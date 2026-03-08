@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "wellness-care",
     "nutrition",
     "weight-loss",
+    "applied-kinesiology",
   ];
 
   const staticPages = [
