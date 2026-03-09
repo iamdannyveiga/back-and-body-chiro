@@ -31,6 +31,7 @@ const serviceLinks = [
 
 const navLinks = [
   { href: '/about', label: 'About' },
+  { href: '/dr-brad', label: 'Dr. Brad' },
   { href: '/testimonials', label: 'Reviews' },
   { href: '/new-patients', label: 'New Patients' },
   { href: '/contact', label: 'Contact' },
