@@ -7,7 +7,7 @@ import FAQAccordion from '@/components/FAQAccordion';
 import { SpineIcon, DecompressionIcon, MassageIcon } from '@/components/Icons';
 
 export const metadata: Metadata = {
-  title: 'Applied Kinesiology',
+  title: 'Applied Kinesiology Shelby Township MI | Back and Body',
   description:
     'Applied kinesiology and muscle testing from Dr. Brad Krawczyk. Advanced diagnostic technique for deeper insight into your condition. $55 New Patient Special. (586) 207-1624. Shelby Township, MI.',
 };
@@ -228,7 +228,7 @@ export default function AppliedKinesiologyPage() {
                   <div className="w-10 h-10 rounded-lg bg-mint/10 text-mint flex items-center justify-center mb-4">{svc.icon}</div>
                   <h3 className="text-[17px] font-bold text-teal mb-2" style={{ fontFamily: 'var(--font-heading)' }}>{svc.title}</h3>
                   <p className="text-sm text-text/70 leading-relaxed mb-3">{svc.desc}</p>
-                  <div className="text-sm font-semibold text-mint group-hover:translate-x-1 transition-transform">Learn More &rarr;</div>
+                  <div className="text-sm font-semibold text-mint group-hover:translate-x-1 transition-transform">{svc.title} &rarr;</div>
                 </Link>
               ))}
             </div>

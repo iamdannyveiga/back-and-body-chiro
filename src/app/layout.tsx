@@ -67,98 +67,6 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Chiropractor",
-  "@id": "https://backandbodydoc.com/#organization",
-  name: "Back and Body Chiropractic Center",
-  image: "https://backandbodydoc.com/images/clinic.jpg",
-  telephone: "(586) 207-1624",
-  email: "",
-  url: "https://backandbodydoc.com",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "55130 Van Dyke Ave #25",
-    addressLocality: "Shelby Charter Township",
-    addressRegion: "MI",
-    postalCode: "48316",
-    addressCountry: "US",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 42.6994733,
-    longitude: -83.0322461,
-  },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday"],
-      opens: "09:00",
-      closes: "13:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday"],
-      opens: "15:00",
-      closes: "19:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: "Thursday",
-      opens: "09:00",
-      closes: "13:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: "Saturday",
-      opens: "09:00",
-      closes: "13:00",
-    },
-  ],
-  sameAs: [
-    "https://www.facebook.com/profile.php?id=61587075946629",
-    "https://backandbodydoc.com",
-  ],
-  priceRange: "$$",
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "34",
-    bestRating: "5",
-  },
-  founder: {
-    "@type": "Person",
-    name: "Dr. Bradley Krawczyk",
-    jobTitle: "Doctor of Chiropractic",
-  },
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Chiropractic Services",
-    itemListElement: [
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Chiropractic Care" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Spinal Decompression" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Massage Therapy" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Back Pain Treatment" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Neck Pain Treatment" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Headache & Migraine Relief" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Sciatica Treatment" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Disc Injury Treatment" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Scoliosis Treatment" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Pediatric Chiropractic" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Prenatal Chiropractic" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Sports Medicine" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Auto & Work Injury Treatment" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Whiplash Treatment" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Carpal Tunnel Treatment" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Vertigo Treatment" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Shoulder Pain Treatment" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Arm & Leg Pain Treatment" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Nutrition Counseling" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Weight Loss Program" } },
-    ],
-  },
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -180,11 +88,6 @@ export default function RootLayout({
         <Navigation />
         <main>{children}</main>
         <Footer />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
       </body>
     </html>
   );

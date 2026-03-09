@@ -135,7 +135,7 @@ export default function ArmLegPainPage() {
                 { icon: <NeckPainIcon className="w-6 h-6" />, title: 'Carpal Tunnel Treatment', desc: 'Nerve compression causing arm and hand symptoms.', href: '/services/carpal-tunnel-treatment' },
                 { icon: <DecompressionIcon className="w-6 h-6" />, title: 'Spinal Decompression', desc: 'Disc-related nerve compression treated with traction.', href: '/services/spinal-decompression' },
               ].map((svc) => (
-                <Link key={svc.title} href={svc.href} className="block bg-light-gray rounded-xl p-7 hover:shadow-md transition-shadow group"><div className="w-10 h-10 rounded-lg bg-mint/10 text-mint flex items-center justify-center mb-4">{svc.icon}</div><h3 className="text-[17px] font-bold text-teal mb-2" style={{ fontFamily: 'var(--font-heading)' }}>{svc.title}</h3><p className="text-sm text-text/70 leading-relaxed mb-3">{svc.desc}</p><div className="text-sm font-semibold text-mint group-hover:translate-x-1 transition-transform">Learn More &rarr;</div></Link>
+                <Link key={svc.title} href={svc.href} className="block bg-light-gray rounded-xl p-7 hover:shadow-md transition-shadow group"><div className="w-10 h-10 rounded-lg bg-mint/10 text-mint flex items-center justify-center mb-4">{svc.icon}</div><h3 className="text-[17px] font-bold text-teal mb-2" style={{ fontFamily: 'var(--font-heading)' }}>{svc.title}</h3><p className="text-sm text-text/70 leading-relaxed mb-3">{svc.desc}</p><div className="text-sm font-semibold text-mint group-hover:translate-x-1 transition-transform">{svc.title} &rarr;</div></Link>
               ))}
             </div>
           </ScrollReveal>

@@ -1,5 +1,16 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import ScrollReveal from '@/components/ScrollReveal';
+import { localBusinessSchema, faqSchema } from '@/lib/schema';
+
+export const metadata: Metadata = {
+  title: 'Chiropractor Shelby Township MI | Back and Body Chiropractic Center',
+  description:
+    'Back and Body Chiropractic Center in Shelby Township, MI. Dr. Bradley Krawczyk, DC -- honest, results-focused care. $55 new patient special. Call (586) 207-1624.',
+  alternates: {
+    canonical: '/',
+  },
+};
 import FAQAccordion from '@/components/FAQAccordion';
 import { SpineIcon, DecompressionIcon, MassageIcon, BackPainIcon, NeckPainIcon, HeadacheIcon, SciaticaIcon, DiscIcon, ScoliosisIcon, PediatricIcon, SportsMedicineIcon, WorkInjuryIcon, CheckIcon } from '@/components/Icons';
 
@@ -149,7 +160,7 @@ export default function HomePage() {
                 <div className="w-12 h-12 bg-mint/10 rounded-lg flex items-center justify-center mb-[18px]"><SpineIcon className="w-6 h-6 stroke-mint" /></div>
                 <div className="text-[26px] font-bold text-teal mb-2.5" style={{ fontFamily: 'var(--font-heading)' }}>Chiropractic Care</div>
                 <p className="text-[15px] text-text opacity-80 leading-relaxed mb-4">The foundation of everything we do. Precise, gentle adjustments that restore alignment and let your body heal naturally. Dr. Brad combines 14 years of experience with a thorough, no-rush approach.</p>
-                <Link href="/services/chiropractic-care" className="font-semibold text-sm text-mint inline-flex items-center gap-1 hover:text-green-sec hover:gap-2 transition-all" style={{ fontFamily: 'var(--font-heading)' }}>Learn More &rarr;</Link>
+                <Link href="/services/chiropractic-care" className="font-semibold text-sm text-mint inline-flex items-center gap-1 hover:text-green-sec hover:gap-2 transition-all" style={{ fontFamily: 'var(--font-heading)' }}>Chiropractic Care &rarr;</Link>
               </div>
             </ScrollReveal>
             {/* Medium cards */}
@@ -158,7 +169,7 @@ export default function HomePage() {
                 <div className="w-12 h-12 bg-mint/10 rounded-lg flex items-center justify-center mb-[18px]"><DecompressionIcon className="w-6 h-6 stroke-mint" /></div>
                 <div className="text-xl font-bold text-teal mb-2.5" style={{ fontFamily: 'var(--font-heading)' }}>Spinal Decompression</div>
                 <p className="text-[15px] text-text opacity-80 leading-relaxed mb-4">Non-surgical disc relief. Gentle traction therapy that creates space between vertebrae, reducing pressure on discs and nerves.</p>
-                <Link href="/services/spinal-decompression" className="font-semibold text-sm text-mint inline-flex items-center gap-1" style={{ fontFamily: 'var(--font-heading)' }}>Learn More &rarr;</Link>
+                <Link href="/services/spinal-decompression" className="font-semibold text-sm text-mint inline-flex items-center gap-1" style={{ fontFamily: 'var(--font-heading)' }}>Spinal Decompression &rarr;</Link>
               </div>
             </ScrollReveal>
             <ScrollReveal className="md:col-span-2" delay=".12s">
@@ -166,7 +177,7 @@ export default function HomePage() {
                 <div className="w-12 h-12 bg-mint/10 rounded-lg flex items-center justify-center mb-[18px]"><MassageIcon className="w-6 h-6 stroke-mint" /></div>
                 <div className="text-xl font-bold text-teal mb-2.5" style={{ fontFamily: 'var(--font-heading)' }}>Massage Therapy</div>
                 <p className="text-[15px] text-text opacity-80 leading-relaxed mb-4">On-site therapeutic massage to complement your chiropractic care. Reduce tension, improve circulation, and accelerate healing.</p>
-                <Link href="/services/massage-therapy" className="font-semibold text-sm text-mint inline-flex items-center gap-1" style={{ fontFamily: 'var(--font-heading)' }}>Learn More &rarr;</Link>
+                <Link href="/services/massage-therapy" className="font-semibold text-sm text-mint inline-flex items-center gap-1" style={{ fontFamily: 'var(--font-heading)' }}>Massage Therapy &rarr;</Link>
               </div>
             </ScrollReveal>
             {/* Small cards */}
@@ -237,7 +248,7 @@ export default function HomePage() {
                   <div className="p-7">
                     <h3 className="text-[22px] font-bold text-teal mb-3" style={{ fontFamily: 'var(--font-heading)' }}>{card.title}</h3>
                     <p className="text-[15px] leading-[1.65] text-text opacity-80 mb-[18px]">{card.desc}</p>
-                    <Link href={card.href} className="font-semibold text-sm text-mint inline-flex items-center gap-1" style={{ fontFamily: 'var(--font-heading)' }}>Learn More &rarr;</Link>
+                    <Link href={card.href} className="font-semibold text-sm text-mint inline-flex items-center gap-1" style={{ fontFamily: 'var(--font-heading)' }}>{card.title} &rarr;</Link>
                   </div>
                 </div>
               </ScrollReveal>
@@ -474,6 +485,15 @@ export default function HomePage() {
           </ScrollReveal>
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema()) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqItems)) }}
+      />
     </>
   );
 }
