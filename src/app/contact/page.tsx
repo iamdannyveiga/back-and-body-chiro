@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   title: 'Contact',
   description:
     'Contact Back and Body Chiropractic Center. (586) 207-1624. 55130 Van Dyke Ave #25, Shelby Charter Township, MI 48316. In Vince and Joe\'s plaza.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/contact/",
+  },
 };
 
 export default function ContactPage() {

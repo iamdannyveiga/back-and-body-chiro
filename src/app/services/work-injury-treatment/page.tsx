@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Work Injury Treatment | Chiropractor Shelby Township MI',
   description:
     'Work injury and workers comp chiropractic treatment from Dr. Brad Krawczyk. Back pain, repetitive strain, and workplace injuries. $55 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/services/work-injury-treatment/",
+  },
 };
 
 const faqItems = [

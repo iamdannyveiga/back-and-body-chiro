@@ -26,9 +26,6 @@ export const metadata: Metadata = {
   description:
     "No sales pitches. No crazy care plans. No gimmicks. Just honest heartfelt care. Dr. Brad Krawczyk -- $55 New Patient Special. Call (586) 207-1624. Shelby Township, MI chiropractor.",
   metadataBase: new URL("https://backandbodydoc.com"),
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     title: "Back and Body Chiropractic Center | Shelby Township Chiropractor",
     description:

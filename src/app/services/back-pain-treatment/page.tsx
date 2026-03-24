@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Back Pain Treatment | Chiropractor Shelby Township MI',
   description:
     'Back pain treatment from Dr. Brad Krawczyk. Root-cause chiropractic care — no band-aids. $55 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/services/back-pain-treatment/",
+  },
 };
 
 const faqItems = [

@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Neck Pain Treatment | Chiropractor Shelby Township MI',
   description:
     'Neck pain treatment from Dr. Brad Krawczyk. Gentle chiropractic adjustments for stiffness, tension, and cervical issues. $55 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/services/neck-pain-treatment/",
+  },
 };
 
 const faqItems = [

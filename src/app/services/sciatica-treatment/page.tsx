@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Sciatica Treatment | Chiropractor Shelby Township MI',
   description:
     'Sciatica treatment from Dr. Brad Krawczyk. Non-surgical relief for radiating leg pain, numbness, and tingling. $55 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/services/sciatica-treatment/",
+  },
 };
 
 const faqItems = [

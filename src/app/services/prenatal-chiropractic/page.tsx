@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Prenatal Chiropractic | Chiropractor Shelby Township MI',
   description:
     'Prenatal chiropractic care from Dr. Brad Krawczyk. Safe, gentle adjustments for pregnancy-related back pain and pelvic alignment. $55 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/services/prenatal-chiropractic/",
+  },
 };
 
 const faqItems = [

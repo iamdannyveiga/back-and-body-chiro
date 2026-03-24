@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   title: 'Patient Reviews',
   description:
     '4.9\u2605 Google rating. Real patient reviews for Dr. Brad Krawczyk at Back and Body Chiropractic Center. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/testimonials/",
+  },
 };
 
 const reviews = [

@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Weight Loss | Chiropractor Shelby Township MI',
   description:
     'Weight loss support from Dr. Brad Krawczyk. Practical nutritional guidance and chiropractic care to support healthy weight management. $55 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/services/weight-loss/",
+  },
 };
 
 const faqItems = [

@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Nutrition | Chiropractor Shelby Township MI',
   description:
     'Nutritional counseling from Dr. Brad Krawczyk. Practical, honest guidance to support healing and overall health. $55 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/services/nutrition/",
+  },
 };
 
 const faqItems = [

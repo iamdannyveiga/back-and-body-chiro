@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Disc Injury Treatment | Chiropractor Shelby Township MI',
   description:
     'Herniated and bulging disc treatment from Dr. Brad Krawczyk. Non-surgical chiropractic care and spinal decompression. $55 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/services/disc-injury-treatment/",
+  },
 };
 
 const faqItems = [

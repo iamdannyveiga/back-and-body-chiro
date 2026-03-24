@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Back and Body Chiropractic Center in Shelby Township, MI. Dr. Bradley Krawczyk, DC -- honest, results-focused care. $55 new patient special. Call (586) 207-1624.',
   alternates: {
-    canonical: '/',
+    canonical: 'https://backandbodydoc.com/',
   },
 };
 import FAQAccordion from '@/components/FAQAccordion';
@@ -56,7 +56,7 @@ export default function HomePage() {
                 <p className="text-[24px] md:text-[32px] font-normal text-text-light leading-[1.35] opacity-85" style={{ fontFamily: 'var(--font-heading)' }}>No gimmicks.</p>
               </div>
               <h1 className="text-[40px] md:text-[56px] font-bold text-text-light leading-[1.1] mb-6" style={{ fontFamily: 'var(--font-heading)' }}>
-                Just honest <span className="text-mint">heartfelt care.</span>
+                Chiropractor in Shelby Township, MI — <span className="text-mint">honest, heartfelt care.</span>
               </h1>
               <p className="text-[17px] text-text-light/75 leading-[1.7] mb-8 max-w-[540px]">
                 Dr. Brad Krawczyk -- MSU Spartan, Macomb County native, and your chiropractor for 14 years. Back and Body Chiropractic Center is where Shelby Township families come for real results at honest prices.
@@ -108,7 +108,7 @@ export default function HomePage() {
           <ScrollReveal className="text-center mb-14">
             <span className="label">Sound Familiar?</span>
             <h2 className="text-[34px] md:text-[44px]" style={{ fontFamily: 'var(--font-heading)' }}>
-              <span className="font-normal">This is </span><span className="font-extrabold">what pain steals.</span>
+              <span className="font-normal">Back pain relief</span><span className="font-extrabold"> in Shelby Township, MI.</span>
             </h2>
           </ScrollReveal>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 mb-12">
@@ -150,7 +150,7 @@ export default function HomePage() {
           <ScrollReveal className="text-center mb-14">
             <span className="label">What We Treat</span>
             <h2 className="text-[34px] md:text-[44px]" style={{ fontFamily: 'var(--font-heading)' }}>
-              <span className="font-normal">One doctor. </span><span className="font-extrabold">Every condition.</span>
+              <span className="font-normal">Chiropractic services</span><span className="font-extrabold"> in Shelby Township, MI.</span>
             </h2>
           </ScrollReveal>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 mb-10">
@@ -232,7 +232,7 @@ export default function HomePage() {
           <ScrollReveal className="text-center mb-14">
             <span className="label">Beyond the Adjustment</span>
             <h2 className="text-[34px] md:text-[44px]" style={{ fontFamily: 'var(--font-heading)' }}>
-              <span className="font-normal">More than </span><span className="font-extrabold">just cracking backs.</span>
+              <span className="font-normal">Massage therapy &amp; nutrition</span><span className="font-extrabold"> in Shelby Township, MI.</span>
             </h2>
           </ScrollReveal>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
@@ -279,7 +279,7 @@ export default function HomePage() {
           <ScrollReveal className="text-center mb-[60px]">
             <span className="label">Meet Your Doctor</span>
             <h2 className="text-[34px] md:text-[44px]" style={{ fontFamily: 'var(--font-heading)' }}>
-              <span className="font-normal">One doctor. </span><span className="font-extrabold">Your doctor.</span>
+              <span className="font-normal">Dr. Brad Krawczyk —</span><span className="font-extrabold"> your Shelby Township chiropractor.</span>
             </h2>
           </ScrollReveal>
           <div className="grid grid-cols-1 xl:grid-cols-[1fr_380px] gap-12 items-start">
@@ -330,7 +330,7 @@ export default function HomePage() {
             <ScrollReveal>
               <span className="label">Real Results</span>
               <h2 className="text-[34px] md:text-[44px] mb-9" style={{ fontFamily: 'var(--font-heading)' }}>
-                <span className="font-normal">This is what </span><span className="font-extrabold">honest care looks like.</span>
+                <span className="font-normal">Chiropractic results</span><span className="font-extrabold"> in Shelby Township, MI.</span>
               </h2>
               <ul className="list-none flex flex-col gap-5 mb-9">
                 {[
@@ -462,7 +462,7 @@ export default function HomePage() {
           <ScrollReveal className="text-center mb-14">
             <span className="label">Common Questions</span>
             <h2 className="text-[34px] md:text-[44px]" style={{ fontFamily: 'var(--font-heading)' }}>
-              <span className="font-normal">Your questions, </span><span className="font-extrabold">answered honestly.</span>
+              <span className="font-normal">Chiropractic in Shelby Township</span><span className="font-extrabold"> — your questions answered.</span>
             </h2>
           </ScrollReveal>
           <FAQAccordion items={faqItems} />

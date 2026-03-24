@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   title: 'New Patients — $55 First Visit',
   description:
     'Your $55 first visit includes consultation, exam, X-rays if needed, and first adjustment. No sales pitches. No contracts. Just honest care.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/new-patients/",
+  },
 };
 
 const faqItems = [

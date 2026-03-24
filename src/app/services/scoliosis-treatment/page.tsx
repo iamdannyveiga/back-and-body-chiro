@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Scoliosis Treatment | Chiropractor Shelby Township MI',
   description:
     'Scoliosis treatment and management from Dr. Brad Krawczyk. Non-surgical chiropractic care for spinal curvature. $55 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/services/scoliosis-treatment/",
+  },
 };
 
 const faqItems = [

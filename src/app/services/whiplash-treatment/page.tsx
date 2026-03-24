@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Whiplash Treatment | Chiropractor Shelby Township MI',
   description:
     'Whiplash treatment from Dr. Brad Krawczyk. Auto accident and injury recovery with chiropractic care. $55 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/services/whiplash-treatment/",
+  },
 };
 
 const faqItems = [

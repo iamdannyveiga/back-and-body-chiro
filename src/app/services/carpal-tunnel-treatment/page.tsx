@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Carpal Tunnel Treatment | Chiropractor Shelby Township MI',
   description:
     'Carpal tunnel treatment from Dr. Brad Krawczyk. Non-surgical relief for wrist pain, numbness, and tingling. $55 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/services/carpal-tunnel-treatment/",
+  },
 };
 
 const faqItems = [

@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Headaches & Migraines | Chiropractor Shelby Township MI',
   description:
     'Headache and migraine treatment from Dr. Brad Krawczyk. Find the cervical cause and fix it — no medication. $55 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/services/headaches-migraines/",
+  },
 };
 
 const faqItems = [

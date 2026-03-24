@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Massage Therapy | Chiropractor Shelby Township MI',
   description:
     'On-site therapeutic massage therapy at Back and Body Chiropractic. Complements chiropractic care for faster recovery. $55 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/services/massage-therapy/",
+  },
 };
 
 const faqItems = [

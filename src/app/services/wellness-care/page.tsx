@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Wellness Care | Chiropractor Shelby Township MI',
   description:
     'Wellness and maintenance chiropractic care from Dr. Brad Krawczyk. Stay healthy, prevent problems, feel your best. $55 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/services/wellness-care/",
+  },
 };
 
 const faqItems = [

@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Applied Kinesiology Shelby Township MI | Back and Body',
   description:
     'Applied kinesiology and muscle testing from Dr. Brad Krawczyk. Advanced diagnostic technique for deeper insight into your condition. $55 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/services/applied-kinesiology/",
+  },
 };
 
 const faqItems = [

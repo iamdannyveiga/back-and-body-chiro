@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Arm & Leg Pain | Chiropractor Shelby Township MI',
   description:
     'Arm and leg pain treatment from Dr. Brad Krawczyk. Radiating pain, numbness, and tingling traced to the spinal source. $55 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/services/arm-leg-pain/",
+  },
 };
 
 const faqItems = [

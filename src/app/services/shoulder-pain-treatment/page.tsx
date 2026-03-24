@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Shoulder Pain Treatment | Chiropractor Shelby Township MI',
   description:
     'Shoulder pain treatment from Dr. Brad Krawczyk. Chiropractic care for frozen shoulder, rotator cuff issues, and more. $55 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/services/shoulder-pain-treatment/",
+  },
 };
 
 const faqItems = [

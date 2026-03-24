@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Spinal Decompression | Chiropractor Shelby Township MI',
   description:
     'Non-surgical spinal decompression therapy from Dr. Brad Krawczyk. Disc relief without surgery. $55 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/services/spinal-decompression/",
+  },
 };
 
 const faqItems = [

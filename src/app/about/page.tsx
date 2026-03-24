@@ -7,6 +7,10 @@ import ConversionCTA from '@/components/ConversionCTA';
 export const metadata: Metadata = {
   title: 'About Us',
   description: 'Dr. Brad Krawczyk -- Macomb County native, MSU grad, 14+ years of honest chiropractic care. No sales pitches. No gimmicks. Just results.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/about/",
+  },
 };
 
 export default function AboutPage() {

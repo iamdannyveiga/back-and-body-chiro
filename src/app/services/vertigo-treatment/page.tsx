@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Vertigo Treatment | Chiropractor Shelby Township MI',
   description:
     'Vertigo and dizziness treatment from Dr. Brad Krawczyk. Chiropractic care for cervicogenic vertigo and BPPV. $55 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/services/vertigo-treatment/",
+  },
 };
 
 const faqItems = [

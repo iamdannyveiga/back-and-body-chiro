@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Chiropractic Care',
   description:
     'Honest, results-focused chiropractic adjustments from Dr. Brad Krawczyk. No sales pitches. No gimmicks. $55 New Patient Special. Shelby Township, MI.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/services/chiropractic-care/",
+  },
 };
 
 const faqItems = [

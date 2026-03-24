@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   title: 'Back Pain Treatment in Shelby Township',
   description:
     "Back pain treatment from Dr. Brad Krawczyk. No sales pitches. No gimmicks. Honest chiropractic care that gets to the root cause. $55 New Patient Special.",
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/conditions/back-pain/",
+  },
 };
 
 const faqItems = [

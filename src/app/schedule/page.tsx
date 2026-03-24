@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   title: 'Schedule Your $55 Visit',
   description:
     'Book your $55 new patient special at Back and Body Chiropractic Center. Consultation, exam, X-rays if needed, and first adjustment. No contracts.',
+
+  alternates: {
+    canonical: "https://backandbodydoc.com/schedule/",
+  },
 };
 
 export default function SchedulePage() {
