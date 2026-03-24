@@ -64,9 +64,18 @@ export default function ContactPage() {
                   </tbody>
                 </table>
 
-                {/* Map placeholder */}
-                <div className="mt-7 h-[200px] bg-gradient-to-br from-[#2a4a58] to-teal rounded-xl flex items-center justify-center">
-                  <p className="text-white/20 text-xs tracking-[1.5px] uppercase">Google Map — 55130 Van Dyke Ave #25</p>
+                {/* Google Map */}
+                <div className="mt-7 rounded-xl overflow-hidden" style={{ height: 240 }}>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.5!2d-83.0338!3d42.6412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824e5c5e5e5e5e5%3A0x0!2s55130+Van+Dyke+Ave+%2325%2C+Shelby+Charter+Township%2C+MI+48316!5e0!3m2!1sen!2sus!4v1"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Back and Body Chiropractic Center - Shelby Township MI"
+                  />
                 </div>
 
                 <div className="mt-7">

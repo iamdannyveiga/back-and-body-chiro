@@ -3,7 +3,8 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { LogoIcon, MenuIcon, XIcon } from './Icons';
+import Image from 'next/image';
+import { MenuIcon, XIcon } from './Icons';
 
 const serviceLinks = [
   { href: '/services/chiropractic-care', label: 'Chiropractic Care' },
@@ -82,17 +83,16 @@ export default function Navigation() {
       }}
     >
       <div className="flex items-center justify-between max-w-[1440px] mx-auto px-5 md:px-6 lg:px-20">
-        <Link href="/" className="flex items-center gap-2.5 no-underline">
-          <LogoIcon />
-          <div
-            className="font-heading font-bold text-[16px] leading-[1.2] transition-colors duration-[350ms]"
-            style={{ color: solid ? 'var(--teal)' : 'var(--white)', fontFamily: 'var(--font-heading)' }}
-          >
-            Back &amp; Body
-            <span className="block font-normal text-[11px] tracking-[0.5px] opacity-80">
-              Chiropractic Center
-            </span>
-          </div>
+        <Link href="/" className="flex items-center no-underline">
+          <Image
+            src={solid ? '/images/logo-scrolling.webp' : '/images/logo-header-white-green.webp'}
+            alt="Back and Body Chiropractic Center"
+            width={180}
+            height={48}
+            className="transition-opacity duration-[350ms]"
+            style={{ height: 'auto', maxHeight: 44, width: 'auto' }}
+            priority
+          />
         </Link>
 
         {/* Desktop nav links */}

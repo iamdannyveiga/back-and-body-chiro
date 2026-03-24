@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { LogoIcon, FacebookIcon } from './Icons';
+import Image from 'next/image';
+import { FacebookIcon } from './Icons';
 
 export default function Footer() {
   return (
@@ -9,10 +10,13 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2.5 mb-4">
-              <LogoIcon className="w-8 h-8" />
-              <div className="font-bold text-[15px] text-text-light leading-[1.2]" style={{ fontFamily: 'var(--font-heading)' }}>
-                Back &amp; Body Chiropractic Center
-              </div>
+              <Image
+                src="/images/logo-header-white-green.webp"
+                alt="Back and Body Chiropractic Center"
+                width={180}
+                height={48}
+                style={{ height: 'auto', maxHeight: 40, width: 'auto' }}
+              />
             </div>
             <p className="text-sm text-text-light/50 leading-relaxed mb-5">
               Serving Macomb &amp; Oakland Counties since 2011. No sales pitches. No crazy care plans. Just honest heartfelt care.
@@ -34,12 +38,12 @@ export default function Footer() {
             <ul className="list-none p-0 m-0">
               {[
                 { href: '/services/chiropractic-care', label: 'Chiropractic Care' },
-                { href: '#', label: 'Spinal Decompression' },
-                { href: '#', label: 'Massage Therapy' },
-                { href: '#', label: 'Applied Kinesiology' },
-                { href: '#', label: 'Pediatric & Prenatal' },
-                { href: '#', label: 'Sports Medicine' },
-                { href: '#', label: 'Nutrition & Weight Loss' },
+                { href: '/services/spinal-decompression', label: 'Spinal Decompression' },
+                { href: '/services/massage-therapy', label: 'Massage Therapy' },
+                { href: '/services/applied-kinesiology', label: 'Applied Kinesiology' },
+                { href: '/services/pediatric-chiropractic', label: 'Pediatric & Prenatal' },
+                { href: '/services/back-pain-treatment', label: 'Back Pain Treatment' },
+                { href: '/services/nutrition', label: 'Nutrition & Weight Loss' },
               ].map((item) => (
                 <li key={item.label} className="mb-2.5">
                   <Link href={item.href} className="text-sm text-text-light/[.55] no-underline hover:text-mint transition-colors">
@@ -98,7 +102,7 @@ export default function Footer() {
 
         <div className="border-t border-white/[.06] pt-7 flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-[13px] text-text-light/[.35]">
-            &copy; 2025 Back and Body Chiropractic Center &middot; Dr. Bradley Krawczyk, D.C.
+            &copy; 2026 Back and Body Chiropractic Center &middot; Dr. Bradley Krawczyk, D.C.
           </p>
           <p className="text-[13px] text-text-light/[.35]">
             55130 Van Dyke Ave #25, Shelby Charter Township, MI 48316
