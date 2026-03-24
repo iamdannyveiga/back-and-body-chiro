@@ -147,6 +147,52 @@ img { max-width: 100%; display: block; }
 .form-group input::placeholder, .form-group textarea::placeholder { color: #999; }
 .form-group textarea { resize: vertical; min-height: 72px; }
 
+/* ========== RESPONSIVE — 1280px ========== */
+@media (max-width: 1280px) {
+  .container { padding: 0 56px; }
+}
+
+/* ========== RESPONSIVE — 1200px ========== */
 @media (max-width: 1200px) { .container { padding: 0 48px; } }
-@media (max-width: 768px) { .container { padding: 0 32px; } }
-@media (max-width: 480px) { .container { padding: 0 20px; } }
+
+/* ========== RESPONSIVE — 1024px ========== */
+@media (max-width: 1024px) {
+  .container { padding: 0 40px; }
+  .btn { padding: 14px 28px; font-size: 14px; }
+  .faq-q { padding: 18px 22px; font-size: 15px; }
+  .faq-a__inner { padding: 0 22px 20px; font-size: 14px; }
+}
+
+/* ========== RESPONSIVE — 768px ========== */
+@media (max-width: 768px) {
+  .container { padding: 0 32px; }
+  .btn { padding: 13px 26px; font-size: 14px; }
+  .label { font-size: 10px; letter-spacing: 2px; margin-bottom: 12px; }
+  .faq-q { padding: 16px 20px; font-size: 15px; gap: 12px; }
+  .faq-q__icon { width: 24px; height: 24px; }
+  .faq-a__inner { padding: 0 20px 18px; }
+  .form-group input,
+  .form-group textarea,
+  .form-group select { padding: 12px 14px; font-size: 14px; }
+}
+
+/* ========== RESPONSIVE — 480px ========== */
+@media (max-width: 480px) {
+  .container { padding: 0 20px; }
+  .btn { padding: 12px 24px; font-size: 14px; width: 100%; justify-content: center; }
+  .btn--sm { padding: 10px 20px; font-size: 13px; }
+}
+
+/* ========== RESPONSIVE — 375px ========== */
+@media (max-width: 375px) {
+  .container { padding: 0 16px; }
+  .btn { padding: 12px 20px; font-size: 13px; }
+  .btn--sm { padding: 9px 18px; font-size: 12px; }
+  .label { font-size: 9px; letter-spacing: 1.8px; margin-bottom: 10px; }
+  .faq-q { padding: 14px 16px; font-size: 14px; gap: 10px; }
+  .faq-q__icon { width: 22px; height: 22px; }
+  .faq-a__inner { padding: 0 16px 16px; font-size: 13px; }
+  .form-group input,
+  .form-group textarea,
+  .form-group select { padding: 11px 12px; font-size: 13px; }
+}

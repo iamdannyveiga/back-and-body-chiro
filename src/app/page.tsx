@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import ScrollReveal from '@/components/ScrollReveal';
 import { localBusinessSchema, faqSchema } from '@/lib/schema';
 
@@ -30,17 +31,8 @@ export default function HomePage() {
     <>
       {/* HERO BANNER */}
       <section className="w-full h-[44vh] min-h-[320px] relative overflow-hidden bg-teal">
-        <div className="w-full h-full bg-gradient-to-br from-[#2a4a58] via-[#1a3040] to-teal flex items-center justify-center relative">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_600px_300px_at_30%_60%,rgba(94,210,153,.08),transparent),radial-gradient(ellipse_400px_200px_at_70%_40%,rgba(94,210,153,.05),transparent)]" />
-          <div className="text-center z-10">
-            <svg className="w-20 h-20 opacity-15 mx-auto mb-4" viewBox="0 0 80 80" fill="none">
-              <rect x="4" y="16" width="72" height="48" rx="4" stroke="#fff" strokeWidth="2" />
-              <path d="M4 52 L28 36 L44 46 L60 30 L76 42" stroke="#5ED299" strokeWidth="2" fill="none" />
-              <circle cx="60" cy="28" r="6" stroke="#5ED299" strokeWidth="1.5" />
-            </svg>
-            <p className="text-white/20 text-[13px] tracking-[2px] uppercase" style={{ fontFamily: 'var(--font-heading)' }}>Clinic exterior or interior -- wide banner</p>
-          </div>
-        </div>
+        <Image src="/images/office-exterior.webp" alt="Back and Body Chiropractic Center office exterior in Shelby Township, MI" fill className="object-cover" priority />
+        <div className="absolute inset-0 bg-gradient-to-b from-teal/30 via-transparent to-teal/60" />
       </section>
 
       {/* HERO TEXT + FORM */}
@@ -237,13 +229,13 @@ export default function HomePage() {
           </ScrollReveal>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
             {[
-              { title: 'Massage Therapy', desc: 'On-site massage therapy to complement your chiropractic care. Reduce tension, improve circulation, accelerate healing -- without driving to a separate appointment.', bg: 'from-[#2a4a58] to-[#1a3540]', href: '/services/massage-therapy' },
-              { title: 'Nutrition & Weight Loss', desc: 'Personalized nutrition counseling and medically guided weight loss. Whole-body wellness, not just spinal health. Practical plans for real Michigan families.', bg: 'from-[#3a5a48] to-[#2a4538]', href: '/services/nutrition' },
+              { title: 'Massage Therapy', desc: 'On-site massage therapy to complement your chiropractic care. Reduce tension, improve circulation, accelerate healing -- without driving to a separate appointment.', img: '/images/service-massage-therapy.webp', imgAlt: 'Massage therapy at Back and Body Chiropractic Center', href: '/services/massage-therapy' },
+              { title: 'Nutrition & Weight Loss', desc: 'Personalized nutrition counseling and medically guided weight loss. Whole-body wellness, not just spinal health. Practical plans for real Michigan families.', img: '/images/service-nutrition.webp', imgAlt: 'Nutrition counseling at Back and Body Chiropractic Center', href: '/services/nutrition' },
             ].map((card) => (
               <ScrollReveal key={card.title}>
                 <div className="bg-white rounded-xl overflow-hidden shadow-[var(--shadow)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-1 transition-all duration-300">
-                  <div className={`w-full h-[260px] bg-gradient-to-br ${card.bg} flex items-center justify-center`}>
-                    <svg className="w-14 h-14 opacity-20" viewBox="0 0 56 56" fill="none"><circle cx="28" cy="28" r="24" stroke="#fff" strokeWidth="1.5" /></svg>
+                  <div className="w-full h-[260px] relative">
+                    <Image src={card.img} alt={card.imgAlt} fill className="object-cover" />
                   </div>
                   <div className="p-7">
                     <h3 className="text-[22px] font-bold text-teal mb-3" style={{ fontFamily: 'var(--font-heading)' }}>{card.title}</h3>
@@ -286,10 +278,7 @@ export default function HomePage() {
             <ScrollReveal>
               {/* Photo placeholder */}
               <div className="w-full h-[440px] rounded-xl overflow-hidden -mt-10 relative z-[2] shadow-[var(--shadow-lg)] mb-7">
-                <div className="w-full h-full bg-gradient-to-br from-[#2a4a58] to-teal flex items-center justify-center flex-col gap-3">
-                  <svg className="w-[72px] h-[72px] opacity-15" viewBox="0 0 72 72" fill="none"><circle cx="36" cy="28" r="14" stroke="#fff" strokeWidth="1.5" /><path d="M12 64c0-12 10-22 24-22s24 10 24 22" stroke="#fff" strokeWidth="1.5" /></svg>
-                  <p className="text-white/15 text-xs tracking-[1.5px] uppercase">Dr. Brad Krawczyk</p>
-                </div>
+                <Image src="/images/dr-bradley-krawczyk-about.webp" alt="Dr. Bradley Krawczyk, DC — Chiropractor in Shelby Township, MI" fill className="object-cover" />
               </div>
               <h3 className="text-[30px] font-extrabold text-teal mt-7 mb-2" style={{ fontFamily: 'var(--font-heading)' }}>Dr. Bradley Krawczyk, D.C.</h3>
               <p className="text-sm text-[#888] mb-6 leading-relaxed">Founder &middot; Michigan State University &middot; Life University 2011 &middot; Macomb County Native &middot; 14+ Years</p>
@@ -348,10 +337,8 @@ export default function HomePage() {
               <Link href="/schedule" className="btn btn--mint">Book Your $55 Visit &rarr;</Link>
             </ScrollReveal>
             <ScrollReveal delay=".1s">
-              <div className="w-full h-[420px] rounded-xl overflow-hidden shadow-[var(--shadow)]">
-                <div className="w-full h-full bg-gradient-to-br from-[#e8efe8] to-[#d4ddd4] flex items-center justify-center">
-                  <svg className="w-16 h-16 opacity-15" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="24" r="10" stroke="#5ED299" strokeWidth="1.5" /><path d="M16 56c0-8 7-16 16-16s16 8 16 16" stroke="#5ED299" strokeWidth="1.5" /></svg>
-                </div>
+              <div className="w-full h-[420px] rounded-xl overflow-hidden shadow-[var(--shadow)] relative">
+                <Image src="/images/dr-bradley-krawczyk-with-staff.webp" alt="Dr. Brad and the Back and Body Chiropractic team in Shelby Township" fill className="object-cover" />
               </div>
             </ScrollReveal>
           </div>
