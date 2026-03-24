@@ -133,7 +133,7 @@ img { max-width: 100%; display: block; }
 .faq-item.open .faq-q__icon { transform: rotate(45deg); }
 .faq-q__icon svg { width: 14px; height: 14px; stroke: var(--mint); stroke-width: 2; fill: none; }
 .faq-a { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
-.faq-item.open .faq-a { max-height: 400px; }
+.faq-item.open .faq-a { max-height: 600px; }
 .faq-a__inner { padding: 0 28px 24px; font-size: 15px; line-height: 1.7; color: var(--text); opacity: .85; }
 
 .form-group input,

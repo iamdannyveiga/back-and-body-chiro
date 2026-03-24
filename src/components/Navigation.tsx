@@ -69,6 +69,12 @@ export default function Navigation() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  /* lock body scroll when mobile menu open */
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [mobileOpen]);
+
   const solid = !isHome || scrolled;
   const linkColor = solid ? 'var(--text-nav)' : 'rgba(255,255,255,0.9)';
 
@@ -172,7 +178,7 @@ export default function Navigation() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-white/[.98] shadow-lg py-5 px-6 flex flex-col gap-4 max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden fixed inset-0 bg-white/[.99] z-[999] pt-24 px-8 pb-10 flex flex-col gap-4 overflow-y-auto">
           {/* Mobile services accordion */}
           <button
             onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
