@@ -150,6 +150,29 @@ export default function NewPatientsPage() {
         </div>
       </section>
 
+      {/* D-PRE: PATIENT PAPERWORK */}
+      <section className="py-16 bg-light-gray">
+        <div className="container">
+          <ScrollReveal>
+            <div className="max-w-[800px] mx-auto text-center">
+              <span className="label">Save Time</span>
+              <h2 className="text-[30px] md:text-[36px] text-teal mb-4" style={{ fontFamily: 'var(--font-heading)' }}>
+                <span className="font-normal">Complete your </span><span className="font-extrabold">paperwork online.</span>
+              </h2>
+              <p className="text-text/70 text-[0.95rem] mb-6">Save 10-15 minutes at check-in by filling out your new patient intake forms before your visit.</p>
+              <div className="flex flex-wrap gap-4 justify-center">
+                <a href="https://www.chirohd.com/office-forms/679/back-and-body-chiropractic-center" target="_blank" rel="noopener noreferrer" className="btn btn--mint">
+                  Complete Forms Online &rarr;
+                </a>
+                <Link href="/new-patient-paperwork" className="btn btn--outline">
+                  Paperwork Details &rarr;
+                </Link>
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* D: INSURANCE & PAYMENT */}
       <section className="py-20 bg-white">
         <div className="container">

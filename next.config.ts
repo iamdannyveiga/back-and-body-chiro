@@ -91,7 +91,7 @@ const nextConfig: NextConfig = {
       { source: "/chiropractor", destination: "/dr-brad", permanent: true },
       { source: "/contact-us", destination: "/contact", permanent: true },
       { source: "/us", destination: "/about", permanent: true },
-      { source: "/new-patient-paperwork", destination: "/new-patients", permanent: true },
+      // /new-patient-paperwork now has its own page -- no redirect needed
       { source: "/review-us", destination: "/testimonials", permanent: true },
       { source: "/finding-a-chiropractor", destination: "/about", permanent: true },
       { source: "/office-tour", destination: "/about", permanent: true },

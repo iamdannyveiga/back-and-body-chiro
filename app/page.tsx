@@ -49,7 +49,7 @@ export default function HomePage() {
                 <p className="text-[24px] md:text-[32px] font-normal text-text-light leading-[1.35] opacity-85" style={{ fontFamily: 'var(--font-heading)' }}>No gimmicks.</p>
               </div>
               <h1 className="text-[40px] md:text-[56px] font-bold text-text-light leading-[1.1] mb-6" style={{ fontFamily: 'var(--font-heading)' }}>
-                Just honest <span className="text-mint">heartfelt care.</span>
+                Chiropractor in Shelby Township, MI -- just honest <span className="text-mint">heartfelt care.</span>
               </h1>
               <p className="text-[17px] text-text-light/75 leading-[1.7] mb-8 max-w-[540px]">
                 Dr. Brad Krawczyk -- MSU Spartan, Macomb County native, and your chiropractor for 14 years. Back and Body Chiropractic Center is where Shelby Township families come for real results at honest prices.
