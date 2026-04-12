@@ -37,6 +37,18 @@ export default function ScheduleAppointmentPage() {
             />
           </div>
 
+          {/* Fallback if iframe doesn't load */}
+          <div className="mt-6 rounded-xl border border-mint/20 bg-mint/5 px-6 py-5 text-center">
+            <p className="text-sm font-semibold text-teal mb-2">Having trouble loading the scheduler?</p>
+            <a
+              href="tel:5862071624"
+              className="inline-block rounded-lg bg-teal px-6 py-3 text-base font-bold text-white shadow hover:opacity-90 transition"
+            >
+              Call (586) 207-1624 to Book Directly
+            </a>
+            <p className="text-xs text-text/50 mt-2">We answer the phone -- no bots, no voicemail trees.</p>
+          </div>
+
           {/* Trust strip */}
           <div className="flex items-center justify-center gap-3 flex-wrap mt-6 text-sm text-text/60">
             <span className="flex items-center gap-1 text-amber">
@@ -49,12 +61,6 @@ export default function ScheduleAppointmentPage() {
             <span>Saturday Hours</span>
             <span className="text-text/20">&middot;</span>
             <span>No Contracts</span>
-          </div>
-
-          <div className="text-center mt-6">
-            <p className="text-sm text-text/50">
-              Prefer to call? <a href="tel:5862071624" className="text-mint font-bold">(586) 207-1624</a>
-            </p>
           </div>
 
           <div className="text-center mt-4">

@@ -113,7 +113,7 @@ export default function BookingForm({ variant = 'full' }: BookingFormProps) {
       <button
         type="submit"
         disabled={status === 'submitting'}
-        className="w-full btn btn--mint justify-center disabled:opacity-60"
+        className="w-full btn btn--teal justify-center disabled:opacity-60"
       >
         {status === 'submitting' ? 'Sending...' : 'Book My $67 Visit \u2192'}
       </button>

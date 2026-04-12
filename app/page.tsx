@@ -164,19 +164,20 @@ export default function HomePage() {
             </ScrollReveal>
             {/* Small cards */}
             {[
-              { icon: <BackPainIcon className="w-5 h-5 stroke-mint" />, title: 'Back Pain', desc: 'The #1 reason patients find us.' },
-              { icon: <NeckPainIcon className="w-5 h-5 stroke-mint" />, title: 'Neck Pain', desc: 'Relief without medication.' },
-              { icon: <HeadacheIcon className="w-5 h-5 stroke-mint" />, title: 'Headaches', desc: 'Often spinal in origin.' },
-              { icon: <SciaticaIcon className="w-5 h-5 stroke-mint" />, title: 'Sciatica', desc: 'Nerve pain resolved at the source.' },
-              { icon: <DiscIcon className="w-5 h-5 stroke-mint" />, title: 'Disc Injuries', desc: 'Non-surgical treatment options.' },
-              { icon: <ScoliosisIcon className="w-5 h-5 stroke-mint" />, title: 'Scoliosis', desc: 'Curvature management and care.' },
+              { icon: <BackPainIcon className="w-5 h-5 stroke-mint" />, title: 'Back Pain', desc: 'The #1 reason patients find us.', href: '/back-pain-treatment-shelby-township-mi' },
+              { icon: <NeckPainIcon className="w-5 h-5 stroke-mint" />, title: 'Neck Pain', desc: 'Relief without medication.', href: '/neck-pain-treatment-shelby-township-mi' },
+              { icon: <HeadacheIcon className="w-5 h-5 stroke-mint" />, title: 'Headaches', desc: 'Often spinal in origin.', href: '/headaches-migraines-shelby-township-mi' },
+              { icon: <SciaticaIcon className="w-5 h-5 stroke-mint" />, title: 'Sciatica', desc: 'Nerve pain resolved at the source.', href: '/sciatica-treatment-shelby-township-mi' },
+              { icon: <DiscIcon className="w-5 h-5 stroke-mint" />, title: 'Disc Injuries', desc: 'Non-surgical treatment options.', href: '/disc-injury-treatment-shelby-township-mi' },
+              { icon: <ScoliosisIcon className="w-5 h-5 stroke-mint" />, title: 'Scoliosis', desc: 'Curvature management and care.', href: '/scoliosis-treatment-shelby-township-mi' },
             ].map((card, i) => (
               <ScrollReveal key={card.title}>
-                <div className="bg-white rounded-xl p-7 shadow-[var(--shadow)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-1 transition-all duration-300">
+                <Link href={card.href} className="block bg-white rounded-xl p-7 shadow-[var(--shadow)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-1 transition-all duration-300">
                   <div className="w-10 h-10 bg-mint/10 rounded-lg flex items-center justify-center mb-3.5">{card.icon}</div>
                   <div className="text-[16px] font-bold text-teal mb-1.5" style={{ fontFamily: 'var(--font-heading)' }}>{card.title}</div>
                   <p className="text-[13px] text-text opacity-80">{card.desc}</p>
-                </div>
+                  <span className="text-mint text-xs font-semibold mt-2 inline-block" style={{ fontFamily: 'var(--font-heading)' }}>&rarr;</span>
+                </Link>
               </ScrollReveal>
             ))}
             {/* Pediatric medium */}
@@ -344,9 +345,9 @@ export default function HomePage() {
               { num: '34+', label: 'Patient Reviews' },
               { num: '14+', label: 'Years Serving Macomb' },
               { num: 'Sat', label: 'Hours Available' },
-            ].map((stat, i) => (
+            ].map((stat, i, arr) => (
               <ScrollReveal key={i} delay={`${i * 0.08}s`}>
-                <div className="relative">
+                <div className={`relative py-2${i < arr.length - 1 ? ' md:border-r md:border-white/30' : ''}`}>
                   <div className="text-[36px] md:text-[48px] font-extrabold text-teal leading-none mb-1.5" style={{ fontFamily: 'var(--font-heading)' }}>{stat.num}</div>
                   <div className="text-sm font-semibold text-teal opacity-70 tracking-[0.5px]" style={{ fontFamily: 'var(--font-heading)' }}>{stat.label}</div>
                 </div>
