@@ -12,13 +12,11 @@ export default function Footer() {
             <div className="flex items-center gap-2.5 mb-4">
               <Image
                 src="/images/logo-header-white-green.webp"
-                alt="Back and Body Chiropractic Center logo"
-                width={32}
-                height={32}
+                alt="Back and Body Chiropractic Center"
+                width={260}
+                height={100}
+                className="h-[36px] w-auto"
               />
-              <div className="font-bold text-[15px] text-text-light leading-[1.2]" style={{ fontFamily: 'var(--font-heading)' }}>
-                Back &amp; Body Chiropractic Center
-              </div>
             </div>
             <p className="text-sm text-text-light/50 leading-relaxed mb-5">
               Serving Macomb &amp; Oakland Counties since 2011. No sales pitches. No crazy care plans. Just honest heartfelt care.
