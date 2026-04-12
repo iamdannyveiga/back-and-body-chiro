@@ -5,11 +5,12 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import { SpineIcon, SciaticaIcon, DiscIcon } from '@/components/Icons';
+import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Spinal Decompression | Chiropractor Shelby Township MI',
   description:
-    'Non-surgical spinal decompression therapy from Dr. Brad Krawczyk. Disc relief without surgery. $67 New Patient Special. (586) 486-5235. Shelby Township, MI.',
+    'Non-surgical spinal decompression therapy from Dr. Brad Krawczyk. Disc relief without surgery. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
     canonical: '/spinal-decompression-shelby-township-mi',
   },
@@ -258,6 +259,23 @@ export default function SpinalDecompressionPage() {
       </section>
 
       <ConversionCTA line1="Disc pain doesn't have to mean surgery." anchor="$67 to find out." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
+          'Spinal Decompression',
+          'Non-surgical spinal decompression therapy from Dr. Brad Krawczyk. Disc relief without surgery. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'spinal-decompression-shelby-township-mi'
+        )) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/#services' },
+          { name: 'Spinal Decompression' },
+        ])) }}
+      />
     </>
   );
 }

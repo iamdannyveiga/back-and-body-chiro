@@ -5,11 +5,12 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import { SpineIcon, DecompressionIcon, NeckPainIcon } from '@/components/Icons';
+import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Massage Therapy | Chiropractor Shelby Township MI',
   description:
-    'On-site therapeutic massage therapy at Back and Body Chiropractic. Complements chiropractic care for faster recovery. $67 New Patient Special. (586) 486-5235. Shelby Township, MI.',
+    'On-site therapeutic massage therapy at Back and Body Chiropractic. Complements chiropractic care for faster recovery. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
     canonical: '/massage-therapy-shelby-township-mi',
   },
@@ -255,6 +256,23 @@ export default function MassageTherapyPage() {
       </section>
 
       <ConversionCTA line1="Muscle tension holding you back?" anchor="$67 to get started." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
+          'Massage Therapy',
+          'On-site therapeutic massage therapy at Back and Body Chiropractic. Complements chiropractic care for faster recovery. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'massage-therapy-shelby-township-mi'
+        )) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/#services' },
+          { name: 'Massage Therapy' },
+        ])) }}
+      />
     </>
   );
 }

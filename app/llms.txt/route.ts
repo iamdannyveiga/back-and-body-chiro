@@ -4,8 +4,8 @@ export async function GET() {
 > Chiropractor in Shelby Charter Township, MI. Dr. Bradley Krawczyk, DC. No sales pitches, no gimmicks -- just honest care focused on results.
 
 ## Contact
-- Phone: (586) 486-5235
-- Address: 55130 Van Dyke Avenue, Shelby Charter Township, MI 48316
+- Phone: (586) 207-1624
+- Address: 55130 Van Dyke Ave #25, Shelby Charter Township, MI 48317
 - Website: https://backandbodydoc.com
 - New Patient Special: $67
 

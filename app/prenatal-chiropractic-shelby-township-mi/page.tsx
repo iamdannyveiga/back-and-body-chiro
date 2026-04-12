@@ -5,11 +5,12 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import { SpineIcon, MassageIcon, PediatricIcon } from '@/components/Icons';
+import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Prenatal Chiropractic | Chiropractor Shelby Township MI',
   description:
-    'Prenatal chiropractic care from Dr. Brad Krawczyk. Safe, gentle adjustments for pregnancy-related back pain and pelvic alignment. $67 New Patient Special. (586) 486-5235. Shelby Township, MI.',
+    'Prenatal chiropractic care from Dr. Brad Krawczyk. Safe, gentle adjustments for pregnancy-related back pain and pelvic alignment. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
     canonical: '/prenatal-chiropractic-shelby-township-mi',
   },
@@ -159,6 +160,23 @@ export default function PrenatalChiropracticPage() {
       </section>
 
       <ConversionCTA line1="Pregnant and in pain?" anchor="$67 for gentle relief." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
+          'Prenatal Chiropractic',
+          'Prenatal chiropractic care from Dr. Brad Krawczyk. Safe, gentle adjustments for pregnancy-related back pain and pelvic alignment. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'prenatal-chiropractic-shelby-township-mi'
+        )) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/#services' },
+          { name: 'Prenatal Chiropractic' },
+        ])) }}
+      />
     </>
   );
 }

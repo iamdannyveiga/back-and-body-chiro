@@ -5,11 +5,12 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import { SpineIcon, ScoliosisIcon, MassageIcon } from '@/components/Icons';
+import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Pediatric Chiropractic | Chiropractor Shelby Township MI',
   description:
-    'Gentle pediatric chiropractic care from Dr. Brad Krawczyk. Safe, effective adjustments for kids of all ages. $67 New Patient Special. (586) 486-5235. Shelby Township, MI.',
+    'Gentle pediatric chiropractic care from Dr. Brad Krawczyk. Safe, effective adjustments for kids of all ages. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
     canonical: '/pediatric-chiropractic-shelby-township-mi',
   },
@@ -170,6 +171,23 @@ export default function PediatricChiropracticPage() {
       </section>
 
       <ConversionCTA line1="Give your kids a healthy start." anchor="$67 for the whole family." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
+          'Pediatric Chiropractic',
+          'Gentle pediatric chiropractic care from Dr. Brad Krawczyk. Safe, effective adjustments for kids of all ages. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'pediatric-chiropractic-shelby-township-mi'
+        )) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/#services' },
+          { name: 'Pediatric Chiropractic' },
+        ])) }}
+      />
     </>
   );
 }

@@ -58,7 +58,7 @@ export default function BookingForm({ variant = 'full' }: BookingFormProps) {
           <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 6L9 17l-5-5" /></svg>
         </div>
         <h3 className="text-xl font-bold text-teal mb-2" style={{ fontFamily: 'var(--font-heading)' }}>Request Received</h3>
-        <p className="text-text/70 text-sm">Redirecting you to schedule your appointment. You can also call us at <a href="tel:+15864865235" className="text-mint font-semibold">(586) 486-5235</a>.</p>
+        <p className="text-text/70 text-sm">Redirecting you to schedule your appointment. You can also call us at <a href="tel:+15862071624" className="text-mint font-semibold">(586) 207-1624</a>.</p>
       </div>
     );
   }
@@ -118,7 +118,7 @@ export default function BookingForm({ variant = 'full' }: BookingFormProps) {
         {status === 'submitting' ? 'Sending...' : 'Book My $67 Visit \u2192'}
       </button>
       {status === 'error' && (
-        <p className="text-red-500 text-sm mt-2 text-center">Something went wrong. Please try again or call (586) 486-5235.</p>
+        <p className="text-red-500 text-sm mt-2 text-center">Something went wrong. Please try again or call (586) 207-1624.</p>
       )}
     </form>
   );

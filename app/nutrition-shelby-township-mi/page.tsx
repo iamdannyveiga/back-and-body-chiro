@@ -5,11 +5,12 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import { SpineIcon, MassageIcon, KinesiologyIcon } from '@/components/Icons';
+import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Nutrition | Chiropractor Shelby Township MI',
   description:
-    'Nutritional counseling from Dr. Brad Krawczyk. Practical, honest guidance to support healing and overall health. $67 New Patient Special. (586) 486-5235. Shelby Township, MI.',
+    'Nutritional counseling from Dr. Brad Krawczyk. Practical, honest guidance to support healing and overall health. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
     canonical: '/nutrition-shelby-township-mi',
   },
@@ -145,6 +146,23 @@ export default function NutritionPage() {
       </section>
 
       <ConversionCTA line1="Ready to fuel your healing?" anchor="$67 to get started." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
+          'Nutrition Counseling',
+          'Nutritional counseling from Dr. Brad Krawczyk. Practical, honest guidance to support healing and overall health. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'nutrition-shelby-township-mi'
+        )) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/#services' },
+          { name: 'Nutrition' },
+        ])) }}
+      />
     </>
   );
 }

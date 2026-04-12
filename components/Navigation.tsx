@@ -146,11 +146,11 @@ export default function Navigation() {
         {/* Desktop right side */}
         <div className="hidden lg:flex items-center gap-5">
           <a
-            href="tel:5864865235"
+            href="tel:5862071624"
             className="font-bold text-sm no-underline transition-colors duration-[350ms]"
             style={{ fontFamily: 'var(--font-heading)', color: solid ? 'var(--teal)' : 'var(--white)' }}
           >
-            (586) 486-5235
+            (586) 207-1624
           </a>
           <Link
             href="/schedule-appointment"
@@ -215,11 +215,11 @@ export default function Navigation() {
             </Link>
           ))}
           <a
-            href="tel:5864865235"
+            href="tel:5862071624"
             className="font-bold text-sm no-underline"
             style={{ fontFamily: 'var(--font-heading)', color: 'var(--teal)' }}
           >
-            (586) 486-5235
+            (586) 207-1624
           </a>
           <Link href="/schedule-appointment" className="btn btn--mint text-center justify-center">
             Book Your $67 Visit

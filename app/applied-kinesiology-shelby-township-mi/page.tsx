@@ -5,11 +5,12 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import { SpineIcon, DecompressionIcon, MassageIcon } from '@/components/Icons';
+import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Applied Kinesiology Shelby Township MI | Back and Body',
   description:
-    'Applied kinesiology and muscle testing from Dr. Brad Krawczyk. Advanced diagnostic technique for deeper insight into your condition. $67 New Patient Special. (586) 486-5235. Shelby Township, MI.',
+    'Applied kinesiology and muscle testing from Dr. Brad Krawczyk. Advanced diagnostic technique for deeper insight into your condition. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
     canonical: '/applied-kinesiology-shelby-township-mi',
   },
@@ -240,6 +241,23 @@ export default function AppliedKinesiologyPage() {
       </section>
 
       <ConversionCTA line1="$67 to get started." anchor="Just honest care." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
+          'Applied Kinesiology',
+          'Applied kinesiology and muscle testing from Dr. Brad Krawczyk. Advanced diagnostic technique for deeper insight into your condition. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'applied-kinesiology-shelby-township-mi'
+        )) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/#services' },
+          { name: 'Applied Kinesiology' },
+        ])) }}
+      />
     </>
   );
 }

@@ -8,7 +8,10 @@ import BookingForm from '@/components/BookingForm';
 export const metadata: Metadata = {
   title: 'Contact',
   description:
-    'Contact Back and Body Chiropractic Center. (586) 486-5235. 55130 Van Dyke Ave #25, Shelby Charter Township, MI 48316. In Vince and Joe\'s plaza.',
+    'Contact Back and Body Chiropractic Center. (586) 207-1624. 55130 Van Dyke Ave #25, Shelby Charter Township, MI 48317. In Vince and Joe\'s plaza.',
+  alternates: {
+    canonical: '/contact',
+  },
 };
 
 export default function ContactPage() {
@@ -35,10 +38,10 @@ export default function ContactPage() {
               <div>
                 <h3 className="text-xl font-bold text-teal mb-4" style={{ fontFamily: 'var(--font-heading)' }}>Back and Body Chiropractic Center</h3>
                 <p className="mb-2">
-                  <a href="tel:5864865235" className="text-teal font-bold text-lg hover:text-mint transition-colors">(586) 486-5235</a>
+                  <a href="tel:5862071624" className="text-teal font-bold text-lg hover:text-mint transition-colors">(586) 207-1624</a>
                 </p>
                 <p className="text-text/80 leading-relaxed">
-                  55130 Van Dyke Ave #25<br />Shelby Charter Township, MI 48316
+                  55130 Van Dyke Ave #25<br />Shelby Charter Township, MI 48317
                 </p>
                 <p className="text-[13px] text-[#999] mt-1">
                   Northeast corner of 25 Mile Rd and Van Dyke Ave, in Vince and Joe&apos;s plaza

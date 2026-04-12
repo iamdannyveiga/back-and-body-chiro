@@ -5,11 +5,12 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import { SciaticaIcon, NeckPainIcon, DecompressionIcon } from '@/components/Icons';
+import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Arm & Leg Pain | Chiropractor Shelby Township MI',
   description:
-    'Arm and leg pain treatment from Dr. Brad Krawczyk. Radiating pain, numbness, and tingling traced to the spinal source. $67 New Patient Special. (586) 486-5235. Shelby Township, MI.',
+    'Arm and leg pain treatment from Dr. Brad Krawczyk. Radiating pain, numbness, and tingling traced to the spinal source. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
     canonical: '/arm-leg-pain-shelby-township-mi',
   },
@@ -146,6 +147,23 @@ export default function ArmLegPainPage() {
       </section>
 
       <ConversionCTA line1="Pain radiating into your arms or legs?" anchor="$67 to trace the source." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
+          'Arm & Leg Pain Treatment',
+          'Arm and leg pain treatment from Dr. Brad Krawczyk. Radiating pain, numbness, and tingling traced to the spinal source. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'arm-leg-pain-shelby-township-mi'
+        )) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/#services' },
+          { name: 'Arm & Leg Pain' },
+        ])) }}
+      />
     </>
   );
 }

@@ -5,11 +5,12 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import { NeckPainIcon, MassageIcon, SpineIcon } from '@/components/Icons';
+import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Headaches & Migraines | Chiropractor Shelby Township MI',
   description:
-    'Headache and migraine treatment from Dr. Brad Krawczyk. Find the cervical cause and fix it — no medication. $67 New Patient Special. (586) 486-5235. Shelby Township, MI.',
+    'Headache and migraine treatment from Dr. Brad Krawczyk. Find the cervical cause and fix it — no medication. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
     canonical: '/headaches-migraines-shelby-township-mi',
   },
@@ -256,6 +257,23 @@ export default function HeadachesMigrainesPage() {
       </section>
 
       <ConversionCTA line1="Done with headaches running your life?" anchor="$67 to find the cause." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
+          'Headache & Migraine Treatment',
+          'Headache and migraine treatment from Dr. Brad Krawczyk. Find the cervical cause and fix it — no medication. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'headaches-migraines-shelby-township-mi'
+        )) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/#services' },
+          { name: 'Headaches & Migraines' },
+        ])) }}
+      />
     </>
   );
 }

@@ -5,11 +5,12 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import { SpineIcon, DecompressionIcon, NeckPainIcon } from '@/components/Icons';
+import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Work Injury Treatment | Chiropractor Shelby Township MI',
   description:
-    'Work injury and workers comp chiropractic treatment from Dr. Brad Krawczyk. Back pain, repetitive strain, and workplace injuries. $67 New Patient Special. (586) 486-5235. Shelby Township, MI.',
+    'Work injury and workers comp chiropractic treatment from Dr. Brad Krawczyk. Back pain, repetitive strain, and workplace injuries. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
     canonical: '/work-injury-treatment-shelby-township-mi',
   },
@@ -145,6 +146,23 @@ export default function WorkInjuryTreatmentPage() {
       </section>
 
       <ConversionCTA line1="Hurt at work?" anchor="$67 to get treated right." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
+          'Work Injury Treatment',
+          'Work injury and workers comp chiropractic treatment from Dr. Brad Krawczyk. Back pain, repetitive strain, and workplace injuries. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'work-injury-treatment-shelby-township-mi'
+        )) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/#services' },
+          { name: 'Work Injury Treatment' },
+        ])) }}
+      />
     </>
   );
 }

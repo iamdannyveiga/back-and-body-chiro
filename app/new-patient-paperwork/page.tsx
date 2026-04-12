@@ -116,8 +116,8 @@ export default function NewPatientPaperworkPage() {
             <div className="mt-8 text-center">
               <p className="text-text/60 text-sm">
                 Questions about your first visit? Call us at{' '}
-                <a href="tel:+15864865235" className="text-teal font-bold">
-                  (586) 486-5235
+                <a href="tel:+15862071624" className="text-teal font-bold">
+                  (586) 207-1624
                 </a>
               </p>
             </div>

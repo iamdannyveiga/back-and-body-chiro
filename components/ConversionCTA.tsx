@@ -25,7 +25,7 @@ export default function ConversionCTA({
           </div>
           <div className="flex items-center justify-center gap-4 flex-wrap mb-4">
             <Link href="/schedule-appointment" className="btn btn--mint">Book My $67 Visit &rarr;</Link>
-            <a href="tel:5864865235" className="btn btn--outline">Call (586) 486-5235</a>
+            <a href="tel:5862071624" className="btn btn--outline">Call (586) 207-1624</a>
           </div>
           <p className="text-sm text-text-light/40">{note}</p>
         </ScrollReveal>

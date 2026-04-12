@@ -5,11 +5,12 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import { SpineIcon, HeadacheIcon, MassageIcon } from '@/components/Icons';
+import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Neck Pain Treatment | Chiropractor Shelby Township MI',
   description:
-    'Neck pain treatment from Dr. Brad Krawczyk. Gentle chiropractic adjustments for stiffness, tension, and cervical issues. $67 New Patient Special. (586) 486-5235. Shelby Township, MI.',
+    'Neck pain treatment from Dr. Brad Krawczyk. Gentle chiropractic adjustments for stiffness, tension, and cervical issues. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
     canonical: '/neck-pain-treatment-shelby-township-mi',
   },
@@ -256,6 +257,23 @@ export default function NeckPainTreatmentPage() {
       </section>
 
       <ConversionCTA line1="Tired of living with neck pain?" anchor="$67 to start." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
+          'Neck Pain Treatment',
+          'Neck pain treatment from Dr. Brad Krawczyk. Gentle chiropractic adjustments for stiffness, tension, and cervical issues. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'neck-pain-treatment-shelby-township-mi'
+        )) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/#services' },
+          { name: 'Neck Pain Treatment' },
+        ])) }}
+      />
     </>
   );
 }

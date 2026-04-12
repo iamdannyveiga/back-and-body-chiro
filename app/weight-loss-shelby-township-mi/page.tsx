@@ -5,11 +5,12 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import { SpineIcon, MassageIcon, KinesiologyIcon } from '@/components/Icons';
+import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Weight Loss | Chiropractor Shelby Township MI',
   description:
-    'Weight loss support from Dr. Brad Krawczyk. Practical nutritional guidance and chiropractic care to support healthy weight management. $67 New Patient Special. (586) 486-5235. Shelby Township, MI.',
+    'Weight loss support from Dr. Brad Krawczyk. Practical nutritional guidance and chiropractic care to support healthy weight management. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
     canonical: '/weight-loss-shelby-township-mi',
   },
@@ -145,6 +146,23 @@ export default function WeightLossPage() {
       </section>
 
       <ConversionCTA line1="Ready for a real approach to weight loss?" anchor="$67 to start." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
+          'Weight Loss Program',
+          'Weight loss support from Dr. Brad Krawczyk. Practical nutritional guidance and chiropractic care to support healthy weight management. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'weight-loss-shelby-township-mi'
+        )) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/#services' },
+          { name: 'Weight Loss' },
+        ])) }}
+      />
     </>
   );
 }

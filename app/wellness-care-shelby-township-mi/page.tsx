@@ -5,11 +5,12 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import { SpineIcon, MassageIcon, PediatricIcon } from '@/components/Icons';
+import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Wellness Care | Chiropractor Shelby Township MI',
   description:
-    'Wellness and maintenance chiropractic care from Dr. Brad Krawczyk. Stay healthy, prevent problems, feel your best. $67 New Patient Special. (586) 486-5235. Shelby Township, MI.',
+    'Wellness and maintenance chiropractic care from Dr. Brad Krawczyk. Stay healthy, prevent problems, feel your best. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
     canonical: '/wellness-care-shelby-township-mi',
   },
@@ -145,6 +146,23 @@ export default function WellnessCarePage() {
       </section>
 
       <ConversionCTA line1="Feel good and stay that way." anchor="$67 to start." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
+          'Wellness Care',
+          'Wellness and maintenance chiropractic care from Dr. Brad Krawczyk. Stay healthy, prevent problems, feel your best. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'wellness-care-shelby-township-mi'
+        )) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/#services' },
+          { name: 'Wellness Care' },
+        ])) }}
+      />
     </>
   );
 }

@@ -5,11 +5,12 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import { DecompressionIcon, SpineIcon, MassageIcon } from '@/components/Icons';
+import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Sciatica Treatment | Chiropractor Shelby Township MI',
   description:
-    'Sciatica treatment from Dr. Brad Krawczyk. Non-surgical relief for radiating leg pain, numbness, and tingling. $67 New Patient Special. (586) 486-5235. Shelby Township, MI.',
+    'Sciatica treatment from Dr. Brad Krawczyk. Non-surgical relief for radiating leg pain, numbness, and tingling. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
     canonical: '/sciatica-treatment-shelby-township-mi',
   },
@@ -256,6 +257,23 @@ export default function SciaticaTreatmentPage() {
       </section>
 
       <ConversionCTA line1="Stop living with sciatica." anchor="$67 to start healing." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
+          'Sciatica Treatment',
+          'Sciatica treatment from Dr. Brad Krawczyk. Non-surgical relief for radiating leg pain, numbness, and tingling. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'sciatica-treatment-shelby-township-mi'
+        )) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/#services' },
+          { name: 'Sciatica Treatment' },
+        ])) }}
+      />
     </>
   );
 }

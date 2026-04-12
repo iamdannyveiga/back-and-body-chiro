@@ -7,7 +7,7 @@ import { localBusinessSchema, faqSchema } from '@/lib/schema';
 export const metadata: Metadata = {
   title: 'Chiropractor Shelby Township MI | Back and Body Chiropractic Center',
   description:
-    'Back and Body Chiropractic Center in Shelby Township, MI. Dr. Bradley Krawczyk, DC -- honest, results-focused care. $67 new patient special. Call (586) 486-5235.',
+    'Back and Body Chiropractic Center in Shelby Township, MI. Dr. Bradley Krawczyk, DC -- honest, results-focused care. $67 new patient special. Call (586) 207-1624.',
   alternates: {
     canonical: '/',
   },
@@ -22,7 +22,7 @@ const faqItems = [
   { question: "What is spinal decompression?", answer: "Spinal decompression is a non-surgical treatment that gently stretches the spine using a specialized table. It creates negative pressure inside the discs, which can help bulging or herniated discs retract and allow nutrients and oxygen to flow back in." },
   { question: "Do you treat children and pregnant women?", answer: "Absolutely. Dr. Brad provides gentle, specialized care for children of all ages and pregnant women. Pediatric adjustments use very light pressure. Prenatal chiropractic helps with back pain, sciatica, and optimal baby positioning." },
   { question: "What is applied kinesiology?", answer: "Applied kinesiology is a diagnostic technique that uses muscle testing to evaluate structural, chemical, and mental aspects of health. By testing the strength and response of specific muscles, Dr. Brad can identify imbalances that standard exams might miss." },
-  { question: "Do you accept insurance?", answer: "Yes, we work with most major insurance plans. Call us at (586) 486-5235 and we'll verify your benefits before your first visit. Even without insurance, our pricing is straightforward and affordable." },
+  { question: "Do you accept insurance?", answer: "Yes, we work with most major insurance plans. Call us at (586) 207-1624 and we'll verify your benefits before your first visit. Even without insurance, our pricing is straightforward and affordable." },
   { question: "Do you offer massage therapy?", answer: "Yes -- on-site therapeutic massage. It's a great complement to chiropractic care, helping reduce muscle tension, improve range of motion, and accelerate your recovery." },
   { question: "What about nutrition and weight loss?", answer: "We offer personalized nutrition counseling and a medically guided weight loss program. Dr. Brad takes a whole-body approach, helping you with practical nutrition plans that work for real life." },
 ];
@@ -405,7 +405,7 @@ export default function HomePage() {
           </ScrollReveal>
           <div className="flex flex-col items-center max-w-[800px] mx-auto">
             {[
-              { num: '1', title: 'Call or Book Online', desc: '(586) 486-5235 -- Saturday hours available. Or fill out the form above. We\'ll get you in fast.' },
+              { num: '1', title: 'Call or Book Online', desc: '(586) 207-1624 -- Saturday hours available. Or fill out the form above. We\'ll get you in fast.' },
               { num: '2', title: 'Meet Dr. Brad', desc: 'Consultation, exam, X-rays if needed. He listens. He\'s thorough. No sales pitch -- just an honest assessment.' },
               { num: '3', title: 'Your Honest Plan', desc: 'A straightforward treatment plan. No 6-month contracts. No gimmick packages. Just what you actually need.' },
               { num: '4', title: 'Feel Better', desc: 'Real results. Come back for maintenance when you want to -- not because you\'re locked into some plan.' },
@@ -456,7 +456,7 @@ export default function HomePage() {
             <div className="text-[38px] md:text-[52px] font-extrabold text-mint mt-2 mb-9" style={{ fontFamily: 'var(--font-heading)' }}>Just honest care.</div>
             <div className="flex items-center justify-center gap-4 flex-wrap mb-5">
               <Link href="/schedule-appointment" className="btn btn--mint">Book My $67 Visit &rarr;</Link>
-              <a href="tel:5864865235" className="btn btn--outline">Call (586) 486-5235</a>
+              <a href="tel:5862071624" className="btn btn--outline">Call (586) 207-1624</a>
             </div>
             <p className="text-sm text-text-light/[.45] mt-2">Open Saturdays &middot; Evening hours Mon-Wed</p>
           </ScrollReveal>

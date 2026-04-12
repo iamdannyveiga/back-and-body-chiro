@@ -5,11 +5,12 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import { NeckPainIcon, HeadacheIcon, SpineIcon } from '@/components/Icons';
+import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Vertigo Treatment | Chiropractor Shelby Township MI',
   description:
-    'Vertigo and dizziness treatment from Dr. Brad Krawczyk. Chiropractic care for cervicogenic vertigo and BPPV. $67 New Patient Special. (586) 486-5235. Shelby Township, MI.',
+    'Vertigo and dizziness treatment from Dr. Brad Krawczyk. Chiropractic care for cervicogenic vertigo and BPPV. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
     canonical: '/vertigo-treatment-shelby-township-mi',
   },
@@ -146,6 +147,23 @@ export default function VertigoTreatmentPage() {
       </section>
 
       <ConversionCTA line1="Room still spinning?" anchor="$67 to find out why." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
+          'Vertigo Treatment',
+          'Vertigo and dizziness treatment from Dr. Brad Krawczyk. Chiropractic care for cervicogenic vertigo and BPPV. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'vertigo-treatment-shelby-township-mi'
+        )) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/#services' },
+          { name: 'Vertigo Treatment' },
+        ])) }}
+      />
     </>
   );
 }

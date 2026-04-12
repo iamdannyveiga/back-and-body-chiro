@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: 'New Patients — $67 First Visit',
   description:
     'Your $67 first visit includes consultation, exam, X-rays if needed, and first adjustment. No sales pitches. No contracts. Just honest care.',
+  alternates: {
+    canonical: '/new-patients',
+  },
 };
 
 const faqItems = [
@@ -89,7 +92,7 @@ export default function NewPatientsPage() {
 
           <div className="max-w-[680px] mx-auto">
             {[
-              { num: '1', title: 'Call or Book Online', text: '(586) 486-5235 — or use the online form. We\'ll find a time that works, including Saturday mornings. Evening appointments Mon\u2013Wed until 7pm.' },
+              { num: '1', title: 'Call or Book Online', text: '(586) 207-1624 — or use the online form. We\'ll find a time that works, including Saturday mornings. Evening appointments Mon\u2013Wed until 7pm.' },
               { num: '2', title: 'Meet Dr. Brad', text: 'Consultation, thorough examination, X-rays if clinically necessary. He listens to the full story. He asks the right questions. No rush. No judgment.' },
               { num: '3', title: 'Your Honest Plan', text: 'Dr. Brad tells you what he found and what he recommends. A straightforward treatment plan. No 6-month contracts. No gimmick packages. Just what you actually need.' },
               { num: '4', title: 'Feel Better', text: 'Real results from your first visit. Continue care as needed — come back when YOU want to, not because you\'re locked in. Your body, your choice, your pace.' },
@@ -184,7 +187,7 @@ export default function NewPatientsPage() {
                   <span className="font-normal">Transparent </span>pricing.
                 </h2>
                 <div className="prose-custom">
-                  <p>We work with most major insurance plans. Call us at <a href="tel:5864865235" className="font-bold">(586) 486-5235</a> before your visit and we&apos;ll verify your benefits — no surprises.</p>
+                  <p>We work with most major insurance plans. Call us at <a href="tel:5862071624" className="font-bold">(586) 207-1624</a> before your visit and we&apos;ll verify your benefits — no surprises.</p>
                   <p>Don&apos;t have insurance? No problem. Our pricing is straightforward and affordable. The $67 new patient special is available to everyone, regardless of insurance status.</p>
                   <p><strong>No hidden fees. No surprise charges. No &ldquo;recommended packages&rdquo; with inflated prices.</strong> You&apos;ll always know what something costs before you agree to it. That&apos;s the honest way.</p>
                 </div>

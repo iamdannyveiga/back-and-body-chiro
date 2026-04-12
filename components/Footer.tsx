@@ -83,10 +83,10 @@ export default function Footer() {
           <div>
             <div className="font-bold text-[13px] text-text-light tracking-[1.5px] uppercase mb-5" style={{ fontFamily: 'var(--font-heading)' }}>Contact</div>
             <p className="text-sm text-text-light/[.55] mb-2">
-              <a href="tel:5864865235" className="text-mint font-bold no-underline hover:text-mint-dark">(586) 486-5235</a>
+              <a href="tel:5862071624" className="text-mint font-bold no-underline hover:text-mint-dark">(586) 207-1624</a>
             </p>
             <p className="text-sm text-text-light/[.55] mb-2 leading-relaxed">
-              55130 Van Dyke Avenue<br />Shelby Charter Township, MI 48316
+              55130 Van Dyke Ave #25<br />Shelby Charter Township, MI 48317
             </p>
             <p className="text-xs text-text-light/[.4] mb-4">In Vince and Joe&apos;s plaza at 25 Mile &amp; Van Dyke</p>
             <div className="mt-4">
@@ -106,10 +106,10 @@ export default function Footer() {
 
         <div className="border-t border-white/[.06] pt-7 flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-[13px] text-text-light/[.35]">
-            &copy; 2025 Back and Body Chiropractic Center &middot; Dr. Bradley Krawczyk, D.C.
+            &copy; {new Date().getFullYear()} Back and Body Chiropractic Center &middot; Dr. Bradley Krawczyk, D.C.
           </p>
           <p className="text-[13px] text-text-light/[.35]">
-            55130 Van Dyke Avenue, Shelby Charter Township, MI 48316
+            55130 Van Dyke Ave #25, Shelby Charter Township, MI 48317
           </p>
         </div>
       </div>

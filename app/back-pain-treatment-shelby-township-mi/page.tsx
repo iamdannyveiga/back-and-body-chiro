@@ -5,11 +5,12 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import { SpineIcon, DecompressionIcon, MassageIcon, CheckIcon } from '@/components/Icons';
+import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Back Pain Treatment | Chiropractor Shelby Township MI',
   description:
-    'Back pain treatment from Dr. Brad Krawczyk. Root-cause chiropractic care — no band-aids. $67 New Patient Special. (586) 486-5235. Shelby Township, MI.',
+    'Back pain treatment from Dr. Brad Krawczyk. Root-cause chiropractic care — no band-aids. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
     canonical: '/back-pain-treatment-shelby-township-mi',
   },
@@ -257,6 +258,23 @@ export default function BackPainTreatmentPage() {
       </section>
 
       <ConversionCTA line1="Stop living with back pain." anchor="$67 to start feeling better." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
+          'Back Pain Treatment',
+          'Back pain treatment from Dr. Brad Krawczyk. Root-cause chiropractic care — no band-aids. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'back-pain-treatment-shelby-township-mi'
+        )) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/#services' },
+          { name: 'Back Pain Treatment' },
+        ])) }}
+      />
     </>
   );
 }

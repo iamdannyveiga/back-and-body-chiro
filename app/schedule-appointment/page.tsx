@@ -5,7 +5,7 @@ import { StarIcon } from '@/components/Icons';
 export const metadata: Metadata = {
   title: 'Schedule Appointment',
   description:
-    'Schedule your $67 new patient special at Back and Body Chiropractic Center in Shelby Township, MI. Consultation, exam, X-rays if needed, and first adjustment. No contracts. Call (586) 486-5235.',
+    'Schedule your $67 new patient special at Back and Body Chiropractic Center in Shelby Township, MI. Consultation, exam, X-rays if needed, and first adjustment. No contracts. Call (586) 207-1624.',
   alternates: {
     canonical: '/schedule-appointment',
   },
@@ -53,12 +53,12 @@ export default function ScheduleAppointmentPage() {
 
           <div className="text-center mt-6">
             <p className="text-sm text-text/50">
-              Prefer to call? <a href="tel:5864865235" className="text-mint font-bold">(586) 486-5235</a>
+              Prefer to call? <a href="tel:5862071624" className="text-mint font-bold">(586) 207-1624</a>
             </p>
           </div>
 
           <div className="text-center mt-4">
-            <p className="text-sm text-[#999]">55130 Van Dyke Avenue, Shelby Charter Township, MI 48316</p>
+            <p className="text-sm text-[#999]">55130 Van Dyke Ave #25, Shelby Charter Township, MI 48317</p>
             <p className="text-xs text-[#bbb] mt-1">In Vince and Joe&apos;s plaza at 25 Mile &amp; Van Dyke</p>
           </div>
         </div>

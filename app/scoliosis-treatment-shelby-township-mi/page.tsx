@@ -5,11 +5,12 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import { SpineIcon, PediatricIcon, DecompressionIcon } from '@/components/Icons';
+import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Scoliosis Treatment | Chiropractor Shelby Township MI',
   description:
-    'Scoliosis treatment and management from Dr. Brad Krawczyk. Non-surgical chiropractic care for spinal curvature. $67 New Patient Special. (586) 486-5235. Shelby Township, MI.',
+    'Scoliosis treatment and management from Dr. Brad Krawczyk. Non-surgical chiropractic care for spinal curvature. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
     canonical: '/scoliosis-treatment-shelby-township-mi',
   },
@@ -223,6 +224,23 @@ export default function ScoliosisTreatmentPage() {
       </section>
 
       <ConversionCTA line1="Living with scoliosis?" anchor="$67 for honest answers." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
+          'Scoliosis Treatment',
+          'Scoliosis treatment and management from Dr. Brad Krawczyk. Non-surgical chiropractic care for spinal curvature. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'scoliosis-treatment-shelby-township-mi'
+        )) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/#services' },
+          { name: 'Scoliosis Treatment' },
+        ])) }}
+      />
     </>
   );
 }

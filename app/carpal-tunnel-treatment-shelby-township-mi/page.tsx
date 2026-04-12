@@ -5,11 +5,12 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import { SpineIcon, NeckPainIcon, WorkInjuryIcon } from '@/components/Icons';
+import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Carpal Tunnel Treatment | Chiropractor Shelby Township MI',
   description:
-    'Carpal tunnel treatment from Dr. Brad Krawczyk. Non-surgical relief for wrist pain, numbness, and tingling. $67 New Patient Special. (586) 486-5235. Shelby Township, MI.',
+    'Carpal tunnel treatment from Dr. Brad Krawczyk. Non-surgical relief for wrist pain, numbness, and tingling. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
     canonical: '/carpal-tunnel-treatment-shelby-township-mi',
   },
@@ -146,6 +147,23 @@ export default function CarpalTunnelTreatmentPage() {
       </section>
 
       <ConversionCTA line1="Hands going numb?" anchor="$67 to find the cause." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
+          'Carpal Tunnel Treatment',
+          'Carpal tunnel treatment from Dr. Brad Krawczyk. Non-surgical relief for wrist pain, numbness, and tingling. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'carpal-tunnel-treatment-shelby-township-mi'
+        )) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/#services' },
+          { name: 'Carpal Tunnel Treatment' },
+        ])) }}
+      />
     </>
   );
 }

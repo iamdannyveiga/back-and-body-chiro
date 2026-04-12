@@ -5,11 +5,12 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import { NeckPainIcon, MassageIcon, HeadacheIcon } from '@/components/Icons';
+import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Whiplash Treatment | Chiropractor Shelby Township MI',
   description:
-    'Whiplash treatment from Dr. Brad Krawczyk. Auto accident and injury recovery with chiropractic care. $67 New Patient Special. (586) 486-5235. Shelby Township, MI.',
+    'Whiplash treatment from Dr. Brad Krawczyk. Auto accident and injury recovery with chiropractic care. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
     canonical: '/whiplash-treatment-shelby-township-mi',
   },
@@ -151,6 +152,23 @@ export default function WhiplashTreatmentPage() {
       </section>
 
       <ConversionCTA line1="Been in an accident?" anchor="$67 — don't wait." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
+          'Whiplash Treatment',
+          'Whiplash treatment from Dr. Brad Krawczyk. Auto accident and injury recovery with chiropractic care. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'whiplash-treatment-shelby-township-mi'
+        )) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/#services' },
+          { name: 'Whiplash Treatment' },
+        ])) }}
+      />
     </>
   );
 }

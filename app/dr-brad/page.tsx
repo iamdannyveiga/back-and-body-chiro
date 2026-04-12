@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: 'Meet Dr. Brad',
   description:
     'Dr. Bradley Krawczyk, D.C. — MSU grad, Life University 2011, Macomb County native. 14+ years of honest chiropractic care. No nonsense. Just results.',
+  alternates: {
+    canonical: '/dr-brad',
+  },
 };
 
 export default function DrBradPage() {

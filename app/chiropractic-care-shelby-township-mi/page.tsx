@@ -5,6 +5,7 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import { DecompressionIcon, MassageIcon, KinesiologyIcon } from '@/components/Icons';
+import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Chiropractic Care',
@@ -257,6 +258,23 @@ export default function ChiropracticCarePage() {
       </section>
 
       <ConversionCTA line1="$67 to get started." anchor="Just honest care." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
+          'Chiropractic Care',
+          'Honest, results-focused chiropractic adjustments from Dr. Brad Krawczyk. No sales pitches. No gimmicks. $67 New Patient Special. Shelby Township, MI.',
+          'chiropractic-care-shelby-township-mi'
+        )) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/#services' },
+          { name: 'Chiropractic Care' },
+        ])) }}
+      />
     </>
   );
 }

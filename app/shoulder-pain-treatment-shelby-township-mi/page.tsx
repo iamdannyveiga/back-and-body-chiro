@@ -5,11 +5,12 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 import { NeckPainIcon, MassageIcon, SpineIcon } from '@/components/Icons';
+import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Shoulder Pain Treatment | Chiropractor Shelby Township MI',
   description:
-    'Shoulder pain treatment from Dr. Brad Krawczyk. Chiropractic care for frozen shoulder, rotator cuff issues, and more. $67 New Patient Special. (586) 486-5235. Shelby Township, MI.',
+    'Shoulder pain treatment from Dr. Brad Krawczyk. Chiropractic care for frozen shoulder, rotator cuff issues, and more. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
     canonical: '/shoulder-pain-treatment-shelby-township-mi',
   },
@@ -146,6 +147,23 @@ export default function ShoulderPainTreatmentPage() {
       </section>
 
       <ConversionCTA line1="Shoulder pain limiting your life?" anchor="$67 to find the cause." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
+          'Shoulder Pain Treatment',
+          'Shoulder pain treatment from Dr. Brad Krawczyk. Chiropractic care for frozen shoulder, rotator cuff issues, and more. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'shoulder-pain-treatment-shelby-township-mi'
+        )) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/#services' },
+          { name: 'Shoulder Pain Treatment' },
+        ])) }}
+      />
     </>
   );
 }
