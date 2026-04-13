@@ -146,9 +146,9 @@ export default function Navigation() {
                       <Link
                         key={svc.href}
                         href={svc.href}
-                        className="block py-[5px] text-[13px] no-underline transition-colors duration-150"
+                        className="block py-[5px] px-2 -mx-2 rounded text-[13px] no-underline transition-all duration-150 hover:bg-[rgba(94,210,153,.1)]"
                         style={{ fontFamily: 'var(--font-heading)', color: '#555' }}
-                        onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--teal)')}
+                        onMouseEnter={(e) => (e.currentTarget.style.color = '#213540')}
                         onMouseLeave={(e) => (e.currentTarget.style.color = '#555')}
                       >
                         {svc.label}
