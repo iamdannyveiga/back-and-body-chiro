@@ -61,6 +61,7 @@ export default function Navigation() {
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const dropdownRef = useRef<HTMLLIElement>(null);
+  const hideTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const pathname = usePathname();
   const isHome = pathname === '/';
 
@@ -85,6 +86,14 @@ export default function Navigation() {
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
+
+  const showDropdown = () => {
+    if (hideTimer.current) { clearTimeout(hideTimer.current); hideTimer.current = null; }
+    setServicesOpen(true);
+  };
+  const scheduleHide = () => {
+    hideTimer.current = setTimeout(() => setServicesOpen(false), 200);
+  };
 
   const solid = !isHome || scrolled;
   const linkColor = solid ? 'var(--text-nav)' : 'rgba(255,255,255,0.9)';
@@ -114,17 +123,17 @@ export default function Navigation() {
         {/* Desktop nav links */}
         <ul className="hidden lg:flex items-center gap-8 list-none">
           {/* Services dropdown */}
-          <li ref={dropdownRef} className="relative">
+          <li ref={dropdownRef} className="relative" onMouseEnter={showDropdown} onMouseLeave={scheduleHide}>
             <button
               onClick={() => setServicesOpen(!servicesOpen)}
-              className="font-semibold text-sm tracking-[0.3px] transition-colors duration-250 bg-transparent border-none cursor-pointer flex items-center gap-1"
+              className="font-semibold text-sm tracking-[0.3px] transition-colors duration-250 bg-transparent border-none cursor-pointer flex items-center gap-1.5"
               style={{ fontFamily: 'var(--font-heading)', color: linkColor }}
             >
               Services
-              <svg className="w-3 h-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 5l3 3 3-3" /></svg>
+              <svg className={`w-4 h-4 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`} viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 5l3 3 3-3" /></svg>
             </button>
             {servicesOpen && (
-              <div className="absolute top-full left-0 mt-3 bg-white rounded-xl shadow-[0_8px_32px_rgba(0,0,0,.12)] p-6 flex gap-8 min-w-[600px]">
+              <div className="absolute top-full left-0 mt-3 bg-white rounded-xl shadow-[0_8px_32px_rgba(0,0,0,.12)] p-6 flex gap-8 min-w-[600px]" onMouseEnter={showDropdown} onMouseLeave={scheduleHide}>
                 {serviceGroups.map((group) => (
                   <div key={group.title} className="flex-1 min-w-0">
                     <div
@@ -206,7 +215,7 @@ export default function Navigation() {
             style={{ fontFamily: 'var(--font-heading)', color: 'var(--text-nav)' }}
           >
             Services
-            <svg className={`w-3 h-3 transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`} viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 5l3 3 3-3" /></svg>
+            <svg className={`w-4 h-4 transition-transform duration-200 ${mobileServicesOpen ? 'rotate-180' : ''}`} viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 5l3 3 3-3" /></svg>
           </button>
           {mobileServicesOpen && (
             <div className="flex flex-col gap-1 pl-4 border-l-2 border-mint/20">

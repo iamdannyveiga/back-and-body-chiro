@@ -32,8 +32,9 @@ export default function HomePage() {
     <>
       {/* HERO BANNER */}
       <section className="w-full h-[44vh] min-h-[320px] relative overflow-hidden bg-teal">
-        <Image src="/images/office-exterior.webp" alt="Back and Body Chiropractic Center office exterior in Shelby Township, MI" fill className="object-cover" priority />
-        <div className="absolute inset-0 bg-gradient-to-b from-teal/30 via-transparent to-teal/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#2a4a58] via-[#1a3040] to-[#213540]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_600px_300px_at_30%_60%,rgba(94,210,153,.08),transparent),radial-gradient(ellipse_400px_200px_at_70%_40%,rgba(94,210,153,.05),transparent)]" />
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20viewBox=%270%200%20256%20256%27%20xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cfilter%20id=%27n%27%3E%3CfeTurbulence%20type=%27fractalNoise%27%20baseFrequency=%27.85%27%20numOctaves=%274%27%20stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect%20width=%27100%25%27%20height=%27100%25%27%20filter=%27url(%23n)%27/%3E%3C/svg%3E')] opacity-[.04] mix-blend-overlay pointer-events-none" />
       </section>
 
       {/* HERO TEXT + FORM */}
