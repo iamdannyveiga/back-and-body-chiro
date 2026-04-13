@@ -32,11 +32,14 @@ export default function HomePage() {
     <>
       {/* HERO BANNER */}
       <section className="w-full h-[44vh] min-h-[320px] relative overflow-hidden bg-[#1a2f3a]">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1e3a48] via-[#1a2f3a] to-[#162832]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_800px_400px_at_20%_80%,rgba(94,210,153,.15),transparent)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_600px_350px_at_80%_20%,rgba(94,210,153,.10),transparent)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_200px_at_50%_50%,rgba(94,210,153,.06),transparent)]" />
-        <div className="absolute inset-0 opacity-[.03] pointer-events-none" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%235ED299' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")" }} />
+        <Image
+          src="/images/hero-clinic.webp"
+          alt="Back and Body Chiropractic Center office in Shelby Township, MI"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[rgba(26,47,58,.4)] to-[rgba(26,47,58,.6)]" />
       </section>
 
       {/* HERO TEXT + FORM */}
