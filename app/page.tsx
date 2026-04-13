@@ -31,10 +31,12 @@ export default function HomePage() {
   return (
     <>
       {/* HERO BANNER */}
-      <section className="w-full h-[44vh] min-h-[320px] relative overflow-hidden bg-teal">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#2a4a58] via-[#1a3040] to-[#213540]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_600px_300px_at_30%_60%,rgba(94,210,153,.08),transparent),radial-gradient(ellipse_400px_200px_at_70%_40%,rgba(94,210,153,.05),transparent)]" />
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20viewBox=%270%200%20256%20256%27%20xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cfilter%20id=%27n%27%3E%3CfeTurbulence%20type=%27fractalNoise%27%20baseFrequency=%27.85%27%20numOctaves=%274%27%20stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect%20width=%27100%25%27%20height=%27100%25%27%20filter=%27url(%23n)%27/%3E%3C/svg%3E')] opacity-[.04] mix-blend-overlay pointer-events-none" />
+      <section className="w-full h-[44vh] min-h-[320px] relative overflow-hidden bg-[#1a2f3a]">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1e3a48] via-[#1a2f3a] to-[#162832]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_800px_400px_at_20%_80%,rgba(94,210,153,.15),transparent)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_600px_350px_at_80%_20%,rgba(94,210,153,.10),transparent)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_200px_at_50%_50%,rgba(94,210,153,.06),transparent)]" />
+        <div className="absolute inset-0 opacity-[.03] pointer-events-none" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%235ED299' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")" }} />
       </section>
 
       {/* HERO TEXT + FORM */}

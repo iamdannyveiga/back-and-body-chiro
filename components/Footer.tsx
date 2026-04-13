@@ -15,7 +15,7 @@ export default function Footer() {
                 alt="Back and Body Chiropractic Center"
                 width={260}
                 height={100}
-                className="h-[36px] w-auto"
+                className="h-[44px] w-auto"
               />
             </div>
             <p className="text-sm text-text-light/50 leading-relaxed mb-5">

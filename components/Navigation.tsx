@@ -115,7 +115,7 @@ export default function Navigation() {
             alt="Back and Body Chiropractic Center"
             width={solid ? 160 : 260}
             height={solid ? 60 : 100}
-            className="transition-opacity duration-[350ms] h-[40px] w-auto"
+            className="transition-opacity duration-[350ms] h-[52px] w-auto"
             priority
           />
         </Link>
@@ -146,8 +146,10 @@ export default function Navigation() {
                       <Link
                         key={svc.href}
                         href={svc.href}
-                        className="block py-1.5 text-[13px] text-text/80 hover:text-teal transition-colors no-underline"
-                        style={{ fontFamily: 'var(--font-heading)' }}
+                        className="block py-[5px] text-[13px] no-underline transition-colors duration-150"
+                        style={{ fontFamily: 'var(--font-heading)', color: '#555' }}
+                        onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--teal)')}
+                        onMouseLeave={(e) => (e.currentTarget.style.color = '#555')}
                       >
                         {svc.label}
                       </Link>
