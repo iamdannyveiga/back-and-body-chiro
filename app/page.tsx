@@ -30,8 +30,8 @@ const faqItems = [
 export default function HomePage() {
   return (
     <>
-      {/* HERO BANNER */}
-      <section className="w-full h-[44vh] min-h-[320px] relative overflow-hidden bg-[#1a2f3a]">
+      {/* HERO */}
+      <section className="relative z-10 pt-32 md:pt-40 pb-20 md:pb-[100px]" id="hero-form">
         <Image
           src="/images/hero-clinic.webp"
           alt="Back and Body Chiropractic Center office in Shelby Township, MI"
@@ -39,12 +39,7 @@ export default function HomePage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[rgba(26,47,58,.4)] to-[rgba(26,47,58,.6)]" />
-      </section>
-
-      {/* HERO TEXT + FORM */}
-      <section className="bg-teal relative z-10 -mt-[60px] py-20 md:pb-[100px]" id="hero-form">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20viewBox=%270%200%20256%20256%27%20xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cfilter%20id=%27n%27%3E%3CfeTurbulence%20type=%27fractalNoise%27%20baseFrequency=%27.85%27%20numOctaves=%274%27%20stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect%20width=%27100%25%27%20height=%27100%25%27%20filter=%27url(%23n)%27/%3E%3C/svg%3E')] opacity-[.03] pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[rgba(26,47,58,.75)] via-[rgba(26,47,58,.8)] to-[rgba(26,47,58,.9)]" />
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-10 lg:gap-[60px] items-start">
             <ScrollReveal className="pt-5">
