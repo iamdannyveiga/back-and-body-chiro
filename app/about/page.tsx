@@ -19,7 +19,6 @@ export default function AboutPage() {
         title={<><span className="font-normal">About </span>Back and Body.</>}
         subtitle="One doctor. One location. 14 years of honest chiropractic care in Shelby Township."
         breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'About' }]}
-        bannerText="Clinic interior -- bright, welcoming, clean"
       />
 
       {/* Dr. Brad's Story */}

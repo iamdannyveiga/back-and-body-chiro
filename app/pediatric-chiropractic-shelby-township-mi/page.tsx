@@ -58,7 +58,6 @@ export default function PediatricChiropracticPage() {
           { label: 'Services', href: '/#services' },
           { label: 'Pediatric Chiropractic' },
         ]}
-        bannerText="Pediatric chiropractic — gentle, family-friendly"
       />
 
       <section className="py-20 bg-white">

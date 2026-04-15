@@ -59,7 +59,6 @@ export default function NewPatientsPage() {
           { label: 'Home', href: '/' },
           { label: 'New Patients' },
         ]}
-        bannerText="Welcoming clinic lobby — clean, bright, approachable"
       />
 
       {/* A: THE PROMISE */}

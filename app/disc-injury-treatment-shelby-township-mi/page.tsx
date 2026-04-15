@@ -59,7 +59,6 @@ export default function DiscInjuryTreatmentPage() {
           { label: 'Services', href: '/#services' },
           { label: 'Disc Injury Treatment' },
         ]}
-        bannerText="Disc injury treatment — clinical, professional"
       />
 
       <section className="py-20 bg-white">

@@ -58,7 +58,6 @@ export default function PrenatalChiropracticPage() {
           { label: 'Services', href: '/#services' },
           { label: 'Prenatal Chiropractic' },
         ]}
-        bannerText="Prenatal chiropractic — gentle, supportive care"
       />
 
       <section className="py-20 bg-white">

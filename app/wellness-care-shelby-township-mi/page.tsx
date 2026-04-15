@@ -53,7 +53,6 @@ export default function WellnessCarePage() {
           { label: 'Services', href: '/#services' },
           { label: 'Wellness Care' },
         ]}
-        bannerText="Wellness chiropractic — proactive, healthy"
       />
 
       <section className="py-20 bg-white">

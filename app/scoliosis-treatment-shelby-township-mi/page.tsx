@@ -59,7 +59,6 @@ export default function ScoliosisTreatmentPage() {
           { label: 'Services', href: '/#services' },
           { label: 'Scoliosis Treatment' },
         ]}
-        bannerText="Scoliosis treatment — clinical, supportive"
       />
 
       <section className="py-20 bg-white">

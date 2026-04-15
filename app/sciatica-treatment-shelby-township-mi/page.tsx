@@ -58,7 +58,6 @@ export default function SciaticaTreatmentPage() {
           { label: 'Services', href: '/#services' },
           { label: 'Sciatica Treatment' },
         ]}
-        bannerText="Sciatica treatment — clinical, professional"
       />
 
       {/* OVERVIEW */}

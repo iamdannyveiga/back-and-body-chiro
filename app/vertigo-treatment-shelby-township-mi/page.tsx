@@ -53,7 +53,6 @@ export default function VertigoTreatmentPage() {
           { label: 'Services', href: '/#services' },
           { label: 'Vertigo Treatment' },
         ]}
-        bannerText="Vertigo treatment — clinical, supportive"
       />
 
       <section className="py-20 bg-white">

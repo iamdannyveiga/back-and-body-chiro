@@ -53,7 +53,6 @@ export default function NutritionPage() {
           { label: 'Services', href: '/#services' },
           { label: 'Nutrition' },
         ]}
-        bannerText="Nutritional guidance — practical, evidence-based"
       />
 
       <section className="py-20 bg-white">

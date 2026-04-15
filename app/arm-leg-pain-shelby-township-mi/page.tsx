@@ -54,7 +54,6 @@ export default function ArmLegPainPage() {
           { label: 'Services', href: '/#services' },
           { label: 'Arm & Leg Pain' },
         ]}
-        bannerText="Arm and leg pain treatment — clinical"
       />
 
       <section className="py-20 bg-white">

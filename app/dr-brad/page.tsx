@@ -26,7 +26,6 @@ export default function DrBradPage() {
           { label: 'Home', href: '/' },
           { label: 'Meet Dr. Brad' },
         ]}
-        bannerText="Dr. Brad — professional portrait, warm, approachable"
       />
 
       {/* A: FULL PROFILE */}

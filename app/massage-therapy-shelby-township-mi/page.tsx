@@ -58,7 +58,6 @@ export default function MassageTherapyPage() {
           { label: 'Services', href: '/#services' },
           { label: 'Massage Therapy' },
         ]}
-        bannerText="Therapeutic massage — clinical, professional"
       />
 
       {/* OVERVIEW */}

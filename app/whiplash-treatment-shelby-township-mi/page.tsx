@@ -58,7 +58,6 @@ export default function WhiplashTreatmentPage() {
           { label: 'Services', href: '/#services' },
           { label: 'Whiplash Treatment' },
         ]}
-        bannerText="Whiplash and auto injury treatment — clinical"
       />
 
       <section className="py-20 bg-white">

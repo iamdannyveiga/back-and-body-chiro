@@ -58,7 +58,6 @@ export default function BackPainTreatmentPage() {
           { label: 'Services', href: '/#services' },
           { label: 'Back Pain Treatment' },
         ]}
-        bannerText="Back pain treatment — clinical, professional"
       />
 
       {/* OVERVIEW */}

@@ -38,7 +38,6 @@ export default function TestimonialsPage() {
           { label: 'Home', href: '/' },
           { label: 'Reviews' },
         ]}
-        bannerText="Happy patients \u2014 warm, genuine, Michigan families"
       />
 
       {/* A: FEATURED REVIEW */}

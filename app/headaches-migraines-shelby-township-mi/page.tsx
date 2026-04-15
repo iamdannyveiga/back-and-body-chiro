@@ -58,7 +58,6 @@ export default function HeadachesMigrainesPage() {
           { label: 'Services', href: '/#services' },
           { label: 'Headaches & Migraines' },
         ]}
-        bannerText="Headache and migraine relief — clinical, honest"
       />
 
       {/* OVERVIEW */}

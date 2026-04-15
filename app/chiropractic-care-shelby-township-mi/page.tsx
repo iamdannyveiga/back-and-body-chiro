@@ -59,7 +59,6 @@ export default function ChiropracticCarePage() {
           { label: 'Services', href: '/#services' },
           { label: 'Chiropractic Care' },
         ]}
-        bannerText="Chiropractic adjustment — professional, clinical, approachable"
       />
 
       {/* A: OVERVIEW */}

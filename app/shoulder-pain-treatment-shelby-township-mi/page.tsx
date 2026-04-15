@@ -53,7 +53,6 @@ export default function ShoulderPainTreatmentPage() {
           { label: 'Services', href: '/#services' },
           { label: 'Shoulder Pain Treatment' },
         ]}
-        bannerText="Shoulder pain treatment — clinical, professional"
       />
 
       <section className="py-20 bg-white">

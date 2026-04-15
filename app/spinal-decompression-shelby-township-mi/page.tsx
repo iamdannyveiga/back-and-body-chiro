@@ -58,7 +58,6 @@ export default function SpinalDecompressionPage() {
           { label: 'Services', href: '/#services' },
           { label: 'Spinal Decompression' },
         ]}
-        bannerText="Spinal decompression therapy — clinical, modern"
       />
 
       {/* OVERVIEW */}

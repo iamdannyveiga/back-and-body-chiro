@@ -58,7 +58,6 @@ export default function AppliedKinesiologyPage() {
           { label: 'Services', href: '/#services' },
           { label: 'Applied Kinesiology' },
         ]}
-        bannerText="Diagnostic muscle testing — professional, clinical, precise"
       />
 
       {/* A: OVERVIEW */}

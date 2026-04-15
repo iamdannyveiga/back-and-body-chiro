@@ -53,7 +53,6 @@ export default function WeightLossPage() {
           { label: 'Services', href: '/#services' },
           { label: 'Weight Loss' },
         ]}
-        bannerText="Weight loss support — practical, honest"
       />
 
       <section className="py-20 bg-white">

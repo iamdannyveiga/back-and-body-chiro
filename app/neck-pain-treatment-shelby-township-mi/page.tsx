@@ -58,7 +58,6 @@ export default function NeckPainTreatmentPage() {
           { label: 'Services', href: '/#services' },
           { label: 'Neck Pain Treatment' },
         ]}
-        bannerText="Neck pain treatment — clinical, professional"
       />
 
       {/* OVERVIEW */}

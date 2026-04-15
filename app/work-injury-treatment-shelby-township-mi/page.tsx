@@ -53,7 +53,6 @@ export default function WorkInjuryTreatmentPage() {
           { label: 'Services', href: '/#services' },
           { label: 'Work Injury Treatment' },
         ]}
-        bannerText="Work injury treatment — clinical, professional"
       />
 
       <section className="py-20 bg-white">

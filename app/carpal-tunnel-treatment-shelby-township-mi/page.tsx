@@ -53,7 +53,6 @@ export default function CarpalTunnelTreatmentPage() {
           { label: 'Services', href: '/#services' },
           { label: 'Carpal Tunnel Treatment' },
         ]}
-        bannerText="Carpal tunnel treatment — clinical, professional"
       />
 
       <section className="py-20 bg-white">

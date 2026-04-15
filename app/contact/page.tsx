@@ -26,7 +26,6 @@ export default function ContactPage() {
           { label: 'Home', href: '/' },
           { label: 'Contact' },
         ]}
-        bannerText="Clinic exterior — Vince and Joe's plaza, 25 Mile & Van Dyke"
       />
 
       {/* CONTACT SECTION */}
