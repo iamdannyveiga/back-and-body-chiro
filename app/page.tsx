@@ -45,9 +45,8 @@ export default function HomePage() {
             <ScrollReveal className="pt-5">
               <span className="label label--light">Chiropractor in Shelby Township, MI</span>
               <div className="mb-5">
-                <p className="text-[24px] md:text-[32px] font-normal text-text-light leading-[1.35] opacity-85" style={{ fontFamily: 'var(--font-heading)' }}>Thorough exams.</p>
-                <p className="text-[24px] md:text-[32px] font-normal text-text-light leading-[1.35] opacity-85" style={{ fontFamily: 'var(--font-heading)' }}>No crazy care plans.</p>
-                <p className="text-[24px] md:text-[32px] font-normal text-text-light leading-[1.35] opacity-85" style={{ fontFamily: 'var(--font-heading)' }}>Clear explanations.</p>
+                <p className="text-[24px] md:text-[32px] font-normal text-text-light leading-[1.35] opacity-85" style={{ fontFamily: 'var(--font-heading)' }}>Proven results.</p>
+                <p className="text-[24px] md:text-[32px] font-normal text-text-light leading-[1.35] opacity-85" style={{ fontFamily: 'var(--font-heading)' }}>Lasting relief.</p>
               </div>
               <h1 className="text-[40px] md:text-[56px] font-bold text-text-light leading-[1.1] mb-6" style={{ fontFamily: 'var(--font-heading)' }}>
                 Chiropractor in Shelby Township, MI -- just honest <span className="text-mint">heartfelt care.</span>
