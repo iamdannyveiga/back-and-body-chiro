@@ -82,8 +82,8 @@ export default function SciaticaTreatmentPage() {
               </div>
               <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
                 <Image
-                  src="/images/services/spinal-decompression-room.webp"
-                  alt="Sciatica treatment room with decompression table at Back and Body in Shelby Township, MI"
+                  src="/images/services/condition-sciatica.webp"
+                  alt="Adult holding lower back and back of leg — sciatica treatment at Back and Body in Shelby Township, MI"
                   fill
                   sizes="(max-width: 768px) 100vw, 40vw"
                   className="object-cover"

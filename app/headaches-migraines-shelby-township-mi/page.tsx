@@ -82,8 +82,8 @@ export default function HeadachesMigrainesPage() {
               </div>
               <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
                 <Image
-                  src="/images/hero-clinic.webp"
-                  alt="Back and Body Chiropractic headache and migraine care in Shelby Township, MI"
+                  src="/images/services/condition-headache.webp"
+                  alt="Adult pressing temples with eyes closed — headache and migraine care at Back and Body in Shelby Township, MI"
                   fill
                   sizes="(max-width: 768px) 100vw, 40vw"
                   className="object-cover"

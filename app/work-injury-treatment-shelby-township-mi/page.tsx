@@ -76,8 +76,8 @@ export default function WorkInjuryTreatmentPage() {
               </div>
               <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
                 <Image
-                  src="/images/office-exam-bed.webp"
-                  alt="Work injury treatment room at Back and Body in Shelby Township, MI"
+                  src="/images/services/condition-work-injury.webp"
+                  alt="Worker holding lower back after lifting — work injury treatment at Back and Body in Shelby Township, MI"
                   fill
                   sizes="(max-width: 768px) 100vw, 40vw"
                   className="object-cover"

@@ -76,8 +76,8 @@ export default function VertigoTreatmentPage() {
               </div>
               <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
                 <Image
-                  src="/images/hero-clinic.webp"
-                  alt="Vertigo treatment at Back and Body Chiropractic in Shelby Township, MI"
+                  src="/images/services/condition-vertigo.webp"
+                  alt="Adult bracing wall with dizziness — vertigo treatment at Back and Body in Shelby Township, MI"
                   fill
                   sizes="(max-width: 768px) 100vw, 40vw"
                   className="object-cover"

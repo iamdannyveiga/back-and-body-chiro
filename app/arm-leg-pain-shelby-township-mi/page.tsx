@@ -77,8 +77,8 @@ export default function ArmLegPainPage() {
               </div>
               <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
                 <Image
-                  src="/images/office-exam-bed.webp"
-                  alt="Arm and leg pain treatment room at Back and Body in Shelby Township, MI"
+                  src="/images/services/condition-arm-leg-pain.webp"
+                  alt="Adult rubbing arm and leg in discomfort — arm and leg pain treatment at Back and Body in Shelby Township, MI"
                   fill
                   sizes="(max-width: 768px) 100vw, 40vw"
                   className="object-cover"

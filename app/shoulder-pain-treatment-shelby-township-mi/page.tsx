@@ -76,8 +76,8 @@ export default function ShoulderPainTreatmentPage() {
               </div>
               <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
                 <Image
-                  src="/images/office-exam-bed.webp"
-                  alt="Shoulder pain treatment room at Back and Body in Shelby Township, MI"
+                  src="/images/services/condition-shoulder-pain.webp"
+                  alt="Adult man rubbing his shoulder with pain — shoulder pain treatment at Back and Body in Shelby Township, MI"
                   fill
                   sizes="(max-width: 768px) 100vw, 40vw"
                   className="object-cover"

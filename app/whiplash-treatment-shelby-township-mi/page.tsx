@@ -81,8 +81,8 @@ export default function WhiplashTreatmentPage() {
               </div>
               <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
                 <Image
-                  src="/images/office-exam-bed.webp"
-                  alt="Whiplash treatment room at Back and Body in Shelby Township, MI"
+                  src="/images/services/condition-whiplash.webp"
+                  alt="Adult with neck brace recovering — whiplash treatment at Back and Body in Shelby Township, MI"
                   fill
                   sizes="(max-width: 768px) 100vw, 40vw"
                   className="object-cover"

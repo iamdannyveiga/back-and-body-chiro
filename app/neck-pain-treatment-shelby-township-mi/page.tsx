@@ -82,8 +82,8 @@ export default function NeckPainTreatmentPage() {
               </div>
               <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
                 <Image
-                  src="/images/office-exam-bed.webp"
-                  alt="Neck pain treatment table at Back and Body in Shelby Township, MI"
+                  src="/images/services/condition-neck-pain.webp"
+                  alt="Adult woman touching her neck with discomfort — neck pain treatment at Back and Body in Shelby Township, MI"
                   fill
                   sizes="(max-width: 768px) 100vw, 40vw"
                   className="object-cover"

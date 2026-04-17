@@ -82,8 +82,8 @@ export default function DiscInjuryTreatmentPage() {
               </div>
               <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
                 <Image
-                  src="/images/services/spinal-decompression-room.webp"
-                  alt="Disc injury treatment room with decompression table at Back and Body in Shelby Township, MI"
+                  src="/images/services/condition-disc-injury.webp"
+                  alt="Adult bending slightly holding mid-back — disc injury treatment at Back and Body in Shelby Township, MI"
                   fill
                   sizes="(max-width: 768px) 100vw, 40vw"
                   className="object-cover"

@@ -76,8 +76,8 @@ export default function CarpalTunnelTreatmentPage() {
               </div>
               <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
                 <Image
-                  src="/images/office-exam-bed.webp"
-                  alt="Carpal tunnel treatment room at Back and Body in Shelby Township, MI"
+                  src="/images/services/condition-carpal-tunnel.webp"
+                  alt="Adult at laptop massaging sore wrist — carpal tunnel treatment at Back and Body in Shelby Township, MI"
                   fill
                   sizes="(max-width: 768px) 100vw, 40vw"
                   className="object-cover"

@@ -81,8 +81,8 @@ export default function PediatricChiropracticPage() {
               </div>
               <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
                 <Image
-                  src="/images/dr-bradley-krawczyk-with-staff.webp"
-                  alt="Pediatric chiropractic care at Back and Body in Shelby Township, MI"
+                  src="/images/services/service-pediatric-care.webp"
+                  alt="Young child receiving gentle chiropractic care — pediatric chiropractic at Back and Body in Shelby Township, MI"
                   fill
                   sizes="(max-width: 768px) 100vw, 40vw"
                   className="object-cover"
