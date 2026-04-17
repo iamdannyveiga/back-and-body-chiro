@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import PageHero from '@/components/PageHero';
 import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
@@ -78,13 +79,14 @@ export default function WhiplashTreatmentPage() {
                   <Link href="/schedule-appointment" className="btn btn--mint">Book Your $67 Visit &rarr;</Link>
                 </div>
               </div>
-              <div className="h-[400px] bg-gradient-to-br from-teal-mid to-teal rounded-xl flex items-center justify-center">
-                <svg viewBox="0 0 56 56" fill="none" className="w-14 h-14">
-                  <circle cx="28" cy="16" r="6" stroke="#5ED299" strokeWidth="1.5" opacity=".25" />
-                  <path d="M28 22v16" stroke="#5ED299" strokeWidth="1.5" opacity=".2" />
-                  <path d="M22 16 C24 10, 32 10, 34 16" stroke="#5ED299" strokeWidth="1" opacity=".2" />
-                  <path d="M20 14l8 4M36 14l-8 4" stroke="#5ED299" strokeWidth="1" opacity=".15" />
-                </svg>
+              <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
+                <Image
+                  src="/images/office-exam-bed.webp"
+                  alt="Whiplash treatment room at Back and Body in Shelby Township, MI"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                  className="object-cover"
+                />
               </div>
             </div>
           </ScrollReveal>

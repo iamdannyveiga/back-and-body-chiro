@@ -103,7 +103,7 @@ export default function NewPatientsPage() {
                       {step.num}
                     </div>
                     <div className="pb-2">
-                      <h4 className="text-[17px] font-bold text-teal mb-1" style={{ fontFamily: 'var(--font-heading)' }}>{step.title}</h4>
+                      <h3 className="text-[17px] font-bold text-teal mb-1" style={{ fontFamily: 'var(--font-heading)' }}>{step.title}</h3>
                       <p className="text-sm text-text/70 leading-relaxed">{step.text}</p>
                     </div>
                   </div>
@@ -198,7 +198,7 @@ export default function NewPatientsPage() {
                   { title: 'No Surprise Billing', desc: "You'll always know what something costs before you agree to it. Period." },
                 ].map((card) => (
                   <div key={card.title} className="bg-light-gray rounded-xl px-6 py-7">
-                    <h4 className="text-base font-bold text-teal mb-2" style={{ fontFamily: 'var(--font-heading)' }}>{card.title}</h4>
+                    <h3 className="text-base font-bold text-teal mb-2" style={{ fontFamily: 'var(--font-heading)' }}>{card.title}</h3>
                     <p className="text-sm leading-relaxed text-text/80">{card.desc}</p>
                   </div>
                 ))}

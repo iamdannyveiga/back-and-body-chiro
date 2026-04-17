@@ -283,7 +283,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 xl:grid-cols-[1fr_380px] gap-12 items-start">
             <ScrollReveal>
               {/* Photo placeholder */}
-              <div className="w-full h-[440px] rounded-xl overflow-hidden -mt-10 relative z-[2] shadow-[var(--shadow-lg)] mb-7">
+              <div className="w-full max-w-[480px] aspect-[3/4] rounded-xl overflow-hidden -mt-10 relative z-[2] shadow-[var(--shadow-lg)] mb-7">
                 <Image src="/images/dr-bradley-krawczyk-about.webp" alt="Dr. Bradley Krawczyk, DC -- Chiropractor in Shelby Township, MI" fill className="object-cover" />
               </div>
               <h3 className="text-[30px] font-extrabold text-teal mt-7 mb-2" style={{ fontFamily: 'var(--font-heading)' }}>Dr. Bradley Krawczyk, D.C.</h3>

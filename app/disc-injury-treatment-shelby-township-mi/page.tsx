@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import PageHero from '@/components/PageHero';
 import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
@@ -79,13 +80,14 @@ export default function DiscInjuryTreatmentPage() {
                   <Link href="/schedule-appointment" className="btn btn--mint">Book Your $67 Visit &rarr;</Link>
                 </div>
               </div>
-              <div className="h-[400px] bg-gradient-to-br from-teal-mid to-teal rounded-xl flex items-center justify-center">
-                <svg viewBox="0 0 56 56" fill="none" className="w-14 h-14">
-                  <ellipse cx="28" cy="28" rx="12" ry="4" stroke="#5ED299" strokeWidth="1.5" opacity=".25" />
-                  <ellipse cx="28" cy="20" rx="10" ry="3" stroke="#5ED299" strokeWidth="1" opacity=".15" />
-                  <ellipse cx="28" cy="36" rx="10" ry="3" stroke="#5ED299" strokeWidth="1" opacity=".15" />
-                  <path d="M28 12v32" stroke="#5ED299" strokeWidth="1" opacity=".1" />
-                </svg>
+              <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
+                <Image
+                  src="/images/services/spinal-decompression-room.webp"
+                  alt="Disc injury treatment room with decompression table at Back and Body in Shelby Township, MI"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                  className="object-cover"
+                />
               </div>
             </div>
           </ScrollReveal>

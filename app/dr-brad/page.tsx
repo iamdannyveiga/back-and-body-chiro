@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import PageHero from '@/components/PageHero';
 import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
@@ -35,13 +36,14 @@ export default function DrBradPage() {
             {/* Photo placeholder */}
             <ScrollReveal>
               <div className="w-full h-[44vh] min-h-[320px] max-h-[480px] rounded-xl overflow-hidden shadow-lg mb-10 -mt-10 relative z-20">
-                <div className="w-full h-full bg-gradient-to-br from-teal-mid to-teal flex flex-col items-center justify-center gap-3">
-                  <svg viewBox="0 0 72 72" fill="none" className="w-16 h-16">
-                    <circle cx="36" cy="28" r="14" stroke="#fff" strokeWidth="1.5" opacity=".2" />
-                    <path d="M12 64c0-12 10-22 24-22s24 10 24 22" stroke="#fff" strokeWidth="1.5" opacity=".2" />
-                  </svg>
-                  <p className="text-white/15 text-xs tracking-[1.5px] uppercase">Dr. Brad — approachable, confident, clinic background</p>
-                </div>
+                <Image
+                  src="/images/dr-bradley-krawczyk-about.webp"
+                  alt="Dr. Bradley Krawczyk, DC — founder of Back and Body in Shelby Township, MI"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 900px"
+                  className="object-cover"
+                  priority
+                />
               </div>
             </ScrollReveal>
 

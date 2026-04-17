@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import PageHero from '@/components/PageHero';
 import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
@@ -79,11 +80,14 @@ export default function MassageTherapyPage() {
                   <Link href="/schedule-appointment" className="btn btn--mint">Book Your $67 Visit &rarr;</Link>
                 </div>
               </div>
-              <div className="h-[400px] bg-gradient-to-br from-teal-mid to-teal rounded-xl flex items-center justify-center">
-                <svg viewBox="0 0 56 56" fill="none" className="w-14 h-14">
-                  <circle cx="28" cy="20" r="8" stroke="#5ED299" strokeWidth="1.5" opacity=".25" />
-                  <path d="M16 44c0-8 6-14 12-14s12 6 12 14" stroke="#5ED299" strokeWidth="1.5" opacity=".2" />
-                </svg>
+              <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
+                <Image
+                  src="/images/service-massage-therapy.webp"
+                  alt="Therapeutic massage therapy at Back and Body in Shelby Township, MI"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                  className="object-cover"
+                />
               </div>
             </div>
           </ScrollReveal>

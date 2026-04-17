@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import PageHero from '@/components/PageHero';
 import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
@@ -73,12 +74,14 @@ export default function WellnessCarePage() {
                   <Link href="/schedule-appointment" className="btn btn--mint">Book Your $67 Visit &rarr;</Link>
                 </div>
               </div>
-              <div className="h-[400px] bg-gradient-to-br from-teal-mid to-teal rounded-xl flex items-center justify-center">
-                <svg viewBox="0 0 56 56" fill="none" className="w-14 h-14">
-                  <circle cx="28" cy="28" r="16" stroke="#5ED299" strokeWidth="1.5" opacity=".2" />
-                  <path d="M28 16v24M16 28h24" stroke="#5ED299" strokeWidth="1" opacity=".15" />
-                  <circle cx="28" cy="28" r="6" stroke="#5ED299" strokeWidth="1.5" opacity=".25" />
-                </svg>
+              <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
+                <Image
+                  src="/images/hero-clinic.webp"
+                  alt="Back and Body wellness chiropractic clinic in Shelby Township, MI"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                  className="object-cover"
+                />
               </div>
             </div>
           </ScrollReveal>

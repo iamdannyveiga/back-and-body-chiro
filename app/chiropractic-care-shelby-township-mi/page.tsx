@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import PageHero from '@/components/PageHero';
 import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
@@ -8,7 +9,7 @@ import { DecompressionIcon, MassageIcon, KinesiologyIcon } from '@/components/Ic
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Chiropractic Care',
+  title: 'Chiropractic Care | Chiropractor Shelby Township MI',
   description:
     'Honest, results-focused chiropractic adjustments from Dr. Brad Krawczyk. Thorough exams and care plans right-sized to your condition. $67 New Patient Special. Shelby Township, MI.',
   alternates: {
@@ -80,12 +81,14 @@ export default function ChiropracticCarePage() {
                   <Link href="/schedule-appointment" className="btn btn--mint">Book Your $67 Visit &rarr;</Link>
                 </div>
               </div>
-              <div className="h-[400px] bg-gradient-to-br from-teal-mid to-teal rounded-xl flex items-center justify-center">
-                <svg viewBox="0 0 56 56" fill="none" className="w-14 h-14">
-                  <path d="M28 8 C24 14, 22 20, 22 28 C22 36, 24 42, 28 46 C32 42, 34 36, 34 28 C34 20, 32 14, 28 8Z" stroke="#5ED299" strokeWidth="1.5" opacity=".3" />
-                  <path d="M16 18 C20 22, 24 24, 28 24 C32 24, 36 22, 40 18" stroke="#5ED299" strokeWidth="1.5" fill="none" opacity=".2" />
-                  <path d="M14 30 C20 34, 24 36, 28 36 C32 36, 36 34, 42 30" stroke="#5ED299" strokeWidth="1.5" fill="none" opacity=".2" />
-                </svg>
+              <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
+                <Image
+                  src="/images/dr-bradley-krawczyk-with-staff.webp"
+                  alt="Dr. Brad Krawczyk performing chiropractic care at Back and Body in Shelby Township, MI"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                  className="object-cover"
+                />
               </div>
             </div>
           </ScrollReveal>

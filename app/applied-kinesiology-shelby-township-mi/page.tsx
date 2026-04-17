@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import PageHero from '@/components/PageHero';
 import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
@@ -79,12 +80,14 @@ export default function AppliedKinesiologyPage() {
                   <Link href="/schedule-appointment" className="btn btn--mint">Book Your $67 Visit &rarr;</Link>
                 </div>
               </div>
-              <div className="h-[400px] bg-gradient-to-br from-teal-mid to-teal rounded-xl flex items-center justify-center">
-                <svg viewBox="0 0 56 56" fill="none" className="w-14 h-14">
-                  <circle cx="28" cy="20" r="6" stroke="#5ED299" strokeWidth="1.5" opacity=".3" />
-                  <path d="M28 26 C24 32, 20 38, 20 44 M28 26 C32 32, 36 38, 36 44" stroke="#5ED299" strokeWidth="1.5" opacity=".3" />
-                  <path d="M20 34 L36 34" stroke="#5ED299" strokeWidth="1.5" opacity=".2" />
-                </svg>
+              <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
+                <Image
+                  src="/images/office-exam-bed.webp"
+                  alt="Applied kinesiology treatment table at Back and Body in Shelby Township, MI"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                  className="object-cover"
+                />
               </div>
             </div>
           </ScrollReveal>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import PageHero from '@/components/PageHero';
 import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
@@ -79,13 +80,14 @@ export default function BackPainTreatmentPage() {
                   <Link href="/schedule-appointment" className="btn btn--mint">Book Your $67 Visit &rarr;</Link>
                 </div>
               </div>
-              <div className="h-[400px] bg-gradient-to-br from-teal-mid to-teal rounded-xl flex items-center justify-center">
-                <svg viewBox="0 0 56 56" fill="none" className="w-14 h-14">
-                  <path d="M28 8 C24 14, 22 20, 22 28 C22 36, 24 42, 28 46" stroke="#5ED299" strokeWidth="2" opacity=".25" />
-                  <circle cx="28" cy="28" r="4" stroke="#5ED299" strokeWidth="1.5" opacity=".2" />
-                  <circle cx="28" cy="20" r="3" stroke="#5ED299" strokeWidth="1" opacity=".15" />
-                  <circle cx="28" cy="36" r="3" stroke="#5ED299" strokeWidth="1" opacity=".15" />
-                </svg>
+              <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
+                <Image
+                  src="/images/office-exam-bed.webp"
+                  alt="Back pain treatment room at Back and Body Chiropractic in Shelby Township, MI"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                  className="object-cover"
+                />
               </div>
             </div>
           </ScrollReveal>

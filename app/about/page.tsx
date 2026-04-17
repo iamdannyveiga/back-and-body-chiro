@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import PageHero from '@/components/PageHero';
 import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
@@ -39,10 +40,14 @@ export default function AboutPage() {
               <p>Thorough chiropractic care, clear explanations, and care plans right-sized to your condition — at a fair price.</p>
               <p>Fourteen years later, he&apos;s still in the same plaza, still serving the same community, still operating by the same principle.</p>
             </div>
-            <div className="w-full h-[380px] rounded-xl overflow-hidden shadow-[var(--shadow)]">
-              <div className="w-full h-full bg-gradient-to-br from-[#2a4a58] to-[#1a3540] flex items-center justify-center">
-                <svg className="w-14 h-14 opacity-15" viewBox="0 0 56 56" fill="none"><circle cx="28" cy="20" r="12" stroke="#fff" strokeWidth="1.5" /><path d="M10 52c0-10 8-18 18-18s18 8 18 18" stroke="#fff" strokeWidth="1.5" /></svg>
-              </div>
+            <div className="w-full h-[380px] rounded-xl overflow-hidden shadow-[var(--shadow)] relative">
+              <Image
+                src="/images/dr-bradley-krawczyk-meet-team.webp"
+                alt="Meet the Back and Body team led by Dr. Bradley Krawczyk in Shelby Township, MI"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover"
+              />
             </div>
           </ScrollReveal>
 

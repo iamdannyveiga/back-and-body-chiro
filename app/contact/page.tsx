@@ -35,7 +35,7 @@ export default function ContactPage() {
             <div className="grid md:grid-cols-2 gap-12 max-w-[1100px] mx-auto">
               {/* LEFT: INFO */}
               <div>
-                <h3 className="text-xl font-bold text-teal mb-4" style={{ fontFamily: 'var(--font-heading)' }}>Back and Body Chiropractic Center</h3>
+                <h2 className="text-xl font-bold text-teal mb-4" style={{ fontFamily: 'var(--font-heading)' }}>Back and Body Chiropractic Center</h2>
                 <p className="mb-2">
                   <a href="tel:5862071624" className="text-teal font-bold text-lg hover:text-mint transition-colors">(586) 207-1624</a>
                 </p>
@@ -46,7 +46,7 @@ export default function ContactPage() {
                   Northeast corner of 25 Mile Rd and Van Dyke Ave, in Vince and Joe&apos;s plaza
                 </p>
 
-                <h3 className="text-xl font-bold text-teal mt-9 mb-4" style={{ fontFamily: 'var(--font-heading)' }}>Office Hours</h3>
+                <h2 className="text-xl font-bold text-teal mt-9 mb-4" style={{ fontFamily: 'var(--font-heading)' }}>Office Hours</h2>
                 <table className="w-full text-sm">
                   <tbody>
                     {[
@@ -77,7 +77,7 @@ export default function ContactPage() {
                 />
 
                 <div className="mt-7">
-                  <h3 className="text-lg font-bold text-teal mb-2" style={{ fontFamily: 'var(--font-heading)' }}>Areas We Serve</h3>
+                  <h2 className="text-lg font-bold text-teal mb-2" style={{ fontFamily: 'var(--font-heading)' }}>Areas We Serve</h2>
                   <p className="text-sm text-[#888] leading-[1.7]">
                     Shelby Township &middot; Sterling Heights &middot; Utica &middot; Rochester Hills &middot; Troy &middot; Macomb &middot; Clinton Township &middot; Washington Township &middot; Romeo
                   </p>
