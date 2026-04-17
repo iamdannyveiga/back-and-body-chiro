@@ -1,7 +1,7 @@
 export async function GET() {
   const content = `# Back and Body Chiropractic Center
 
-> Chiropractor in Shelby Charter Township, MI. Dr. Bradley Krawczyk, DC. No sales pitches, no gimmicks -- just honest care focused on results.
+> Chiropractor in Shelby Charter Township, MI. Dr. Bradley Krawczyk, DC. Thorough diagnosis, personalized care, and real results — focused on your goals, not a prescribed plan.
 
 ## Contact
 - Phone: (586) 207-1624
@@ -20,6 +20,7 @@ Dr. Bradley Krawczyk earned his BS in Kinesiology from Michigan State University
 ## Services
 - Chiropractic Care: /chiropractic-care-shelby-township-mi
 - Spinal Decompression: /spinal-decompression-shelby-township-mi
+- SoftWave Therapy (FDA-cleared shockwave / tissue regeneration): /softwave-therapy-shelby-township-mi
 - Massage Therapy: /massage-therapy-shelby-township-mi
 - Applied Kinesiology: /applied-kinesiology-shelby-township-mi
 - Back Pain Treatment: /back-pain-treatment-shelby-township-mi

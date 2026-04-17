@@ -75,8 +75,6 @@ export default function DrBradPage() {
 
             <ScrollReveal>
               <div className="prose-custom">
-                <p>That same year — September 2011 — he opened <strong>Back and Body Chiropractic Center</strong> in Shelby Township. Same plaza, same corner: 25 Mile and Van Dyke, in Vince and Joe&apos;s. He was 27 years old, fresh out of school, and absolutely certain about one thing: he wasn&apos;t going to play the games he&apos;d seen other practices play.</p>
-                <p>No high-pressure sales pitches to get patients to sign up for months of care they might not need. No gimmick discount packages. No scare tactics with X-rays. Just an honest examination, a straightforward plan, and results that speak for themselves.</p>
                 <p><strong>&ldquo;The best care without any of the nonsense.&rdquo;</strong> That&apos;s the promise he made on day one. Fourteen years and thousands of patients later, it&apos;s still the promise he keeps.</p>
               </div>
             </ScrollReveal>

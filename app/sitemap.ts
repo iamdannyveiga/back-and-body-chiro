@@ -6,6 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const servicePages = [
     "chiropractic-care-shelby-township-mi",
     "spinal-decompression-shelby-township-mi",
+    "softwave-therapy-shelby-township-mi",
     "massage-therapy-shelby-township-mi",
     "back-pain-treatment-shelby-township-mi",
     "neck-pain-treatment-shelby-township-mi",

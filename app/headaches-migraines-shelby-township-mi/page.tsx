@@ -203,7 +203,7 @@ export default function HeadachesMigrainesPage() {
                 The Back &amp; Body Promise
               </div>
               <p className="text-base text-text/80 leading-[1.8]">
-                Dr. Brad treats every patient with the same philosophy: <strong>no sales, no gimmicks, just honest care focused on results.</strong> Your treatment plan is based on what you actually need — nothing more. Come when you need to. Stop when you&apos;re feeling good. No guilt, no pressure.
+                Dr. Brad treats every patient with the same philosophy: <strong>thorough diagnosis, personalized care, and real results.</strong> Your treatment plan is built around your specific condition and goals. Come when you need to. Stop when you&apos;re feeling good. You&apos;re in control of your care.
               </p>
             </div>
           </ScrollReveal>

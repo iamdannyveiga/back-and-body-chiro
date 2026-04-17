@@ -8,7 +8,7 @@ import FAQAccordion from '@/components/FAQAccordion';
 export const metadata: Metadata = {
   title: 'New Patients — $67 First Visit',
   description:
-    'Your $67 first visit includes consultation, exam, X-rays if needed, and first adjustment. No sales pitches. No contracts. Just honest care.',
+    'Your $67 first visit includes consultation, exam, X-rays if needed, and first adjustment. Thorough, personalized care — no contracts.',
   alternates: {
     canonical: '/new-patients',
   },
@@ -93,7 +93,7 @@ export default function NewPatientsPage() {
             {[
               { num: '1', title: 'Call or Book Online', text: '(586) 207-1624 — or use the online form. We\'ll find a time that works, including Saturday mornings. Evening appointments Mon\u2013Wed until 7pm.' },
               { num: '2', title: 'Meet Dr. Brad', text: 'Consultation, thorough examination, X-rays if clinically necessary. He listens to the full story. He asks the right questions. No rush. No judgment.' },
-              { num: '3', title: 'Your Honest Plan', text: 'Dr. Brad tells you what he found and what he recommends. A straightforward treatment plan. No 6-month contracts. No gimmick packages. Just what you actually need.' },
+              { num: '3', title: 'Your Honest Plan', text: 'Dr. Brad tells you what he found and what he recommends. A straightforward, right-sized treatment plan — no long-term contracts, no packages.' },
               { num: '4', title: 'Feel Better', text: 'Real results from your first visit. Continue care as needed — come back when YOU want to, not because you\'re locked in. Your body, your choice, your pace.' },
             ].map((step, i) => (
               <div key={step.num}>

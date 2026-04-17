@@ -103,7 +103,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <ConversionCTA line1="Ready to feel better?" anchor="$67 gets you started." note="No sales pitches. No gimmicks. Just honest care." />
+      <ConversionCTA line1="Ready to feel better?" anchor="$67 gets you started." note="Thorough exam, clear answers, a care plan built around you." />
     </>
   );
 }

@@ -12,6 +12,7 @@ const serviceGroups = [
     links: [
       { href: '/chiropractic-care-shelby-township-mi', label: 'Chiropractic Care' },
       { href: '/spinal-decompression-shelby-township-mi', label: 'Spinal Decompression' },
+      { href: '/softwave-therapy-shelby-township-mi', label: 'SoftWave Therapy' },
       { href: '/massage-therapy-shelby-township-mi', label: 'Massage Therapy' },
       { href: '/applied-kinesiology-shelby-township-mi', label: 'Applied Kinesiology' },
       { href: '/pediatric-chiropractic-shelby-township-mi', label: 'Pediatric Chiropractic' },

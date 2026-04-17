@@ -4,59 +4,70 @@ import PageHero from '@/components/PageHero';
 import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
-import { SpineIcon, HeadacheIcon, MassageIcon } from '@/components/Icons';
+import { SpineIcon, SciaticaIcon, DiscIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Neck Pain Treatment | Chiropractor Shelby Township MI',
+  title: 'SoftWave Therapy | Chiropractor Shelby Township MI',
   description:
-    'Neck pain treatment from Dr. Brad Krawczyk. Gentle chiropractic adjustments for stiffness, tension, and cervical issues. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+    'SoftWave tissue regeneration therapy in Shelby Township, MI. FDA-cleared shockwave therapy for chronic pain, inflammation, and tissue healing. Dr. Brad Krawczyk. $67 New Patient Special. (586) 207-1624.',
   alternates: {
-    canonical: '/neck-pain-treatment-shelby-township-mi',
+    canonical: '/softwave-therapy-shelby-township-mi',
   },
 };
 
 const faqItems = [
   {
-    question: 'What causes neck pain?',
+    question: 'What is SoftWave therapy and how does it work?',
     answer:
-      'Common causes include poor posture (especially from desk work and phone use), cervical misalignment, muscle strain, disc issues, and whiplash. Dr. Brad performs a thorough exam to identify your specific cause before any treatment.',
+      'SoftWave therapy uses unfocused electrohydraulic shockwaves to trigger your body\u2019s natural healing response. The acoustic waves reach deep into tissue, increasing blood flow, activating resident stem cells, and reducing inflammation — without surgery or medication.',
   },
   {
-    question: 'Is it safe to adjust the neck?',
+    question: 'Is SoftWave therapy FDA-cleared?',
     answer:
-      'Yes. Cervical adjustments are well-researched and safe when performed by a licensed chiropractor. Dr. Brad has 14+ years of experience and uses gentle, precise techniques tailored to each patient.',
+      'Yes. SoftWave therapy is FDA 510(k) cleared for activation of connective tissue, treatment of pain, and improving blood supply. It is a safe, non-invasive treatment backed by clinical research.',
   },
   {
-    question: 'Can neck problems cause headaches?',
+    question: 'How many SoftWave sessions will I need?',
     answer:
-      'Absolutely. Cervicogenic headaches originate from neck dysfunction and are one of the most common types of headaches. Many patients who come in for headaches actually have an underlying neck problem that chiropractic can address.',
+      'Most patients notice improvement after the first session. A typical treatment plan involves 6 to 12 sessions depending on the condition and how long you\u2019ve had it. Dr. Brad builds the plan around your specific situation — not a packaged protocol.',
   },
   {
-    question: 'How many visits will I need for neck pain?',
+    question: 'Does SoftWave therapy hurt?',
     answer:
-      'It depends on the cause and severity. Some patients improve in 1-2 visits. Others with chronic issues may need a few weeks of care. Dr. Brad will be upfront about what to expect — no long-term contracts.',
+      'Most patients feel mild pressure or a tapping sensation during treatment. Sessions typically last 10 to 15 minutes with no downtime. You can go right back to your day.',
+  },
+  {
+    question: 'What conditions does SoftWave treat?',
+    answer:
+      'SoftWave works well for plantar fasciitis, shoulder pain, knee pain, tennis elbow, carpal tunnel, neuropathy, arthritis, back pain, and soft tissue injuries. If you\u2019ve had pain that hasn\u2019t resolved with rest or standard care, SoftWave is often a good next step.',
+  },
+  {
+    question: 'Is SoftWave covered by insurance?',
+    answer:
+      'Most insurance plans don\u2019t cover SoftWave yet because it\u2019s a newer regenerative therapy. The good news is that pricing is transparent and affordable, and the results typically justify the investment — especially compared to surgery or long-term pain medication.',
   },
 ];
 
 const conditions = [
-  'Cervical Misalignment', 'Tech Neck', 'Stiff Neck', 'Muscle Tension',
-  'Cervical Disc Issues', 'Pinched Nerve', 'Whiplash', 'Cervicogenic Headaches',
-  'Shoulder & Neck Pain', 'Torticollis', 'Neck Arthritis',
+  'Plantar Fasciitis', 'Shoulder Pain', 'Rotator Cuff Injuries', 'Knee Pain',
+  'Tennis Elbow', 'Golfer\'s Elbow', 'Carpal Tunnel', 'Neuropathy',
+  'Arthritis', 'Chronic Low Back Pain', 'Hip Pain', 'Achilles Tendonitis',
+  'Soft Tissue Injuries', 'Sports Injuries',
 ];
 
-export default function NeckPainTreatmentPage() {
+export default function SoftWaveTherapyPage() {
   return (
     <>
       <PageHero
         title={<>
-          Neck Pain Treatment <span className="text-mint">in Shelby Township.</span>
+          SoftWave Therapy <span className="text-mint">in Shelby Township.</span>
         </>}
-        subtitle="Stiffness, tension, limited range of motion. Dr. Brad finds the cause and fixes it."
+        subtitle="FDA-cleared tissue regeneration. The newest addition at Back and Body — and one of the few SoftWave machines in Macomb County."
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Services', href: '/#services' },
-          { label: 'Neck Pain Treatment' },
+          { label: 'SoftWave Therapy' },
         ]}
       />
 
@@ -68,12 +79,12 @@ export default function NeckPainTreatmentPage() {
               <div>
                 <span className="label">Overview</span>
                 <h2 className="text-[40px] font-extrabold text-teal mb-6" style={{ fontFamily: 'var(--font-heading)' }}>
-                  <span className="font-normal">Your neck pain </span>has a cause.
+                  <span className="font-normal">Healing at the </span>cellular level.
                 </h2>
                 <div className="prose-custom">
-                  <p>Neck pain is one of the most common complaints Dr. Brad sees — and one of the most misunderstood. Most people assume it&apos;s just &ldquo;sleeping wrong&rdquo; or &ldquo;stress.&rdquo; Sometimes it is. But often there&apos;s a structural issue that, left unaddressed, leads to chronic problems.</p>
-                  <p>The cervical spine (your neck) supports the weight of your head — about 10-12 pounds. When alignment is off even slightly, muscles compensate, nerves get compressed, and pain follows. Add desk work, phone use, and daily stress, and you&apos;ve got a recipe for persistent neck problems.</p>
-                  <p>Dr. Brad takes the time to examine your cervical spine properly. He identifies the structural cause — not just the symptom — and treats it with precise, gentle adjustments that restore alignment and relieve pressure.</p>
+                  <p>SoftWave therapy uses unfocused electrohydraulic shockwaves — acoustic pulses that travel deep into injured tissue and trigger the same healing cascade your body uses after an injury. It stimulates blood flow, wakes up resident stem cells, and tells the surrounding tissue to start repairing itself.</p>
+                  <p>Unlike focused shockwave (which concentrates energy in a tight spot), SoftWave&apos;s unfocused technology covers a wider treatment area and reaches deeper structures without the discomfort. That&apos;s why the FDA cleared it for activation of connective tissue, treatment of pain, and improvement of blood supply.</p>
+                  <p>Back and Body recently added SoftWave to our clinic. It&apos;s the same device used across MaxLiving Health Centers nationally — a proven technology that belongs alongside chiropractic care and spinal decompression. For patients with nagging pain that hasn&apos;t responded to other care, SoftWave is often the missing piece.</p>
                 </div>
                 <div className="mt-7">
                   <Link href="/schedule-appointment" className="btn btn--mint">Book Your $67 Visit &rarr;</Link>
@@ -81,9 +92,10 @@ export default function NeckPainTreatmentPage() {
               </div>
               <div className="h-[400px] bg-gradient-to-br from-teal-mid to-teal rounded-xl flex items-center justify-center">
                 <svg viewBox="0 0 56 56" fill="none" className="w-14 h-14">
-                  <circle cx="28" cy="16" r="8" stroke="#5ED299" strokeWidth="1.5" opacity=".25" />
-                  <path d="M28 24v20" stroke="#5ED299" strokeWidth="1.5" opacity=".2" />
-                  <path d="M20 28h16" stroke="#5ED299" strokeWidth="1" opacity=".15" />
+                  <circle cx="28" cy="28" r="4" stroke="#5ED299" strokeWidth="1.5" opacity=".4" />
+                  <circle cx="28" cy="28" r="10" stroke="#5ED299" strokeWidth="1.2" opacity=".25" />
+                  <circle cx="28" cy="28" r="16" stroke="#5ED299" strokeWidth="1" opacity=".18" />
+                  <circle cx="28" cy="28" r="22" stroke="#5ED299" strokeWidth="0.8" opacity=".12" />
                 </svg>
               </div>
             </div>
@@ -96,9 +108,9 @@ export default function NeckPainTreatmentPage() {
         <div className="container">
           <ScrollReveal>
             <div className="text-center mb-12">
-              <span className="label">Benefits</span>
+              <span className="label">Why SoftWave</span>
               <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>
-                <span className="font-normal">Why chiropractic works </span><span className="font-extrabold">for neck pain.</span>
+                <span className="font-normal">What makes it </span><span className="font-extrabold">different.</span>
               </h2>
             </div>
           </ScrollReveal>
@@ -106,24 +118,24 @@ export default function NeckPainTreatmentPage() {
             <div className="grid md:grid-cols-2 gap-6 max-w-[1000px] mx-auto">
               {[
                 {
+                  icon: <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2v20M2 12h20" /></svg>,
+                  title: 'Regenerates Tissue Without Surgery',
+                  text: 'The shockwaves trigger your body to build new blood vessels, activate stem cells, and repair damaged tissue naturally. No cutting, no stitches, no anesthesia.',
+                },
+                {
                   icon: <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2" /></svg>,
-                  title: 'Restores Cervical Alignment',
-                  text: 'Precise adjustments correct misalignments in the cervical spine, reducing nerve interference and relieving pressure on muscles and joints.',
+                  title: 'Reduces Inflammation at the Source',
+                  text: 'Instead of masking inflammation with medication, SoftWave addresses the underlying cellular dysfunction that keeps tissue inflamed — so pain gets better and stays better.',
                 },
                 {
-                  icon: <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" /><path d="M8 14s1.5 2 4 2 4-2 4-2" /><line x1="9" y1="9" x2="9.01" y2="9" /><line x1="15" y1="9" x2="15.01" y2="9" /></svg>,
-                  title: 'Improved Range of Motion',
-                  text: 'Stiff neck keeping you from turning your head? Chiropractic adjustments restore proper mobility so you can move without pain or restriction.',
-                },
-                {
-                  icon: <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 18h6M10 22h4M15.09 14a7 7 0 10-6.18 0" /></svg>,
-                  title: 'Headache Relief',
-                  text: 'Many headaches originate from neck dysfunction. By fixing the cervical issue, Dr. Brad often resolves headaches that patients have lived with for years.',
+                  icon: <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>,
+                  title: 'No Drugs, No Downtime',
+                  text: 'Sessions last 10-15 minutes. You walk out ready to go back to work, the gym, or wherever you need to be. No pills. No recovery period.',
                 },
                 {
                   icon: <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>,
-                  title: 'Drug-Free Approach',
-                  text: 'No muscle relaxers. No pain medication. Chiropractic treats neck pain naturally by addressing the structural cause — not just masking the symptoms.',
+                  title: 'FDA-Cleared, Clinically Proven',
+                  text: 'SoftWave is FDA 510(k) cleared for activation of connective tissue, pain treatment, and improved blood supply. The research is solid and it\'s been used by thousands of clinicians.',
                 },
               ].map((card, i) => (
                 <div key={i} className="bg-white rounded-xl p-8 shadow-sm">
@@ -144,12 +156,13 @@ export default function NeckPainTreatmentPage() {
             <div className="text-center mb-10">
               <span className="label">Conditions Treated</span>
               <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>
-                <span className="font-normal">Neck conditions </span><span className="font-extrabold">we treat.</span>
+                <span className="font-normal">SoftWave </span><span className="font-extrabold">can help.</span>
               </h2>
+              <p className="text-text/70 mt-3 max-w-[620px] mx-auto">Particularly effective for pain that hasn&apos;t responded to rest, medication, or standard physical therapy.</p>
             </div>
           </ScrollReveal>
           <ScrollReveal>
-            <div className="flex flex-wrap gap-2 justify-center max-w-[700px] mx-auto">
+            <div className="flex flex-wrap gap-2 justify-center max-w-[720px] mx-auto">
               {conditions.map((c) => (
                 <span key={c} className="inline-block px-4 py-[6px] bg-[#f1f5f5] text-teal text-sm font-medium rounded-full">{c}</span>
               ))}
@@ -165,15 +178,15 @@ export default function NeckPainTreatmentPage() {
             <div className="text-center mb-12">
               <span className="label">What to Expect</span>
               <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>
-                <span className="font-normal">Your neck pain </span><span className="font-extrabold">visit.</span>
+                <span className="font-normal">Your SoftWave </span><span className="font-extrabold">session.</span>
               </h2>
             </div>
           </ScrollReveal>
           <div className="max-w-[680px] mx-auto">
             {[
-              { num: '1', title: 'Assessment', text: 'Dr. Brad examines your cervical spine, tests range of motion, and checks for nerve involvement. He asks detailed questions about your symptoms, posture habits, and daily activities.' },
-              { num: '2', title: 'Adjustment', text: 'Gentle, precise cervical adjustments to restore alignment. You may hear a small pop — totally normal. Most patients feel immediate improvement in mobility and a reduction in tension.' },
-              { num: '3', title: 'Guidance', text: 'Dr. Brad explains what he found and gives you practical recommendations — posture tips, stretches, ergonomic adjustments — so you can maintain results between visits.' },
+              { num: '1', title: 'Setup', text: 'You sit or lie comfortably while Dr. Brad applies ultrasound gel to the treatment area. The SoftWave applicator is placed against the skin over the injury or pain source.' },
+              { num: '2', title: 'Treatment', text: 'The applicator delivers thousands of unfocused acoustic pulses into the tissue. You\'ll feel a tapping sensation and hear a rapid clicking sound. Each session lasts 10-15 minutes — most patients describe it as more intense than painful.' },
+              { num: '3', title: 'Afterward', text: 'No rest required. You can go right back to your day. Many patients feel improvement after a single session; most complete a series of 6-12 sessions depending on the condition. Dr. Brad checks in on progress and adjusts the plan as needed.' },
             ].map((step, i) => (
               <div key={step.num}>
                 <ScrollReveal delay={`${i * 0.1}s`}>
@@ -217,7 +230,7 @@ export default function NeckPainTreatmentPage() {
             <div className="text-center mb-12">
               <span className="label">FAQ</span>
               <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>
-                <span className="font-normal">Neck pain </span><span className="font-extrabold">questions.</span>
+                <span className="font-normal">SoftWave </span><span className="font-extrabold">questions.</span>
               </h2>
             </div>
           </ScrollReveal>
@@ -239,9 +252,9 @@ export default function NeckPainTreatmentPage() {
           <ScrollReveal>
             <div className="grid md:grid-cols-3 gap-6 max-w-[1000px] mx-auto">
               {[
-                { icon: <HeadacheIcon className="w-6 h-6" />, title: 'Headaches & Migraines', desc: 'Many headaches originate from cervical dysfunction.', href: '/headaches-migraines-shelby-township-mi' },
-                { icon: <MassageIcon className="w-6 h-6" />, title: 'Massage Therapy', desc: 'Release muscle tension that compounds neck pain.', href: '/massage-therapy-shelby-township-mi' },
-                { icon: <SpineIcon className="w-6 h-6" />, title: 'Whiplash Treatment', desc: 'Specialized care for neck injuries from auto accidents.', href: '/whiplash-treatment-shelby-township-mi' },
+                { icon: <SpineIcon className="w-6 h-6" />, title: 'Chiropractic Care', desc: 'The foundation — precise spinal adjustments that complement SoftWave perfectly.', href: '/chiropractic-care-shelby-township-mi' },
+                { icon: <DiscIcon className="w-6 h-6" />, title: 'Spinal Decompression', desc: 'Non-surgical disc relief. Often paired with SoftWave for herniated disc recovery.', href: '/spinal-decompression-shelby-township-mi' },
+                { icon: <SciaticaIcon className="w-6 h-6" />, title: 'Sciatica Treatment', desc: 'SoftWave can accelerate recovery for nerve-related pain.', href: '/sciatica-treatment-shelby-township-mi' },
               ].map((svc) => (
                 <Link key={svc.title} href={svc.href} className="block bg-light-gray rounded-xl p-7 hover:shadow-md transition-shadow group">
                   <div className="w-10 h-10 rounded-lg bg-mint/10 text-mint flex items-center justify-center mb-4">{svc.icon}</div>
@@ -255,14 +268,14 @@ export default function NeckPainTreatmentPage() {
         </div>
       </section>
 
-      <ConversionCTA line1="Tired of living with neck pain?" anchor="$67 to start." />
+      <ConversionCTA line1="Pain that won't quit?" anchor="$67 to see if SoftWave is right for you." />
 
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
-          'Neck Pain Treatment',
-          'Neck pain treatment from Dr. Brad Krawczyk. Gentle chiropractic adjustments for stiffness, tension, and cervical issues. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
-          'neck-pain-treatment-shelby-township-mi'
+          'SoftWave Therapy',
+          'FDA-cleared SoftWave tissue regeneration therapy from Dr. Brad Krawczyk. Non-invasive shockwave for chronic pain, inflammation, and tissue healing. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'softwave-therapy-shelby-township-mi'
         )) }}
       />
       <script
@@ -270,7 +283,7 @@ export default function NeckPainTreatmentPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
           { name: 'Home', href: '/' },
           { name: 'Services', href: '/#services' },
-          { name: 'Neck Pain Treatment' },
+          { name: 'SoftWave Therapy' },
         ])) }}
       />
     </>

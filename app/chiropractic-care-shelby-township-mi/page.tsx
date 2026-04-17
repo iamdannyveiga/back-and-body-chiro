@@ -10,7 +10,7 @@ import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 export const metadata: Metadata = {
   title: 'Chiropractic Care',
   description:
-    'Honest, results-focused chiropractic adjustments from Dr. Brad Krawczyk. No sales pitches. No gimmicks. $67 New Patient Special. Shelby Township, MI.',
+    'Honest, results-focused chiropractic adjustments from Dr. Brad Krawczyk. Thorough exams and care plans right-sized to your condition. $67 New Patient Special. Shelby Township, MI.',
   alternates: {
     canonical: '/chiropractic-care-shelby-township-mi',
   },
@@ -174,7 +174,7 @@ export default function ChiropracticCarePage() {
             {[
               { num: '1', title: 'Before', text: "Dr. Brad reviews your history, discusses your symptoms, and performs a hands-on examination. X-rays if clinically needed. No pressure \u2014 just a thorough, honest assessment." },
               { num: '2', title: 'During', text: "Precise, gentle adjustments targeted to your specific misalignments. You may hear a pop (normal \u2014 it's just gas releasing from the joint). Most patients feel immediate relief." },
-              { num: '3', title: 'After', text: "Dr. Brad explains what he found, what he did, and what he recommends going forward. No sales pitch. No 6-month care plan you didn't ask for. Just an honest plan based on what you actually need." },
+              { num: '3', title: 'After', text: "Dr. Brad explains what he found, what he did, and what he recommends going forward. A clear, right-sized care plan built around your specific condition — no contracts, no upsells." },
             ].map((step, i) => (
               <div key={step.num}>
                 <ScrollReveal delay={`${i * 0.1}s`}>
@@ -204,7 +204,7 @@ export default function ChiropracticCarePage() {
                 The Back &amp; Body Promise
               </div>
               <p className="text-base text-text/80 leading-[1.8]">
-                At Back and Body, Dr. Brad treats chiropractic care with the same philosophy he applies to everything: <strong>no sales, no gimmicks, just honest care focused on results.</strong> Your treatment plan is based on what you actually need — nothing more. Come when you need to. Stop when you&apos;re feeling good. No guilt, no pressure.
+                At Back and Body, Dr. Brad treats chiropractic care with the same philosophy he applies to everything: <strong>thorough diagnosis, personalized care, and real results.</strong> Your treatment plan is built around your specific condition and goals. Come when you need to. Stop when you&apos;re feeling good. You&apos;re in control of your care.
               </p>
             </div>
           </ScrollReveal>
@@ -262,7 +262,7 @@ export default function ChiropracticCarePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
           'Chiropractic Care',
-          'Honest, results-focused chiropractic adjustments from Dr. Brad Krawczyk. No sales pitches. No gimmicks. $67 New Patient Special. Shelby Township, MI.',
+          'Honest, results-focused chiropractic adjustments from Dr. Brad Krawczyk. Thorough exams and care plans right-sized to your condition. $67 New Patient Special. Shelby Township, MI.',
           'chiropractic-care-shelby-township-mi'
         )) }}
       />

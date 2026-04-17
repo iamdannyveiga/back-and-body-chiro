@@ -174,7 +174,7 @@ export default function BackPainTreatmentPage() {
             {[
               { num: '1', title: 'Evaluation', text: 'Dr. Brad reviews your history, asks detailed questions about your pain, and performs a hands-on spinal examination. X-rays only if clinically necessary.' },
               { num: '2', title: 'Treatment', text: 'Targeted chiropractic adjustments to restore alignment, reduce nerve interference, and relieve pressure. Spinal decompression or massage may be added depending on your condition.' },
-              { num: '3', title: 'Plan', text: "Dr. Brad explains what he found, what he did, and what he recommends. No sales pitch. No 6-month plan you didn't ask for. Just an honest recommendation based on what you actually need." },
+              { num: '3', title: 'Plan', text: "Dr. Brad explains what he found, what he did, and what he recommends. A clear, right-sized care plan built around your specific condition — no contracts, no upsells." },
             ].map((step, i) => (
               <div key={step.num}>
                 <ScrollReveal delay={`${i * 0.1}s`}>

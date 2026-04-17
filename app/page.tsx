@@ -45,9 +45,9 @@ export default function HomePage() {
             <ScrollReveal className="pt-5">
               <span className="label label--light">Chiropractor in Shelby Township, MI</span>
               <div className="mb-5">
-                <p className="text-[24px] md:text-[32px] font-normal text-text-light leading-[1.35] opacity-85" style={{ fontFamily: 'var(--font-heading)' }}>No sales pitches.</p>
+                <p className="text-[24px] md:text-[32px] font-normal text-text-light leading-[1.35] opacity-85" style={{ fontFamily: 'var(--font-heading)' }}>Thorough exams.</p>
                 <p className="text-[24px] md:text-[32px] font-normal text-text-light leading-[1.35] opacity-85" style={{ fontFamily: 'var(--font-heading)' }}>No crazy care plans.</p>
-                <p className="text-[24px] md:text-[32px] font-normal text-text-light leading-[1.35] opacity-85" style={{ fontFamily: 'var(--font-heading)' }}>No gimmicks.</p>
+                <p className="text-[24px] md:text-[32px] font-normal text-text-light leading-[1.35] opacity-85" style={{ fontFamily: 'var(--font-heading)' }}>Clear explanations.</p>
               </div>
               <h1 className="text-[40px] md:text-[56px] font-bold text-text-light leading-[1.1] mb-6" style={{ fontFamily: 'var(--font-heading)' }}>
                 Chiropractor in Shelby Township, MI -- just honest <span className="text-mint">heartfelt care.</span>
@@ -156,6 +156,20 @@ export default function HomePage() {
               </div>
             </ScrollReveal>
             <ScrollReveal className="md:col-span-2" delay=".12s">
+              <div className="bg-white rounded-xl p-8 shadow-[var(--shadow)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-1 transition-all duration-300">
+                <div className="w-12 h-12 bg-mint/10 rounded-lg flex items-center justify-center mb-[18px]">
+                  <svg viewBox="0 0 24 24" className="w-6 h-6 stroke-mint" fill="none" strokeWidth="2">
+                    <circle cx="12" cy="12" r="2" />
+                    <circle cx="12" cy="12" r="6" opacity=".6" />
+                    <circle cx="12" cy="12" r="10" opacity=".3" />
+                  </svg>
+                </div>
+                <div className="text-xl font-bold text-teal mb-2.5" style={{ fontFamily: 'var(--font-heading)' }}>SoftWave Therapy <span className="inline-block text-[11px] font-semibold tracking-[1px] uppercase px-2 py-[2px] bg-mint text-white rounded-full align-middle ml-2">New</span></div>
+                <p className="text-[15px] text-text opacity-80 leading-relaxed mb-4">FDA-cleared tissue regeneration therapy. Non-invasive shockwave that reduces inflammation, stimulates healing, and relieves chronic pain — no surgery, no drugs, no downtime.</p>
+                <Link href="/softwave-therapy-shelby-township-mi" className="font-semibold text-sm text-mint inline-flex items-center gap-1" style={{ fontFamily: 'var(--font-heading)' }}>SoftWave Therapy &rarr;</Link>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal className="md:col-span-2" delay=".14s">
               <div className="bg-white rounded-xl p-8 shadow-[var(--shadow)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-1 transition-all duration-300">
                 <div className="w-12 h-12 bg-mint/10 rounded-lg flex items-center justify-center mb-[18px]"><MassageIcon className="w-6 h-6 stroke-mint" /></div>
                 <div className="text-xl font-bold text-teal mb-2.5" style={{ fontFamily: 'var(--font-heading)' }}>Massage Therapy</div>
@@ -278,10 +292,10 @@ export default function HomePage() {
                 <p>Brad grew up right here in Macomb County. A high school football injury introduced him to chiropractic -- and changed his life. He went to Michigan State for Kinesiology, then headed to Life University in Atlanta to earn his Doctor of Chiropractic degree.</p>
                 <p>In September 2011, the same year he graduated, he opened Back and Body Chiropractic Center at 25 Mile and Van Dyke -- in Vince and Joe&apos;s plaza. He&apos;s been there ever since, quietly building a practice on one simple principle:</p>
                 <p><strong className="text-teal">&ldquo;The best care without any of the nonsense.&rdquo;</strong></p>
-                <p>No high-pressure sales. No 6-month care plans you don&apos;t need. No gimmick packages. Just an honest evaluation, a straightforward plan, and real results.</p>
+                <p>Every patient gets a thorough evaluation, a clear explanation of what is going on, and a care plan sized to their specific condition. Real results speak for themselves.</p>
               </div>
               <div className="flex flex-wrap gap-2">
-                {['Back Pain', 'Neck Pain', 'Spinal Decompression', 'Pediatric', 'Prenatal', 'Sports Medicine', 'Applied Kinesiology', 'Massage', 'Nutrition'].map((tag) => (
+                {['Back Pain', 'Neck Pain', 'Spinal Decompression', 'SoftWave Therapy', 'Pediatric', 'Prenatal', 'Sports Medicine', 'Applied Kinesiology', 'Massage', 'Nutrition'].map((tag) => (
                   <span key={tag} className="text-xs font-semibold px-3.5 py-1.5 bg-mint/10 text-green-sec rounded-[20px]" style={{ fontFamily: 'var(--font-heading)' }}>{tag}</span>
                 ))}
               </div>
@@ -408,8 +422,8 @@ export default function HomePage() {
           <div className="flex flex-col items-center max-w-[800px] mx-auto">
             {[
               { num: '1', title: 'Call or Book Online', desc: '(586) 207-1624 -- Saturday hours available. Or fill out the form above. We\'ll get you in fast.' },
-              { num: '2', title: 'Meet Dr. Brad', desc: 'Consultation, exam, X-rays if needed. He listens. He\'s thorough. No sales pitch -- just an honest assessment.' },
-              { num: '3', title: 'Your Honest Plan', desc: 'A straightforward treatment plan. No 6-month contracts. No gimmick packages. Just what you actually need.' },
+              { num: '2', title: 'Meet Dr. Brad', desc: 'Consultation, exam, X-rays if needed. He listens. He\'s thorough. A clear, honest assessment of what is going on.' },
+              { num: '3', title: 'Your Honest Plan', desc: 'A straightforward treatment plan, right-sized to your specific condition — no long-term contracts, no packages.' },
               { num: '4', title: 'Feel Better', desc: 'Real results. Come back for maintenance when you want to -- not because you\'re locked into some plan.' },
             ].map((step, i) => (
               <div key={i} className="w-full">
@@ -454,7 +468,7 @@ export default function HomePage() {
         <div className="container relative z-10">
           <ScrollReveal>
             <div className="text-[28px] md:text-[38px] font-normal text-text-light leading-[1.4]" style={{ fontFamily: 'var(--font-heading)' }}>$67 gets you started.</div>
-            <div className="text-[24px] md:text-[32px] font-normal text-text-light leading-[1.4] opacity-85" style={{ fontFamily: 'var(--font-heading)' }}>No sales. No gimmicks.</div>
+            <div className="text-[24px] md:text-[32px] font-normal text-text-light leading-[1.4] opacity-85" style={{ fontFamily: 'var(--font-heading)' }}>Thorough. Honest. Effective.</div>
             <div className="text-[38px] md:text-[52px] font-extrabold text-mint mt-2 mb-9" style={{ fontFamily: 'var(--font-heading)' }}>Just honest care.</div>
             <div className="flex items-center justify-center gap-4 flex-wrap mb-5">
               <Link href="/schedule-appointment" className="btn btn--mint">Book My $67 Visit &rarr;</Link>

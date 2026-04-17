@@ -19,7 +19,7 @@ export default function ScheduleAppointmentPage() {
           <h1 className="text-[36px] font-extrabold text-teal mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
             Schedule Your Appointment
           </h1>
-          <p className="text-base text-text/65 mb-1">No sales pitches. No gimmicks. Just honest care.</p>
+          <p className="text-base text-text/65 mb-1">Thorough exam, clear answers, a care plan built around you.</p>
           <p className="text-sm text-text/50">$67 New Patient Special -- Consultation, exam, X-rays if needed, and first adjustment</p>
         </div>
       </ScrollReveal>

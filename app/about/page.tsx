@@ -6,7 +6,7 @@ import ConversionCTA from '@/components/ConversionCTA';
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: 'Dr. Brad Krawczyk -- Macomb County native, MSU grad, 14+ years of honest chiropractic care. No sales pitches. No gimmicks. Just results.',
+  description: 'Dr. Brad Krawczyk -- Macomb County native, MSU grad, 14+ years of thorough, personalized chiropractic care focused on real results.',
   alternates: {
     canonical: '/about',
   },
@@ -36,7 +36,7 @@ export default function AboutPage() {
           <ScrollReveal className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-10 lg:gap-[60px] mt-12 max-w-[860px] mx-auto items-center">
             <div className="text-[16px] leading-[1.75] space-y-[18px]">
               <p>That same year -- September 2011 -- Brad opened Back and Body Chiropractic Center at 25 Mile and Van Dyke, in Vince and Joe&apos;s plaza. He was fresh out of school, but he was clear about one thing: he was going to do this differently.</p>
-              <p>No sales pitches. No high-pressure care plan packages. No gimmick marketing. Just honest, thorough chiropractic care at a fair price.</p>
+              <p>Thorough chiropractic care, clear explanations, and care plans right-sized to your condition — at a fair price.</p>
               <p>Fourteen years later, he&apos;s still in the same plaza, still serving the same community, still operating by the same principle.</p>
             </div>
             <div className="w-full h-[380px] rounded-xl overflow-hidden shadow-[var(--shadow)]">
@@ -60,7 +60,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20viewBox=%270%200%20256%20256%27%20xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cfilter%20id=%27n%27%3E%3CfeTurbulence%20type=%27fractalNoise%27%20baseFrequency=%27.85%27%20numOctaves=%274%27%20stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect%20width=%27100%25%27%20height=%27100%25%27%20filter=%27url(%23n)%27/%3E%3C/svg%3E')] opacity-[.04] pointer-events-none" />
         <div className="container relative z-10">
           <ScrollReveal className="text-center py-5">
-            {['"No sales pitches."', '"No crazy care plans."', '"No gimmicks."'].map((line, i) => (
+            {['"Thorough exams."', '"Clear explanations."', '"Real results."'].map((line, i) => (
               <div key={i} className="text-[26px] md:text-[36px] font-normal text-text-light leading-[1.5] opacity-80" style={{ fontFamily: 'var(--font-heading)' }}>{line}</div>
             ))}
             <div className="text-[32px] md:text-[44px] font-extrabold text-mint mt-2" style={{ fontFamily: 'var(--font-heading)' }}>&ldquo;Just honest heartfelt care.&rdquo;</div>

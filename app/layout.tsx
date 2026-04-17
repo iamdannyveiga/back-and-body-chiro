@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Back and Body Chiropractic Center",
   },
   description:
-    "No sales pitches. No crazy care plans. No gimmicks. Just honest heartfelt care. Dr. Brad Krawczyk -- $67 New Patient Special. Call (586) 207-1624. Shelby Township, MI chiropractor.",
+    "Thorough examinations, clear explanations, and care plans right-sized to your condition. Dr. Brad Krawczyk -- $67 New Patient Special. Call (586) 207-1624. Shelby Township, MI chiropractor.",
   metadataBase: new URL("https://backandbodydoc.com"),
   alternates: {
     canonical: "/",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Back and Body Chiropractic Center | Shelby Township Chiropractor",
     description:
-      "Chiropractor in Shelby Township, MI. Dr. Brad Krawczyk -- 14+ years, 4.9-star rated. $67 New Patient Special. No sales pitches, no gimmicks. Call (586) 207-1624.",
+      "Chiropractor in Shelby Township, MI. Dr. Brad Krawczyk -- 14+ years, 4.9-star rated. $67 New Patient Special. Thorough, personalized care. Call (586) 207-1624.",
     url: "https://backandbodydoc.com",
     siteName: "Back and Body Chiropractic Center",
     locale: "en_US",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Back and Body Chiropractic Center | Shelby Township Chiropractor",
     description:
-      "Dr. Brad Krawczyk -- $67 New Patient Special. No sales pitches, no gimmicks. Call (586) 207-1624.",
+      "Dr. Brad Krawczyk -- $67 New Patient Special. Thorough, personalized care. Call (586) 207-1624.",
   },
   robots: {
     index: true,
