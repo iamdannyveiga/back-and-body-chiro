@@ -3,6 +3,7 @@ import { Raleway, Oxygen } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -69,6 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${raleway.variable} ${oxygen.variable} antialiased`}>
+        <GoogleAnalytics />
         {/* Grain overlay */}
         <div className="grain">
           <svg width="100%" height="100%">
