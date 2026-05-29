@@ -9,9 +9,9 @@ import { DecompressionIcon, SciaticaIcon, SpineIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Disc Injury Treatment | Chiropractor Shelby Township MI',
+  title: 'Disc Injury Shelby Township',
   description:
-    'Herniated and bulging disc treatment from Dr. Brad Krawczyk. Non-surgical chiropractic care and spinal decompression. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+    'Herniated and bulging disc relief from Dr. Brad Krawczyk. Non-surgical care including spinal decompression. $67 New Patient Visit. Shelby Township, MI.',
   alternates: {
     canonical: '/disc-injury-treatment-shelby-township-mi',
   },
@@ -159,7 +159,7 @@ export default function DiscInjuryTreatmentPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
           'Disc Injury Treatment',
-          'Herniated and bulging disc treatment from Dr. Brad Krawczyk. Non-surgical chiropractic care and spinal decompression. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'Herniated and bulging disc relief from Dr. Brad Krawczyk. Non-surgical care including spinal decompression. $67 New Patient Visit. Shelby Township, MI.',
           'disc-injury-treatment-shelby-township-mi'
         )) }}
       />

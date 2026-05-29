@@ -21,8 +21,8 @@ const oxygen = Oxygen({
 
 export const metadata: Metadata = {
   title: {
-    default: "Back and Body Chiropractic Center | Shelby Township Chiropractor",
-    template: "%s | Back and Body Chiropractic Center",
+    default: "Back & Body Chiro | Shelby Township Chiropractor",
+    template: "%s | Back & Body Chiro",
   },
   description:
     "Thorough examinations, clear explanations, and care plans right-sized to your condition. Dr. Brad Krawczyk -- $67 New Patient Special. Call (586) 207-1624. Shelby Township, MI chiropractor.",

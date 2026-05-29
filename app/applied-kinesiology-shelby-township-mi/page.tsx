@@ -9,7 +9,7 @@ import { SpineIcon, DecompressionIcon, MassageIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Applied Kinesiology Shelby Township MI | Back and Body',
+  title: 'Applied Kinesiology Shelby Township',
   description:
     'Applied kinesiology and muscle testing from Dr. Brad Krawczyk. Advanced diagnostic technique for deeper insight into your condition. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {

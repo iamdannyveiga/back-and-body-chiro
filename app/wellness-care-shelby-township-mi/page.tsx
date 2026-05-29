@@ -9,7 +9,7 @@ import { SpineIcon, MassageIcon, PediatricIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Wellness Care | Chiropractor Shelby Township MI',
+  title: 'Wellness Care Shelby Township',
   description:
     'Wellness and maintenance chiropractic care from Dr. Brad Krawczyk. Stay healthy, prevent problems, feel your best. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {

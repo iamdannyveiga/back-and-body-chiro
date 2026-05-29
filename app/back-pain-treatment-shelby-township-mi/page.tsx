@@ -9,7 +9,7 @@ import { SpineIcon, DecompressionIcon, MassageIcon, CheckIcon } from '@/componen
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Back Pain Treatment | Chiropractor Shelby Township MI',
+  title: 'Back Pain Shelby Township',
   description:
     'Back pain treatment from Dr. Brad Krawczyk. Root-cause chiropractic care — no band-aids. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {

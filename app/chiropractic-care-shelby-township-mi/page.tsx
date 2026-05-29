@@ -9,9 +9,9 @@ import { DecompressionIcon, MassageIcon, KinesiologyIcon } from '@/components/Ic
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Chiropractic Care | Chiropractor Shelby Township MI',
+  title: 'Chiropractic Care Shelby Township',
   description:
-    'Honest, results-focused chiropractic adjustments from Dr. Brad Krawczyk. Thorough exams and care plans right-sized to your condition. $67 New Patient Special. Shelby Township, MI.',
+    'Chiropractic care from Dr. Brad Krawczyk. Honest exams, results-focused adjustments, no contracts. $67 New Patient Visit. Shelby Township, MI.',
   alternates: {
     canonical: '/chiropractic-care-shelby-township-mi',
   },
@@ -265,7 +265,7 @@ export default function ChiropracticCarePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
           'Chiropractic Care',
-          'Honest, results-focused chiropractic adjustments from Dr. Brad Krawczyk. Thorough exams and care plans right-sized to your condition. $67 New Patient Special. Shelby Township, MI.',
+          'Chiropractic care from Dr. Brad Krawczyk. Honest exams, results-focused adjustments, no contracts. $67 New Patient Visit. Shelby Township, MI.',
           'chiropractic-care-shelby-township-mi'
         )) }}
       />

@@ -9,7 +9,7 @@ import { SpineIcon, MassageIcon, KinesiologyIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Weight Loss | Chiropractor Shelby Township MI',
+  title: 'Weight Loss Shelby Township',
   description:
     'Weight loss support from Dr. Brad Krawczyk. Practical nutritional guidance and chiropractic care to support healthy weight management. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {

@@ -9,7 +9,7 @@ import { SpineIcon, SciaticaIcon, DiscIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Spinal Decompression | Chiropractor Shelby Township MI',
+  title: 'Spinal Decompression Shelby Township',
   description:
     'Non-surgical spinal decompression therapy from Dr. Brad Krawczyk. Disc relief without surgery. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {

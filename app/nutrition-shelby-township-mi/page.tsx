@@ -9,7 +9,7 @@ import { SpineIcon, MassageIcon, KinesiologyIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Nutrition | Chiropractor Shelby Township MI',
+  title: 'Nutrition Shelby Township',
   description:
     'Nutritional counseling from Dr. Brad Krawczyk. Practical, honest guidance to support healing and overall health. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {

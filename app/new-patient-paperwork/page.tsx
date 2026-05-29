@@ -5,7 +5,7 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 
 export const metadata: Metadata = {
-  title: 'New Patient Paperwork | Back and Body Chiropractic Center',
+  title: 'New Patient Paperwork',
   description:
     'Complete your new patient intake forms online before your first visit to Back and Body Chiropractic Center in Shelby Township, MI. Save time at check-in.',
   alternates: {

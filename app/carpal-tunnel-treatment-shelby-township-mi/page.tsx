@@ -9,7 +9,7 @@ import { SpineIcon, NeckPainIcon, WorkInjuryIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Carpal Tunnel Treatment | Chiropractor Shelby Township MI',
+  title: 'Carpal Tunnel Shelby Township',
   description:
     'Carpal tunnel treatment from Dr. Brad Krawczyk. Non-surgical relief for wrist pain, numbness, and tingling. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {

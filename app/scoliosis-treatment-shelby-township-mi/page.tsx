@@ -9,7 +9,7 @@ import { SpineIcon, PediatricIcon, DecompressionIcon } from '@/components/Icons'
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Scoliosis Treatment | Chiropractor Shelby Township MI',
+  title: 'Scoliosis Shelby Township',
   description:
     'Scoliosis treatment and management from Dr. Brad Krawczyk. Non-surgical chiropractic care for spinal curvature. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {

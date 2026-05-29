@@ -9,9 +9,9 @@ import { SpineIcon, DecompressionIcon, NeckPainIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Massage Therapy | Chiropractor Shelby Township MI',
+  title: 'Massage Therapy Shelby Township',
   description:
-    'On-site therapeutic massage therapy at Back and Body Chiropractic. Complements chiropractic care for faster recovery. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+    'On-site therapeutic massage at Back & Body Chiro. Complements chiropractic care for faster recovery. $67 New Patient Visit. Shelby Township, MI.',
   alternates: {
     canonical: '/massage-therapy-shelby-township-mi',
   },
@@ -264,7 +264,7 @@ export default function MassageTherapyPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
           'Massage Therapy',
-          'On-site therapeutic massage therapy at Back and Body Chiropractic. Complements chiropractic care for faster recovery. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'On-site therapeutic massage at Back & Body Chiro. Complements chiropractic care for faster recovery. $67 New Patient Visit. Shelby Township, MI.',
           'massage-therapy-shelby-township-mi'
         )) }}
       />

@@ -5,9 +5,9 @@ import ScrollReveal from '@/components/ScrollReveal';
 import { localBusinessSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Chiropractor Shelby Township MI | Back and Body Chiropractic Center',
+  title: { absolute: 'Chiropractor Shelby Township MI | Back & Body Chiro' },
   description:
-    'Back and Body Chiropractic Center in Shelby Township, MI. Dr. Bradley Krawczyk, DC -- honest, results-focused care. $67 new patient special. Call (586) 207-1624.',
+    'Dr. Brad Krawczyk in Shelby Township, MI. Honest, results-focused chiropractic care. No long-term contracts. $67 New Patient Visit. Call (586) 207-1624.',
   alternates: {
     canonical: '/',
   },

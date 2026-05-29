@@ -9,7 +9,7 @@ import { NeckPainIcon, MassageIcon, HeadacheIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Whiplash Treatment | Chiropractor Shelby Township MI',
+  title: 'Whiplash Shelby Township',
   description:
     'Whiplash treatment from Dr. Brad Krawczyk. Auto accident and injury recovery with chiropractic care. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {

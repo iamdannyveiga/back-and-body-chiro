@@ -9,9 +9,9 @@ import { SpineIcon, SciaticaIcon, DiscIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'SoftWave Therapy | Chiropractor Shelby Township MI',
+  title: 'SoftWave Therapy Shelby Township',
   description:
-    'SoftWave tissue regeneration therapy in Shelby Township, MI. FDA-cleared shockwave therapy for chronic pain, inflammation, and tissue healing. Dr. Brad Krawczyk. $67 New Patient Special. (586) 207-1624.',
+    'SoftWave tissue regeneration: FDA-cleared shockwave for chronic pain and inflammation. Dr. Brad Krawczyk. $67 New Patient Visit. Shelby Township, MI.',
   alternates: {
     canonical: '/softwave-therapy-shelby-township-mi',
   },

@@ -9,7 +9,7 @@ import { NeckPainIcon, HeadacheIcon, SpineIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Vertigo Treatment | Chiropractor Shelby Township MI',
+  title: 'Vertigo Shelby Township',
   description:
     'Vertigo and dizziness treatment from Dr. Brad Krawczyk. Chiropractic care for cervicogenic vertigo and BPPV. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {

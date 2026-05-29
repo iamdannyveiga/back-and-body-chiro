@@ -9,7 +9,7 @@ import { DecompressionIcon, SpineIcon, MassageIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Sciatica Treatment | Chiropractor Shelby Township MI',
+  title: 'Sciatica Shelby Township',
   description:
     'Sciatica treatment from Dr. Brad Krawczyk. Non-surgical relief for radiating leg pain, numbness, and tingling. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {

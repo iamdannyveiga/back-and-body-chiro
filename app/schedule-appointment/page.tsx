@@ -5,7 +5,7 @@ import { StarIcon } from '@/components/Icons';
 export const metadata: Metadata = {
   title: 'Schedule Appointment',
   description:
-    'Schedule your $67 new patient special at Back and Body Chiropractic Center in Shelby Township, MI. Consultation, exam, X-rays if needed, and first adjustment. No contracts. Call (586) 207-1624.',
+    'Book your $67 new patient visit. Consultation, exam, X-rays if needed, first adjustment. No contracts. Shelby Township, MI. Call (586) 207-1624.',
   alternates: {
     canonical: '/schedule-appointment',
   },

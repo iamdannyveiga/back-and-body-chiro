@@ -9,9 +9,9 @@ import { SpineIcon, HeadacheIcon, MassageIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Neck Pain Treatment | Chiropractor Shelby Township MI',
+  title: 'Neck Pain Shelby Township',
   description:
-    'Neck pain treatment from Dr. Brad Krawczyk. Gentle chiropractic adjustments for stiffness, tension, and cervical issues. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+    'Neck pain relief from Dr. Brad Krawczyk. Gentle adjustments for stiffness, tension, and cervical issues. $67 New Patient Visit. Shelby Township, MI.',
   alternates: {
     canonical: '/neck-pain-treatment-shelby-township-mi',
   },
@@ -264,7 +264,7 @@ export default function NeckPainTreatmentPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
           'Neck Pain Treatment',
-          'Neck pain treatment from Dr. Brad Krawczyk. Gentle chiropractic adjustments for stiffness, tension, and cervical issues. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'Neck pain relief from Dr. Brad Krawczyk. Gentle adjustments for stiffness, tension, and cervical issues. $67 New Patient Visit. Shelby Township, MI.',
           'neck-pain-treatment-shelby-township-mi'
         )) }}
       />
