@@ -11,7 +11,7 @@ import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 export const metadata: Metadata = {
   title: 'Headaches & Migraines Shelby Township',
   description:
-    'Headache and migraine treatment from Dr. Brad Krawczyk. Find the cervical cause and fix it — no medication. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+    'Headache and migraine relief from Dr. Brad Krawczyk. Find the cervical cause, fix it without medication. $67 New Patient Visit. Shelby Township, MI.',
   alternates: {
     canonical: '/headaches-migraines-shelby-township-mi',
   },
@@ -264,7 +264,7 @@ export default function HeadachesMigrainesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
           'Headache & Migraine Treatment',
-          'Headache and migraine treatment from Dr. Brad Krawczyk. Find the cervical cause and fix it — no medication. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'Headache and migraine relief from Dr. Brad Krawczyk. Find the cervical cause, fix it without medication. $67 New Patient Visit. Shelby Township, MI.',
           'headaches-migraines-shelby-township-mi'
         )) }}
       />

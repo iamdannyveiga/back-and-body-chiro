@@ -11,7 +11,7 @@ import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 export const metadata: Metadata = {
   title: 'Shoulder Pain Shelby Township',
   description:
-    'Shoulder pain treatment from Dr. Brad Krawczyk. Chiropractic care for frozen shoulder, rotator cuff issues, and more. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+    'Shoulder pain relief from Dr. Brad Krawczyk. Chiropractic care for frozen shoulder and rotator cuff issues. $67 New Patient Visit. Shelby Township, MI.',
   alternates: {
     canonical: '/shoulder-pain-treatment-shelby-township-mi',
   },
@@ -153,7 +153,7 @@ export default function ShoulderPainTreatmentPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
           'Shoulder Pain Treatment',
-          'Shoulder pain treatment from Dr. Brad Krawczyk. Chiropractic care for frozen shoulder, rotator cuff issues, and more. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+          'Shoulder pain relief from Dr. Brad Krawczyk. Chiropractic care for frozen shoulder and rotator cuff issues. $67 New Patient Visit. Shelby Township, MI.',
           'shoulder-pain-treatment-shelby-township-mi'
         )) }}
       />
