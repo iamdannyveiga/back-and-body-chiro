@@ -41,13 +41,30 @@ Dr. Bradley Krawczyk earned his BS in Kinesiology from Michigan State University
 - Nutrition: /nutrition-shelby-township-mi
 - Weight Loss: /weight-loss-shelby-township-mi
 
+## Appointment
+- Book an appointment online: https://backandbodydoc.com/schedule-appointment
+- Call to schedule an appointment: (586) 207-1624
+- Walk-ins accepted when schedule permits
+- New patient appointments include consultation, exam, and first adjustment for $67
+- Most major insurance accepted; cash-pay options available
+
+## FAQ
+- What's the $67 new patient special? Consultation, exam, X-rays if needed, and first adjustment. No hidden fees.
+- Do you require long-term care contracts? No. Dr. Brad recommends what he believes you need; you decide when to start and stop.
+- Do you treat children and pregnant women? Yes. Gentle pediatric adjustments and Webster-style prenatal care.
+- Do you accept insurance? Yes, most major plans. Call (586) 207-1624 to verify benefits.
+- What is spinal decompression? Non-surgical traction therapy for bulging or herniated discs.
+- What conditions do you treat? Back pain, neck pain, sciatica, headaches, disc injuries, whiplash, scoliosis, carpal tunnel, vertigo, work injuries, and general wellness.
+- Where are you located? 55130 Van Dyke Ave Suite 25, Shelby Charter Township, MI 48317.
+- What are your hours? Monday-Wednesday 9AM-1PM and 3PM-7PM; Thursday 9AM-1PM; Saturday 9AM-1PM.
+
 ## Pages
 - Home: /
 - About: /about
 - Dr. Brad: /dr-brad
 - New Patients: /new-patients
 - Contact: /contact
-- Schedule: /schedule-appointment
+- Schedule Appointment: /schedule-appointment
 - Testimonials: /testimonials
 `;
 

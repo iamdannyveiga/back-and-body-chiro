@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import ScrollReveal from '@/components/ScrollReveal';
-import { localBusinessSchema, faqSchema } from '@/lib/schema';
+import { localBusinessSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Chiropractor Shelby Township MI | Back and Body Chiropractic Center',
@@ -481,10 +481,6 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema()) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqItems)) }}
       />
     </>
   );
