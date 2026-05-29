@@ -6,7 +6,7 @@ import ConversionCTA from '@/components/ConversionCTA';
 import BookingForm from '@/components/BookingForm';
 
 export const metadata: Metadata = {
-  title: 'Contact',
+  title: 'Contact Us in Shelby Township',
   description:
     'Contact Back and Body Chiropractic Center. (586) 207-1624. 55130 Van Dyke Ave #25, Shelby Charter Township, MI 48317. In Vince and Joe\'s plaza.',
   alternates: {

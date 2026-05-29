@@ -6,7 +6,7 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 
 export const metadata: Metadata = {
-  title: 'About Us',
+  title: 'About Dr. Brad Krawczyk',
   description: 'Dr. Brad Krawczyk -- Macomb County native, MSU grad, 14+ years of thorough, personalized chiropractic care focused on real results.',
   alternates: {
     canonical: '/about',
