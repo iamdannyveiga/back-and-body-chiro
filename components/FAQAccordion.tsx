@@ -9,7 +9,7 @@ interface FAQItem {
 }
 
 export default function FAQAccordion({ items }: { items: FAQItem[] }) {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const faqSchema = {
     "@context": "https://schema.org",
