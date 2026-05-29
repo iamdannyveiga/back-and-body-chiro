@@ -31,7 +31,7 @@ export default function PageHero({
       />
       <div className="absolute inset-0 bg-gradient-to-b from-[rgba(26,47,58,.78)] via-[rgba(26,47,58,.85)] to-[rgba(26,47,58,.92)]" />
       <div className="container relative z-10">
-        <div className="text-[13px] text-text-light/[.45] mb-4">
+        <div className="text-[13px] text-text-light/75 mb-4">
           {breadcrumbs.map((bc, i) => (
             <span key={i}>
               {i > 0 && <span className="mx-2 opacity-40">/</span>}

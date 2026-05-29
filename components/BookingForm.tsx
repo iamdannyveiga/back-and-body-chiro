@@ -73,7 +73,8 @@ export default function BookingForm({ variant = 'full' }: BookingFormProps) {
       <div className="form-group mb-3"><input type="tel" name="phone" placeholder="Phone" required /></div>
       <div className="form-group mb-3"><input type="email" name="email" placeholder="Email" required /></div>
       <div className="form-group mb-3">
-        <select name="service" defaultValue="">
+        <label htmlFor="service-select" className="sr-only">What brings you in</label>
+        <select id="service-select" name="service" defaultValue="" aria-label="What brings you in">
           {variant === 'full' ? (
             <>
               <option value="" disabled>What brings you in? (optional)</option>

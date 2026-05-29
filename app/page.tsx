@@ -430,7 +430,7 @@ export default function HomePage() {
                   <div className="flex flex-col sm:flex-row items-center gap-6 bg-white rounded-xl p-8 shadow-[var(--shadow)] border border-border hover:border-mint hover:shadow-[var(--shadow-lg)] hover:-translate-y-0.5 transition-all duration-300 relative z-[2] w-full">
                     <div className="w-[52px] h-[52px] bg-mint rounded-full flex items-center justify-center shrink-0 text-[22px] font-extrabold text-teal" style={{ fontFamily: 'var(--font-heading)' }}>{step.num}</div>
                     <div className="text-center sm:text-left">
-                      <h4 className="text-xl font-bold text-teal mb-1.5" style={{ fontFamily: 'var(--font-heading)' }}>{step.title}</h4>
+                      <h3 className="text-xl font-bold text-teal mb-1.5" style={{ fontFamily: 'var(--font-heading)' }}>{step.title}</h3>
                       <p className="text-[15px] leading-relaxed text-text opacity-80">{step.desc}</p>
                     </div>
                   </div>
@@ -473,7 +473,7 @@ export default function HomePage() {
               <Link href="/schedule-appointment" className="btn btn--mint">Book My $67 Visit &rarr;</Link>
               <a href="tel:5862071624" className="btn btn--outline">Call (586) 207-1624</a>
             </div>
-            <p className="text-sm text-text-light/[.45] mt-2">Open Saturdays &middot; Evening hours Mon-Wed</p>
+            <p className="text-sm text-text-light/80 mt-2">Open Saturdays &middot; Evening hours Mon-Wed</p>
           </ScrollReveal>
         </div>
       </section>

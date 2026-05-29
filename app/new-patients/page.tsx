@@ -128,7 +128,7 @@ export default function NewPatientsPage() {
             <div className="mb-8">
               <span className="text-[72px] font-extrabold text-amber leading-none" style={{ fontFamily: 'var(--font-heading)' }}>$67</span>
               <h2 className="text-[36px] font-bold text-text-light mt-2" style={{ fontFamily: 'var(--font-heading)' }}>New Patient Special</h2>
-              <p className="text-base text-text-light/50 mt-1">+ Free Consultation</p>
+              <p className="text-base text-text-light/80 mt-1">+ Free Consultation</p>
             </div>
           </ScrollReveal>
           <ScrollReveal>
@@ -141,7 +141,7 @@ export default function NewPatientsPage() {
               ].map((item) => (
                 <div key={item.title} className="text-center">
                   <div className="text-[17px] font-bold text-mint mb-[6px]" style={{ fontFamily: 'var(--font-heading)' }}>{item.title}</div>
-                  <p className="text-[13px] text-text-light/50">{item.desc}</p>
+                  <p className="text-[13px] text-text-light/80">{item.desc}</p>
                 </div>
               ))}
             </div>

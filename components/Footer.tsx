@@ -18,7 +18,7 @@ export default function Footer() {
                 className="h-[44px] w-auto"
               />
             </div>
-            <p className="text-sm text-text-light/50 leading-relaxed mb-5">
+            <p className="text-sm text-text-light/80 leading-relaxed mb-5">
               Serving Macomb &amp; Oakland Counties since 2011. No sales pitches. No crazy care plans. Just honest heartfelt care.
             </p>
             <div>
@@ -83,13 +83,13 @@ export default function Footer() {
             <p className="text-sm text-text-light/[.55] mb-2">
               <a href="tel:5862071624" className="text-mint font-bold no-underline hover:text-mint-dark">(586) 207-1624</a>
             </p>
-            <p className="text-sm text-text-light/[.55] mb-2 leading-relaxed">
+            <p className="text-sm text-text-light/80 mb-2 leading-relaxed">
               55130 Van Dyke Ave #25<br />Shelby Charter Township, MI 48317
             </p>
-            <p className="text-xs text-text-light/[.4] mb-4">In Vince and Joe&apos;s plaza at 25 Mile &amp; Van Dyke</p>
+            <p className="text-xs text-text-light/75 mb-4">In Vince and Joe&apos;s plaza at 25 Mile &amp; Van Dyke</p>
             <div className="mt-4">
               <div className="font-bold text-[13px] text-text-light tracking-[1.5px] uppercase mb-2.5" style={{ fontFamily: 'var(--font-heading)' }}>Hours</div>
-              <div className="text-[13px] text-text-light/50 leading-[1.8]">
+              <div className="text-[13px] text-text-light/80 leading-[1.8]">
                 <span className="text-text-light/70">Mon:</span> 9am-1pm, 3-7pm<br />
                 <span className="text-text-light/70">Tue:</span> 9am-1pm, 3-7pm<br />
                 <span className="text-text-light/70">Wed:</span> 9am-1pm, 3-7pm<br />
@@ -103,10 +103,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/[.06] pt-7 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-[13px] text-text-light/[.35]">
+          <p className="text-[13px] text-text-light/80">
             &copy; {new Date().getFullYear()} Back and Body Chiropractic Center &middot; Dr. Bradley Krawczyk, D.C.
           </p>
-          <p className="text-[13px] text-text-light/[.35]">
+          <p className="text-[13px] text-text-light/80">
             55130 Van Dyke Ave #25, Shelby Charter Township, MI 48317
           </p>
         </div>
