@@ -34,10 +34,10 @@ export default function HomePage() {
       <section className="relative z-10 pt-32 md:pt-40 pb-20 md:pb-[100px]" id="hero-form">
         <Image
           src="/images/hero-clinic.webp"
-          alt="Back and Body Chiropractic Center office in Shelby Township, MI"
+          alt="Back and Body Chiropractic Center team in Shelby Township, MI"
           fill
           sizes="(max-width: 768px) 100vw, 100vw"
-          className="object-cover"
+          className="object-cover object-bottom"
           priority
           fetchPriority="high"
         />

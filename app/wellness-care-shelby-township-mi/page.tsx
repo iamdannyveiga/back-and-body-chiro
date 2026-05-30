@@ -76,8 +76,8 @@ export default function WellnessCarePage() {
               </div>
               <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
                 <Image
-                  src="/images/hero-clinic.webp"
-                  alt="Back and Body wellness chiropractic clinic in Shelby Township, MI"
+                  src="/images/services/office-consultation-room.webp"
+                  alt="Wellness consultation room at Back and Body in Shelby Township, MI"
                   fill
                   sizes="(max-width: 768px) 100vw, 40vw"
                   className="object-cover"
