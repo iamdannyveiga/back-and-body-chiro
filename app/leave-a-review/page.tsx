@@ -47,8 +47,8 @@ export default function LeaveAReviewPage() {
         title="Loved your visit? Help other patients find us."
         subtitle="Reviews mentioning your specific story (problem + service + outcome) help patients in Macomb and Oakland County find honest care."
         breadcrumbs={[
-          { name: 'Home', href: '/' },
-          { name: 'Leave a Review' },
+          { label: 'Home', href: '/' },
+          { label: 'Leave a Review' },
         ]}
       />
 

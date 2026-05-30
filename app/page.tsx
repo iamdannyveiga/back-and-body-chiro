@@ -285,7 +285,7 @@ export default function HomePage() {
             <ScrollReveal>
               {/* Photo placeholder */}
               <div className="w-full max-w-[480px] aspect-[3/4] rounded-xl overflow-hidden -mt-10 relative z-[2] shadow-[var(--shadow-lg)] mb-7">
-                <Image src="/images/dr-bradley-krawczyk-about.webp" alt="Dr. Bradley Krawczyk, DC -- Chiropractor in Shelby Township, MI" fill className="object-cover" />
+                <Image src="/images/dr-bradley-krawczyk-about.webp" alt="Dr. Bradley Krawczyk, DC -- Chiropractor in Shelby Township, MI" fill className="object-cover object-top" />
               </div>
               <h3 className="text-[30px] font-extrabold text-teal mt-7 mb-2" style={{ fontFamily: 'var(--font-heading)' }}>Dr. Bradley Krawczyk, D.C.</h3>
               <p className="text-sm text-[#888] mb-6 leading-relaxed">Founder &middot; Michigan State University &middot; Life University 2011 &middot; Macomb County Native &middot; 14+ Years</p>

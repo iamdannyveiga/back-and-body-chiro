@@ -46,7 +46,7 @@ export default function AboutPage() {
                 alt="Meet the Back and Body team led by Dr. Bradley Krawczyk in Shelby Township, MI"
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
           </ScrollReveal>

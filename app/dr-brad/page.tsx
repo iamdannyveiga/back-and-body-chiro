@@ -42,7 +42,7 @@ export default function DrBradPage() {
                   alt="Dr. Bradley Krawczyk, DC — founder of Back and Body in Shelby Township, MI"
                   fill
                   sizes="(max-width: 768px) 100vw, 900px"
-                  className="object-cover"
+                  className="object-cover object-top"
                   priority
                 />
               </div>
