@@ -7,6 +7,19 @@ const GA_ID = process.env.NEXT_PUBLIC_GA4_ID
 
 let listenersAttached = false
 
+// Read all active split-test variants from cookies → tag GA4 events with them
+function readSplitTestVariants(): Record<string, string> {
+  if (typeof document === 'undefined') return {}
+  const out: Record<string, string> = {}
+  for (const cookie of document.cookie.split(';')) {
+    const [k, v] = cookie.trim().split('=')
+    if (k && k.startsWith('spl-var-') && (v === 'a' || v === 'b')) {
+      out[`variant_${k.replace('spl-var-', '').replace(/-/g, '_')}`] = v
+    }
+  }
+  return out
+}
+
 export default function GoogleAnalytics() {
   useEffect(() => {
     if (!GA_ID || listenersAttached) return
@@ -24,6 +37,7 @@ export default function GoogleAnalytics() {
         event_label: phone,
         phone_number: phone,
         link_text: (link.textContent || '').trim().slice(0, 80),
+        ...readSplitTestVariants(),
       })
     }
 
@@ -41,10 +55,30 @@ export default function GoogleAnalytics() {
         event_category: 'engagement',
         event_label: name,
         form_name: name,
+        ...readSplitTestVariants(),
+      })
+    }
+
+    // Track variant CTA clicks specifically (more direct than tel-only)
+    const handleVariantClick = (e: Event) => {
+      const target = e.target as HTMLElement | null
+      if (!target) return
+      const el = target.closest('[data-spl-variant]') as HTMLElement | null
+      if (!el) return
+      const [testId, variant] = (el.getAttribute('data-spl-variant') || '').split(':')
+      if (!testId || !variant) return
+      const w = window as Window & { gtag?: (...args: unknown[]) => void }
+      w.gtag?.('event', 'split_test_cta_click', {
+        event_category: 'split_test',
+        test_id: testId,
+        variant,
+        text: (el.textContent || '').trim().slice(0, 80),
+        ...readSplitTestVariants(),
       })
     }
 
     document.addEventListener('click', handleClick, true)
+    document.addEventListener('click', handleVariantClick, true)
     document.addEventListener('submit', handleSubmit, true)
   }, [])
 

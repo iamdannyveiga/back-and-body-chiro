@@ -13,8 +13,8 @@ const ACTIVE_TESTS: Array<{
   paths: string[];      // path prefixes this test applies to (empty array = all)
   ratio: number;        // 0..1 fraction assigned to variant B (default 0.5)
 }> = [
-  // Example (commented out until ready):
-  // { id: "hero-cta-001", paths: ["/"], ratio: 0.5 },
+  { id: "hero-cta-002", paths: ["/"], ratio: 0.5 },
+  { id: "form-cta-003", paths: ["/"], ratio: 0.5 },
 ];
 
 function hashStr(s: string): number {
