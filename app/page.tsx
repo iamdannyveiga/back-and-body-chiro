@@ -36,8 +36,10 @@ export default function HomePage() {
           src="/images/hero-clinic.webp"
           alt="Back and Body Chiropractic Center office in Shelby Township, MI"
           fill
+          sizes="(max-width: 768px) 100vw, 100vw"
           className="object-cover"
           priority
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[rgba(26,47,58,.75)] via-[rgba(26,47,58,.8)] to-[rgba(26,47,58,.9)]" />
         <div className="container">
