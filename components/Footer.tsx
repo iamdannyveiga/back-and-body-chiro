@@ -41,11 +41,41 @@ export default function Footer() {
               {[
                 { href: '/chiropractic-care-shelby-township-mi', label: 'Chiropractic Care' },
                 { href: '/spinal-decompression-shelby-township-mi', label: 'Spinal Decompression' },
+                { href: '/softwave-therapy-shelby-township-mi', label: 'SoftWave Therapy' },
                 { href: '/massage-therapy-shelby-township-mi', label: 'Massage Therapy' },
                 { href: '/applied-kinesiology-shelby-township-mi', label: 'Applied Kinesiology' },
-                { href: '/pediatric-chiropractic-shelby-township-mi', label: 'Pediatric & Prenatal' },
-                { href: '/nutrition-shelby-township-mi', label: 'Nutrition & Weight Loss' },
-                { href: '/back-pain-treatment-shelby-township-mi', label: 'Back Pain Treatment' },
+                { href: '/pediatric-chiropractic-shelby-township-mi', label: 'Pediatric Chiropractic' },
+                { href: '/prenatal-chiropractic-shelby-township-mi', label: 'Prenatal Chiropractic' },
+                { href: '/nutrition-shelby-township-mi', label: 'Nutrition' },
+                { href: '/weight-loss-shelby-township-mi', label: 'Weight Loss' },
+                { href: '/wellness-care-shelby-township-mi', label: 'Wellness Care' },
+              ].map((item) => (
+                <li key={item.label} className="mb-2.5">
+                  <Link href={item.href} className="text-sm text-text-light/[.55] no-underline hover:text-mint transition-colors">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Conditions */}
+          <div>
+            <div className="font-bold text-[13px] text-text-light tracking-[1.5px] uppercase mb-5" style={{ fontFamily: 'var(--font-heading)' }}>Conditions</div>
+            <ul className="list-none p-0 m-0">
+              {[
+                { href: '/back-pain-treatment-shelby-township-mi', label: 'Back Pain' },
+                { href: '/neck-pain-treatment-shelby-township-mi', label: 'Neck Pain' },
+                { href: '/sciatica-treatment-shelby-township-mi', label: 'Sciatica' },
+                { href: '/headaches-migraines-shelby-township-mi', label: 'Headaches & Migraines' },
+                { href: '/disc-injury-treatment-shelby-township-mi', label: 'Disc Injuries' },
+                { href: '/scoliosis-treatment-shelby-township-mi', label: 'Scoliosis' },
+                { href: '/shoulder-pain-treatment-shelby-township-mi', label: 'Shoulder Pain' },
+                { href: '/whiplash-treatment-shelby-township-mi', label: 'Whiplash' },
+                { href: '/carpal-tunnel-treatment-shelby-township-mi', label: 'Carpal Tunnel' },
+                { href: '/vertigo-treatment-shelby-township-mi', label: 'Vertigo' },
+                { href: '/arm-leg-pain-shelby-township-mi', label: 'Arm & Leg Pain' },
+                { href: '/work-injury-treatment-shelby-township-mi', label: 'Work Injury' },
               ].map((item) => (
                 <li key={item.label} className="mb-2.5">
                   <Link href={item.href} className="text-sm text-text-light/[.55] no-underline hover:text-mint transition-colors">
@@ -61,9 +91,10 @@ export default function Footer() {
             <div className="font-bold text-[13px] text-text-light tracking-[1.5px] uppercase mb-5" style={{ fontFamily: 'var(--font-heading)' }}>Quick Links</div>
             <ul className="list-none p-0 m-0">
               {[
-                { href: '/about', label: 'About Dr. Brad' },
+                { href: '/about', label: 'About' },
                 { href: '/dr-brad', label: 'Meet Dr. Brad' },
                 { href: '/testimonials', label: 'Patient Reviews' },
+                { href: '/leave-a-review', label: 'Leave a Review' },
                 { href: '/new-patients', label: 'New Patients' },
                 { href: '/contact', label: 'Contact' },
                 { href: '/schedule-appointment', label: 'Book Online' },

@@ -5,6 +5,7 @@ import PageHero from '@/components/PageHero';
 import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import { StarIcon, HomeIcon, KinesiologyIcon, WorkInjuryIcon, PediatricIcon } from '@/components/Icons';
+import { personSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Meet Dr. Brad',
@@ -191,6 +192,18 @@ export default function DrBradPage() {
       </section>
 
       <ConversionCTA line1="$67 gets you started." anchor="Just honest care." />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema()) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+          { name: 'Home', href: '/' },
+          { name: 'Dr. Brad' },
+        ])) }}
+      />
     </>
   );
 }

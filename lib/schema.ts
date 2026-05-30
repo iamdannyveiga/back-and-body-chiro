@@ -111,6 +111,48 @@ export function serviceSchema(serviceName: string, description: string, slug: st
   };
 }
 
+export function personSchema() {
+  // Caleb doctrine: doctor as Person entity with E-A-T credentials
+  // Improves answer-engine attribution (Google AIO, ChatGPT, Perplexity, Claude)
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': `${BUSINESS.url}/#dr-brad-krawczyk`,
+    name: BUSINESS.doctor,
+    givenName: 'Bradley',
+    familyName: 'Krawczyk',
+    jobTitle: BUSINESS.doctorTitle,
+    description: 'Macomb County native. Doctor of Chiropractic since 2011. Honest, results-focused chiropractic care without long-term contracts.',
+    image: `${BUSINESS.url}/images/dr-brad.webp`,
+    url: `${BUSINESS.url}/dr-brad`,
+    telephone: BUSINESS.phone,
+    worksFor: { '@type': 'Chiropractor', '@id': `${BUSINESS.url}/#organization` },
+    alumniOf: [
+      { '@type': 'CollegeOrUniversity', name: 'Michigan State University', sameAs: 'https://msu.edu' },
+      { '@type': 'CollegeOrUniversity', name: 'Life University', sameAs: 'https://www.life.edu' },
+    ],
+    hasCredential: [
+      { '@type': 'EducationalOccupationalCredential', name: 'BS in Kinesiology', credentialCategory: 'degree', educationalLevel: 'Bachelor', recognizedBy: { '@type': 'CollegeOrUniversity', name: 'Michigan State University' } },
+      { '@type': 'EducationalOccupationalCredential', name: 'Doctor of Chiropractic', credentialCategory: 'degree', educationalLevel: 'Doctoral', recognizedBy: { '@type': 'CollegeOrUniversity', name: 'Life University' } },
+      { '@type': 'EducationalOccupationalCredential', name: 'Licensed Chiropractor in Michigan', credentialCategory: 'license' },
+    ],
+    knowsAbout: [
+      'Chiropractic adjustments', 'Spinal decompression', 'SoftWave tissue regeneration therapy',
+      'Applied kinesiology', 'Pediatric chiropractic', 'Prenatal chiropractic (Webster Technique)',
+      'Sports injury rehabilitation', 'Back pain treatment', 'Neck pain treatment',
+      'Sciatica relief', 'Disc injury treatment', 'Headache and migraine relief',
+    ],
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: BUSINESS.street,
+      addressLocality: BUSINESS.city,
+      addressRegion: BUSINESS.state,
+      postalCode: BUSINESS.zip,
+      addressCountry: 'US',
+    },
+  };
+}
+
 export function faqSchema(items: { question: string; answer: string }[]) {
   return {
     '@context': 'https://schema.org',
