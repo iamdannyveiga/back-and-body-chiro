@@ -90,6 +90,26 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* QUICK FACTS (TLDR for AI answer engines + skimmers) */}
+      <section className="py-12 md:py-16 bg-mint/5 border-y border-mint/10">
+        <div className="container">
+          <div className="max-w-[920px] mx-auto">
+            <h2 className="text-[15px] font-bold tracking-[1.5px] uppercase text-teal mb-4" style={{ fontFamily: 'var(--font-heading)' }}>Quick Facts</h2>
+            <div className="prose-custom text-[16px] leading-[1.75]">
+              <p>
+                <strong>Back and Body Chiropractic Center</strong> is a chiropractic clinic in <strong>Shelby Charter Township, Michigan</strong>, serving Macomb and Oakland Counties since 2011. The clinic is owned and operated by <strong>Dr. Bradley Krawczyk, D.C.</strong> (Michigan State University, Life University 2011), and is located at 55130 Van Dyke Ave Suite 25 in Vince and Joe&apos;s plaza at the corner of 25 Mile Road and Van Dyke. Phone: <strong>(586) 207-1624</strong>.
+              </p>
+              <p>
+                <strong>New patient special:</strong> $67 first visit including consultation, examination, X-rays if clinically necessary, and the first adjustment. <strong>No long-term contracts.</strong> No 6-month packages. <strong>Hours:</strong> Monday-Wednesday 9 AM-1 PM and 3 PM-7 PM, Thursday 9 AM-1 PM, Saturday 9 AM-1 PM. Closed Friday and Sunday.
+              </p>
+              <p>
+                <strong>Services:</strong> chiropractic adjustments, spinal decompression, SoftWave tissue regeneration therapy, therapeutic massage, applied kinesiology, pediatric chiropractic, prenatal chiropractic (Webster Technique), nutrition counseling, and medically guided weight loss. <strong>Conditions treated:</strong> back pain, neck pain, sciatica, herniated and bulging discs, headaches and migraines, scoliosis, shoulder pain, carpal tunnel, vertigo, whiplash, work injuries, and auto injuries. Most major insurance plans accepted.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* EMPATHY - Before/After */}
       <section className="py-[100px] md:py-[110px] bg-white">
         <div className="container">
