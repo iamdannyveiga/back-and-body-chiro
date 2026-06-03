@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import ScrollReveal from '@/components/ScrollReveal';
 import { localBusinessSchema } from '@/lib/schema';
-import { getVariant } from '@/lib/split-test';
+import HeroCtaButton from '@/components/HeroCtaButton';
 
 export const metadata: Metadata = {
   title: { absolute: 'Chiropractor Shelby Township MI | Back & Body Chiro' },
@@ -28,10 +28,7 @@ const faqItems = [
   { question: "What about nutrition and weight loss?", answer: "We offer personalized nutrition counseling and a medically guided weight loss program. Dr. Brad takes a whole-body approach, helping you with practical nutrition plans that work for real life." },
 ];
 
-export default async function HomePage() {
-  const heroCtaVariant = await getVariant('hero-cta-002');
-  const heroCtaText = heroCtaVariant === 'b' ? 'Claim Your $67 Visit Today →' : 'Book Your $67 First Visit →';
-
+export default function HomePage() {
   return (
     <>
       {/* HERO */}
@@ -60,7 +57,7 @@ export default async function HomePage() {
               <p className="text-[17px] text-text-light/75 leading-[1.7] mb-8 max-w-[540px]">
                 Dr. Brad Krawczyk -- MSU Spartan, Macomb County native, and your chiropractor for 14 years. Back and Body Chiropractic Center is where Shelby Township families come for real results at honest prices.
               </p>
-              <Link href="/schedule-appointment" className="btn btn--mint" data-spl-variant={`hero-cta-002:${heroCtaVariant}`}>{heroCtaText}</Link>
+              <HeroCtaButton />
               <div className="flex items-center flex-wrap gap-2 mt-7 text-[13px] text-text-light/60" style={{ fontFamily: 'var(--font-heading)' }}>
                 <span className="text-amber text-[15px] tracking-[1px]">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                 <span>4.9</span>
