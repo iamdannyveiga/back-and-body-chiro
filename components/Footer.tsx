@@ -98,6 +98,7 @@ export default function Footer() {
                 { href: '/new-patients', label: 'New Patients' },
                 { href: '/contact', label: 'Contact' },
                 { href: '/schedule-appointment', label: 'Book Online' },
+                { href: '/ai-information', label: 'AI Information' },
               ].map((item) => (
                 <li key={item.label} className="mb-2.5">
                   <Link href={item.href} className="text-sm text-text-light/[.55] no-underline hover:text-mint transition-colors">

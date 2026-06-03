@@ -66,6 +66,8 @@ Dr. Bradley Krawczyk earned his BS in Kinesiology from Michigan State University
 - Contact: /contact
 - Schedule Appointment: /schedule-appointment
 - Testimonials: /testimonials
+- Leave a Review: /leave-a-review
+- AI Information (structured facts): /ai-information
 `;
 
   return new Response(content, {
