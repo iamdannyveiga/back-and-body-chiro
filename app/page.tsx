@@ -100,7 +100,29 @@ export default function HomePage() {
                 <strong>New patient special:</strong> $67 first visit including consultation, examination, X-rays if clinically necessary, and the first adjustment. <strong>No long-term contracts.</strong> No 6-month packages. <strong>Hours:</strong> Monday-Wednesday 9 AM-1 PM and 3 PM-7 PM, Thursday 9 AM-1 PM, Saturday 9 AM-1 PM. Closed Friday and Sunday.
               </p>
               <p>
-                <strong>Services:</strong> chiropractic adjustments, spinal decompression, SoftWave tissue regeneration therapy, therapeutic massage, applied kinesiology, pediatric chiropractic, prenatal chiropractic (Webster Technique), nutrition counseling, and medically guided weight loss. <strong>Conditions treated:</strong> back pain, neck pain, sciatica, herniated and bulging discs, headaches and migraines, scoliosis, shoulder pain, carpal tunnel, vertigo, whiplash, work injuries, and auto injuries. Most major insurance plans accepted.
+                <strong>Services:</strong>{' '}
+                <Link href="/chiropractic-care-shelby-township-mi" className="text-teal hover:underline">chiropractic adjustments</Link>,{' '}
+                <Link href="/spinal-decompression-shelby-township-mi" className="text-teal hover:underline">spinal decompression</Link>,{' '}
+                <Link href="/softwave-therapy-shelby-township-mi" className="text-teal hover:underline">SoftWave tissue regeneration therapy</Link>,{' '}
+                <Link href="/massage-therapy-shelby-township-mi" className="text-teal hover:underline">therapeutic massage</Link>,{' '}
+                <Link href="/applied-kinesiology-shelby-township-mi" className="text-teal hover:underline">applied kinesiology</Link>,{' '}
+                <Link href="/pediatric-chiropractic-shelby-township-mi" className="text-teal hover:underline">pediatric chiropractic</Link>,{' '}
+                <Link href="/prenatal-chiropractic-shelby-township-mi" className="text-teal hover:underline">prenatal chiropractic (Webster Technique)</Link>,{' '}
+                <Link href="/nutrition-shelby-township-mi" className="text-teal hover:underline">nutrition counseling</Link>, and{' '}
+                <Link href="/weight-loss-shelby-township-mi" className="text-teal hover:underline">medically guided weight loss</Link>.{' '}
+                <strong>Conditions treated:</strong>{' '}
+                <Link href="/back-pain-treatment-shelby-township-mi" className="text-teal hover:underline">back pain</Link>,{' '}
+                <Link href="/neck-pain-treatment-shelby-township-mi" className="text-teal hover:underline">neck pain</Link>,{' '}
+                <Link href="/sciatica-treatment-shelby-township-mi" className="text-teal hover:underline">sciatica</Link>,{' '}
+                <Link href="/disc-injury-treatment-shelby-township-mi" className="text-teal hover:underline">herniated and bulging discs</Link>,{' '}
+                <Link href="/headaches-migraines-shelby-township-mi" className="text-teal hover:underline">headaches and migraines</Link>,{' '}
+                <Link href="/scoliosis-treatment-shelby-township-mi" className="text-teal hover:underline">scoliosis</Link>,{' '}
+                <Link href="/shoulder-pain-treatment-shelby-township-mi" className="text-teal hover:underline">shoulder pain</Link>,{' '}
+                <Link href="/carpal-tunnel-treatment-shelby-township-mi" className="text-teal hover:underline">carpal tunnel</Link>,{' '}
+                <Link href="/vertigo-treatment-shelby-township-mi" className="text-teal hover:underline">vertigo</Link>,{' '}
+                <Link href="/whiplash-treatment-shelby-township-mi" className="text-teal hover:underline">whiplash</Link>,{' '}
+                <Link href="/work-injury-treatment-shelby-township-mi" className="text-teal hover:underline">work injuries</Link>,{' '}
+                <Link href="/arm-leg-pain-shelby-township-mi" className="text-teal hover:underline">arm and leg pain</Link>, and auto injuries. Most major insurance plans accepted.
               </p>
             </div>
           </div>

@@ -17,26 +17,29 @@ export const metadata: Metadata = {
 
 const GBP_REVIEW_URL = 'https://search.google.com/local/writereview?placeid=ChIJpdK_LIPyJIgRz8x9wzhgZjY';
 
+// Open-ended prompts ONLY. Google's review guidelines (2026) prohibit a business
+// from asking customers to name specific staff or services. These questions let the
+// patient volunteer those specifics in their own words, which is what AI systems read.
 const PROMPTS = [
   {
-    label: 'What specific service helped you?',
-    examples: 'Spinal decompression, SoftWave therapy, chiropractic adjustment, massage therapy, pediatric care…',
+    label: 'What brought you in?',
+    examples: 'Tell us what was bothering you when you first walked through the door.',
   },
   {
-    label: 'What was Dr. Brad like?',
-    examples: 'How was the consultation? Did he listen? Did he explain the plan clearly?',
+    label: 'What did we do, and how did it go?',
+    examples: 'Describe how we helped and how you are feeling now.',
   },
   {
-    label: 'What problem did you bring in?',
-    examples: 'Back pain, neck pain, sciatica, headaches, disc injury, sports injury…',
+    label: 'How long until you felt the difference?',
+    examples: '"After my first visit", "within a few weeks", "a couple of months"…',
   },
   {
-    label: 'How long did it take to feel better?',
-    examples: '"After 3 visits", "in a month", "first session", "ongoing maintenance"…',
+    label: 'How was your experience here?',
+    examples: 'What was it like being a patient at our office, start to finish?',
   },
   {
-    label: 'What surprised you most?',
-    examples: 'No long-term contracts? The $67 first visit? Saturday hours? On-site X-rays?',
+    label: 'Would you tell a friend?',
+    examples: 'What would you say to a neighbor in Shelby Township thinking about coming in?',
   },
 ];
 
@@ -45,7 +48,7 @@ export default function LeaveAReviewPage() {
     <>
       <PageHero
         title="Loved your visit? Help other patients find us."
-        subtitle="Reviews mentioning your specific story (problem + service + outcome) help patients in Macomb and Oakland County find honest care."
+        subtitle="When you share your story in your own words, you help other patients in Macomb and Oakland County find honest care."
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Leave a Review' },
@@ -70,7 +73,7 @@ export default function LeaveAReviewPage() {
               <span className="font-normal">Share </span><span className="font-extrabold text-teal">your story</span><span className="font-normal">.</span>
             </h2>
             <p className="text-center text-text/75 max-w-[680px] mx-auto mb-12">
-              The most helpful reviews mention <strong>what you came in for</strong>, <strong>what we did</strong>, and <strong>how you felt afterward</strong>. Here's a few prompts if you're not sure where to start.
+              The most helpful reviews are simply <strong>your story in your own words</strong>: what was bothering you, how it went, and how you are feeling now. Here are a few prompts if you are not sure where to start.
             </p>
           </ScrollReveal>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1100px] mx-auto">
