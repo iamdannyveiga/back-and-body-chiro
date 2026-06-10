@@ -37,6 +37,8 @@ const nextConfig: NextConfig = {
 
   async redirects() {
     return [
+      // Weight-loss service discontinued (Dr. Brad does not offer it, 2026-06-10) -> nutrition
+      { source: "/weight-loss-shelby-township-mi", destination: "/nutrition-shelby-township-mi", statusCode: 301 },
       // 301s: Old /services/ paths -> new geo-slugged root paths
       { source: "/services/chiropractic-care", destination: "/chiropractic-care-shelby-township-mi", statusCode: 301 },
       { source: "/services/spinal-decompression", destination: "/spinal-decompression-shelby-township-mi", statusCode: 301 },

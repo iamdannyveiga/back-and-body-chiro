@@ -47,7 +47,6 @@ export default function Footer() {
                 { href: '/pediatric-chiropractic-shelby-township-mi', label: 'Pediatric Chiropractic' },
                 { href: '/prenatal-chiropractic-shelby-township-mi', label: 'Prenatal Chiropractic' },
                 { href: '/nutrition-shelby-township-mi', label: 'Nutrition' },
-                { href: '/weight-loss-shelby-township-mi', label: 'Weight Loss' },
                 { href: '/wellness-care-shelby-township-mi', label: 'Wellness Care' },
               ].map((item) => (
                 <li key={item.label} className="mb-2.5">

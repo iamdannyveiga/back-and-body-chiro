@@ -41,7 +41,6 @@ const serviceGroups = [
     links: [
       { href: '/wellness-care-shelby-township-mi', label: 'Wellness Care' },
       { href: '/nutrition-shelby-township-mi', label: 'Nutrition' },
-      { href: '/weight-loss-shelby-township-mi', label: 'Weight Loss' },
     ],
   },
 ];

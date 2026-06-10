@@ -136,7 +136,7 @@ export default function NutritionPage() {
           <ScrollReveal>
             <div className="grid md:grid-cols-3 gap-6 max-w-[1000px] mx-auto">
               {[
-                { icon: <KinesiologyIcon className="w-6 h-6" />, title: 'Weight Loss', desc: 'Nutrition is a key component of healthy weight management.', href: '/weight-loss-shelby-township-mi' },
+                { icon: <KinesiologyIcon className="w-6 h-6" />, title: 'Applied Kinesiology', desc: 'Muscle testing that uncovers imbalances nutrition can help correct.', href: '/applied-kinesiology-shelby-township-mi' },
                 { icon: <SpineIcon className="w-6 h-6" />, title: 'Wellness Care', desc: 'Combine nutrition with chiropractic for complete wellness.', href: '/wellness-care-shelby-township-mi' },
                 { icon: <MassageIcon className="w-6 h-6" />, title: 'Chiropractic Care', desc: 'Nutrition supports and enhances chiropractic results.', href: '/chiropractic-care-shelby-township-mi' },
               ].map((svc) => (

@@ -96,9 +96,9 @@ const SERVICE_FAQS = [
       "Yes -- on-site therapeutic massage. It's a great complement to chiropractic care, helping reduce muscle tension, improve range of motion, and accelerate your recovery.",
   },
   {
-    question: 'What about nutrition and weight loss?',
+    question: 'Do you offer nutrition counseling?',
     answer:
-      'We offer personalized nutrition counseling and a medically guided weight loss program. Dr. Brad takes a whole-body approach, helping you with practical nutrition plans that work for real life.',
+      "Yes. Dr. Brad takes a whole-body approach, offering personalized nutrition counseling with practical plans that work for real life and support your body's healing from the inside out.",
   },
   {
     question: 'Do you treat children and pregnant women?',

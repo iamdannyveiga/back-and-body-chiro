@@ -24,7 +24,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "arm-leg-pain-shelby-township-mi",
     "wellness-care-shelby-township-mi",
     "nutrition-shelby-township-mi",
-    "weight-loss-shelby-township-mi",
     "applied-kinesiology-shelby-township-mi",
   ];
 

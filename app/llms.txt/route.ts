@@ -39,7 +39,6 @@ Dr. Bradley Krawczyk earned his BS in Kinesiology from Michigan State University
 - Work Injury Treatment: /work-injury-treatment-shelby-township-mi
 - Wellness Care: /wellness-care-shelby-township-mi
 - Nutrition: /nutrition-shelby-township-mi
-- Weight Loss: /weight-loss-shelby-township-mi
 
 ## Appointment
 - Book an appointment online: https://backandbodydoc.com/schedule-appointment

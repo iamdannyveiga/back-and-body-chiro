@@ -25,7 +25,7 @@ const faqItems = [
   { question: "What is applied kinesiology?", answer: "Applied kinesiology is a diagnostic technique that uses muscle testing to evaluate structural, chemical, and mental aspects of health. By testing the strength and response of specific muscles, Dr. Brad can identify imbalances that standard exams might miss." },
   { question: "Do you accept insurance?", answer: "Yes, we work with most major insurance plans. Call us at (586) 207-1624 and we'll verify your benefits before your first visit. Even without insurance, our pricing is straightforward and affordable." },
   { question: "Do you offer massage therapy?", answer: "Yes -- on-site therapeutic massage. It's a great complement to chiropractic care, helping reduce muscle tension, improve range of motion, and accelerate your recovery." },
-  { question: "What about nutrition and weight loss?", answer: "We offer personalized nutrition counseling and a medically guided weight loss program. Dr. Brad takes a whole-body approach, helping you with practical nutrition plans that work for real life." },
+  { question: "Do you offer nutrition counseling?", answer: "Yes. Dr. Brad takes a whole-body approach, offering personalized nutrition counseling with practical plans that work for real life and support your body's healing from the inside out." },
 ];
 
 export default function HomePage() {
@@ -109,7 +109,7 @@ export default function HomePage() {
                 <Link href="/pediatric-chiropractic-shelby-township-mi" className="text-teal hover:underline">pediatric chiropractic</Link>,{' '}
                 <Link href="/prenatal-chiropractic-shelby-township-mi" className="text-teal hover:underline">prenatal chiropractic (Webster Technique)</Link>,{' '}
                 <Link href="/nutrition-shelby-township-mi" className="text-teal hover:underline">nutrition counseling</Link>, and{' '}
-                <Link href="/weight-loss-shelby-township-mi" className="text-teal hover:underline">medically guided weight loss</Link>.{' '}
+                <Link href="/wellness-care-shelby-township-mi" className="text-teal hover:underline">wellness care</Link>.{' '}
                 <strong>Conditions treated:</strong>{' '}
                 <Link href="/back-pain-treatment-shelby-township-mi" className="text-teal hover:underline">back pain</Link>,{' '}
                 <Link href="/neck-pain-treatment-shelby-township-mi" className="text-teal hover:underline">neck pain</Link>,{' '}
@@ -263,7 +263,7 @@ export default function HomePage() {
             </ScrollReveal>
           </div>
           <ScrollReveal className="text-center text-sm text-[#888] leading-[1.7]">
-            <strong className="text-text font-semibold">Plus:</strong> Applied Kinesiology &middot; Carpal Tunnel &middot; Vertigo &middot; Shoulder Pain &middot; Arm &amp; Leg Pain &middot; Nutrition &middot; Weight Loss &middot; Wellness Care
+            <strong className="text-text font-semibold">Plus:</strong> Applied Kinesiology &middot; Carpal Tunnel &middot; Vertigo &middot; Shoulder Pain &middot; Arm &amp; Leg Pain &middot; Nutrition &middot; Wellness Care
           </ScrollReveal>
         </div>
       </section>
@@ -280,7 +280,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
             {[
               { title: 'Massage Therapy', desc: 'On-site massage therapy to complement your chiropractic care. Reduce tension, improve circulation, accelerate healing -- without driving to a separate appointment.', img: '/images/service-massage-therapy.webp', imgAlt: 'Massage therapy at Back and Body Chiropractic Center', href: '/massage-therapy-shelby-township-mi' },
-              { title: 'Nutrition & Weight Loss', desc: 'Personalized nutrition counseling and medically guided weight loss. Whole-body wellness, not just spinal health. Practical plans for real Michigan families.', img: '/images/service-nutrition.webp', imgAlt: 'Nutrition counseling at Back and Body Chiropractic Center', href: '/nutrition-shelby-township-mi' },
+              { title: 'Nutrition Counseling', desc: 'Personalized nutrition counseling for whole-body wellness, not just spinal health. Practical plans for real Michigan families.', img: '/images/service-nutrition.webp', imgAlt: 'Nutrition counseling at Back and Body Chiropractic Center', href: '/nutrition-shelby-township-mi' },
             ].map((card) => (
               <ScrollReveal key={card.title}>
                 <div className="bg-white rounded-xl overflow-hidden shadow-[var(--shadow)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-1 transition-all duration-300">

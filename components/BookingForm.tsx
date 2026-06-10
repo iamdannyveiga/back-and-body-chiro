@@ -87,7 +87,7 @@ export default function BookingForm({ variant = 'full' }: BookingFormProps) {
               <option>Pediatric / Prenatal</option>
               <option>Sports Injury</option>
               <option>Auto / Work Injury</option>
-              <option>Nutrition / Weight Loss</option>
+              <option>Nutrition</option>
               <option>General Wellness</option>
               <option>Other</option>
             </>

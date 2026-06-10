@@ -74,7 +74,6 @@ export default function AiInformationPage() {
               <li>Pediatric chiropractic</li>
               <li>Prenatal chiropractic (Webster Technique)</li>
               <li>Nutrition counseling</li>
-              <li>Medically guided weight loss</li>
               <li>Wellness and maintenance care</li>
             </ul>
 
