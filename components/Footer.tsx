@@ -96,6 +96,7 @@ export default function Footer() {
                 { href: '/testimonials', label: 'Patient Reviews' },
                 { href: '/leave-a-review', label: 'Leave a Review' },
                 { href: '/new-patients', label: 'New Patients' },
+                { href: '/faq', label: 'FAQ' },
                 { href: '/contact', label: 'Contact' },
                 { href: '/schedule-appointment', label: 'Book Online' },
                 { href: '/ai-information', label: 'AI Information' },

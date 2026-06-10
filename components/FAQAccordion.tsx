@@ -8,7 +8,9 @@ interface FAQItem {
   answer: string;
 }
 
-export default function FAQAccordion({ items }: { items: FAQItem[] }) {
+export default function FAQAccordion({ items, withSchema = true }: { items: FAQItem[]; withSchema?: boolean }) {
+  // withSchema=false lets a page render multiple accordions while emitting ONE
+  // consolidated FAQPage schema itself (Google: one FAQPage per page).
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const faqSchema = {
@@ -26,10 +28,12 @@ export default function FAQAccordion({ items }: { items: FAQItem[] }) {
 
   return (
     <div className="max-w-[820px] mx-auto">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      {withSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       {items.map((item, i) => (
         <div key={i} className={`faq-item ${openIndex === i ? 'open' : ''}`}>
           <div

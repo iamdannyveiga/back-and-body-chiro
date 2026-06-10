@@ -503,6 +503,11 @@ export default function HomePage() {
             </h2>
           </ScrollReveal>
           <FAQAccordion items={faqItems} />
+          <ScrollReveal className="text-center mt-10">
+            <p className="text-[15px] text-text/75">
+              Have a different question? <Link href="/faq" className="font-semibold text-teal hover:underline">See all frequently asked questions &rarr;</Link>
+            </p>
+          </ScrollReveal>
         </div>
       </section>
 
