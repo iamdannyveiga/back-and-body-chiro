@@ -43,15 +43,26 @@ export async function POST(req: NextRequest) {
       offer_type: 'Chiro',
     }
 
-    // Split-test conversion stamping: forward every spl-var-* cookie so each
-    // CRM lead records which A/B variants the visitor saw. Per-variant
-    // conversion rates for UX tests are computed from this field.
+    // Organic-channel identification: the CRM intake persists event_source_url
+    // (raw_data) — it is the field reporting uses to separate website/organic
+    // leads from ad leads. Use the actual submitting page when available.
+    const referer = req.headers.get('referer') || ''
+    payload.event_source_url = referer.startsWith('https://backandbodydoc.com')
+      ? referer
+      : 'https://backandbodydoc.com/'
+
+    // Split-test conversion stamping. The intake normalizes unknown fields away
+    // but has native split_test_id / variant_id columns — flatten the primary
+    // variant into those, and keep the full map for GA cross-checking.
     const splVariants: Record<string, string> = {}
     req.cookies.getAll().forEach((c) => {
       if (c.name.startsWith('spl-var-')) splVariants[c.name.slice('spl-var-'.length)] = c.value
     })
-    if (Object.keys(splVariants).length) {
+    const splKeys = Object.keys(splVariants).sort()
+    if (splKeys.length) {
       payload.spl_variants = JSON.stringify(splVariants)
+      payload.split_test_id = splKeys[0]
+      payload.variant_id = splVariants[splKeys[0]]
     }
 
     // Add client IP and user agent
