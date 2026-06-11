@@ -43,6 +43,17 @@ export async function POST(req: NextRequest) {
       offer_type: 'Chiro',
     }
 
+    // Split-test conversion stamping: forward every spl-var-* cookie so each
+    // CRM lead records which A/B variants the visitor saw. Per-variant
+    // conversion rates for UX tests are computed from this field.
+    const splVariants: Record<string, string> = {}
+    req.cookies.getAll().forEach((c) => {
+      if (c.name.startsWith('spl-var-')) splVariants[c.name.slice('spl-var-'.length)] = c.value
+    })
+    if (Object.keys(splVariants).length) {
+      payload.spl_variants = JSON.stringify(splVariants)
+    }
+
     // Add client IP and user agent
     const clientIp = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || ''
     const userAgent = req.headers.get('user-agent') || ''
