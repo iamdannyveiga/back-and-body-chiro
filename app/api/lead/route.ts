@@ -15,6 +15,21 @@ export async function POST(req: NextRequest) {
       )
     }
 
+    // ── Spam gate (Basin-equivalent behavioral filtering) ──────────────────
+    // 1. Honeypot: the hidden _gotcha field arrives as `hp` — humans never see
+    //    it, bots fill it. 2. Time-trap: form rendered -> submitted in under 3s
+    //    is automation. Silently return success so bots don't adapt; the lead
+    //    is NOT forwarded to the CRM workflow.
+    const elapsedMs = typeof body.form_ts === 'number' ? Date.now() - body.form_ts : null
+    if (body.hp) {
+      console.warn('[/api/lead] spam-drop: honeypot filled')
+      return NextResponse.json({ success: true })
+    }
+    if (elapsedMs !== null && elapsedMs >= 0 && elapsedMs < 3000) {
+      console.warn(`[/api/lead] spam-drop: submitted in ${elapsedMs}ms`)
+      return NextResponse.json({ success: true })
+    }
+
     const payload: Record<string, string> = {
       // Standard fields
       firstName,

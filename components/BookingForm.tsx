@@ -9,6 +9,8 @@ interface BookingFormProps {
 
 export default function BookingForm({ variant = 'full' }: BookingFormProps) {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  // Spam time-trap: bots auto-submit near-instantly; humans take seconds.
+  const [mountedAt] = useState(() => Date.now());
   const router = useRouter();
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
@@ -24,6 +26,9 @@ export default function BookingForm({ variant = 'full' }: BookingFormProps) {
       email: data.get('email') as string,
       concern: data.get('service') as string || data.get('message') as string || '',
       message: data.get('message') as string || '',
+      // Spam signals — checked server-side in /api/lead, stripped before CRM
+      hp: (data.get('_gotcha') as string) || '',
+      form_ts: mountedAt,
     };
 
     try {
@@ -65,7 +70,11 @@ export default function BookingForm({ variant = 'full' }: BookingFormProps) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="hidden" name="_gotcha" />
+      {/* Honeypot: invisible to humans, bots fill it. type=text (not hidden) so
+          naive bots treat it as a real field; CSS-hidden + untabbable. */}
+      <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', height: 0, overflow: 'hidden' }}>
+        <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" />
+      </div>
       <div className="grid grid-cols-2 gap-3 mb-3">
         <div className="form-group"><input type="text" name="first_name" placeholder="First Name" required /></div>
         <div className="form-group"><input type="text" name="last_name" placeholder="Last Name" required /></div>
