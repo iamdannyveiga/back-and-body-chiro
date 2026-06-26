@@ -7,6 +7,18 @@ interface BookingFormProps {
   variant?: 'full' | 'compact';
 }
 
+type AnalyticsWindow = Window & {
+  gtag?: (...args: unknown[]) => void;
+  clarity?: (...args: unknown[]) => void;
+}
+
+function trackLeadEvent(name: string, params: Record<string, unknown>) {
+  if (typeof window === 'undefined') return;
+  const w = window as AnalyticsWindow;
+  w.gtag?.('event', name, params);
+  w.clarity?.('event', name);
+}
+
 export default function BookingForm({ variant = 'full' }: BookingFormProps) {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   // Spam time-trap: bots auto-submit near-instantly; humans take seconds.
@@ -30,6 +42,7 @@ export default function BookingForm({ variant = 'full' }: BookingFormProps) {
       hp: (data.get('_gotcha') as string) || '',
       form_ts: mountedAt,
     };
+    const visitReason = (data.get('service') as string) || 'not_provided';
 
     try {
       const res = await fetch('/api/lead', {
@@ -39,12 +52,36 @@ export default function BookingForm({ variant = 'full' }: BookingFormProps) {
       });
       if (res.ok) {
         setStatus('success');
+        trackLeadEvent('generate_lead', {
+          event_category: 'conversion',
+          event_label: 'booking_form_success',
+          form_name: `booking_form_${variant}`,
+          form_variant: variant,
+          lead_source: 'website',
+          visit_reason: visitReason,
+          value: 67,
+          currency: 'USD',
+        });
+        trackLeadEvent('lead_submit_success', {
+          event_category: 'conversion',
+          event_label: 'lead_forwarded_to_chiroflow',
+          form_name: `booking_form_${variant}`,
+          form_variant: variant,
+          lead_source: 'website',
+          visit_reason: visitReason,
+        });
         form.reset();
         // Track funnel event
         fetch('/api/funnel/event', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ type: 'lead-submitted', slug: 'bradley-krawczyk' }),
+          body: JSON.stringify({
+            type: 'lead-submitted',
+            slug: 'bradley-krawczyk',
+            source: 'Website',
+            formName: `booking_form_${variant}`,
+            visitReason,
+          }),
         }).catch(() => {});
         // Redirect to schedule appointment
         router.push('/schedule-appointment');
@@ -69,7 +106,7 @@ export default function BookingForm({ variant = 'full' }: BookingFormProps) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} data-form-name={`booking_form_${variant}`}>
       {/* Honeypot: invisible to humans, bots fill it. type=text (not hidden) so
           naive bots treat it as a real field; CSS-hidden + untabbable. */}
       <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', height: 0, overflow: 'hidden' }}>

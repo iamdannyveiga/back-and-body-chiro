@@ -6,6 +6,10 @@ import { useEffect } from 'react'
 const GA_ID = process.env.NEXT_PUBLIC_GA4_ID
 
 let listenersAttached = false
+type AnalyticsWindow = Window & {
+  gtag?: (...args: unknown[]) => void
+  clarity?: (...args: unknown[]) => void
+}
 
 // Read all active split-test variants from cookies → tag GA4 events with them
 function readSplitTestVariants(): Record<string, string> {
@@ -20,6 +24,12 @@ function readSplitTestVariants(): Record<string, string> {
   return out
 }
 
+function trackClientEvent(name: string, params: Record<string, unknown>) {
+  const w = window as AnalyticsWindow
+  w.gtag?.('event', name, params)
+  w.clarity?.('event', name)
+}
+
 export default function GoogleAnalytics() {
   useEffect(() => {
     if (!GA_ID || listenersAttached) return
@@ -31,8 +41,7 @@ export default function GoogleAnalytics() {
       const link = target.closest('a[href^="tel:"]') as HTMLAnchorElement | null
       if (!link) return
       const phone = link.href.replace(/^tel:/, '')
-      const w = window as Window & { gtag?: (...args: unknown[]) => void }
-      w.gtag?.('event', 'phone_click', {
+      trackClientEvent('phone_click', {
         event_category: 'engagement',
         event_label: phone,
         phone_number: phone,
@@ -50,8 +59,7 @@ export default function GoogleAnalytics() {
         form.getAttribute('data-form-name') ||
         form.action ||
         'unnamed_form'
-      const w = window as Window & { gtag?: (...args: unknown[]) => void }
-      w.gtag?.('event', 'form_submit', {
+      trackClientEvent('form_submit', {
         event_category: 'engagement',
         event_label: name,
         form_name: name,
@@ -67,8 +75,7 @@ export default function GoogleAnalytics() {
       if (!el) return
       const [testId, variant] = (el.getAttribute('data-spl-variant') || '').split(':')
       if (!testId || !variant) return
-      const w = window as Window & { gtag?: (...args: unknown[]) => void }
-      w.gtag?.('event', 'split_test_cta_click', {
+      trackClientEvent('split_test_cta_click', {
         event_category: 'split_test',
         test_id: testId,
         variant,
