@@ -4,6 +4,7 @@ import Image from 'next/image';
 import PageHero from '@/components/PageHero';
 import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
+import BookingForm from '@/components/BookingForm';
 import FAQAccordion from '@/components/FAQAccordion';
 import { DecompressionIcon, MassageIcon, KinesiologyIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
@@ -61,6 +62,41 @@ export default function ChiropracticCarePage() {
           { label: 'Chiropractic Care' },
         ]}
       />
+
+      {/* HERO LEAD FORM — above-the-fold capture for paid/ad traffic. The
+          bottom ConversionCTA form sits past 7 sections (~36% scroll depth =
+          almost nobody reaches it). Submits to /api/lead -> CRM workflow
+          c58aa67d with gclid/UTM attribution, same path as organic/Meta. */}
+      <section id="get-started" className="py-14 md:py-16 bg-teal relative overflow-hidden scroll-mt-20">
+        <div className="container relative z-10">
+          <div className="grid lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-14 items-center max-w-[1080px] mx-auto">
+            <div className="text-center lg:text-left">
+              <span className="inline-block bg-mint text-white text-xs font-bold tracking-[1.5px] uppercase px-4 py-[6px] rounded-full mb-4">
+                $67 New Patient Visit
+              </span>
+              <h2 className="text-[32px] md:text-[42px] font-extrabold text-white mb-4 leading-[1.15]" style={{ fontFamily: 'var(--font-heading)' }}>
+                Book your visit with Dr. Brad.
+              </h2>
+              <p className="text-white/80 text-base md:text-lg leading-relaxed mb-6 max-w-[520px] mx-auto lg:mx-0">
+                Thorough exam, honest assessment, and an adjustment tailored to you — no contracts, no pressure. Same-week appointments in Shelby Township.
+              </p>
+              <ul className="space-y-2 text-white/90 text-sm inline-block text-left">
+                <li className="flex items-center gap-2"><span className="text-mint font-bold">&#10003;</span> 14+ years of experience</li>
+                <li className="flex items-center gap-2"><span className="text-mint font-bold">&#10003;</span> 4.9-star rated by local patients</li>
+                <li className="flex items-center gap-2"><span className="text-mint font-bold">&#10003;</span> No long-term care-plan pressure</li>
+              </ul>
+              <p className="mt-6 text-white/80 text-sm">
+                Prefer to call? <a href="tel:+15862071624" className="text-mint font-semibold">(586) 207-1624</a>
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl p-6 md:p-7 shadow-xl">
+              <h3 className="text-xl font-bold text-teal mb-1" style={{ fontFamily: 'var(--font-heading)' }}>Claim your $67 visit</h3>
+              <p className="text-sm text-text/60 mb-5">Fill this out and we&apos;ll reach out to lock in your time.</p>
+              <BookingForm variant="compact" />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* A: OVERVIEW */}
       <section className="py-20 bg-white">

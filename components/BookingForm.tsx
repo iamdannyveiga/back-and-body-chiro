@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, FormEvent } from 'react';
+import { useState, useEffect, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 
 interface BookingFormProps {
@@ -25,11 +25,30 @@ export default function BookingForm({ variant = 'full' }: BookingFormProps) {
   const [mountedAt] = useState(() => Date.now());
   const router = useRouter();
 
+  // Persist ad-click attribution (Google gclid / Meta fbclid / UTMs) from the
+  // landing URL so it survives on-site navigation and attaches to the lead —
+  // this is what lets the CRM tag paid Google leads (parallel to Meta leads).
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const p = new URLSearchParams(window.location.search);
+    const found: Record<string, string> = {};
+    ['gclid', 'wbraid', 'gbraid', 'fbclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach((k) => {
+      const v = p.get(k);
+      if (v) found[k] = v;
+    });
+    if (Object.keys(found).length) {
+      try { sessionStorage.setItem('bb_attribution', JSON.stringify(found)); } catch { /* private mode */ }
+    }
+  }, []);
+
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus('submitting');
     const form = e.currentTarget;
     const data = new FormData(form);
+
+    let attribution: Record<string, string> = {};
+    try { attribution = JSON.parse(sessionStorage.getItem('bb_attribution') || '{}'); } catch { /* ignore */ }
 
     const payload = {
       firstName: data.get('first_name') as string,
@@ -38,6 +57,8 @@ export default function BookingForm({ variant = 'full' }: BookingFormProps) {
       email: data.get('email') as string,
       concern: data.get('service') as string || data.get('message') as string || '',
       message: data.get('message') as string || '',
+      // Ad-click attribution (gclid / fbclid / UTMs) forwarded to the CRM
+      ...attribution,
       // Spam signals — checked server-side in /api/lead, stripped before CRM
       hp: (data.get('_gotcha') as string) || '',
       form_ts: mountedAt,

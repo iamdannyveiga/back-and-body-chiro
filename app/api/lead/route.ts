@@ -58,6 +58,24 @@ export async function POST(req: NextRequest) {
       offer_type: 'Chiro',
     }
 
+    // Ad-click attribution. Keeps source as "Website" so the lead flows through
+    // the CRM workflow exactly like an organic lead, but stamps utm_source/gclid
+    // so reporting can attribute paid Google leads — the parallel to Meta leads
+    // carrying utm_source=Facebook. A gclid-only click (Google auto-tagging) is
+    // defaulted to google / cpc.
+    const hasGoogleClick = !!(body.gclid || body.wbraid || body.gbraid)
+    if (body.utm_source) payload.utm_source = body.utm_source
+    else if (hasGoogleClick) payload.utm_source = 'google'
+    if (body.utm_medium) payload.utm_medium = body.utm_medium
+    else if (hasGoogleClick) payload.utm_medium = 'cpc'
+    if (body.utm_campaign) payload.utm_campaign = body.utm_campaign
+    if (body.utm_content) payload.utm_content = body.utm_content
+    if (body.utm_term) payload.utm_term = body.utm_term
+    if (body.gclid) payload.gclid = body.gclid
+    if (body.wbraid) payload.wbraid = body.wbraid
+    if (body.gbraid) payload.gbraid = body.gbraid
+    if (body.fbclid) payload.fbclid = body.fbclid
+
     // Organic-channel identification: the CRM intake persists event_source_url
     // (raw_data) — it is the field reporting uses to separate website/organic
     // leads from ad leads. Use the actual submitting page when available.
