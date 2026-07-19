@@ -61,6 +61,11 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
+  verification: {
+    other: {
+      "msvalidate.01": "A6F217ED0AC5FB964B9FA5F800FEF19E",
+    },
+  },
 };
 
 export default function RootLayout({
