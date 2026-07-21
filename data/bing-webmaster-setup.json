@@ -1,23 +1,29 @@
 {
   "schema_version": 1,
-  "status": "prepared_existing_verification",
+  "status": "complete",
   "site_url": "https://backandbodydoc.com/",
   "sitemap_url": "https://backandbodydoc.com/sitemap.xml",
   "prepared_at": "2026-07-21T09:02:11.640Z",
   "bing_webmaster": {
     "property_present": true,
     "verified": true,
-    "verification_file": "/BingSiteAuth.xml"
+    "verification_file": "/BingSiteAuth.xml",
+    "verification_file_live": true
   },
   "sitemap": {
-    "submitted": false,
-    "api_visible": false,
-    "status": "pending_verification"
+    "submitted": true,
+    "api_visible": true,
+    "status": "Pending",
+    "url_count": 32,
+    "last_crawled": "/Date(1784533896000)/"
   },
   "indexnow": {
     "key_file": "/703a84d10d1e7014f37657cc2c0e779a.txt",
-    "key_file_live": false,
-    "accepted": false,
-    "submitted_url_count": 0
-  }
+    "key_file_live": true,
+    "accepted": true,
+    "submitted_url_count": 1,
+    "response_status": 202,
+    "submitted_at": "2026-07-21T09:04:12.048Z"
+  },
+  "verified_at": "2026-07-21T09:04:12.047Z"
 }
