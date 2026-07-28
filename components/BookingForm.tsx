@@ -104,8 +104,13 @@ export default function BookingForm({ variant = 'full' }: BookingFormProps) {
             visitReason,
           }),
         }).catch(() => {});
-        // Redirect to schedule appointment
-        router.push('/schedule-appointment');
+        // Redirect to schedule appointment; email is the only field the
+        // ChiroHD intake scheduler can prefill from the URL
+        router.push(
+          payload.email
+            ? `/schedule-appointment?email=${encodeURIComponent(payload.email)}`
+            : '/schedule-appointment'
+        );
       } else {
         setStatus('error');
       }

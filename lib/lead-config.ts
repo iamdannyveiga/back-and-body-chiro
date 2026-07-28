@@ -4,7 +4,7 @@ export const leadConfig = {
   funnelStatsUrl: 'https://hooks.chiroflow.ai/api/funnel-stats/appointment-booked',
   funnelId: 'bradley-krawczyk',
   calendarType: 'chirohd',
-  calendarEmbedUrl: 'https://www.chirohd.com/online-scheduler/679/back-and-body-chiropractic-center',
+  calendarEmbedUrl: 'https://intake.chirohd.com/new-patient-scheduling/679/back-and-body-chiropractic-center',
   offer: {
     name: 'New Patient Special',
     price: 67,

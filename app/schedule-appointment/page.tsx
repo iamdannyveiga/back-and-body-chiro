@@ -11,7 +11,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ScheduleAppointmentPage() {
+export default async function ScheduleAppointmentPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ email?: string }>;
+}) {
+  // ChiroHD's intake scheduler only supports email prefill via query param
+  const { email } = await searchParams;
+  const schedulerUrl = email
+    ? `https://intake.chirohd.com/new-patient-scheduling/679/back-and-body-chiropractic-center?email=${encodeURIComponent(email)}`
+    : 'https://intake.chirohd.com/new-patient-scheduling/679/back-and-body-chiropractic-center';
   return (
     <section className="pt-[100px] pb-20 min-h-screen bg-white">
       <ScrollReveal>
@@ -28,7 +37,7 @@ export default function ScheduleAppointmentPage() {
         <div className="w-full max-w-[800px] mx-auto px-5">
           <div className="bg-white border border-gray-100 rounded-2xl shadow-lg overflow-hidden">
             <iframe
-              src="https://www.chirohd.com/online-scheduler/679/back-and-body-chiropractic-center"
+              src={schedulerUrl}
               title="Schedule Appointment - Back and Body Chiropractic Center"
               width="100%"
               height="700"
