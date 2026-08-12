@@ -5,6 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Clarity from "@/components/Clarity";
+import TelClickTracker from "@/components/TelClickTracker";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -91,6 +92,7 @@ export default function RootLayout({
         <Navigation />
         <main>{children}</main>
         <Footer />
+        <TelClickTracker />
       </body>
     </html>
   );
