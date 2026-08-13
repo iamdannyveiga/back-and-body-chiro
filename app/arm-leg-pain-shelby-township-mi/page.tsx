@@ -9,7 +9,7 @@ import { SciaticaIcon, NeckPainIcon, DecompressionIcon } from '@/components/Icon
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Arm & Leg Pain Shelby Township',
+  title: "Arm Leg Pain Shelby Township MI | Back and Body",
   description:
     'Arm and leg pain treatment from Dr. Brad Krawczyk. Radiating pain, numbness, and tingling traced to the spinal source. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
