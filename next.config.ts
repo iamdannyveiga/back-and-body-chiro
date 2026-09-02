@@ -108,7 +108,6 @@ const nextConfig: NextConfig = {
       { source: "/accessibility", destination: "/", permanent: false },
       { source: "/healthcare-disclaimer", destination: "/", permanent: false },
       { source: "/anti-discrimination", destination: "/", permanent: false },
-      { source: "/privacy-policy", destination: "/", permanent: false },
       { source: "/ai-generated-content-disclaimer", destination: "/", permanent: false },
 
       // Blog: temporary redirect until blog is implemented

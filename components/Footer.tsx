@@ -98,6 +98,7 @@ export default function Footer() {
                 { href: '/faq', label: 'FAQ' },
                 { href: '/contact', label: 'Contact' },
                 { href: '/schedule-appointment', label: 'Book Online' },
+                { href: '/privacy-policy', label: 'Privacy Policy' },
                 { href: '/ai-information', label: 'AI Information' },
               ].map((item) => (
                 <li key={item.label} className="mb-2.5">
