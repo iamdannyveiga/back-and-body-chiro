@@ -6,7 +6,7 @@ import ConversionCTA from '@/components/ConversionCTA';
 import { StarIcon, FacebookIcon, CheckIcon } from '@/components/Icons';
 
 export const metadata: Metadata = {
-  title: 'Patient Reviews',
+  title: "Back and Body Chiropractor Reviews Shelby Charter Township",
   description:
     '4.9\u2605 Google rating. Real patient reviews for Dr. Brad Krawczyk at Back and Body Chiropractic Center. Shelby Township, MI.',
   alternates: {
