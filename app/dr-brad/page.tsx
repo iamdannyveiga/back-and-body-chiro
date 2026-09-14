@@ -10,7 +10,7 @@ import { personSchema, breadcrumbSchema } from '@/lib/schema';
 export const metadata: Metadata = {
   title: 'Meet Dr. Brad',
   description:
-    'Dr. Bradley Krawczyk, D.C. — MSU grad, Life University 2011, Macomb County native. 14+ years of honest chiropractic care. No nonsense. Just results.',
+    "Meet Dr. Brad at Back and Body Chiropractic Center, serving Shelby Charter Township. Personalized chiropractic care in a welcoming, patient focused office.",
   alternates: {
     canonical: '/dr-brad',
   },
