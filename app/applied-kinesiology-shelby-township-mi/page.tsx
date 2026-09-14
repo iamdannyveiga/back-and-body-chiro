@@ -11,7 +11,7 @@ import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 export const metadata: Metadata = {
   title: 'Applied Kinesiology Shelby Township',
   description:
-    'Applied kinesiology and muscle testing from Dr. Brad Krawczyk. Advanced diagnostic technique for deeper insight into your condition. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+    "Applied Kinesiology Shelby Township MI. New patient special $67: exam and first visit with Back and Body. Same-day appointments. Book online.",
   alternates: {
     canonical: '/applied-kinesiology-shelby-township-mi',
   },
