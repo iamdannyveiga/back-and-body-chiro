@@ -8,7 +8,7 @@ import { StarIcon, FacebookIcon, CheckIcon } from '@/components/Icons';
 export const metadata: Metadata = {
   title: "Back and Body Chiropractor Reviews Shelby Charter Township",
   description:
-    '4.9\u2605 Google rating. Real patient reviews for Dr. Brad Krawczyk at Back and Body Chiropractic Center. Shelby Township, MI.',
+    "Read real patient reviews for Back and Body Chiropractic, a trusted Shelby Charter Township chiropractor offering personalized spinal care.",
   alternates: {
     canonical: '/testimonials',
   },
