@@ -8,7 +8,7 @@ import { StarIcon, HomeIcon, KinesiologyIcon, WorkInjuryIcon, PediatricIcon } fr
 import { personSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Meet Dr. Brad',
+  title: "Dr. Brad | Chiropractor Shelby Charter Township, MI",
   description:
     "Meet Dr. Brad at Back and Body Chiropractic Center, serving Shelby Charter Township. Personalized chiropractic care in a welcoming, patient focused office.",
   alternates: {
