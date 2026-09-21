@@ -67,7 +67,7 @@ export default async function ScheduleAppointmentPage({
             <span className="text-text/20">&middot;</span>
             <span>14+ Years</span>
             <span className="text-text/20">&middot;</span>
-            <span>Saturday Hours</span>
+            <span>Evening Hours</span>
             <span className="text-text/20">&middot;</span>
             <span>No Contracts</span>
           </div>

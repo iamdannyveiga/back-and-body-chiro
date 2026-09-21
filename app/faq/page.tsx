@@ -52,7 +52,7 @@ const LOCATION_FAQS = [
   {
     question: 'What are your hours?',
     answer:
-      'Monday through Wednesday 9 AM-1 PM and 3 PM-7 PM, Thursday 9 AM-1 PM, and Saturday 9 AM-1 PM. Closed Friday and Sunday.',
+      'Monday through Thursday 9 AM-1 PM and 3 PM-7 PM, and Friday 9 AM-12 PM. Closed Saturday and Sunday.',
   },
 ];
 

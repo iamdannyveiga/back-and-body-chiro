@@ -21,7 +21,7 @@ export default function ContactPage() {
         title={<>
           <span className="font-normal">Get in </span>touch.
         </>}
-        subtitle="In Vince and Joe's plaza at 25 Mile & Van Dyke. Saturday hours available."
+        subtitle="In Vince and Joe's plaza at 25 Mile & Van Dyke. Evening and Friday-morning appointments available."
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Contact' },
@@ -53,12 +53,12 @@ export default function ContactPage() {
                       ['Monday', '9:00 AM \u2013 1:00 PM, 3:00 \u2013 7:00 PM'],
                       ['Tuesday', '9:00 AM \u2013 1:00 PM, 3:00 \u2013 7:00 PM'],
                       ['Wednesday', '9:00 AM \u2013 1:00 PM, 3:00 \u2013 7:00 PM'],
-                      ['Thursday', '9:00 AM \u2013 1:00 PM'],
-                      ['Friday', 'Closed'],
-                      ['Saturday', '9:00 AM \u2013 1:00 PM'],
+                      ['Thursday', '9:00 AM \u2013 1:00 PM, 3:00 \u2013 7:00 PM'],
+                      ['Friday', '9:00 AM \u2013 12:00 PM'],
+                      ['Saturday', 'Closed'],
                       ['Sunday', 'Closed'],
                     ].map(([day, hours]) => (
-                      <tr key={day} className={`border-b border-gray-100 ${day === 'Saturday' ? 'text-mint font-semibold' : ''}`}>
+                      <tr key={day} className={`border-b border-gray-100 ${day === 'Friday' ? 'text-mint font-semibold' : ''}`}>
                         <td className="py-2 pr-6 font-medium text-teal">{day}</td>
                         <td className="py-2 text-text/70">{hours}</td>
                       </tr>
@@ -94,7 +94,7 @@ export default function ContactPage() {
                   <p className="text-sm text-text/50 mb-6">+ Free Consultation</p>
                   <BookingForm variant="compact" />
                   <p className="text-center text-xs text-[#888] mt-4">
-                    Open Saturdays &middot; Evening hours Mon&ndash;Wed until 7pm
+                    Evening hours Mon&ndash;Thu until 7pm &middot; Friday mornings
                   </p>
                 </div>
               </div>

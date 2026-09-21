@@ -10,9 +10,10 @@ export async function GET() {
 - New Patient Special: $67
 
 ## Hours
-- Monday-Wednesday: 9AM-1PM & 3PM-7PM
-- Thursday: 9AM-1PM
-- Saturday: 9AM-1PM
+- Monday-Thursday: 9AM-1PM & 3PM-7PM
+- Friday: 9AM-12PM
+- Saturday: Closed
+- Sunday: Closed
 
 ## About Dr. Brad
 Dr. Bradley Krawczyk earned his BS in Kinesiology from Michigan State University and his Doctor of Chiropractic from Life University (2011). 14+ years of experience. 4.9-star Google rating.
@@ -55,7 +56,7 @@ Dr. Bradley Krawczyk earned his BS in Kinesiology from Michigan State University
 - What is spinal decompression? Non-surgical traction therapy for bulging or herniated discs.
 - What conditions do you treat? Back pain, neck pain, sciatica, headaches, disc injuries, whiplash, scoliosis, carpal tunnel, vertigo, work injuries, and general wellness.
 - Where are you located? 55130 Van Dyke Ave Suite 25, Shelby Charter Township, MI 48317.
-- What are your hours? Monday-Wednesday 9AM-1PM and 3PM-7PM; Thursday 9AM-1PM; Saturday 9AM-1PM.
+- What are your hours? Monday-Thursday 9AM-1PM and 3PM-7PM; Friday 9AM-12PM. Closed Saturday and Sunday.
 
 ## Pages
 - Home: /

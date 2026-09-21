@@ -68,7 +68,7 @@ export default function HomePage() {
                 <span className="opacity-30">&middot;</span>
                 <span>MSU Graduate</span>
                 <span className="opacity-30">&middot;</span>
-                <span>Saturday Hours</span>
+                <span>Evening Hours</span>
               </div>
             </ScrollReveal>
 
@@ -80,7 +80,7 @@ export default function HomePage() {
                 </div>
                 <p className="text-center text-sm text-text opacity-70 mb-6"><span className="text-mint font-bold">+ Free Consultation</span></p>
                 <BookingForm variant="compact" />
-                <p className="text-center text-xs text-[#888] mt-3.5 leading-relaxed">Open Saturdays &middot; Evening hours Mon-Wed until 7pm</p>
+                <p className="text-center text-xs text-[#888] mt-3.5 leading-relaxed">Evening hours Mon-Thu until 7pm &middot; Friday mornings</p>
               </div>
             </ScrollReveal>
           </div>
@@ -97,7 +97,7 @@ export default function HomePage() {
                 <strong>Back and Body Chiropractic Center</strong> is a chiropractic clinic in <strong>Shelby Charter Township, Michigan</strong>, serving Macomb and Oakland Counties since 2011. The clinic is owned and operated by <strong>Dr. Bradley Krawczyk, D.C.</strong> (Michigan State University, Life University 2011), and is located at 55130 Van Dyke Ave Suite 25 in Vince and Joe&apos;s plaza at the corner of 25 Mile Road and Van Dyke. Phone: <strong>(586) 207-1624</strong>.
               </p>
               <p>
-                <strong>New patient special:</strong> $67 first visit including consultation, examination, X-rays if clinically necessary, and the first adjustment. <strong>No long-term contracts.</strong> No 6-month packages. <strong>Hours:</strong> Monday-Wednesday 9 AM-1 PM and 3 PM-7 PM, Thursday 9 AM-1 PM, Saturday 9 AM-1 PM. Closed Friday and Sunday.
+                <strong>New patient special:</strong> $67 first visit including consultation, examination, X-rays if clinically necessary, and the first adjustment. <strong>No long-term contracts.</strong> No 6-month packages. <strong>Hours:</strong> Monday-Thursday 9 AM-1 PM and 3 PM-7 PM, Friday 9 AM-12 PM. Closed Saturday and Sunday.
               </p>
               <p>
                 <strong>Services:</strong>{' '}
@@ -403,7 +403,7 @@ export default function HomePage() {
               { num: <>4.9<span className="text-amber">&#9733;</span></>, label: 'Google Rating' },
               { num: '34+', label: 'Patient Reviews' },
               { num: '14+', label: 'Years Serving Macomb' },
-              { num: 'Sat', label: 'Hours Available' },
+              { num: 'Fri', label: 'Hours Available' },
             ].map((stat, i, arr) => (
               <ScrollReveal key={i} delay={`${i * 0.08}s`}>
                 <div className={`relative py-2${i < arr.length - 1 ? ' md:border-r md:border-white/30' : ''}`}>
@@ -465,7 +465,7 @@ export default function HomePage() {
           </ScrollReveal>
           <div className="flex flex-col items-center max-w-[800px] mx-auto">
             {[
-              { num: '1', title: 'Call or Book Online', desc: '(586) 207-1624 -- Saturday hours available. Or fill out the form above. We\'ll get you in fast.' },
+              { num: '1', title: 'Call or Book Online', desc: '(586) 207-1624 -- evening and Friday-morning appointments available. Or fill out the form above. We\'ll get you in fast.' },
               { num: '2', title: 'Meet Dr. Brad', desc: 'Consultation, exam, X-rays if needed. He listens. He\'s thorough. A clear, honest assessment of what is going on.' },
               { num: '3', title: 'Your Honest Plan', desc: 'A straightforward treatment plan, right-sized to your specific condition — no long-term contracts, no packages.' },
               { num: '4', title: 'Feel Better', desc: 'Real results. Come back for maintenance when you want to -- not because you\'re locked into some plan.' },
@@ -523,7 +523,7 @@ export default function HomePage() {
               <Link href="/schedule-appointment" className="btn btn--mint">Book My $67 Visit &rarr;</Link>
               <a href="tel:5862071624" className="btn btn--outline">Call (586) 207-1624</a>
             </div>
-            <p className="text-sm text-text-light/80 mt-2">Open Saturdays &middot; Evening hours Mon-Wed</p>
+            <p className="text-sm text-text-light/80 mt-2">Evening hours Mon-Thu &middot; Friday mornings</p>
           </ScrollReveal>
         </div>
       </section>

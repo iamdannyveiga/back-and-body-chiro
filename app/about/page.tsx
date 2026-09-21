@@ -86,7 +86,7 @@ export default function AboutPage() {
                 { num: <>4.9<span className="text-amber">&#9733;</span></>, label: 'Google Rating' },
                 { num: '34+', label: 'Patient Reviews' },
                 { num: '14+', label: 'Years Serving Macomb' },
-                { num: 'Sat', label: 'Hours Available' },
+                { num: 'Fri', label: 'Hours Available' },
               ].map((s, i) => (
                 <div key={i} className="relative">
                   <div className="text-[44px] font-extrabold text-mint leading-none mb-1.5" style={{ fontFamily: 'var(--font-heading)' }}>{s.num}</div>

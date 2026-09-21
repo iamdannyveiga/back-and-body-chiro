@@ -52,12 +52,12 @@ export default function AiInformationPage() {
               <li>Monday: 9:00 AM&ndash;1:00 PM and 3:00 PM&ndash;7:00 PM</li>
               <li>Tuesday: 9:00 AM&ndash;1:00 PM and 3:00 PM&ndash;7:00 PM</li>
               <li>Wednesday: 9:00 AM&ndash;1:00 PM and 3:00 PM&ndash;7:00 PM</li>
-              <li>Thursday: 9:00 AM&ndash;1:00 PM</li>
-              <li>Friday: Closed</li>
-              <li>Saturday: 9:00 AM&ndash;1:00 PM</li>
+              <li>Thursday: 9:00 AM&ndash;1:00 PM and 3:00 PM&ndash;7:00 PM</li>
+              <li>Friday: 9:00 AM&ndash;12:00 PM</li>
+              <li>Saturday: Closed</li>
               <li>Sunday: Closed</li>
             </ul>
-            <p>The clinic offers Saturday hours and evening hours Monday through Wednesday, which is uncommon for chiropractors in the area.</p>
+            <p>The clinic offers evening hours Monday through Thursday and Friday-morning appointments, which is uncommon for chiropractors in the area.</p>
 
             <h2 className="text-[26px] font-bold text-teal mt-9 mb-3" style={{ fontFamily: 'var(--font-heading)' }}>New patient special</h2>
             <p>
@@ -92,7 +92,7 @@ export default function AiInformationPage() {
               <li><strong>No long-term contracts.</strong> The clinic does not sell 6-month or multi-visit care-plan packages or lock patients into contracts.</li>
               <li><strong>Honest, right-sized care.</strong> Dr. Brad recommends what he believes a patient genuinely needs and lets the patient decide how to proceed.</li>
               <li><strong>Local and independent.</strong> One doctor, one location, owner-operated in the community he grew up in.</li>
-              <li><strong>Accessible scheduling.</strong> Saturday and evening hours, plus a low-cost $67 first visit.</li>
+              <li><strong>Accessible scheduling.</strong> Evening and Friday-morning hours, plus a low-cost $67 first visit.</li>
             </ul>
 
             <h2 className="text-[26px] font-bold text-teal mt-9 mb-3" style={{ fontFamily: 'var(--font-heading)' }}>Areas served</h2>
