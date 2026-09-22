@@ -126,9 +126,9 @@ export default function Footer() {
                 <span className="text-text-light/70">Mon:</span> 9am-1pm, 3-7pm<br />
                 <span className="text-text-light/70">Tue:</span> 9am-1pm, 3-7pm<br />
                 <span className="text-text-light/70">Wed:</span> 9am-1pm, 3-7pm<br />
-                <span className="text-text-light/70">Thu:</span> 9am-1pm<br />
-                <span className="text-text-light/70">Fri:</span> Closed<br />
-                <span className="text-text-light/70">Sat:</span> 9am-1pm<br />
+                <span className="text-text-light/70">Thu:</span> 9am-1pm, 3-7pm<br />
+                <span className="text-text-light/70">Fri:</span> 9am-12pm<br />
+                <span className="text-text-light/70">Sat:</span> Closed<br />
                 <span className="text-text-light/70">Sun:</span> Closed
               </div>
             </div>

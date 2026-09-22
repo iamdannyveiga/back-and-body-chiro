@@ -20,7 +20,7 @@ const NOISE_OVERLAY =
 export default function ConversionCTA({
   line1 = '$67 gets you started.',
   anchor = 'Just honest care.',
-  note = 'Open Saturdays · Evening hours Mon-Wed',
+  note = 'Evening hours Mon-Thu · Friday mornings',
   withForm = true,
 }: ConversionCTAProps) {
   // Button-only variant — pages that already capture (e.g. /contact).
