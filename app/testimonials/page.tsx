@@ -6,7 +6,7 @@ import ConversionCTA from '@/components/ConversionCTA';
 import { StarIcon, FacebookIcon, CheckIcon } from '@/components/Icons';
 
 export const metadata: Metadata = {
-  title: "Back and Body Chiropractor Reviews Shelby Charter Township",
+  title: "Patient Testimonials & Reviews",
   description:
     "Read real patient reviews for Back and Body Chiropractic, a trusted Shelby Charter Township chiropractor offering personalized spinal care.",
   alternates: {
