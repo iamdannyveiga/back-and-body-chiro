@@ -258,6 +258,18 @@ export default function SpinalDecompressionPage() {
         </div>
       </section>
 
+      <section className="py-12 bg-light-gray">
+        <div className="container">
+          <div className="max-w-[860px] mx-auto text-center">
+            <h2 className="text-[26px] md:text-[32px] text-teal mb-3" style={{ fontFamily: 'var(--font-heading)' }}>Also Serving Nearby Communities</h2>
+            <p className="text-text/70 mb-5">Our Shelby Charter Township office also serves patients from nearby towns.</p>
+            <div className="flex flex-wrap justify-center gap-x-8 gap-y-3">
+              <Link href="/spinal-decompression-sterling-heights-mi" className="text-mint font-semibold underline underline-offset-4">Spinal Decompression in Sterling Heights</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <ConversionCTA line1="Disc pain doesn't have to mean surgery." anchor="$67 to find out." />
 
       <script

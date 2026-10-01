@@ -12,6 +12,7 @@ interface PageHeroProps {
   breadcrumbs: Breadcrumb[];
   imageSrc?: string;
   imageAlt?: string;
+  aside?: React.ReactNode;
 }
 
 export default function PageHero({
@@ -20,6 +21,7 @@ export default function PageHero({
   breadcrumbs,
   imageSrc = '/images/hero-clinic.webp',
   imageAlt = 'Back and Body Chiropractic Center',
+  aside,
 }: PageHeroProps) {
   return (
     <section className="relative pt-[120px] md:pt-[140px] pb-14 md:pb-16">
@@ -30,7 +32,8 @@ export default function PageHero({
         className="object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-[rgba(26,47,58,.78)] via-[rgba(26,47,58,.85)] to-[rgba(26,47,58,.92)]" />
-      <div className="container relative z-10">
+      <div className={aside ? "container relative z-10 grid lg:grid-cols-[1.1fr_1fr] gap-8 lg:gap-12 items-center" : "container relative z-10"}>
+        <div>
         <div className="text-[13px] text-text-light/75 mb-4">
           {breadcrumbs.map((bc, i) => (
             <span key={i}>
@@ -49,6 +52,8 @@ export default function PageHero({
         {subtitle && (
           <p className="text-[17px] text-text-light/[.65] mt-4 max-w-[600px] leading-[1.65]">{subtitle}</p>
         )}
+        </div>
+        {aside && <div id="get-started" className="scroll-mt-24 w-full max-w-[460px] lg:ml-auto">{aside}</div>}
       </div>
     </section>
   );
