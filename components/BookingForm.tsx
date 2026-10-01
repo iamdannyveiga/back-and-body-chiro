@@ -5,6 +5,10 @@ import { useRouter } from 'next/navigation';
 
 interface BookingFormProps {
   variant?: 'full' | 'compact';
+  // PAGES-1: optional pre-selected "reason for visit" so city/service pages can
+  // carry the offer context into the lead (spec offer_prefill). Existing
+  // callers are unchanged (undefined -> empty default).
+  defaultService?: string;
 }
 
 type AnalyticsWindow = Window & {
@@ -19,7 +23,7 @@ function trackLeadEvent(name: string, params: Record<string, unknown>) {
   w.clarity?.('event', name);
 }
 
-export default function BookingForm({ variant = 'full' }: BookingFormProps) {
+export default function BookingForm({ variant = 'full', defaultService }: BookingFormProps) {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   // Spam time-trap: bots auto-submit near-instantly; humans take seconds.
   const [mountedAt] = useState(() => Date.now());
@@ -146,7 +150,7 @@ export default function BookingForm({ variant = 'full' }: BookingFormProps) {
       <div className="form-group mb-3"><input type="email" name="email" placeholder="Email" required /></div>
       <div className="form-group mb-3">
         <label htmlFor="service-select" className="sr-only">What brings you in</label>
-        <select id="service-select" name="service" defaultValue="" aria-label="What brings you in">
+        <select id="service-select" name="service" defaultValue={defaultService || ''} aria-label="What brings you in">
           {variant === 'full' ? (
             <>
               <option value="" disabled>What brings you in? (optional)</option>
@@ -170,6 +174,8 @@ export default function BookingForm({ variant = 'full' }: BookingFormProps) {
               <option>Neck Pain</option>
               <option>Headaches</option>
               <option>Sciatica</option>
+              <option>Spinal Decompression</option>
+              <option>SoftWave Therapy</option>
               <option>General Wellness</option>
               <option>Other</option>
             </>
