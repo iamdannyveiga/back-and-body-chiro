@@ -129,10 +129,10 @@ export default function SpinalDecompressionSterlingHeightsMiPage() {
                 $67 New Patient Visit
               </span>
               <h2 className="text-[32px] md:text-[42px] font-extrabold text-white mb-4 leading-[1.15]" style={{ fontFamily: 'var(--font-heading)' }}>
-                'Book your decompression consultation with Dr. Brad.'
+                {'Book your decompression consultation with Dr. Brad.'}
               </h2>
               <p className="text-white/80 text-base md:text-lg leading-relaxed mb-6 max-w-[520px] mx-auto lg:mx-0">
-                'Non-surgical spinal decompression for Sterling Heights patients with disc and nerve pain. Fill this out and we\'ll reach out to lock in your time.'
+                {'Non-surgical spinal decompression for Sterling Heights patients with disc and nerve pain. Fill this out and we\'ll reach out to lock in your time.'}
               </p>
               <ul className="space-y-2 text-white/90 text-sm inline-block text-left">
                 <li className="flex items-center gap-2"><span className="text-mint font-bold">&#10003;</span> 14+ years of experience</li>

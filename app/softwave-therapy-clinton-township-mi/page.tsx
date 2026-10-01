@@ -129,10 +129,10 @@ export default function SoftwaveTherapyClintonTownshipMiPage() {
                 $67 New Patient Visit
               </span>
               <h2 className="text-[32px] md:text-[42px] font-extrabold text-white mb-4 leading-[1.15]" style={{ fontFamily: 'var(--font-heading)' }}>
-                'Book your SoftWave visit with Dr. Brad.'
+                {'Book your SoftWave visit with Dr. Brad.'}
               </h2>
               <p className="text-white/80 text-base md:text-lg leading-relaxed mb-6 max-w-[520px] mx-auto lg:mx-0">
-                'Regenerative SoftWave therapy close to home for Clinton Township patients. Fill this out and we\'ll reach out to lock in your time.'
+                {'Regenerative SoftWave therapy close to home for Clinton Township patients. Fill this out and we\'ll reach out to lock in your time.'}
               </p>
               <ul className="space-y-2 text-white/90 text-sm inline-block text-left">
                 <li className="flex items-center gap-2"><span className="text-mint font-bold">&#10003;</span> 14+ years of experience</li>
