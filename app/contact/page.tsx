@@ -4,6 +4,7 @@ import PageHero from '@/components/PageHero';
 import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import BookingForm from '@/components/BookingForm';
+import { localBusinessSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Contact Us in Shelby Township',
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema()) }} />
       <PageHero
         title={<>
           <span className="font-normal">Get in </span>touch.
