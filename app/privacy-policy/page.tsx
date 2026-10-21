@@ -109,7 +109,7 @@ export default function PrivacyPolicyPage() {
               <p className="font-bold text-teal mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
                 Back and Body Chiropractic Center
               </p>
-              <p className="mb-3">55130 Van Dyke, Shelby Twp, MI 48316-5302</p>
+              <p className="mb-3">55130 Van Dyke Ave #25, Shelby Charter Township, MI 48317</p>
               <p className="mb-1">
                 Email:{' '}
                 <a href="mailto:backandbodydoc@gmail.com" className="text-teal font-bold underline">
