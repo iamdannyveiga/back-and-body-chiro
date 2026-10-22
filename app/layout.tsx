@@ -5,6 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Clarity from "@/components/Clarity";
+import MetaPixel from "@/components/MetaPixel";
 import TelClickTracker from "@/components/TelClickTracker";
 
 const raleway = Raleway({
@@ -79,6 +80,7 @@ export default function RootLayout({
       <body className={`${raleway.variable} ${oxygen.variable} antialiased`}>
         <GoogleAnalytics />
         <Clarity />
+        <MetaPixel />
         {/* Grain overlay */}
         <div className="grain">
           <svg width="100%" height="100%">
