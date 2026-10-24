@@ -1,0 +1,94 @@
+{
+  "source": "gbp-reviews-feed (forge gbp_review_responses_v2, Google Business Profile)",
+  "crm_id": "mEE5D5TrXWgcB6OpCBMY",
+  "corpus_keys": [
+    "live-bradley"
+  ],
+  "feed_ts": "2026-10-24T14:51:59Z",
+  "reviews": [
+    {
+      "review_id": "AbFvOqnjawI7vk1ClhkcQJ1cQFTxjuP0z1LBepDhjhn4kX37robSPQCZbjaLctZR6B22UcA_MRrwWw",
+      "name": "Bill G.",
+      "stars": 5,
+      "at": "2026-10-22T17:10:11.651965Z",
+      "text": "Great experience, caring, professional, friendly and very proficient at what they do. Thank you for all your help!"
+    },
+    {
+      "review_id": "AbFvOqlqHbFMvsAHndW4l2qdELYNPLzn0RFEs247TcDZIahOmuz6BcnM0wj7Y2IANLahXFbpu1I4VA",
+      "name": "Kevin J.",
+      "stars": 5,
+      "at": "2026-08-11T22:33:44.512156Z",
+      "text": "Everyone very professional and in a happy mood. Highly recommend Dr. Brad and employees!!"
+    },
+    {
+      "review_id": "AbFvOqkyHJjDHVYGH12gCIkeLhPdytYFSxhmULHu-BwZJt6qnTUHBpXdJRuJVQ7akIhCaaGLA1nc",
+      "name": "Derek B.",
+      "stars": 5,
+      "at": "2026-08-10T17:47:02.259396Z",
+      "text": "Great staff, easy to schedule appointments and knowledgeable."
+    },
+    {
+      "review_id": "AbFvOqmfdZXEOg2mjX3PgqzN1Fl5gehZ1Wo_1PEJ9pS__HHWPh7cQWNnn_rsZ-OSbGf0AI1u8ctGOw",
+      "name": "Emv V.",
+      "stars": 5,
+      "at": "2026-08-06T16:26:29.679384Z",
+      "text": "Been coming here for 3 years now.. and I havent gone no where else. Best of the best. The most friendly people around!"
+    },
+    {
+      "review_id": "AbFvOqn1i4Eo4Sx-EsJ_x6nI-nm9Ox2Bp-oi4x9YDctyF8fkEjYIUUj0kxd-xAVI5bfMX7exEb-93w",
+      "name": "Robert S.",
+      "stars": 5,
+      "at": "2026-08-03T15:42:57.603292Z",
+      "text": "Dr. Brad and company are fantastic. I've been bringing my son here for treatment and his recovery has improved drastically. We appreciate everything they have done."
+    },
+    {
+      "review_id": "AbFvOqntgObNaZYjNxXQPs2o-judPOJNOuIn4IMUFJYIuWvqY9UzJHVmgot4gyY1OurdDxuPkXcV",
+      "name": "Marek S.",
+      "stars": 5,
+      "at": "2026-07-28T01:50:37.162444Z",
+      "text": "I always feel better after seeing Dr Brad. He puts me on my feet. Highly recommend Back and Body Chiropractic!! Always a great experience!!!! 10/10 Recommend!!!"
+    },
+    {
+      "review_id": "AbFvOqnEV_93GlhljWgqMtwexVAvs0bsxN-gsYrERndd-fDzHYeqkH30fV_lr1ph5SJPUsbdnDtgrQ",
+      "name": "Jayne D.",
+      "stars": 5,
+      "at": "2026-07-22T13:35:04.818649Z",
+      "text": "So glad I found this practice. After one visit I feel better already"
+    },
+    {
+      "review_id": "AbFvOqlwg7ekNZcTIn8BSPGqRED0i1owKjO60oB5HsLLUyfSzmEzxL_XzEQPYX69omFyu2wI7FiIxw",
+      "name": "Krystal J.",
+      "stars": 5,
+      "at": "2026-07-07T21:08:27.562423Z",
+      "text": "I highly recommend this business as dr brad has been vital in my healing. Hes understanding, compassionate and has great bedside manner."
+    },
+    {
+      "review_id": "AbFvOqkxOQyGAuDryJVSDlc3WdrsX0JGJnz-jzh6mCksRm5KIHnltFJouGUMGE7gh5mjKd1s5_3heA",
+      "name": "Mrmike B.",
+      "stars": 5,
+      "at": "2026-06-17T17:45:14.755241Z",
+      "text": "derrick is great and extremely friendly. very welcoming environment thank you will definitely be back !"
+    },
+    {
+      "review_id": "AbFvOqkz-CtAF5v9XPTGLAZk6qduZCHpMPbkVVIuynjgVjvHx3rgU2KgHteOgC7yV21q60yTRUapDA",
+      "name": "Adam D.",
+      "stars": 5,
+      "at": "2026-05-21T15:20:47.739428Z",
+      "text": "Dr. Brad along with the rest of his staff are top class. Dr. Brad truly cares about his patients and does an outstanding job. Highly recommend! 5 star service!!"
+    },
+    {
+      "review_id": "AbFvOqlwFGcHfiyVXZ0H1XuNoUXdx5NpEwZPSk_q9KPsWvaz7xlfcyLS1lcI0gK2xNaf3gNfPyzMqQ",
+      "name": "Anne G.",
+      "stars": 5,
+      "at": "2026-05-21T14:12:16.549209Z",
+      "text": "Dr. Brad takes the time to listen and get to the source of the problem. Getting treatment from Back & Body Chiropractic is considerably improving my pain and my life."
+    },
+    {
+      "review_id": "AbFvOqnvD8tq1DAJEgoifi1XVkMpAeS3mmumrfOgoqezZdfK1XXQ44DKGaCvz0zsiuLrTS1btzNr7Q",
+      "name": "Tamara D.",
+      "stars": 5,
+      "at": "2026-05-02T16:18:03.870562Z",
+      "text": "Dr. Brad is the best! The decompression machine saved my back! The massage therapists are amazing as well. Highly recommend :)"
+    }
+  ]
+}
