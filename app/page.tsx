@@ -4,6 +4,9 @@ import Image from 'next/image';
 import ScrollReveal from '@/components/ScrollReveal';
 import { localBusinessSchema } from '@/lib/schema';
 import HeroCtaButton from '@/components/HeroCtaButton';
+import { homeReviews } from '../lib/google-reviews.mjs';
+
+const [featuredReview, ...sideReviews] = homeReviews();
 
 export const metadata: Metadata = {
   title: { absolute: 'Chiropractor Shelby Township MI | Back & Body Chiro' },
@@ -429,20 +432,17 @@ export default function HomePage() {
             <ScrollReveal>
               <div className="bg-white rounded-xl p-9 md:p-11 shadow-[var(--shadow)] border-l-4 border-mint">
                 <div className="text-[80px] leading-[.8] text-mint opacity-15" style={{ fontFamily: 'Georgia, serif' }}>&ldquo;</div>
-                <p className="text-xl font-normal leading-relaxed text-teal mb-4" style={{ fontFamily: 'var(--font-heading)' }}>I tried a whole lot of chiropractors in the area. I almost lost hope going to chiropractors until I found Dr. Brad.</p>
-                <div className="text-sm font-semibold text-teal" style={{ fontFamily: 'var(--font-heading)' }}>Verified Patient <span className="font-normal text-[#999] ml-1">&middot; Google Review</span></div>
+                <p className="text-xl font-normal leading-relaxed text-teal mb-4" style={{ fontFamily: 'var(--font-heading)' }}>{featuredReview.text}</p>
+                <div className="text-sm font-semibold text-teal" style={{ fontFamily: 'var(--font-heading)' }}>{featuredReview.name} <span className="font-normal text-[#999] ml-1">&middot; Google Review &middot; {featuredReview.when}</span></div>
               </div>
             </ScrollReveal>
             <div className="flex flex-col gap-6">
-              {[
-                { text: 'Dr. Brad is an amazing chiropractor. He helped me so much with my headaches and the rest of my family with their back and neck pain. He truly cares for all of his patients including my whole family.', delay: '.08s' },
-                { text: 'After about 3 months, my headaches completely disappeared and I am now pain-free. I continue to visit to keep my spine in alignment.', delay: '.16s' },
-              ].map((review, i) => (
-                <ScrollReveal key={i} delay={review.delay}>
+              {sideReviews.map((review, i) => (
+                <ScrollReveal key={review.review_id} delay={`${(i + 1) * 0.08}s`}>
                   <div className="bg-white rounded-xl p-8 shadow-[var(--shadow)]">
                     <div className="text-[16px] text-amber tracking-[2px] mb-4">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <p className="text-[15px] leading-[1.7] text-text mb-4">{review.text}</p>
-                    <div className="text-sm font-semibold text-teal" style={{ fontFamily: 'var(--font-heading)' }}>Verified Patient <span className="font-normal text-[#999] ml-1">&middot; Google Review</span></div>
+                    <div className="text-sm font-semibold text-teal" style={{ fontFamily: 'var(--font-heading)' }}>{review.name} <span className="font-normal text-[#999] ml-1">&middot; Google Review &middot; {review.when}</span></div>
                   </div>
                 </ScrollReveal>
               ))}
