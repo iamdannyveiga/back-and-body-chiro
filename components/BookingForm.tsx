@@ -2,6 +2,7 @@
 
 import { useState, useEffect, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
+import { browserFirstTouch } from '@/lib/firstTouchReferrer';
 
 interface BookingFormProps {
   variant?: 'full' | 'compact';
@@ -43,6 +44,7 @@ export default function BookingForm({ variant = 'full', defaultService }: Bookin
     if (Object.keys(found).length) {
       try { sessionStorage.setItem('bb_attribution', JSON.stringify(found)); } catch { /* private mode */ }
     }
+    browserFirstTouch();
   }, []);
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
@@ -63,6 +65,9 @@ export default function BookingForm({ variant = 'full', defaultService }: Bookin
       message: data.get('message') as string || '',
       // Ad-click attribution (gclid / fbclid / UTMs) forwarded to the CRM
       ...attribution,
+      // First-touch referrer + landing URL (lib/firstTouchReferrer.ts) and the submitting page
+      ...browserFirstTouch(),
+      page_url: window.location.href,
       // Spam signals — checked server-side in /api/lead, stripped before CRM
       hp: (data.get('_gotcha') as string) || '',
       form_ts: mountedAt,

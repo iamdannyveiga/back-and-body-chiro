@@ -7,6 +7,7 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Clarity from "@/components/Clarity";
 import MetaPixel from "@/components/MetaPixel";
 import TelClickTracker from "@/components/TelClickTracker";
+import FirstTouchCapture from "@/components/FirstTouchCapture";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -95,6 +96,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <TelClickTracker />
+        <FirstTouchCapture />
       </body>
     </html>
   );

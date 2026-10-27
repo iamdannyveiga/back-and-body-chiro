@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { leadConfig } from '@/lib/lead-config'
+import { leadReferrerFields } from '@/lib/firstTouchReferrer'
 
 export async function POST(req: NextRequest) {
   try {
@@ -75,6 +76,10 @@ export async function POST(req: NextRequest) {
     if (body.wbraid) payload.wbraid = body.wbraid
     if (body.gbraid) payload.gbraid = body.gbraid
     if (body.fbclid) payload.fbclid = body.fbclid
+    // Website first-touch: document.referrer + landing URL kept from the
+    // session's first page, and the submitting page. The CRM stores them in
+    // leads.raw_data (referrer / landing_url / page_url) for lead-source mapping.
+    Object.assign(payload, leadReferrerFields(body))
 
     // Organic-channel identification: the CRM intake persists event_source_url
     // (raw_data) — it is the field reporting uses to separate website/organic
