@@ -78,6 +78,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* 0268c: shared 90-day first touch (referrer, landing URL, utm_*, click ids) for lead-source tracking */}
+        <script src="https://hooks.chiroflow.ai/lp/ft.js" defer></script>
+      </head>
       <body className={`${raleway.variable} ${oxygen.variable} antialiased`}>
         <GoogleAnalytics />
         <Clarity />
