@@ -2,7 +2,7 @@
 
 import { useState, useEffect, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
-import { browserFirstTouch } from '@/lib/firstTouchReferrer';
+import { attachFirstTouch, browserFirstTouch } from '@/lib/firstTouchReferrer';
 
 interface BookingFormProps {
   variant?: 'full' | 'compact';
@@ -72,6 +72,8 @@ export default function BookingForm({ variant = 'full', defaultService }: Bookin
       hp: (data.get('_gotcha') as string) || '',
       form_ts: mountedAt,
     };
+    // 90-day first touch (hooks.chiroflow.ai/lp/ft.js): adds ft_ts + ft_* keys; no-op if the script did not load
+    attachFirstTouch(payload as Record<string, unknown>);
     const visitReason = (data.get('service') as string) || 'not_provided';
 
     try {
