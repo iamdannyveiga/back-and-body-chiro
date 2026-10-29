@@ -163,7 +163,7 @@ export default function NewPatientsPage() {
               </h2>
               <p className="text-text/70 text-[0.95rem] mb-6">Save 10-15 minutes at check-in by filling out your new patient intake forms before your visit.</p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <a href="https://www.chirohd.com/office-forms/679/back-and-body-chiropractic-center" target="_blank" rel="noopener noreferrer" className="btn btn--mint">
+                <a href="https://intake.chirohd.com/office-forms/679/back-and-body-chiropractic-center" target="_blank" rel="noopener noreferrer" className="btn btn--mint">
                   Complete Forms Online &rarr;
                 </a>
                 <Link href="/new-patient-paperwork" className="btn btn--outline">

@@ -60,7 +60,7 @@ export default function NewPatientPaperworkPage() {
                   Health history, current concerns, and consent forms. Takes about 10 minutes.
                 </p>
                 <a
-                  href="https://www.chirohd.com/office-forms/679/back-and-body-chiropractic-center"
+                  href="https://intake.chirohd.com/office-forms/679/back-and-body-chiropractic-center"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn--mint inline-flex justify-center"
