@@ -9,7 +9,7 @@ import { SpineIcon, DecompressionIcon, NeckPainIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Massage Shelby Township MI | Sports, Deep Tissue & Back Massage',
+  title: 'Massage Shelby Township MI | Sports & Deep Tissue',
   description:
     'Massage in Shelby Township, MI: sports, deep tissue and back massage at Back & Body Chiropractic. On-site therapist, $67 new patient visit. Call (586) 207-1624.',
   alternates: {

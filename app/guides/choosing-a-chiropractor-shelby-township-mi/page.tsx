@@ -3,7 +3,7 @@ import GuideArticle from '@/components/GuideArticle';
 
 const SLUG = 'choosing-a-chiropractor-shelby-township-mi';
 export const metadata: Metadata = {
-  title: 'How to Choose a Chiropractor in Shelby Township: 6 Things to Check',
+  title: { absolute: 'Choosing a Chiropractor in Shelby Township: 6 Checks' },
   description: 'A simple checklist for picking a chiropractor in Shelby Township, MI: exam, plan, services, hours, location and reviews. From Dr. Brad Krawczyk.',
   alternates: { canonical: `/guides/${SLUG}` },
 };

@@ -10,7 +10,7 @@ import { DecompressionIcon, MassageIcon, KinesiologyIcon } from '@/components/Ic
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Shelby Township Chiropractor | Back & Body Chiropractic Center',
+  title: 'Shelby Township Chiropractor | Dr. Brad Krawczyk',
   description:
     'Looking for a chiropractor in Shelby Township, MI? Dr. Brad Krawczyk offers honest exams and results-focused adjustments. $67 New Patient Visit. Call (586) 207-1624.',
   alternates: {

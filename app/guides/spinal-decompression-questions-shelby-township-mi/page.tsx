@@ -3,7 +3,7 @@ import GuideArticle from '@/components/GuideArticle';
 
 const SLUG = 'spinal-decompression-questions-shelby-township-mi';
 export const metadata: Metadata = {
-  title: 'Spinal Decompression in Shelby Township: 6 Questions Answered',
+  title: { absolute: 'Spinal Decompression Shelby Township: 6 Questions Answered' },
   description: 'What spinal decompression is, whether it hurts, who it helps and what to expect at Back and Body Chiropractic Center in Shelby Township, MI.',
   alternates: { canonical: `/guides/${SLUG}` },
 };

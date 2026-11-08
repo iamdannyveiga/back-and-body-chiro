@@ -3,7 +3,7 @@ import GuideArticle from '@/components/GuideArticle';
 
 const SLUG = 'massage-types-shelby-township-mi';
 export const metadata: Metadata = {
-  title: 'Sports, Deep Tissue & Back Massage in Shelby Township: 6 Types Compared',
+  title: { absolute: 'Massage in Shelby Township: 6 Types Compared' },
   description: 'Which massage fits your pain? Sports, deep tissue, back, trigger point, myofascial and prenatal massage compared by Dr. Brad Krawczyk. Shelby Township, MI.',
   alternates: { canonical: `/guides/${SLUG}` },
 };
