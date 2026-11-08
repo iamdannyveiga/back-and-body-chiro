@@ -9,7 +9,7 @@ import { SpineIcon, SciaticaIcon, DiscIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Spinal Decompression Shelby Township',
+  title: 'Spinal Decompression Shelby Township MI',
   description:
     'Non-surgical spinal decompression therapy from Dr. Brad Krawczyk. Disc relief without surgery. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
@@ -32,6 +32,11 @@ const faqItems = [
     question: 'How many sessions will I need?',
     answer:
       'It depends on the severity of your disc condition. Some patients feel improvement in a few sessions. More significant disc injuries may benefit from a series of treatments. Dr. Brad will be upfront about what to expect.',
+  },
+  {
+    question: 'Is there spinal decompression near me in Shelby Township?',
+    answer:
+      'Yes. Dr. Brad Krawczyk offers non-surgical spinal decompression at Back and Body Chiropractic Center, 55130 Van Dyke Ave #25, Shelby Township, MI. Call (586) 207-1624 or book a $67 new patient visit. See our guide with six common decompression questions answered.',
   },
   {
     question: 'Is spinal decompression covered by insurance?',
@@ -213,6 +218,12 @@ export default function SpinalDecompressionPage() {
         </div>
       </section>
 
+      {/* GUIDE LINK */}
+      <section className="py-12 bg-white">
+        <div className="container max-w-[860px] mx-auto text-center">
+          <p className="text-lg">New to decompression? <Link href="/guides/spinal-decompression-questions-shelby-township-mi" className="text-mint font-semibold underline underline-offset-4">Read 6 questions answered about spinal decompression in Shelby Township</Link>.</p>
+        </div>
+      </section>
       {/* FAQ */}
       <section className="py-20 bg-light-gray">
         <div className="container">

@@ -9,9 +9,9 @@ import { SpineIcon, DecompressionIcon, NeckPainIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Massage Therapy Shelby Township',
+  title: 'Massage Shelby Township MI | Sports & Deep Tissue',
   description:
-    'On-site therapeutic massage at Back & Body Chiro. Complements chiropractic care for faster recovery. $67 New Patient Visit. Shelby Township, MI.',
+    'Massage in Shelby Township, MI: sports, deep tissue and back massage at Back & Body Chiropractic. On-site therapist, $67 new patient visit. Call (586) 207-1624.',
   alternates: {
     canonical: '/massage-therapy-shelby-township-mi',
   },
@@ -32,6 +32,16 @@ const faqItems = [
     question: 'How long are massage sessions?',
     answer:
       'Sessions are typically 30 or 60 minutes. Dr. Brad or the massage therapist can recommend the best duration based on your condition and treatment goals.',
+  },
+  {
+    question: 'Do you offer sports massage and back massage in Shelby Township?',
+    answer:
+      'Yes. Sports massage, back-focused massage, deep tissue, trigger point therapy and myofascial release are all offered on site at 55130 Van Dyke Ave #25, Shelby Township. Read our guide to the six massage types to see which fits your pain.',
+  },
+  {
+    question: 'Where is your massage therapist located?',
+    answer:
+      'Inside Back and Body Chiropractic Center at 55130 Van Dyke Ave #25, Shelby Township, MI 48317. Call (586) 207-1624 or book online.',
   },
   {
     question: 'Does massage help with back pain?',
@@ -213,6 +223,12 @@ export default function MassageTherapyPage() {
         </div>
       </section>
 
+      {/* GUIDE LINK */}
+      <section className="py-12 bg-white">
+        <div className="container max-w-[860px] mx-auto text-center">
+          <p className="text-lg">Not sure which type fits? <Link href="/guides/massage-types-shelby-township-mi" className="text-mint font-semibold underline underline-offset-4">Compare sports, deep tissue and back massage in Shelby Township</Link>.</p>
+        </div>
+      </section>
       {/* FAQ */}
       <section className="py-20 bg-light-gray">
         <div className="container">
@@ -264,7 +280,7 @@ export default function MassageTherapyPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema(
           'Massage Therapy',
-          'On-site therapeutic massage at Back & Body Chiro. Complements chiropractic care for faster recovery. $67 New Patient Visit. Shelby Township, MI.',
+          'Massage in Shelby Township, MI: sports, deep tissue and back massage at Back & Body Chiropractic. On-site therapist, $67 new patient visit. Call (586) 207-1624.',
           'massage-therapy-shelby-township-mi'
         )) }}
       />
