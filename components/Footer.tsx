@@ -45,6 +45,7 @@ export default function Footer() {
                 { href: '/softwave-therapy-clinton-township-mi', label: 'SoftWave in Clinton Township' },
                 { href: '/softwave-therapy-sterling-heights-mi', label: 'SoftWave in Sterling Heights' },
                 { href: '/spinal-decompression-sterling-heights-mi', label: 'Decompression in Sterling Heights' },
+                { href: '/chiropractic-utica-mi', label: 'Chiropractic in Utica' },
                 { href: '/massage-therapy-shelby-township-mi', label: 'Massage Therapy' },
                 { href: '/applied-kinesiology-shelby-township-mi', label: 'Applied Kinesiology' },
                 { href: '/pediatric-chiropractic-shelby-township-mi', label: 'Pediatric Chiropractic' },
