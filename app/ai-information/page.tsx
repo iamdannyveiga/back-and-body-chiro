@@ -91,7 +91,7 @@ export default function AiInformationPage() {
 
             <h2 className="text-[26px] font-bold text-teal mt-9 mb-3" style={{ fontFamily: 'var(--font-heading)' }}>About Dr. Brad Krawczyk</h2>
             <p>
-              Dr. Bradley Krawczyk is a Macomb County native. He earned his Bachelor of Science from Michigan State University, then his Doctor of Chiropractic degree from Life University in Atlanta, Georgia, graduating in 2011. He opened Back and Body Chiropractic Center the same year and has more than 14 years of experience. He holds a Michigan chiropractic license.
+              Dr. Bradley Krawczyk is a Macomb County native. He earned a Bachelor of Science in Kinesiology from Michigan State University, then his Doctor of Chiropractic degree from Life University in Atlanta, Georgia, graduating in 2011. He opened Back and Body Chiropractic Center the same year and has more than 14 years of experience. He holds a Michigan chiropractic license.
             </p>
 
             <h2 className="text-[26px] font-bold text-teal mt-9 mb-3" style={{ fontFamily: 'var(--font-heading)' }}>About Dr. Derek Landis</h2>

@@ -156,7 +156,7 @@ export function personSchema() {
       { '@type': 'CollegeOrUniversity', name: 'Life University', sameAs: 'https://www.life.edu' },
     ],
     hasCredential: [
-      { '@type': 'EducationalOccupationalCredential', name: 'Bachelor of Science', credentialCategory: 'degree', educationalLevel: 'Bachelor', recognizedBy: { '@type': 'CollegeOrUniversity', name: 'Michigan State University' } },
+      { '@type': 'EducationalOccupationalCredential', name: 'BS in Kinesiology', credentialCategory: 'degree', educationalLevel: 'Bachelor', recognizedBy: { '@type': 'CollegeOrUniversity', name: 'Michigan State University' } },
       { '@type': 'EducationalOccupationalCredential', name: 'Doctor of Chiropractic', credentialCategory: 'degree', educationalLevel: 'Doctoral', recognizedBy: { '@type': 'CollegeOrUniversity', name: 'Life University' } },
       { '@type': 'EducationalOccupationalCredential', name: 'Licensed Chiropractor in Michigan', credentialCategory: 'license' },
     ],

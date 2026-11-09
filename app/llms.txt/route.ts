@@ -21,7 +21,7 @@ export async function GET() {
 - Dr. Derek Landis, DC (associate; Life University College of Chiropractic 2025, Grand Valley State University, sports chiropractic): /doctors#dr-derek
 
 ## About Dr. Brad
-Dr. Bradley Krawczyk earned his BS from Michigan State University and his Doctor of Chiropractic from Life University (2011). 14+ years of experience. 5.0-star Google rating (92 reviews).
+Dr. Bradley Krawczyk earned his BS in Kinesiology from Michigan State University and his Doctor of Chiropractic from Life University (2011). 14+ years of experience. 5.0-star Google rating (92 reviews).
 
 ## Services
 - Chiropractic Care: /chiropractic-care-shelby-township-mi

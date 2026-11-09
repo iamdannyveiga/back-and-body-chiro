@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import Image from 'next/image';
 import PageHero from '@/components/PageHero';
 import ScrollReveal from '@/components/ScrollReveal';
@@ -64,7 +63,7 @@ export default function DoctorsPage() {
             <ScrollReveal>
               <div className="prose-custom">
                 <p>Brad Krawczyk grew up in Macomb County. He played football at his local high school, took a bad hit, and ended up in a chiropractor&apos;s office. That visit changed his trajectory. Not just because the pain went away — but because he experienced firsthand what honest, hands-on healthcare could do.</p>
-                <p>He went to <strong>Michigan State University</strong> and earned his undergraduate degree. From there, he headed to <strong>Life University College of Chiropractic</strong> in Atlanta, Georgia. He graduated in 2011 with his Doctor of Chiropractic degree.</p>
+                <p>He went to <strong>Michigan State University</strong> and earned a degree in Kinesiology. From there, he headed to <strong>Life University College of Chiropractic</strong> in Atlanta, Georgia. He graduated in 2011 with his Doctor of Chiropractic degree.</p>
               </div>
             </ScrollReveal>
 
@@ -176,7 +175,7 @@ export default function DoctorsPage() {
                 {
                   icon: <SpineIcon className="w-6 h-6" />,
                   title: 'MSU-educated, Life University-trained — the credentials are real.',
-                  text: 'B.S. from Michigan State. Doctor of Chiropractic from Life University. Fourteen years of continuing education and hands-on experience.',
+                  text: 'B.S. in Kinesiology from Michigan State. Doctor of Chiropractic from Life University. Fourteen years of continuing education and hands-on experience.',
                 },
                 {
                   icon: <WorkInjuryIcon className="w-6 h-6" />,
