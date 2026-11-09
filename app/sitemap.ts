@@ -31,6 +31,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "spinal-decompression-sterling-heights-mi",
     // SEO page-buildout #2 2026-11-09: Utica city page
     "chiropractic-utica-mi",
+    // SEO page-buildout 2026-11-09: Clinton Township disc + sciatica pages
+    "herniated-disc-treatment-clinton-township-mi",
+    "sciatica-treatment-clinton-township-mi",
     // SEO-KW-PUSH 2026-11-08 guides
     "guides/massage-types-shelby-township-mi",
     "guides/spinal-decompression-questions-shelby-township-mi",

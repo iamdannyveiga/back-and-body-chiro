@@ -75,6 +75,7 @@ export default function SciaticaTreatmentPage() {
                   <p>Sciatica isn&apos;t a diagnosis — it&apos;s a symptom. That burning, shooting pain traveling from your low back into your leg is caused by something compressing or irritating the sciatic nerve. The question is: what?</p>
                   <p>It could be a herniated disc pressing on the nerve root. A bone spur narrowing the spinal canal. A tight piriformis muscle. Or a combination of factors. The treatment depends entirely on the cause — which is why Dr. Brad starts with a thorough examination, not a one-size-fits-all adjustment.</p>
                   <p>At Back and Body, sciatica treatment combines precise chiropractic adjustments with spinal decompression to take pressure off the nerve, reduce inflammation, and allow healing. No injections. No surgery. Just targeted, effective care.</p>
+                  <p>Coming from Clinton Township? See our <Link href="/sciatica-treatment-clinton-township-mi" className="text-teal underline">sciatica treatment page for Clinton Township</Link>.</p>
                 </div>
                 <div className="mt-7">
                   <Link href="/schedule-appointment" className="btn btn--mint">Book Your $67 Visit &rarr;</Link>
