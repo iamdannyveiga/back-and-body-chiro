@@ -9,15 +9,25 @@ import { SpineIcon, SciaticaIcon, DiscIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'SoftWave Therapy Shelby Township',
+  title: 'SoftWave Clinics Near Me | Shelby Township, MI',
   description:
-    'SoftWave tissue regeneration: FDA-cleared shockwave for chronic pain and inflammation. Dr. Brad Krawczyk. $67 New Patient Visit. Shelby Township, MI.',
+    'SoftWave clinics near me? SoftWave tissue regeneration at Back and Body in Shelby Township: FDA-cleared shockwave for chronic pain and inflammation. Dr. Brad Krawczyk. $67 New Patient Visit. Shelby Township, MI.',
   alternates: {
     canonical: '/softwave-therapy-shelby-township-mi',
   },
 };
 
 const faqItems = [
+  {
+    question: 'Where are the SoftWave clinics near me in Shelby Township?',
+    answer:
+      'Back and Body Chiropractic Center, 55130 Van Dyke Ave #25, Shelby Township, MI 48317, offers SoftWave tissue regeneration and is one of the few SoftWave machines in Macomb County. Call (586) 207-1624 or book online.',
+  },
+  {
+    question: 'How do I choose between SoftWave clinics near me?',
+    answer:
+      'Ask who examines you first and what else the clinic offers. At Back and Body, Dr. Brad examines you and can combine SoftWave with spinal decompression, chiropractic care and massage under one plan. The $67 new patient visit lets you find out if SoftWave is right for you.',
+  },
   {
     question: 'What is SoftWave therapy and how does it work?',
     answer:
@@ -62,7 +72,7 @@ export default function SoftWaveTherapyPage() {
     <>
       <PageHero
         title={<>
-          SoftWave Therapy <span className="text-mint">in Shelby Township.</span>
+          SoftWave Clinics Near Me: <span className="text-mint">SoftWave Therapy in Shelby Township.</span>
         </>}
         subtitle="FDA-cleared tissue regeneration. The newest addition at Back and Body — and one of the few SoftWave machines in Macomb County."
         breadcrumbs={[
@@ -83,7 +93,7 @@ export default function SoftWaveTherapyPage() {
                   <span className="font-normal">Healing at the </span>cellular level.
                 </h2>
                 <div className="prose-custom">
-                  <p>SoftWave therapy uses unfocused electrohydraulic shockwaves — acoustic pulses that travel deep into injured tissue and trigger the same healing cascade your body uses after an injury. It stimulates blood flow, wakes up resident stem cells, and tells the surrounding tissue to start repairing itself.</p>
+                  <p>Searching for SoftWave clinics near me? Back and Body in Shelby Township offers SoftWave therapy, which uses unfocused electrohydraulic shockwaves — acoustic pulses that travel deep into injured tissue and trigger the same healing cascade your body uses after an injury. It stimulates blood flow, wakes up resident stem cells, and tells the surrounding tissue to start repairing itself.</p>
                   <p>Unlike focused shockwave (which concentrates energy in a tight spot), SoftWave&apos;s unfocused technology covers a wider treatment area and reaches deeper structures without the discomfort. That&apos;s why the FDA cleared it for activation of connective tissue, treatment of pain, and improvement of blood supply.</p>
                   <p>Back and Body recently added SoftWave to our clinic. It&apos;s the same device used across MaxLiving Health Centers nationally — a proven technology that belongs alongside chiropractic care and spinal decompression. For patients with nagging pain that hasn&apos;t responded to other care, SoftWave is often the missing piece.</p>
                 </div>
@@ -220,6 +230,25 @@ export default function SoftWaveTherapyPage() {
               <p className="text-base text-text/80 leading-[1.8]">
                 Dr. Brad treats every patient with the same philosophy: <strong>thorough diagnosis, personalized care, and real results.</strong> Your treatment plan is built around your specific condition and goals. Come when you need to. Stop when you&apos;re feeling good. You&apos;re in control of your care.
               </p>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* STRIKING-DISTANCE CONTENT */}
+      <section id="softwave-clinics-near-me" className="py-20 bg-light-gray">
+        <div className="container">
+          <ScrollReveal>
+            <div className="max-w-[860px] mx-auto">
+              <span className="label">SoftWave Clinics Near Me</span>
+              <h2 className="text-[32px] md:text-[40px] font-extrabold text-teal mb-6" style={{ fontFamily: 'var(--font-heading)' }}>SoftWave clinics near me: what to look for in Shelby Township</h2>
+              <div className="prose-custom">
+                  <p>If you are comparing SoftWave clinics near me, start with who runs the treatment and what else the clinic can do for you. Back and Body Chiropractic Center at 55130 Van Dyke Ave #25 in Shelby Township is a chiropractic clinic that added SoftWave tissue regeneration, and it is one of the few SoftWave machines in Macomb County. Dr. Bradley Krawczyk examines you first, so the treatment is aimed at the tissue that is actually causing the pain.</p>
+                  <p>SoftWave uses unfocused electrohydraulic shockwaves that are FDA 510(k) cleared for activation of connective tissue, treatment of pain and improving blood supply. Patients come in for plantar fasciitis, shoulder pain, knee pain, tennis elbow, carpal tunnel, neuropathy, arthritis and chronic low back pain. A typical plan is 6 to 12 sessions depending on the condition and how long you have had it, and most patients notice improvement after the first session.</p>
+                  <p>Because we are a chiropractic clinic, SoftWave can be paired with the rest of your care. If your back or leg pain comes from a disc, <Link href="/spinal-decompression-shelby-township-mi" className="text-teal hover:underline">spinal decompression</Link> comes first, and SoftWave can support the surrounding tissue. Tight muscles around the area can be handled with on-site <Link href="/massage-therapy-shelby-township-mi" className="text-teal hover:underline">massage therapy</Link>, and joint motion with <Link href="/chiropractic-care-shelby-township-mi" className="text-teal hover:underline">chiropractic adjustments</Link>. One clinic, one plan.</p>
+                  <p>Most insurance plans do not cover SoftWave yet because it is a newer regenerative therapy, and pricing is transparent. The best way to start is the $67 new patient visit: a consultation and exam so Dr. Brad can tell you honestly whether SoftWave is right for you. See what happens at that visit on our <Link href="/new-patients" className="text-teal hover:underline">new patients page</Link>, then <Link href="/schedule-appointment" className="text-teal hover:underline">book online</Link> or call (586) 207-1624.</p>
+                  <p>Hours are Monday to Thursday 9 AM to 1 PM and 3 PM to 7 PM, and Friday 9 AM to 12 PM, so there is room to fit sessions around work.</p>
+              </div>
             </div>
           </ScrollReveal>
         </div>

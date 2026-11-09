@@ -6,15 +6,30 @@ import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 
 export const metadata: Metadata = {
-  title: 'New Patients — $67 First Visit',
+  title: 'Shelby Township Chiropractor | $67 First Visit',
   description:
-    'Your $67 first visit includes consultation, exam, X-rays if needed, and first adjustment. Thorough, personalized care — no contracts.',
+    'Looking for a Shelby Township chiropractor? Your $67 first visit with Dr. Brad includes consultation, exam, X-rays if needed, and first adjustment. No contracts.',
   alternates: {
     canonical: '/new-patients',
   },
 };
 
 const faqItems = [
+  {
+    question: 'How do I choose a Shelby Township chiropractor?',
+    answer:
+      'Compare how the first visit works. At Back and Body Chiropractic Center in Shelby Township the first visit is $67 and includes a consultation, exam, X-rays if clinically necessary and your first adjustment, with no long-term contracts. Dr. Brad explains what he found and recommends a plan sized to you.',
+  },
+  {
+    question: 'Where is your Shelby Township chiropractor office and when are you open?',
+    answer:
+      '55130 Van Dyke Ave #25, Shelby Township, MI 48317. Hours are Monday to Thursday 9 AM to 1 PM and 3 PM to 7 PM, and Friday 9 AM to 12 PM. Call (586) 207-1624 to book.',
+  },
+  {
+    question: 'Does a Shelby Township chiropractor offer spinal decompression?',
+    answer:
+      'Yes. Spinal decompression is the first option Dr. Brad discusses when your exam points to a disc problem, sciatica or nerve irritation. It is non-surgical and gentle, and your first visit is $67.',
+  },
   {
     question: 'Will I be pressured into a long-term plan?',
     answer:
@@ -52,7 +67,7 @@ export default function NewPatientsPage() {
     <>
       <PageHero
         title={<>
-          Your <span className="text-mint">$67</span> first visit.
+          Shelby Township chiropractor: your <span className="text-mint">$67</span> first visit.
         </>}
         subtitle="Here's what to expect — starting with what we WON'T do."
         breadcrumbs={[
@@ -70,7 +85,7 @@ export default function NewPatientsPage() {
                 Before We Start
               </div>
               <p className="text-lg leading-[1.8] text-text/80">
-                Before we tell you what to expect, here&apos;s what we <strong>won&apos;t</strong> do: we won&apos;t give you a sales pitch. We won&apos;t lock you into a care plan you don&apos;t need. We won&apos;t use scare tactics with your X-rays. We won&apos;t pressure you to prepay for dozens of visits. <strong>We&apos;ll just be honest about what we see and what we recommend.</strong> That&apos;s the Back and Body way — and it&apos;s been that way for 14 years.
+                As a Shelby Township chiropractor, before we tell you what to expect, here&apos;s what we <strong>won&apos;t</strong> do: we won&apos;t give you a sales pitch. We won&apos;t lock you into a care plan you don&apos;t need. We won&apos;t use scare tactics with your X-rays. We won&apos;t pressure you to prepay for dozens of visits. <strong>We&apos;ll just be honest about what we see and what we recommend.</strong> That&apos;s the Back and Body way — and it&apos;s been that way for 14 years.
               </p>
             </div>
           </ScrollReveal>
@@ -202,6 +217,25 @@ export default function NewPatientsPage() {
                     <p className="text-sm leading-relaxed text-text/80">{card.desc}</p>
                   </div>
                 ))}
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* STRIKING-DISTANCE CONTENT */}
+      <section id="shelby-township-chiropractor" className="py-20 bg-white">
+        <div className="container">
+          <ScrollReveal>
+            <div className="max-w-[860px] mx-auto">
+              <span className="label">Shelby Township Chiropractor</span>
+              <h2 className="text-[32px] md:text-[40px] font-extrabold text-teal mb-6" style={{ fontFamily: 'var(--font-heading)' }}>What to know before you choose a Shelby Township chiropractor</h2>
+              <div className="prose-custom">
+                  <p>If you are searching for a Shelby Township chiropractor, the first thing to compare is how the first visit works. At Back and Body Chiropractic Center, 55130 Van Dyke Ave #25 in Shelby Township, the first visit is $67 and includes a consultation, an exam, X-rays if clinically necessary, and your first adjustment. There are no long-term contracts and no 6-month packages, so you can see how Dr. Bradley Krawczyk works before you decide anything else.</p>
+                  <p>Dr. Krawczyk studied Kinesiology at Michigan State University, earned his Doctor of Chiropractic at Life University College of Chiropractic in 2011, and the clinic has served Macomb and Oakland Counties since 2011. The visit starts with your story: where it hurts, when it started, what makes it better or worse. The exam and any imaging follow from that, and you leave with a plain-English plan sized to your situation.</p>
+                  <p>Many people who call a Shelby Township chiropractor are dealing with back pain, neck pain, headaches or sciatica. When the exam points to a disc problem or nerve irritation, <Link href="/spinal-decompression-shelby-township-mi" className="text-teal hover:underline">spinal decompression</Link> is the first option Dr. Brad talks through, because it is a gentle, non-surgical way to take pressure off the disc. Standard <Link href="/chiropractic-care-shelby-township-mi" className="text-teal hover:underline">chiropractic adjustments</Link> are used when joint motion is the main problem. For stubborn tendon and soft tissue pain, patients can add <Link href="/softwave-therapy-shelby-township-mi" className="text-teal hover:underline">SoftWave therapy</Link> or on-site <Link href="/massage-therapy-shelby-township-mi" className="text-teal hover:underline">massage</Link>.</p>
+                  <p>Hours are Monday to Thursday 9 AM to 1 PM and 3 PM to 7 PM, and Friday 9 AM to 12 PM. We work with most major insurance plans and will verify your benefits before you come in. You can save 10 to 15 minutes at check-in by finishing the <Link href="/new-patient-paperwork" className="text-teal hover:underline">new patient paperwork</Link> online first, then book through the <Link href="/schedule-appointment" className="text-teal hover:underline">online scheduler</Link> or call (586) 207-1624.</p>
+                  <p>Wondering what makes one Shelby Township chiropractor different from another? Ask what the plan looks like after the first visit. Here, the answer is that Dr. Brad tells you what he found, what he recommends, and what it would cost, and you choose the pace. If chiropractic is not the right fit, he will refer you to the right provider.</p>
               </div>
             </div>
           </ScrollReveal>

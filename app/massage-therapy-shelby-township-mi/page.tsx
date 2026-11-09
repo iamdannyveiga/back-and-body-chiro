@@ -19,6 +19,16 @@ export const metadata: Metadata = {
 
 const faqItems = [
   {
+    question: 'Where can I get massage in Shelby Township, MI?',
+    answer:
+      'At Back and Body Chiropractic Center, 55130 Van Dyke Ave #25, Shelby Township, MI 48317. Our on-site therapist offers sports, deep tissue and back-focused massage. Call (586) 207-1624.',
+  },
+  {
+    question: 'How is massage in Shelby Township at a chiropractic clinic different from a spa?',
+    answer:
+      'It is clinical and targeted. The therapist works with Dr. Brad so the massage goes to the areas driving your pain, and it supports your chiropractic and spinal decompression care.',
+  },
+  {
     question: 'What kind of massage do you offer?',
     answer:
       'We offer therapeutic massage focused on relieving muscle tension, reducing pain, and supporting chiropractic care. This is not a spa — it is clinical, targeted massage designed to complement your treatment.',
@@ -61,7 +71,7 @@ export default function MassageTherapyPage() {
     <>
       <PageHero
         title={<>
-          Massage Therapy <span className="text-mint">in Shelby Township.</span>
+          Massage <span className="text-mint">Shelby Township, MI.</span>
         </>}
         subtitle="On-site therapeutic massage. Not a spa — clinical, targeted muscle work that complements your care."
         breadcrumbs={[
@@ -82,7 +92,7 @@ export default function MassageTherapyPage() {
                   <span className="font-normal">Massage that </span>actually treats something.
                 </h2>
                 <div className="prose-custom">
-                  <p>Massage therapy at Back and Body isn&apos;t about candles and relaxation music. It&apos;s therapeutic, clinical massage designed to address specific muscle and soft tissue problems that contribute to your pain.</p>
+                  <p>Massage in Shelby Township at Back and Body isn&apos;t about candles and relaxation music. It&apos;s therapeutic, clinical massage designed to address specific muscle and soft tissue problems that contribute to your pain.</p>
                   <p>When muscles are tight, they pull bones out of alignment. When fascia is restricted, it limits movement and creates pain. Therapeutic massage addresses these soft tissue components — making chiropractic adjustments more effective and longer-lasting.</p>
                   <p>Our on-site massage therapist works closely with Dr. Brad to ensure your massage targets the areas that matter most for your recovery. It&apos;s coordinated care, not isolated treatment.</p>
                 </div>
@@ -229,6 +239,25 @@ export default function MassageTherapyPage() {
           <p className="text-lg">Not sure which type fits? <Link href="/guides/massage-types-shelby-township-mi" className="text-mint font-semibold underline underline-offset-4">Compare sports, deep tissue and back massage in Shelby Township</Link>.</p>
         </div>
       </section>
+      {/* STRIKING-DISTANCE CONTENT */}
+      <section id="massage-shelby-township" className="py-20 bg-light-gray">
+        <div className="container">
+          <ScrollReveal>
+            <div className="max-w-[860px] mx-auto">
+              <span className="label">Massage Shelby Township</span>
+              <h2 className="text-[32px] md:text-[40px] font-extrabold text-teal mb-6" style={{ fontFamily: 'var(--font-heading)' }}>Massage in Shelby Township that works with your chiropractic care</h2>
+              <div className="prose-custom">
+                  <p>Looking for massage in Shelby Township that does more than relax you? Back and Body Chiropractic Center, 55130 Van Dyke Ave #25, has an on-site massage therapist who works alongside Dr. Bradley Krawczyk. The massage is clinical and targeted: sports massage, back-focused massage, deep tissue, trigger point therapy and myofascial release.</p>
+                  <p>Sessions are typically 30 or 60 minutes, and Dr. Brad or the massage therapist can recommend the best length for your goals. Massage works well alongside chiropractic care. Tight muscles can pull on the spine and restricted fascia limits motion, so releasing them can make adjustments hold longer. If your pain starts at a disc, <Link href="/spinal-decompression-shelby-township-mi" className="text-teal hover:underline">spinal decompression</Link> is addressed first and massage helps calm the muscle guarding around it.</p>
+                  <p>Not sure which style you need? Our guide to the <Link href="/guides/massage-types-shelby-township-mi" className="text-teal hover:underline">six massage types in Shelby Township</Link> walks through them. For stubborn tendon or joint pain, <Link href="/softwave-therapy-shelby-township-mi" className="text-teal hover:underline">SoftWave therapy</Link> can be added to the plan, and <Link href="/back-pain-treatment-shelby-township-mi" className="text-teal hover:underline">back pain treatment</Link> is our most common reason for visits.</p>
+                  <p>Who is it for? Desk workers with tight shoulders and a sore low back, athletes recovering from hard training, and anyone whose muscles stay tense between adjustments. Tell the therapist where it hurts and what you do all day, and the session is built around that. Because the therapist and Dr. Brad share your plan, nothing is done in isolation and you are not asked to commit to a package.</p>
+                  <p>New patients start with the $67 visit: consultation, exam, X-rays if clinically necessary and first adjustment, with no contracts. Read what to expect on our <Link href="/new-patients" className="text-teal hover:underline">new patients page</Link>, then <Link href="/schedule-appointment" className="text-teal hover:underline">book online</Link> or call (586) 207-1624. Hours are Monday to Thursday 9 AM to 1 PM and 3 PM to 7 PM, and Friday 9 AM to 12 PM.</p>
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-20 bg-light-gray">
         <div className="container">

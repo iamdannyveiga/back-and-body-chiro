@@ -124,6 +124,9 @@ export default function HomePage() {
                 <Link href="/work-injury-treatment-shelby-township-mi" className="text-teal hover:underline">work injuries</Link>,{' '}
                 <Link href="/arm-leg-pain-shelby-township-mi" className="text-teal hover:underline">arm and leg pain</Link>, and auto injuries. Most major insurance plans accepted.
               </p>
+              <p>
+                <strong>Find care near you:</strong> Looking for a <Link href="/new-patients#shelby-township-chiropractor" className="text-teal hover:underline">Shelby Township chiropractor</Link>? Start with the $67 first visit. Interested in <Link href="/softwave-therapy-shelby-township-mi#softwave-clinics-near-me" className="text-teal hover:underline">SoftWave clinics near me</Link>? We are one of the few clinics in Macomb County with SoftWave. Need <Link href="/massage-therapy-shelby-township-mi#massage-shelby-township" className="text-teal hover:underline">massage in Shelby Township</Link> alongside your care? Our therapist is on site.
+              </p>
             </div>
           </div>
         </div>

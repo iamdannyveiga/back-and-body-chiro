@@ -286,6 +286,12 @@ export default function SpinalDecompressionPage() {
         </div>
       </section>
 
+      <section className="py-10 bg-white">
+        <div className="container max-w-[860px] mx-auto text-center">
+          <p className="text-base leading-relaxed">New to our office? Read what to expect from a <Link href="/new-patients#shelby-township-chiropractor" className="text-teal hover:underline">Shelby Township chiropractor</Link> visit, or add <Link href="/massage-therapy-shelby-township-mi#massage-shelby-township" className="text-teal hover:underline">massage Shelby Township</Link> and <Link href="/softwave-therapy-shelby-township-mi#softwave-clinics-near-me" className="text-teal hover:underline">SoftWave therapy</Link> to your plan.</p>
+        </div>
+      </section>
+
       <ConversionCTA line1="Disc pain doesn't have to mean surgery." anchor="$67 to find out." />
 
       <script

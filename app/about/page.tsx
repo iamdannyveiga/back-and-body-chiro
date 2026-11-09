@@ -113,6 +113,12 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="py-10 bg-white">
+        <div className="container max-w-[860px] mx-auto text-center">
+          <p className="text-base leading-relaxed">Meet your <Link href="/new-patients#shelby-township-chiropractor" className="text-teal hover:underline">Shelby Township chiropractor</Link>, then explore <Link href="/softwave-therapy-shelby-township-mi#softwave-clinics-near-me" className="text-teal hover:underline">SoftWave clinics near me</Link> and <Link href="/massage-therapy-shelby-township-mi#massage-shelby-township" className="text-teal hover:underline">massage in Shelby Township</Link>.</p>
+        </div>
+      </section>
+
       <ConversionCTA />
     </>
   );

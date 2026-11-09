@@ -306,6 +306,12 @@ export default function ChiropracticCarePage() {
         </div>
       </section>
 
+      <section className="py-10 bg-white">
+        <div className="container max-w-[860px] mx-auto text-center">
+          <p className="text-base leading-relaxed">Choosing a <Link href="/new-patients#shelby-township-chiropractor" className="text-teal hover:underline">Shelby Township chiropractor</Link>? See how the $67 first visit works. Searching for <Link href="/softwave-therapy-shelby-township-mi#softwave-clinics-near-me" className="text-teal hover:underline">SoftWave clinics near me</Link>? We offer SoftWave here, plus <Link href="/massage-therapy-shelby-township-mi#massage-shelby-township" className="text-teal hover:underline">massage in Shelby Township</Link>.</p>
+        </div>
+      </section>
+
       <ConversionCTA line1="$67 to get started." anchor="Just honest care." />
 
       <script
