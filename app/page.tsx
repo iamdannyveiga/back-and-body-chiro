@@ -113,8 +113,8 @@ export default function HomePage() {
                 <strong>Conditions treated:</strong>{' '}
                 <Link href="/back-pain-treatment-shelby-township-mi" className="text-teal hover:underline">back pain</Link>,{' '}
                 <Link href="/neck-pain-treatment-shelby-township-mi" className="text-teal hover:underline">neck pain</Link>,{' '}
-                <Link href="/sciatica-treatment-shelby-township-mi" className="text-teal hover:underline">sciatica</Link>,{' '}
-                <Link href="/disc-injury-treatment-shelby-township-mi" className="text-teal hover:underline">herniated and bulging discs</Link>,{' '}
+                <Link href="/sciatica-treatment-shelby-township-mi" className="text-teal hover:underline">sciatica</Link> (<Link href="/sciatica-treatment-clinton-township-mi" className="text-teal hover:underline">Clinton Township sciatica</Link>),{' '}
+                <Link href="/disc-injury-treatment-shelby-township-mi" className="text-teal hover:underline">herniated and bulging discs</Link> (<Link href="/herniated-disc-treatment-clinton-township-mi" className="text-teal hover:underline">Clinton Township disc care</Link>),{' '}
                 <Link href="/headaches-migraines-shelby-township-mi" className="text-teal hover:underline">headaches and migraines</Link>,{' '}
                 <Link href="/scoliosis-treatment-shelby-township-mi" className="text-teal hover:underline">scoliosis</Link>,{' '}
                 <Link href="/shoulder-pain-treatment-shelby-township-mi" className="text-teal hover:underline">shoulder pain</Link>,{' '}

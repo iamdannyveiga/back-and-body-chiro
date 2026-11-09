@@ -75,6 +75,7 @@ export default function DiscInjuryTreatmentPage() {
                   <p>When you hear &ldquo;herniated disc&rdquo; or &ldquo;bulging disc,&rdquo; it sounds serious. And it can be. But it doesn&apos;t automatically mean you need surgery, injections, or a life of medication. Many disc injuries respond well to non-surgical treatment.</p>
                   <p>At Back and Body, Dr. Brad combines chiropractic adjustments with spinal decompression therapy to treat disc injuries conservatively. Adjustments restore proper spinal alignment and reduce the mechanical stress on the disc. Decompression creates space for the disc to heal by reducing intradiscal pressure.</p>
                   <p>The key is an accurate diagnosis. Dr. Brad performs a thorough examination to understand exactly what type of disc injury you have, how severe it is, and whether conservative care is appropriate. He&apos;ll be honest — if your case requires a surgical referral, he&apos;ll tell you.</p>
+                  <p>Coming from Clinton Township? See our <Link href="/herniated-disc-treatment-clinton-township-mi" className="text-teal underline">herniated disc treatment page for Clinton Township</Link>.</p>
                 </div>
                 <div className="mt-7">
                   <Link href="/schedule-appointment" className="btn btn--mint">Book Your $67 Visit &rarr;</Link>
