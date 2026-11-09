@@ -81,7 +81,7 @@ export default function ContactPage() {
                 <div className="mt-7">
                   <h2 className="text-lg font-bold text-teal mb-2" style={{ fontFamily: 'var(--font-heading)' }}>Areas We Serve</h2>
                   <p className="text-sm text-[#888] leading-[1.7]">
-                    Shelby Township &middot; Sterling Heights &middot; Utica &middot; Rochester Hills &middot; Troy &middot; Macomb &middot; Clinton Township &middot; Washington Township &middot; Romeo
+                    Shelby Township &middot; Sterling Heights &middot; <Link href="/chiropractic-utica-mi" className="text-teal hover:text-mint">Utica</Link> &middot; Rochester Hills &middot; Troy &middot; Macomb &middot; Clinton Township &middot; Washington Township &middot; Romeo
                   </p>
                 </div>
               </div>

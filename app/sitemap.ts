@@ -29,6 +29,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "softwave-therapy-clinton-township-mi",
     "softwave-therapy-sterling-heights-mi",
     "spinal-decompression-sterling-heights-mi",
+    // SEO page-buildout #2 2026-11-09: Utica city page
+    "chiropractic-utica-mi",
     // SEO-KW-PUSH 2026-11-08 guides
     "guides/massage-types-shelby-township-mi",
     "guides/spinal-decompression-questions-shelby-township-mi",
