@@ -60,9 +60,9 @@ export default function HomePage() {
               <HeroCtaButton />
               <div className="flex items-center flex-wrap gap-2 mt-7 text-[13px] text-text-light/60" style={{ fontFamily: 'var(--font-heading)' }}>
                 <span className="text-amber text-[15px] tracking-[1px]">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                <span>4.9</span>
+                <span>5.0</span>
                 <span className="opacity-30">&middot;</span>
-                <span>34+ Reviews</span>
+                <span>90+ Reviews</span>
                 <span className="opacity-30">&middot;</span>
                 <span>14+ Years</span>
                 <span className="opacity-30">&middot;</span>
@@ -400,8 +400,8 @@ export default function HomePage() {
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5 text-center">
             {[
-              { num: <>4.9<span className="text-amber">&#9733;</span></>, label: 'Google Rating' },
-              { num: '34+', label: 'Patient Reviews' },
+              { num: <>5.0<span className="text-amber">&#9733;</span></>, label: 'Google Rating' },
+              { num: '90+', label: 'Patient Reviews' },
               { num: '14+', label: 'Years Serving Macomb' },
               { num: 'Fri', label: 'Hours Available' },
             ].map((stat, i, arr) => (
