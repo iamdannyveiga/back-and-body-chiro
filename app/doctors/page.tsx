@@ -86,7 +86,7 @@ export default function DoctorsPage() {
               <div className="mt-9">
                 <h3 className="text-lg font-bold text-teal mb-4" style={{ fontFamily: 'var(--font-heading)' }}>Specialties</h3>
                 <div className="flex flex-wrap gap-2">
-                  {['Back Pain', 'Neck Pain', 'Spinal Decompression', 'Pediatric', 'Prenatal', 'Sports Medicine', 'Massage Therapy', 'Nutrition', 'Scoliosis', 'Auto/Work Injury'].map((tag) => (
+                  {['Back Pain', 'Neck Pain', 'Spinal Decompression', 'Pediatric', 'Prenatal', 'Sports Chiropractic', 'Massage Therapy', 'Nutrition', 'Scoliosis', 'Auto/Work Injury'].map((tag) => (
                     <span key={tag} className="inline-block px-4 py-[6px] bg-[#f1f5f5] text-teal text-sm font-medium rounded-full">
                       {tag}
                     </span>
@@ -139,7 +139,7 @@ export default function DoctorsPage() {
                   <div className="mt-9">
                     <h3 className="text-lg font-bold text-teal mb-4" style={{ fontFamily: 'var(--font-heading)' }}>Focus Areas</h3>
                     <div className="flex flex-wrap gap-2">
-                      {['Sports Chiropractic', 'Shoulder Injuries', 'Athletes', 'Families of All Ages'].map((tag) => (
+                      {['Back Pain', 'Neck Pain', 'Spinal Decompression', 'Pediatric', 'Prenatal', 'Sports Chiropractic', 'Massage Therapy', 'Nutrition', 'Scoliosis', 'Auto/Work Injury'].map((tag) => (
                         <span key={tag} className="inline-block px-4 py-[6px] bg-[#f1f5f5] text-teal text-sm font-medium rounded-full">
                           {tag}
                         </span>
