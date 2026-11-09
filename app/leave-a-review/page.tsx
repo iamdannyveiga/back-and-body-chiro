@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
 };
 
-const GBP_REVIEW_URL = 'https://search.google.com/local/writereview?placeid=ChIJpdK_LIPyJIgRz8x9wzhgZjY';
+const GBP_REVIEW_URL = 'https://search.google.com/local/writereview?placeid=ChIJcYtYsfnmJIgRj4z8PqaKHDc';
 
 // Open-ended prompts ONLY. Google's review guidelines (2026) prohibit a business
 // from asking customers to name specific staff or services. These questions let the
@@ -61,7 +61,7 @@ export default function LeaveAReviewPage() {
           <div className="flex justify-center gap-2 mb-4 text-amber">
             {[...Array(5)].map((_, i) => <StarIcon key={i} className="w-8 h-8" />)}
           </div>
-          <p className="text-[18px] text-text/75">4.9 stars · 34+ patient reviews on Google</p>
+          <p className="text-[18px] text-text/75">5.0 stars · 90+ patient reviews on Google</p>
         </ScrollReveal>
       </section>
 

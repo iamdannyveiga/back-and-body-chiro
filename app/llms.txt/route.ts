@@ -5,7 +5,7 @@ export async function GET() {
 
 ## Contact
 - Phone: (586) 207-1624
-- Address: 55130 Van Dyke Ave #25, Shelby Charter Township, MI 48317
+- Address: 55130 Van Dyke Avenue #25, Shelby Charter Township, MI 48317
 - Website: https://backandbodydoc.com
 - New Patient Special: $67
 
@@ -16,7 +16,7 @@ export async function GET() {
 - Sunday: Closed
 
 ## About Dr. Brad
-Dr. Bradley Krawczyk earned his BS in Kinesiology from Michigan State University and his Doctor of Chiropractic from Life University (2011). 14+ years of experience. 4.9-star Google rating.
+Dr. Bradley Krawczyk earned his BS in Kinesiology from Michigan State University and his Doctor of Chiropractic from Life University (2011). 14+ years of experience. 5.0-star Google rating (92 reviews).
 
 ## Services
 - Chiropractic Care: /chiropractic-care-shelby-township-mi
@@ -41,6 +41,12 @@ Dr. Bradley Krawczyk earned his BS in Kinesiology from Michigan State University
 - Wellness Care: /wellness-care-shelby-township-mi
 - Nutrition: /nutrition-shelby-township-mi
 
+## Service area
+- Based in Shelby Charter Township, MI (Macomb County), serving Shelby Township, Utica, Sterling Heights, Clinton Township, Macomb, Washington Township, Rochester Hills, Troy, and Romeo.
+- Utica, MI: /chiropractic-utica-mi (about 5 miles from the clinic)
+- Sterling Heights, MI: /spinal-decompression-sterling-heights-mi and /softwave-therapy-sterling-heights-mi
+- Clinton Township, MI: /softwave-therapy-clinton-township-mi
+
 ## Appointment
 - Book an appointment online: https://backandbodydoc.com/schedule-appointment
 - Call to schedule an appointment: (586) 207-1624
@@ -55,7 +61,7 @@ Dr. Bradley Krawczyk earned his BS in Kinesiology from Michigan State University
 - Do you accept insurance? Yes, most major plans. Call (586) 207-1624 to verify benefits.
 - What is spinal decompression? Non-surgical traction therapy for bulging or herniated discs.
 - What conditions do you treat? Back pain, neck pain, sciatica, headaches, disc injuries, whiplash, scoliosis, carpal tunnel, vertigo, work injuries, and general wellness.
-- Where are you located? 55130 Van Dyke Ave Suite 25, Shelby Charter Township, MI 48317.
+- Where are you located? 55130 Van Dyke Avenue #25 (Suite 25), Shelby Charter Township, MI 48317.
 - What are your hours? Monday-Thursday 9AM-1PM and 3PM-7PM; Friday 9AM-12PM. Closed Saturday and Sunday.
 
 ## Pages
