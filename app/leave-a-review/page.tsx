@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
 };
 
-const GBP_REVIEW_URL = 'https://search.google.com/local/writereview?placeid=ChIJpdK_LIPyJIgRz8x9wzhgZjY';
+const GBP_REVIEW_URL = 'https://search.google.com/local/writereview?placeid=ChIJcYtYsfnmJIgRj4z8PqaKHDc';
 
 // Open-ended prompts ONLY. Google's review guidelines (2026) prohibit a business
 // from asking customers to name specific staff or services. These questions let the

@@ -46,7 +46,7 @@ export function localBusinessSchema() {
     sameAs: [
       'https://www.facebook.com/profile.php?id=61587075946629',
       'https://maps.google.com/maps?cid=3971201418059877519',
-      'https://www.google.com/maps/place/?q=place_id:ChIJpdK_LIPyJIgRz8x9wzhgZjY',
+      'https://www.google.com/maps/place/?q=place_id:ChIJcYtYsfnmJIgRj4z8PqaKHDc',
     ],
     priceRange: '$$',
     aggregateRating: {
