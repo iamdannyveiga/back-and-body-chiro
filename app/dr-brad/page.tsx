@@ -4,7 +4,7 @@ import Image from 'next/image';
 import PageHero from '@/components/PageHero';
 import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
-import { StarIcon, HomeIcon, KinesiologyIcon, WorkInjuryIcon, PediatricIcon } from '@/components/Icons';
+import { StarIcon, HomeIcon, SpineIcon, WorkInjuryIcon, PediatricIcon } from '@/components/Icons';
 import { personSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
@@ -86,7 +86,7 @@ export default function DrBradPage() {
               <div className="mt-9">
                 <h3 className="text-lg font-bold text-teal mb-4" style={{ fontFamily: 'var(--font-heading)' }}>Specialties</h3>
                 <div className="flex flex-wrap gap-2">
-                  {['Back Pain', 'Neck Pain', 'Spinal Decompression', 'Pediatric', 'Prenatal', 'Sports Medicine', 'Applied Kinesiology', 'Massage Therapy', 'Nutrition', 'Scoliosis', 'Auto/Work Injury'].map((tag) => (
+                  {['Back Pain', 'Neck Pain', 'Spinal Decompression', 'Pediatric', 'Prenatal', 'Sports Medicine', 'Massage Therapy', 'Nutrition', 'Scoliosis', 'Auto/Work Injury'].map((tag) => (
                     <span key={tag} className="inline-block px-4 py-[6px] bg-[#f1f5f5] text-teal text-sm font-medium rounded-full">
                       {tag}
                     </span>
@@ -118,7 +118,7 @@ export default function DrBradPage() {
                   text: "This isn't some doctor who moved here for a business opportunity. Brad is from here. He went to school here. He chose to build his practice in the community he grew up in.",
                 },
                 {
-                  icon: <KinesiologyIcon className="w-6 h-6" />,
+                  icon: <SpineIcon className="w-6 h-6" />,
                   title: 'MSU-educated, Life University-trained — the credentials are real.',
                   text: 'B.S. in Kinesiology from Michigan State. Doctor of Chiropractic from Life University. Fourteen years of continuing education and hands-on experience.',
                 },

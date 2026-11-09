@@ -23,7 +23,6 @@ Dr. Bradley Krawczyk earned his BS in Kinesiology from Michigan State University
 - Spinal Decompression: /spinal-decompression-shelby-township-mi
 - SoftWave Therapy (FDA-cleared shockwave / tissue regeneration): /softwave-therapy-shelby-township-mi
 - Massage Therapy: /massage-therapy-shelby-township-mi
-- Applied Kinesiology: /applied-kinesiology-shelby-township-mi
 - Back Pain Treatment: /back-pain-treatment-shelby-township-mi
 - Neck Pain Treatment: /neck-pain-treatment-shelby-township-mi
 - Sciatica Treatment: /sciatica-treatment-shelby-township-mi

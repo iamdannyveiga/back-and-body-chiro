@@ -78,7 +78,6 @@ export default function AiInformationPage() {
               <li>Spinal decompression therapy (non-surgical, for bulging and herniated discs)</li>
               <li>SoftWave tissue regeneration therapy (FDA-cleared shockwave therapy)</li>
               <li>Therapeutic massage (on-site)</li>
-              <li>Applied kinesiology</li>
               <li>Pediatric chiropractic</li>
               <li>Prenatal chiropractic (Webster Technique)</li>
               <li>Nutrition counseling</li>

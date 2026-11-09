@@ -86,11 +86,6 @@ const SERVICE_FAQS = [
       "SoftWave is a non-invasive shockwave treatment that stimulates your body's own healing cells to repair damaged tissue and reduce inflammation. It's often used when other treatments haven't worked.",
   },
   {
-    question: 'What is applied kinesiology?',
-    answer:
-      'Applied kinesiology is a diagnostic technique that uses muscle testing to evaluate structural, chemical, and mental aspects of health. By testing the strength and response of specific muscles, Dr. Brad can identify imbalances that standard exams might miss.',
-  },
-  {
     question: 'Do you offer massage therapy?',
     answer:
       "Yes -- on-site therapeutic massage. It's a great complement to chiropractic care, helping reduce muscle tension, improve range of motion, and accelerate your recovery.",

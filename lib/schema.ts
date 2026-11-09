@@ -138,7 +138,7 @@ export function personSchema() {
     ],
     knowsAbout: [
       'Chiropractic adjustments', 'Spinal decompression', 'SoftWave tissue regeneration therapy',
-      'Applied kinesiology', 'Pediatric chiropractic', 'Prenatal chiropractic (Webster Technique)',
+      'Pediatric chiropractic', 'Prenatal chiropractic (Webster Technique)',
       'Sports injury rehabilitation', 'Back pain treatment', 'Neck pain treatment',
       'Sciatica relief', 'Disc injury treatment', 'Headache and migraine relief',
     ],

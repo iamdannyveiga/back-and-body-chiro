@@ -22,7 +22,6 @@ const faqItems = [
   { question: "Do you do long-term care plans or contracts?", answer: "No. This is one of the biggest things that sets us apart. We don't sell long-term care plan packages. We don't pressure you into 6-month contracts. Dr. Brad recommends what he genuinely believes you need -- and you decide how to proceed. Come when you need to, stop when you're feeling good. No guilt, no pressure." },
   { question: "What is spinal decompression?", answer: "Spinal decompression is a non-surgical treatment that gently stretches the spine using a specialized table. It creates negative pressure inside the discs, which can help bulging or herniated discs retract and allow nutrients and oxygen to flow back in." },
   { question: "Do you treat children and pregnant women?", answer: "Absolutely. Dr. Brad provides gentle, specialized care for children of all ages and pregnant women. Pediatric adjustments use very light pressure. Prenatal chiropractic helps with back pain, sciatica, and optimal baby positioning." },
-  { question: "What is applied kinesiology?", answer: "Applied kinesiology is a diagnostic technique that uses muscle testing to evaluate structural, chemical, and mental aspects of health. By testing the strength and response of specific muscles, Dr. Brad can identify imbalances that standard exams might miss." },
   { question: "Do you accept insurance?", answer: "Yes, we work with most major insurance plans. Call us at (586) 207-1624 and we'll verify your benefits before your first visit. Even without insurance, our pricing is straightforward and affordable." },
   { question: "Do you offer massage therapy?", answer: "Yes -- on-site therapeutic massage. It's a great complement to chiropractic care, helping reduce muscle tension, improve range of motion, and accelerate your recovery." },
   { question: "Do you offer nutrition counseling?", answer: "Yes. Dr. Brad takes a whole-body approach, offering personalized nutrition counseling with practical plans that work for real life and support your body's healing from the inside out." },
@@ -105,7 +104,6 @@ export default function HomePage() {
                 <Link href="/spinal-decompression-shelby-township-mi" className="text-teal hover:underline">spinal decompression</Link>,{' '}
                 <Link href="/softwave-therapy-shelby-township-mi" className="text-teal hover:underline">SoftWave tissue regeneration therapy</Link>,{' '}
                 <Link href="/massage-therapy-shelby-township-mi" className="text-teal hover:underline">therapeutic massage</Link>,{' '}
-                <Link href="/applied-kinesiology-shelby-township-mi" className="text-teal hover:underline">applied kinesiology</Link>,{' '}
                 <Link href="/pediatric-chiropractic-shelby-township-mi" className="text-teal hover:underline">pediatric chiropractic</Link>,{' '}
                 <Link href="/prenatal-chiropractic-shelby-township-mi" className="text-teal hover:underline">prenatal chiropractic (Webster Technique)</Link>,{' '}
                 <Link href="/nutrition-shelby-township-mi" className="text-teal hover:underline">nutrition counseling</Link>, and{' '}
@@ -266,7 +264,7 @@ export default function HomePage() {
             </ScrollReveal>
           </div>
           <ScrollReveal className="text-center text-sm text-[#888] leading-[1.7]">
-            <strong className="text-text font-semibold">Plus:</strong> Applied Kinesiology &middot; Carpal Tunnel &middot; Vertigo &middot; Shoulder Pain &middot; Arm &amp; Leg Pain &middot; Nutrition &middot; Wellness Care
+            <strong className="text-text font-semibold">Plus:</strong> Carpal Tunnel &middot; Vertigo &middot; Shoulder Pain &middot; Arm &amp; Leg Pain &middot; Nutrition &middot; Wellness Care
           </ScrollReveal>
         </div>
       </section>
@@ -342,7 +340,7 @@ export default function HomePage() {
                 <p>Every patient gets a thorough evaluation, a clear explanation of what is going on, and a care plan sized to their specific condition. Real results speak for themselves.</p>
               </div>
               <div className="flex flex-wrap gap-2">
-                {['Back Pain', 'Neck Pain', 'Spinal Decompression', 'SoftWave Therapy', 'Pediatric', 'Prenatal', 'Sports Medicine', 'Applied Kinesiology', 'Massage', 'Nutrition'].map((tag) => (
+                {['Back Pain', 'Neck Pain', 'Spinal Decompression', 'SoftWave Therapy', 'Pediatric', 'Prenatal', 'Sports Medicine', 'Massage', 'Nutrition'].map((tag) => (
                   <span key={tag} className="text-xs font-semibold px-3.5 py-1.5 bg-mint/10 text-green-sec rounded-[20px]" style={{ fontFamily: 'var(--font-heading)' }}>{tag}</span>
                 ))}
               </div>
