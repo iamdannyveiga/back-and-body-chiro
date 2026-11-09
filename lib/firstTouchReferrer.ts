@@ -54,7 +54,7 @@ export function browserFirstTouch(): FirstTouch {
 
 const MAX_LEN = 2048;
 const SCHEME = /^(https?|android-app):\/\//i;
-const FIELDS = ["referrer", "landing_url", "page_url"] as const;
+const FIELDS = ["referrer", "landing_url", "landing_page", "page_url"] as const;
 
 // Server side: the attribution fields /api/lead forwards to the CRM webhook.
 export function leadReferrerFields(body: Record<string, unknown>): Record<string, string> {
