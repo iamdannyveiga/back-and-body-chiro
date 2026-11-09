@@ -24,7 +24,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "arm-leg-pain-shelby-township-mi",
     "wellness-care-shelby-township-mi",
     "nutrition-shelby-township-mi",
-    "applied-kinesiology-shelby-township-mi",
     // PAGES-1 city pages (2026-10-01): service x city pages from staged specs.
     "softwave-therapy-clinton-township-mi",
     "softwave-therapy-sterling-heights-mi",

@@ -5,7 +5,7 @@ import PageHero from '@/components/PageHero';
 import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
-import { SpineIcon, MassageIcon, KinesiologyIcon } from '@/components/Icons';
+import { SpineIcon, MassageIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
@@ -136,7 +136,6 @@ export default function NutritionPage() {
           <ScrollReveal>
             <div className="grid md:grid-cols-3 gap-6 max-w-[1000px] mx-auto">
               {[
-                { icon: <KinesiologyIcon className="w-6 h-6" />, title: 'Applied Kinesiology', desc: 'Muscle testing that uncovers imbalances nutrition can help correct.', href: '/applied-kinesiology-shelby-township-mi' },
                 { icon: <SpineIcon className="w-6 h-6" />, title: 'Wellness Care', desc: 'Combine nutrition with chiropractic for complete wellness.', href: '/wellness-care-shelby-township-mi' },
                 { icon: <MassageIcon className="w-6 h-6" />, title: 'Chiropractic Care', desc: 'Nutrition supports and enhances chiropractic results.', href: '/chiropractic-care-shelby-township-mi' },
               ].map((svc) => (

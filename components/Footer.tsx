@@ -49,7 +49,6 @@ export default function Footer() {
                 { href: '/herniated-disc-treatment-clinton-township-mi', label: 'Herniated Disc in Clinton Township' },
                 { href: '/sciatica-treatment-clinton-township-mi', label: 'Sciatica in Clinton Township' },
                 { href: '/massage-therapy-shelby-township-mi', label: 'Massage Therapy' },
-                { href: '/applied-kinesiology-shelby-township-mi', label: 'Applied Kinesiology' },
                 { href: '/pediatric-chiropractic-shelby-township-mi', label: 'Pediatric Chiropractic' },
                 { href: '/prenatal-chiropractic-shelby-township-mi', label: 'Prenatal Chiropractic' },
                 { href: '/nutrition-shelby-township-mi', label: 'Nutrition' },

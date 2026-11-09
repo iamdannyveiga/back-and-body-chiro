@@ -6,7 +6,7 @@ import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
 import BookingForm from '@/components/BookingForm';
 import FAQAccordion from '@/components/FAQAccordion';
-import { DecompressionIcon, MassageIcon, KinesiologyIcon } from '@/components/Icons';
+import { DecompressionIcon, MassageIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
@@ -292,7 +292,6 @@ export default function ChiropracticCarePage() {
               {[
                 { icon: <DecompressionIcon className="w-6 h-6" />, title: 'Spinal Decompression', desc: 'Non-surgical disc relief through gentle traction therapy.', href: '/spinal-decompression-shelby-township-mi' },
                 { icon: <MassageIcon className="w-6 h-6" />, title: 'Massage Therapy', desc: 'On-site therapeutic massage to complement your adjustments.', href: '/massage-therapy-shelby-township-mi' },
-                { icon: <KinesiologyIcon className="w-6 h-6" />, title: 'Applied Kinesiology', desc: 'Advanced muscle testing diagnostics for deeper insight.', href: '/applied-kinesiology-shelby-township-mi' },
               ].map((svc) => (
                 <Link key={svc.title} href={svc.href} className="block bg-light-gray rounded-xl p-7 hover:shadow-md transition-shadow group">
                   <div className="w-10 h-10 rounded-lg bg-mint/10 text-mint flex items-center justify-center mb-4">{svc.icon}</div>
