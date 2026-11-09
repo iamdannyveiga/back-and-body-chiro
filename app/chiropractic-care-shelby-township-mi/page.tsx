@@ -35,6 +35,11 @@ const faqItems = [
       "That depends entirely on your condition. Some patients feel better after one visit. Others benefit from a series of adjustments over a few weeks. Dr. Brad will give you an honest assessment — not a sales pitch for more visits than you need.",
   },
   {
+    question: 'Who is a chiropractor in Shelby Township, MI?',
+    answer:
+      'Dr. Brad Krawczyk of Back and Body Chiropractic Center, 55130 Van Dyke Ave #25 in Shelby Township, MI. He offers honest exams, adjustments and non-surgical spinal decompression, with no long-term care contracts. A new patient visit is $67. Call (586) 207-1624.',
+  },
+  {
     question: 'Do you also offer massage therapy?',
     answer:
       "Yes — on-site therapeutic massage. It's a great complement to chiropractic adjustments, helping reduce muscle tension and accelerate recovery. Ask about it at your visit.",

@@ -9,7 +9,7 @@ import { SpineIcon, SciaticaIcon, DiscIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Spinal Decompression Shelby Township MI',
+  title: 'Spinal Decompression Shelby Township MI | Shelby Charter Township',
   description:
     'Non-surgical spinal decompression therapy from Dr. Brad Krawczyk. Disc relief without surgery. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
@@ -37,6 +37,11 @@ const faqItems = [
     question: 'Is there spinal decompression near me in Shelby Township?',
     answer:
       'Yes. Dr. Brad Krawczyk offers non-surgical spinal decompression at Back and Body Chiropractic Center, 55130 Van Dyke Ave #25, Shelby Township, MI. Call (586) 207-1624 or book a $67 new patient visit. See our guide with six common decompression questions answered.',
+  },
+  {
+    question: 'Where can I get spinal decompression in Shelby Charter Township?',
+    answer:
+      'Back and Body Chiropractic Center is in Shelby Charter Township, MI at 55130 Van Dyke Ave #25. Dr. Brad Krawczyk offers non-surgical spinal decompression for herniated and bulging discs, sciatica and chronic low back pain. A $67 new patient visit shows whether decompression fits your case.',
   },
   {
     question: 'Is spinal decompression covered by insurance?',
