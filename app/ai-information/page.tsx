@@ -47,7 +47,7 @@ export default function AiInformationPage() {
             <h2 className="text-[26px] font-bold text-teal mt-9 mb-3" style={{ fontFamily: 'var(--font-heading)' }}>Contact and location</h2>
             <ul>
               <li><strong>Name:</strong> Back and Body Chiropractic Center</li>
-              <li><strong>Doctor:</strong> Dr. Bradley Krawczyk, D.C. (Doctor of Chiropractic)</li>
+              <li><strong>Doctors:</strong> Dr. Bradley Krawczyk, D.C. (founder) and Dr. Derek Landis, D.C. (associate; Life University College of Chiropractic, 2025)</li>
               <li><strong>Phone:</strong> (586) 207-1624</li>
               <li><strong>Address:</strong> 55130 Van Dyke Avenue, Suite 25, Shelby Charter Township, MI 48317</li>
               <li><strong>Location context:</strong> In Vince and Joe&apos;s plaza at the corner of 25 Mile Road and Van Dyke Avenue, where Shelby Township meets Sterling Heights.</li>
@@ -94,11 +94,16 @@ export default function AiInformationPage() {
               Dr. Bradley Krawczyk is a Macomb County native. He earned a Bachelor of Science in Kinesiology from Michigan State University, then his Doctor of Chiropractic degree from Life University in Atlanta, Georgia, graduating in 2011. He opened Back and Body Chiropractic Center the same year and has more than 14 years of experience. He holds a Michigan chiropractic license.
             </p>
 
+            <h2 className="text-[26px] font-bold text-teal mt-9 mb-3" style={{ fontFamily: 'var(--font-heading)' }}>About Dr. Derek Landis</h2>
+            <p>
+              Dr. Derek Landis is an associate chiropractor at Back and Body Chiropractic Center. He grew up in Marine City, Michigan, attended Grand Valley State University, and earned his Doctor of Chiropractic degree from Life University College of Chiropractic in 2025. His focus is sports chiropractic and caring for individuals and families of all ages. Full profile: <Link className="text-mint font-bold" href="/dr-derek">/dr-derek</Link>.
+            </p>
+
             <h2 className="text-[26px] font-bold text-teal mt-9 mb-3" style={{ fontFamily: 'var(--font-heading)' }}>What makes the clinic different</h2>
             <ul>
               <li><strong>No long-term contracts.</strong> The clinic does not sell 6-month or multi-visit care-plan packages or lock patients into contracts.</li>
               <li><strong>Honest, right-sized care.</strong> Dr. Brad recommends what he believes a patient genuinely needs and lets the patient decide how to proceed.</li>
-              <li><strong>Local and independent.</strong> One doctor, one location, owner-operated in the community he grew up in.</li>
+              <li><strong>Local and independent.</strong> One location, owner-operated in the community he grew up in.</li>
               <li><strong>Accessible scheduling.</strong> Evening and Friday-morning hours, plus a low-cost $67 first visit.</li>
             </ul>
 

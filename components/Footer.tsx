@@ -97,6 +97,7 @@ export default function Footer() {
               {[
                 { href: '/about', label: 'About' },
                 { href: '/dr-brad', label: 'Meet Dr. Brad' },
+                { href: '/dr-derek', label: 'Meet Dr. Derek' },
                 { href: '/testimonials', label: 'Patient Reviews' },
                 { href: '/leave-a-review', label: 'Leave a Review' },
                 { href: '/new-patients', label: 'New Patients' },

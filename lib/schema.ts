@@ -111,6 +111,30 @@ export function serviceSchema(serviceName: string, description: string, slug: st
   };
 }
 
+export function personSchemaDerek() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': `${BUSINESS.url}/#dr-derek-landis`,
+    name: 'Dr. Derek Landis',
+    givenName: 'Derek',
+    familyName: 'Landis',
+    jobTitle: 'Doctor of Chiropractic',
+    description: 'Associate chiropractor at Back and Body Chiropractic Center. Doctor of Chiropractic from Life University College of Chiropractic (2025) with a focus on sports chiropractic and care for individuals and families of all ages.',
+    image: `${BUSINESS.url}/images/dr-derek-landis.webp`,
+    url: `${BUSINESS.url}/dr-derek`,
+    worksFor: { '@type': 'Chiropractor', '@id': `${BUSINESS.url}/#organization` },
+    alumniOf: [
+      { '@type': 'CollegeOrUniversity', name: 'Grand Valley State University', sameAs: 'https://www.gvsu.edu' },
+      { '@type': 'CollegeOrUniversity', name: 'Life University', sameAs: 'https://www.life.edu' },
+    ],
+    hasCredential: [
+      { '@type': 'EducationalOccupationalCredential', name: 'Doctor of Chiropractic', credentialCategory: 'degree' },
+    ],
+    knowsAbout: ['Sports chiropractic', 'Shoulder injuries', 'Chiropractic care for families'],
+  };
+}
+
 export function personSchema() {
   // Caleb doctrine: doctor as Person entity with E-A-T credentials
   // Improves answer-engine attribution (Google AIO, ChatGPT, Perplexity, Claude)
