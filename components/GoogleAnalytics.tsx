@@ -45,6 +45,7 @@ export default function GoogleAnalytics() {
         event_category: 'engagement',
         event_label: phone,
         phone_number: phone,
+        page_path: window.location.pathname,
         link_text: (link.textContent || '').trim().slice(0, 80),
         ...readSplitTestVariants(),
       })

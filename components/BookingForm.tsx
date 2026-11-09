@@ -66,7 +66,7 @@ export default function BookingForm({ variant = 'full', defaultService }: Bookin
       // Ad-click attribution (gclid / fbclid / UTMs) forwarded to the CRM
       ...attribution,
       // First-touch referrer + landing URL (lib/firstTouchReferrer.ts) and the submitting page
-      ...browserFirstTouch(),
+      ...(() => { const ft = browserFirstTouch(); return { ...ft, landing_page: ft.landing_url }; })(),
       page_url: window.location.href,
       // Spam signals — checked server-side in /api/lead, stripped before CRM
       hp: (data.get('_gotcha') as string) || '',

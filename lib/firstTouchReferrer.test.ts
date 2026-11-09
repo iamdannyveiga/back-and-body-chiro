@@ -75,3 +75,10 @@ test("route drops empty, non-string, non-url and oversized values", () => {
   assert.deepEqual(leadReferrerFields({ page_url: "https://x.com/" + "a".repeat(3000) }), {});
   assert.deepEqual(leadReferrerFields({ referrer: "  " + GOOGLE + "  " }), { referrer: GOOGLE });
 });
+
+test("landing_page, referrer and page_url pass through to the CRM payload", () => {
+  const out = leadReferrerFields({ landing_page: "https://backandbodydoc.com/dr-brad", referrer: "https://www.google.com/", page_url: "https://backandbodydoc.com/contact" });
+  assert.equal(out.landing_page, "https://backandbodydoc.com/dr-brad");
+  assert.equal(out.referrer, "https://www.google.com/");
+  assert.equal(out.page_url, "https://backandbodydoc.com/contact");
+});
