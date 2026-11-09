@@ -16,8 +16,9 @@ export async function GET() {
 - Sunday: Closed
 
 ## Doctors
-- Dr. Bradley Krawczyk, DC (founder): /dr-brad
-- Dr. Derek Landis, DC (associate; Life University College of Chiropractic 2025, Grand Valley State University, sports chiropractic): /dr-derek
+- Our Doctors page (both doctors, one page): /doctors
+- Dr. Bradley Krawczyk, DC (founder): /doctors#dr-brad
+- Dr. Derek Landis, DC (associate; Life University College of Chiropractic 2025, Grand Valley State University, sports chiropractic): /doctors#dr-derek
 
 ## About Dr. Brad
 Dr. Bradley Krawczyk earned his BS in Kinesiology from Michigan State University and his Doctor of Chiropractic from Life University (2011). 14+ years of experience. 5.0-star Google rating (92 reviews).
@@ -70,8 +71,7 @@ Dr. Bradley Krawczyk earned his BS in Kinesiology from Michigan State University
 ## Pages
 - Home: /
 - About: /about
-- Dr. Brad: /dr-brad
-- Dr. Derek: /dr-derek
+- Our Doctors (Dr. Brad and Dr. Derek): /doctors
 - New Patients: /new-patients
 - Contact: /contact
 - Schedule Appointment: /schedule-appointment

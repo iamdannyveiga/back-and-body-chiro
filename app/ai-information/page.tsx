@@ -47,7 +47,7 @@ export default function AiInformationPage() {
             <h2 className="text-[26px] font-bold text-teal mt-9 mb-3" style={{ fontFamily: 'var(--font-heading)' }}>Contact and location</h2>
             <ul>
               <li><strong>Name:</strong> Back and Body Chiropractic Center</li>
-              <li><strong>Doctors:</strong> Dr. Bradley Krawczyk, D.C. (founder) and Dr. Derek Landis, D.C. (associate; Life University College of Chiropractic, 2025)</li>
+              <li><strong>Doctors:</strong> Dr. Bradley Krawczyk, D.C. (founder) and Dr. Derek Landis, D.C. (associate; Life University College of Chiropractic, 2025) Both doctors: <Link className="text-mint font-bold" href="/doctors">Our Doctors page</Link>.</li>
               <li><strong>Phone:</strong> (586) 207-1624</li>
               <li><strong>Address:</strong> 55130 Van Dyke Avenue, Suite 25, Shelby Charter Township, MI 48317</li>
               <li><strong>Location context:</strong> In Vince and Joe&apos;s plaza at the corner of 25 Mile Road and Van Dyke Avenue, where Shelby Township meets Sterling Heights.</li>

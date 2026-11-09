@@ -96,8 +96,7 @@ export default function Footer() {
             <ul className="list-none p-0 m-0">
               {[
                 { href: '/about', label: 'About' },
-                { href: '/dr-brad', label: 'Meet Dr. Brad' },
-                { href: '/dr-derek', label: 'Meet Dr. Derek' },
+                { href: '/doctors', label: 'Our Doctors' },
                 { href: '/testimonials', label: 'Patient Reviews' },
                 { href: '/leave-a-review', label: 'Leave a Review' },
                 { href: '/new-patients', label: 'New Patients' },

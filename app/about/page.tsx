@@ -79,7 +79,7 @@ export default function AboutPage() {
                 <h2 className="text-[34px] font-extrabold text-teal mb-3 leading-[1.15]" style={{ fontFamily: 'var(--font-heading)' }}>Dr. Derek Landis, DC</h2>
                 <p className="text-sm text-[#888] mb-4">Life University College of Chiropractic, 2025 &middot; Grand Valley State University &middot; Sports chiropractic</p>
                 <p className="text-[16px] leading-[1.75] mb-5">Derek grew up in Marine City, Michigan, and found chiropractic care as a baseball pitcher working through shoulder injuries. Today he brings that same passion for sports chiropractic and family care to patients at Back and Body Chiropractic Center.</p>
-                <Link href="/dr-derek" className="text-mint font-bold">Meet Dr. Derek &rarr;</Link>
+                <Link href="/doctors#dr-derek" className="text-mint font-bold">Meet Dr. Derek &rarr;</Link>
               </div>
             </div>
           </ScrollReveal>

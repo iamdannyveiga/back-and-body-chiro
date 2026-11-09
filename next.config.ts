@@ -37,6 +37,8 @@ const nextConfig: NextConfig = {
 
   async redirects() {
     return [
+      // One combined doctors page (client 2026-11-09): /doctors is the combined page; /dr-brad stays live as a form-lead landing page; /dr-derek folds into /doctors
+      { source: "/dr-derek", destination: "/doctors#dr-derek", statusCode: 301 },
       // Weight-loss service discontinued (Dr. Brad does not offer it, 2026-06-10) -> nutrition
       { source: "/weight-loss-shelby-township-mi", destination: "/nutrition-shelby-township-mi", statusCode: 301 },
       // 301s: Old /services/ paths -> new geo-slugged root paths
@@ -44,8 +46,8 @@ const nextConfig: NextConfig = {
       { source: "/services/spinal-decompression", destination: "/spinal-decompression-shelby-township-mi", statusCode: 301 },
       { source: "/services/massage-therapy", destination: "/massage-therapy-shelby-township-mi", statusCode: 301 },
       { source: "/services", destination: "/#services", statusCode: 301 },
-      { source: "/services/applied-kinesiology", destination: "/#services", statusCode: 301 },
-      { source: "/applied-kinesiology-shelby-township-mi", destination: "/#services", statusCode: 301 },
+      { source: "/services/applied-kinesiology", destination: "/chiropractic-care-shelby-township-mi", statusCode: 301 },
+      { source: "/applied-kinesiology-shelby-township-mi", destination: "/chiropractic-care-shelby-township-mi", statusCode: 301 },
       { source: "/services/back-pain-treatment", destination: "/back-pain-treatment-shelby-township-mi", statusCode: 301 },
       { source: "/services/neck-pain-treatment", destination: "/neck-pain-treatment-shelby-township-mi", statusCode: 301 },
       { source: "/services/sciatica-treatment", destination: "/sciatica-treatment-shelby-township-mi", statusCode: 301 },
@@ -92,7 +94,7 @@ const nextConfig: NextConfig = {
       { source: "/weight-loss", destination: "/weight-loss-shelby-township-mi", statusCode: 301 },
 
       // Informational pages: WordPress -> Next.js restructured routes
-      { source: "/chiropractor", destination: "/dr-brad", statusCode: 301 },
+      { source: "/chiropractor", destination: "/doctors", statusCode: 301 },
       { source: "/contact-us", destination: "/contact", statusCode: 301 },
       { source: "/us", destination: "/about", statusCode: 301 },
       // /new-patient-paperwork now has its own page -- no redirect needed

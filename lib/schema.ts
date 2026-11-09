@@ -122,7 +122,7 @@ export function personSchemaDerek() {
     jobTitle: 'Doctor of Chiropractic',
     description: 'Associate chiropractor at Back and Body Chiropractic Center. Doctor of Chiropractic from Life University College of Chiropractic (2025) with a focus on sports chiropractic and care for individuals and families of all ages.',
     image: `${BUSINESS.url}/images/dr-derek-landis.webp`,
-    url: `${BUSINESS.url}/dr-derek`,
+    url: `${BUSINESS.url}/doctors#dr-derek`,
     worksFor: { '@type': 'Chiropractor', '@id': `${BUSINESS.url}/#organization` },
     alumniOf: [
       { '@type': 'CollegeOrUniversity', name: 'Grand Valley State University', sameAs: 'https://www.gvsu.edu' },
@@ -148,7 +148,7 @@ export function personSchema() {
     jobTitle: BUSINESS.doctorTitle,
     description: 'Macomb County native. Doctor of Chiropractic since 2011. Honest, results-focused chiropractic care without long-term contracts.',
     image: `${BUSINESS.url}/images/dr-brad.webp`,
-    url: `${BUSINESS.url}/dr-brad`,
+    url: `${BUSINESS.url}/doctors#dr-brad`,
     telephone: BUSINESS.phone,
     worksFor: { '@type': 'Chiropractor', '@id': `${BUSINESS.url}/#organization` },
     alumniOf: [

@@ -191,6 +191,12 @@ export default function DrBradPage() {
         </div>
       </section>
 
+      <section className="py-10 bg-white">
+        <div className="container text-center">
+          <Link href="/doctors" className="text-mint font-bold">Meet Dr. Derek Landis too: see both doctors &rarr;</Link>
+        </div>
+      </section>
+
       <ConversionCTA line1="$67 gets you started." anchor="Just honest care." />
 
       <script
