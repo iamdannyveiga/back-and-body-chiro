@@ -18,7 +18,7 @@ export default function AboutPage() {
     <>
       <PageHero
         title={<><span className="font-normal">About </span>Back and Body.</>}
-        subtitle="One doctor. One location. 14 years of honest chiropractic care in Shelby Township."
+        subtitle="Two doctors. One location. 14 years of honest chiropractic care in Shelby Township."
         breadcrumbs={[{ label: 'Home', href: '/' }, { label: 'About' }]}
       />
 
@@ -55,6 +55,32 @@ export default function AboutPage() {
             <div className="border-l-4 border-mint py-7 px-8 bg-mint/[.04] rounded-r-xl">
               <div className="text-[80px] leading-[.8] text-mint opacity-20" style={{ fontFamily: 'Georgia, serif' }}>&ldquo;</div>
               <div className="text-[22px] font-normal leading-[1.5] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>The best care without any of the nonsense.</div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Meet Dr. Derek */}
+      <section className="py-[80px] bg-light-gray">
+        <div className="container">
+          <ScrollReveal className="max-w-[860px] mx-auto">
+            <div className="grid md:grid-cols-[260px_1fr] gap-10 items-center">
+              <div className="w-full aspect-[2/3] rounded-xl overflow-hidden shadow-[var(--shadow)] relative">
+                <Image
+                  src="/images/dr-derek-landis.webp"
+                  alt="Dr. Derek Landis, DC, associate chiropractor at Back and Body Chiropractic Center in Shelby Township, MI"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 260px"
+                  className="object-cover object-top"
+                />
+              </div>
+              <div>
+                <span className="label">Meet Our Associate</span>
+                <h2 className="text-[34px] font-extrabold text-teal mb-3 leading-[1.15]" style={{ fontFamily: 'var(--font-heading)' }}>Dr. Derek Landis, DC</h2>
+                <p className="text-sm text-[#888] mb-4">Life University College of Chiropractic, 2025 &middot; Grand Valley State University &middot; Sports chiropractic</p>
+                <p className="text-[16px] leading-[1.75] mb-5">Derek grew up in Marine City, Michigan, and found chiropractic care as a baseball pitcher working through shoulder injuries. Today he brings that same passion for sports chiropractic and family care to patients at Back and Body Chiropractic Center.</p>
+                <Link href="/dr-derek" className="text-mint font-bold">Meet Dr. Derek &rarr;</Link>
+              </div>
             </div>
           </ScrollReveal>
         </div>
