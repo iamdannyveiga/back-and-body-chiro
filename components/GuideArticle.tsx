@@ -2,17 +2,21 @@ import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import ScrollReveal from '@/components/ScrollReveal';
 import ConversionCTA from '@/components/ConversionCTA';
+import FAQAccordion from '@/components/FAQAccordion';
 import { breadcrumbSchema } from '@/lib/schema';
 
 export interface GuideItem { heading: string; body: string[]; }
 export interface GuideLink { href: string; label: string; }
+export interface GuideFaq { question: string; answer: string; }
 
 // Shared layout for health-library guides (listicle format). Server component.
+// Optional faq renders a visible FAQ accordion that emits the page's one FAQPage schema.
 export default function GuideArticle({
-  slug, title, titleAccent, subtitle, intro, items, links, updated,
+  slug, title, titleAccent, subtitle, intro, items, links, updated, faq, faqTitle,
 }: {
   slug: string; title: string; titleAccent: string; subtitle: string;
   intro: string[]; items: GuideItem[]; links: GuideLink[]; updated: string;
+  faq?: GuideFaq[]; faqTitle?: string;
 }) {
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -51,6 +55,17 @@ export default function GuideArticle({
               </div>
             </ScrollReveal>
           ))}
+          {faq && faq.length > 0 && (
+            <div className="mt-14">
+              <ScrollReveal>
+                <div className="text-center mb-8">
+                  <span className="label">FAQ</span>
+                  <h2 className="text-[30px] md:text-[36px] font-extrabold text-teal" style={{ fontFamily: 'var(--font-heading)' }}>{faqTitle || 'Frequently asked questions'}</h2>
+                </div>
+              </ScrollReveal>
+              <FAQAccordion items={faq} />
+            </div>
+          )}
           <ScrollReveal>
             <div className="mt-12 border-[3px] border-mint/30 rounded-xl p-8">
               <h2 className="text-[24px] font-extrabold text-teal mb-3" style={{ fontFamily: 'var(--font-heading)' }}>Keep reading</h2>
