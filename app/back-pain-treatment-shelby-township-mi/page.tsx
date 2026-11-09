@@ -258,6 +258,12 @@ export default function BackPainTreatmentPage() {
         </div>
       </section>
 
+      <section className="py-10 bg-white">
+        <div className="container max-w-[860px] mx-auto text-center">
+          <p className="text-base leading-relaxed">Start with a <Link href="/new-patients#shelby-township-chiropractor" className="text-teal hover:underline">Shelby Township chiropractor</Link> visit. Muscle tension? Try <Link href="/massage-therapy-shelby-township-mi#massage-shelby-township" className="text-teal hover:underline">massage in Shelby Township</Link>. Stubborn tissue pain? See <Link href="/softwave-therapy-shelby-township-mi#softwave-clinics-near-me" className="text-teal hover:underline">SoftWave clinics near me</Link>.</p>
+        </div>
+      </section>
+
       <ConversionCTA line1="Stop living with back pain." anchor="$67 to start feeling better." />
 
       <script
