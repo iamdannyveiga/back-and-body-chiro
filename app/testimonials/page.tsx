@@ -33,7 +33,7 @@ export default function TestimonialsPage() {
         title={<>
           <span className="font-normal">Real patients. </span><span className="text-mint">Real results.</span>
         </>}
-        subtitle="4.9 stars on Google. 34+ reviews. Every one earned through results, not incentives."
+        subtitle="5.0 stars on Google. 90+ reviews. Every one earned through results, not incentives."
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Reviews' },
@@ -132,7 +132,7 @@ export default function TestimonialsPage() {
         </div>
       </section>
 
-      <ConversionCTA line1="Join 34+ happy patients." anchor="$67 to get started." />
+      <ConversionCTA line1="Join 90+ happy patients." anchor="$67 to get started." />
     </>
   );
 }

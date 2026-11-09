@@ -3,7 +3,7 @@ const BUSINESS = {
   phone: '(586) 207-1624',
   phonePlain: '5862071624',
   url: 'https://backandbodydoc.com',
-  street: '55130 Van Dyke Ave #25',
+  street: '55130 Van Dyke Avenue #25',
   city: 'Shelby Charter Township',
   state: 'MI',
   zip: '48317',
@@ -11,14 +11,14 @@ const BUSINESS = {
   lng: -83.0322461,
   doctor: 'Dr. Bradley Krawczyk',
   doctorTitle: 'Doctor of Chiropractic',
-  rating: '4.9',
-  reviewCount: '34',
+  rating: '5.0',
+  reviewCount: '92',
 } as const;
 
 export function localBusinessSchema() {
   return {
     '@context': 'https://schema.org',
-    '@type': 'Chiropractor',
+    '@type': ['Chiropractor', 'MedicalClinic'],
     '@id': `${BUSINESS.url}/#organization`,
     name: BUSINESS.name,
     image: `${BUSINESS.url}/images/office-exterior.webp`,

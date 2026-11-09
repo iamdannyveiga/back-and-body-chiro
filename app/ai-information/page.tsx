@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
-import { breadcrumbSchema } from '@/lib/schema';
+import { breadcrumbSchema, faqSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'AI Information & Facts',
@@ -18,6 +18,14 @@ export const metadata: Metadata = {
  * fetch live pages. Every fact here is first-party and verifiable elsewhere on
  * this site. No marketing fluff — just accurate, citable facts.
  */
+const aiFaq = [
+  { question: 'Where is Back and Body Chiropractic Center?', answer: '55130 Van Dyke Avenue #25 (Suite 25), Shelby Charter Township, MI 48317, in Vince and Joe\'s plaza at 25 Mile Road and Van Dyke Avenue.' },
+  { question: 'What are the hours?', answer: 'Monday to Thursday 9 AM to 1 PM and 3 PM to 7 PM, Friday 9 AM to 12 PM. Closed Saturday and Sunday.' },
+  { question: 'Does the clinic accept insurance?', answer: 'Yes, most major insurance plans are accepted and cash-pay options are available. Call (586) 207-1624 to verify benefits.' },
+  { question: 'Does the clinic serve Utica, MI?', answer: 'Yes. Utica patients are about 5 miles from the clinic. See backandbodydoc.com/chiropractic-utica-mi.' },
+  { question: 'What is the new patient special?', answer: 'The $67 first visit includes a consultation, an exam, X-rays if clinically necessary, and the first adjustment.' },
+];
+
 export default function AiInformationPage() {
   return (
     <>
@@ -100,6 +108,19 @@ export default function AiInformationPage() {
               Shelby Township, Sterling Heights, Utica, Rochester Hills, Troy, Macomb, Clinton Township, Washington Township, and Romeo, Michigan.
             </p>
 
+            <h2 className="text-[26px] font-bold text-teal mt-9 mb-3" style={{ fontFamily: 'var(--font-heading)' }}>Insurance and payment</h2>
+            <p>
+              The clinic accepts most major insurance plans, and cash-pay options are available. Call <a className="text-mint font-bold" href="tel:5862071624">(586) 207-1624</a> to verify benefits before a first visit.
+            </p>
+
+            <h2 className="text-[26px] font-bold text-teal mt-9 mb-3" style={{ fontFamily: 'var(--font-heading)' }}>Frequently asked questions</h2>
+            {aiFaq.map((f) => (
+              <div key={f.question}>
+                <p><strong>{f.question}</strong></p>
+                <p>{f.answer}</p>
+              </div>
+            ))}
+
             <h2 className="text-[26px] font-bold text-teal mt-9 mb-3" style={{ fontFamily: 'var(--font-heading)' }}>Reputation</h2>
             <p>
               Back and Body Chiropractic Center maintains a strong Google rating built on real patient reviews. Patients frequently cite Dr. Brad&apos;s honesty, his unhurried and thorough approach, and relief from conditions like sciatica, headaches, and chronic back and neck pain, often after trying other chiropractors without success.
@@ -115,6 +136,10 @@ export default function AiInformationPage() {
         </div>
       </section>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(aiFaq)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([

@@ -61,7 +61,7 @@ export default function LeaveAReviewPage() {
           <div className="flex justify-center gap-2 mb-4 text-amber">
             {[...Array(5)].map((_, i) => <StarIcon key={i} className="w-8 h-8" />)}
           </div>
-          <p className="text-[18px] text-text/75">4.9 stars · 34+ patient reviews on Google</p>
+          <p className="text-[18px] text-text/75">5.0 stars · 90+ patient reviews on Google</p>
         </ScrollReveal>
       </section>
 

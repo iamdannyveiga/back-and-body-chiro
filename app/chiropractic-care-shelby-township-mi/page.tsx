@@ -87,7 +87,7 @@ export default function ChiropracticCarePage() {
               </p>
               <ul className="space-y-2 text-white/90 text-sm inline-block text-left">
                 <li className="flex items-center gap-2"><span className="text-mint font-bold">&#10003;</span> 14+ years of experience</li>
-                <li className="flex items-center gap-2"><span className="text-mint font-bold">&#10003;</span> 4.9-star rated by local patients</li>
+                <li className="flex items-center gap-2"><span className="text-mint font-bold">&#10003;</span> 5.0-star rated by local patients</li>
                 <li className="flex items-center gap-2"><span className="text-mint font-bold">&#10003;</span> No long-term care-plan pressure</li>
               </ul>
               <p className="mt-6 text-white/80 text-sm">
