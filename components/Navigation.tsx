@@ -48,8 +48,7 @@ const allServiceLinks = serviceGroups.flatMap((g) => g.links);
 
 const navLinks = [
   { href: '/about', label: 'About' },
-  { href: '/dr-brad', label: 'Dr. Brad' },
-  { href: '/dr-derek', label: 'Dr. Derek' },
+  { href: '/doctors', label: 'Doctors' },
   { href: '/testimonials', label: 'Reviews' },
   { href: '/new-patients', label: 'New Patients' },
   { href: '/contact', label: 'Contact' },

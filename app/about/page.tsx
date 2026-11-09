@@ -30,7 +30,7 @@ export default function AboutPage() {
             <h2 className="text-[40px] font-extrabold text-teal mb-7 leading-[1.15]" style={{ fontFamily: 'var(--font-heading)' }}>A Macomb County kid who found his calling.</h2>
             <div className="text-[16px] leading-[1.75] space-y-[18px]">
               <p>Brad Krawczyk grew up right here -- in Macomb County, Michigan. He played football in high school, did the Friday night lights thing, and took a hit that would end up changing his life. Not because it ended his football career, but because it introduced him to chiropractic care.</p>
-              <p>That experience -- going from pain to relief, from frustration to function -- stuck with him. He went to Michigan State University to study Kinesiology, then headed south to Life University College of Chiropractic in Atlanta, Georgia. He earned his Doctor of Chiropractic degree in 2011.</p>
+              <p>That experience -- going from pain to relief, from frustration to function -- stuck with him. He went to Michigan State University to study, then headed south to Life University College of Chiropractic in Atlanta, Georgia. He earned his Doctor of Chiropractic degree in 2011.</p>
             </div>
           </ScrollReveal>
 
@@ -79,7 +79,7 @@ export default function AboutPage() {
                 <h2 className="text-[34px] font-extrabold text-teal mb-3 leading-[1.15]" style={{ fontFamily: 'var(--font-heading)' }}>Dr. Derek Landis, DC</h2>
                 <p className="text-sm text-[#888] mb-4">Life University College of Chiropractic, 2025 &middot; Grand Valley State University &middot; Sports chiropractic</p>
                 <p className="text-[16px] leading-[1.75] mb-5">Derek grew up in Marine City, Michigan, and found chiropractic care as a baseball pitcher working through shoulder injuries. Today he brings that same passion for sports chiropractic and family care to patients at Back and Body Chiropractic Center.</p>
-                <Link href="/dr-derek" className="text-mint font-bold">Meet Dr. Derek &rarr;</Link>
+                <Link href="/doctors#dr-derek" className="text-mint font-bold">Meet Dr. Derek &rarr;</Link>
               </div>
             </div>
           </ScrollReveal>

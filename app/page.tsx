@@ -334,7 +334,7 @@ export default function HomePage() {
               <h3 className="text-[30px] font-extrabold text-teal mt-7 mb-2" style={{ fontFamily: 'var(--font-heading)' }}>Dr. Bradley Krawczyk, D.C.</h3>
               <p className="text-sm text-[#888] mb-6 leading-relaxed">Founder &middot; Michigan State University &middot; Life University 2011 &middot; Macomb County Native &middot; 14+ Years</p>
               <div className="text-[16px] leading-[1.75] text-text mb-7 space-y-4">
-                <p>Brad grew up right here in Macomb County. A high school football injury introduced him to chiropractic -- and changed his life. He went to Michigan State for Kinesiology, then headed to Life University in Atlanta to earn his Doctor of Chiropractic degree.</p>
+                <p>Brad grew up right here in Macomb County. A high school football injury introduced him to chiropractic -- and changed his life. He went to Michigan State, then headed to Life University in Atlanta to earn his Doctor of Chiropractic degree.</p>
                 <p>In September 2011, the same year he graduated, he opened Back and Body Chiropractic Center at 25 Mile and Van Dyke -- in Vince and Joe&apos;s plaza. He&apos;s been there ever since, quietly building a practice on one simple principle:</p>
                 <p><strong className="text-teal">&ldquo;The best care without any of the nonsense.&rdquo;</strong></p>
                 <p>Every patient gets a thorough evaluation, a clear explanation of what is going on, and a care plan sized to their specific condition. Real results speak for themselves.</p>
