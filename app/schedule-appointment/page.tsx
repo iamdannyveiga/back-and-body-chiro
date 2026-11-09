@@ -63,7 +63,7 @@ export default async function ScheduleAppointmentPage({
             <span className="flex items-center gap-1 text-amber">
               {[...Array(5)].map((_, i) => <StarIcon key={i} className="w-3.5 h-3.5" />)}
             </span>
-            <span>4.9 Rating</span>
+            <span>5.0 Rating</span>
             <span className="text-text/20">&middot;</span>
             <span>14+ Years</span>
             <span className="text-text/20">&middot;</span>

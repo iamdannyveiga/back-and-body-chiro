@@ -83,8 +83,8 @@ export default function AboutPage() {
           <ScrollReveal>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-5 text-center">
               {[
-                { num: <>4.9<span className="text-amber">&#9733;</span></>, label: 'Google Rating' },
-                { num: '34+', label: 'Patient Reviews' },
+                { num: <>5.0<span className="text-amber">&#9733;</span></>, label: 'Google Rating' },
+                { num: '90+', label: 'Patient Reviews' },
                 { num: '14+', label: 'Years Serving Macomb' },
                 { num: 'Fri', label: 'Hours Available' },
               ].map((s, i) => (
