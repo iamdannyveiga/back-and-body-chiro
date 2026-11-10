@@ -288,7 +288,7 @@ export default function SpinalDecompressionPage() {
 
       <section className="py-10 bg-white">
         <div className="container max-w-[860px] mx-auto text-center">
-          <p className="text-base leading-relaxed">New to our office? Read what to expect from a <Link href="/new-patients#shelby-township-chiropractor" className="text-teal hover:underline">Shelby Township chiropractor</Link> visit, or add <Link href="/massage-therapy-shelby-township-mi#massage-shelby-township" className="text-teal hover:underline">massage Shelby Township</Link> and <Link href="/softwave-therapy-shelby-township-mi#softwave-clinics-near-me" className="text-teal hover:underline">SoftWave therapy</Link> to your plan.</p>
+          <p className="text-base leading-relaxed">New to our office? Read what to expect from a <Link href="/" className="text-teal hover:underline">Shelby Township chiropractor</Link> visit, or add <Link href="/massage-therapy-shelby-township-mi#massage-shelby-township" className="text-teal hover:underline">massage Shelby Township</Link> and <Link href="/softwave-therapy-shelby-township-mi#softwave-clinics-near-me" className="text-teal hover:underline">SoftWave therapy</Link> to your plan. Our office serves patients across Shelby Charter Township and nearby Macomb County; see <Link href="/new-patients" className="text-teal hover:underline">how the $67 first visit works</Link>.</p>
         </div>
       </section>
 
