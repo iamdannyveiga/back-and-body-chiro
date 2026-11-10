@@ -6,7 +6,7 @@ import ConversionCTA from '@/components/ConversionCTA';
 import FAQAccordion from '@/components/FAQAccordion';
 
 export const metadata: Metadata = {
-  title: 'New Patients | $67 First Visit | Back & Body Chiro',
+  title: 'New Patients | $67 First Visit',
   description:
     'Looking for a new chiropractor? Your $67 first visit with Dr. Brad includes consultation, exam, X-rays if needed, and first adjustment. No contracts.',
   alternates: {
