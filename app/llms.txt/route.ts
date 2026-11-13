@@ -79,6 +79,19 @@ Dr. Bradley Krawczyk earned his BS in Kinesiology from Michigan State University
 - Leave a Review: /leave-a-review
 - AI Information (structured facts): /ai-information
 - FAQ (visits, pricing, insurance, treatments): /faq
+
+## Key pages
+- [Home](https://backandbodydoc.com)
+- [Book an appointment](https://backandbodydoc.com/schedule-appointment)
+- [New patients](https://backandbodydoc.com/new-patients)
+- [About](https://backandbodydoc.com/about)
+- [Contact](https://backandbodydoc.com/contact)
+- [FAQ](https://backandbodydoc.com/faq)
+- [AI information and key facts](https://backandbodydoc.com/ai-information)
+- [Reviews](https://backandbodydoc.com/testimonials)
+- [Spinal decompression](https://backandbodydoc.com/spinal-decompression-shelby-township-mi)
+- [Back pain](https://backandbodydoc.com/back-pain-treatment-shelby-township-mi)
+- [Neck pain](https://backandbodydoc.com/neck-pain-treatment-shelby-township-mi)
 `;
 
   return new Response(content, {
