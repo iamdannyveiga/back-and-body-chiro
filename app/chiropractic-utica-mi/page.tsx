@@ -38,27 +38,35 @@ export default function ChiropracticUticaMiPage() {
   const faqItems = [
     {
       question: 'Is your chiropractic office in Utica?',
-      answer: 'Our office is just north of Utica in Shelby Charter Township at 55130 Van Dyke Ave #25, in Vince and Joe\'s plaza at 25 Mile and Van Dyke. From downtown Utica it is one straight road: Van Dyke Avenue.',
+      answer: 'Our office is just north of Utica in Shelby Charter Township at 55130 Van Dyke Ave #25, in the plaza on the northeast corner of Van Dyke and 25 Mile Road. From Utica it is one straight road: Van Dyke Avenue.',
     },
     {
-      question: 'How long is the drive from Utica?',
+      question: 'How long is the drive from downtown Utica?',
       answer: 'From Utica City Hall on Auburn Road it is about 5 miles, roughly 10 minutes in light traffic. Take Cass Avenue over to Van Dyke, then head north past 23 Mile Road to 25 Mile.',
     },
     {
+      question: 'I sit through baseball games at UWM Field. Can you help with a sore back afterward?',
+      answer: 'Dr. Brad will examine you first to find out what is behind the pain. Depending on the cause, care can include chiropractic adjustments, spinal decompression, SoftWave therapy or massage.',
+    },
+    {
       question: 'Do you offer spinal decompression for Utica patients?',
-      answer: 'Yes. Spinal decompression is a non-surgical traction therapy for disc and nerve pain such as herniated or bulging discs and sciatica. Each session is about 15 to 20 minutes on the table, and an exam comes first to see whether your case is a good fit.',
+      answer: 'Yes. Spinal decompression is a non-surgical traction therapy for disc and nerve pain such as herniated or bulging discs and sciatica. Each session is about 15 to 20 minutes, and an exam comes first to see whether your case is a good fit.',
+    },
+    {
+      question: 'Do you see kids and expectant moms from Utica?',
+      answer: 'Yes. We offer pediatric and prenatal chiropractic care, and each starts with an exam and a clear explanation.',
     },
     {
       question: 'What does the $67 first visit include?',
       answer: 'A consultation, an exam, X-rays if needed and your first adjustment. No contracts and no pressure.',
     },
     {
-      question: 'Do you have evening hours for people commuting from Utica?',
-      answer: 'Yes. Monday through Thursday we are open 9am to 1pm and 3pm to 7pm, and Friday 9am to 12pm. We are closed Saturday and Sunday.',
-    },
-    {
       question: 'Is chiropractic or spinal decompression covered by insurance?',
       answer: 'Coverage varies by plan. Our office can help you understand your benefits.',
+    },
+    {
+      question: 'Can I come in after work?',
+      answer: 'Yes. Monday through Thursday we are open 9am to 1pm and 3pm to 7pm, and Friday 9am to 12pm. We are closed Saturday and Sunday.',
     },
   ];
 
@@ -123,7 +131,7 @@ export default function ChiropracticUticaMiPage() {
         title={<>
           Utica Chiropractic <span className="text-mint">&amp; Spinal Decompression.</span>
         </>}
-        subtitle='Disc relief first, then the adjustments and soft-tissue care to keep it. About 5 miles up Van Dyke from downtown Utica.'
+        subtitle='Disc relief first, then adjustments and soft-tissue care. Straight up Van Dyke from Utica.'
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Services', href: '/#services' },
@@ -131,20 +139,20 @@ export default function ChiropracticUticaMiPage() {
         ]}
       />
 
-      {/* GETTING HERE FROM UTICA */}
-      <section className="py-20 bg-white">
+            <section className="py-20 bg-white">
         <div className="container">
           <ScrollReveal>
             <div className="max-w-[860px] mb-8">
               <span className="label">From Utica</span>
-              <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>One Road From Downtown Utica</h2>
+              <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>Auburn Road to Van Dyke in Ten Minutes</h2>
             </div>
           </ScrollReveal>
           <ScrollReveal>
             <div className="grid md:grid-cols-[1.5fr_1fr] gap-12 items-center">
               <div className="prose-custom">
-                <p>Back and Body Chiropractic Center sits in Vince and Joe&apos;s plaza at 25 Mile and Van Dyke in Shelby Charter Township. We are not in Utica itself, but getting to us from Utica is simple: Van Dyke Avenue runs straight north from Hall Road (M-59) at the edge of town, past 23 Mile Road, right to our plaza.</p>
-                <p>From Utica City Hall or the Utica Public Library on Auburn Road, take Cass Avenue over to Van Dyke and head north for about 5 miles. In light traffic that is roughly a 10 minute drive. Whether you live near Grant Park, along the Clinton River or in one of the neighborhoods off Auburn Road, you can be on our table without fighting Hall Road traffic.</p>
+                <p>Utica is a small city of 5,245 people (2020 census) that sits just south of Shelby Charter Township, with the Clinton River running through its center and M-59 along its southern edge. Back and Body Chiropractic Center is not in Utica itself, but it is the next stop north: the Vince and Joe&apos;s International Gourmet Shopping Plaza at the northeast corner of Van Dyke and 25 Mile Road.</p>
+                <p>From Utica City Hall at 7550 Auburn Road, go along Auburn Road to Cass Avenue, then over to Summers Street and onto Van Dyke Avenue, and head north for about 5 miles. In light traffic that is roughly 10 minutes, and you cross 23 Mile Road along the way. The M-53 freeway runs about a mile to the east of Van Dyke through this stretch, so the surface road is the straight shot.</p>
+                <p>Coming from the south side of town, for example near the Utica Public Library at 7530 Auburn Road or the ballpark at 7171 Auburn Road, the trip is the same Van Dyke run with a couple more blocks on Auburn.</p>
                 <p><strong>Address:</strong> 55130 Van Dyke Ave #25, Shelby Charter Township, MI 48317. <strong>Phone:</strong> <a href="tel:+15862071624" className="text-teal font-semibold">(586) 207-1624</a>.</p>
               </div>
               <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
@@ -160,9 +168,24 @@ export default function ChiropracticUticaMiPage() {
           </ScrollReveal>
         </div>
       </section>
-
-      {/* DECOMPRESSION FIRST */}
       <section className="py-20 bg-light-gray relative" style={{ clipPath: 'polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0 100%)' }}>
+        <div className="container">
+          <ScrollReveal>
+            <div className="max-w-[860px] mb-8">
+              <span className="label">Around Town</span>
+              <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>Where Utica Sits, and Why It Matters for Your Back</h2>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal>
+            <div className="prose-custom max-w-[860px]">
+              <p>The city was platted by Joseph Stead in 1829 and first called Harlow, and the historic district centered on Cass Avenue and Auburn Road is still the heart of downtown. Walkable blocks, a river and a ballpark make Utica a place people spend time on their feet and in the stands.</p>
+              <p>That ballpark is UWM Field at 7171 Auburn Road, home of the Utica Unicorns and the rest of the United Shore Professional Baseball League, with 4,500 seats and a season that runs May through September. Hours on a hard seat, or a long afternoon at Grant Park on Hahn Street with its playgrounds and paved walking path, are the kind of hours that can leave a back sore, and a good reason to get it examined.</p>
+              <p>Families here send kids to Utica Community Schools, and the district runs Utica High School and Eppler Junior High. If a child has had a rough landing on a field or court, our office also offers pediatric chiropractic care, and prenatal chiropractic care is available for expectant mothers.</p>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+      <section className="py-20 bg-white">
         <div className="container">
           <ScrollReveal>
             <div className="max-w-[860px] mb-8">
@@ -172,16 +195,14 @@ export default function ChiropracticUticaMiPage() {
           </ScrollReveal>
           <ScrollReveal>
             <div className="prose-custom max-w-[860px]">
-              <p>Most people in Utica who search for a chiropractor are dealing with something specific: a disc that flared up, pain shooting down a leg, or a stiff low back that has not let go in months. For disc and nerve pain, spinal decompression is where we usually begin.</p>
-              <p>Decompression uses a specialized table to apply controlled, gentle traction to the spine. That gentle stretch creates negative pressure inside the disc, which is designed to help draw bulging material back in and take pressure off the nerve. You stay fully clothed, a session lasts about 15 to 20 minutes, and Dr. Brad may follow it with a chiropractic adjustment.</p>
+              <p>A disc that flared up, pain shooting down a leg, or a low back that has been stiff for months: these are the reasons most people looking for a chiropractor near Utica walk in. For disc and nerve pain, spinal decompression is where we usually begin.</p>
+              <p>Decompression uses a specialized table to apply controlled, gentle traction to the spine. That stretch creates negative pressure inside the disc, which is designed to help draw bulging material back in and take pressure off the nerve. You stay fully clothed, a session lasts about 15 to 20 minutes, and Dr. Brad may follow it with a chiropractic adjustment.</p>
               <p>It is a conservative option many people try before injections or a surgical consult. The exam always comes first, so you will know whether your case is a good fit before you start.</p>
             </div>
           </ScrollReveal>
         </div>
       </section>
-
-      {/* WHAT WE TREAT */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-light-gray">
         <div className="container">
           <ScrollReveal>
             <div className="text-center mb-8">
@@ -205,9 +226,7 @@ export default function ChiropracticUticaMiPage() {
           </div>
         </div>
       </section>
-
-      {/* CHIROPRACTIC FOR UTICA FAMILIES */}
-      <section className="py-20 bg-light-gray relative" style={{ clipPath: 'polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0 100%)' }}>
+      <section className="py-20 bg-white">
         <div className="container">
           <ScrollReveal>
             <div className="max-w-[860px] mb-8">
@@ -218,13 +237,13 @@ export default function ChiropracticUticaMiPage() {
           <ScrollReveal>
             <div className="prose-custom max-w-[860px]">
               <p>Not every visit is about a disc. Dr. Bradley Krawczyk, DC, has served Macomb and Oakland Counties since 2011 with chiropractic adjustments, SoftWave therapy, therapeutic massage, and pediatric and prenatal chiropractic. When it helps your recovery, those services are combined with decompression in one plan.</p>
-              <p>You get a thorough exam, a clear explanation of what is going on and a plan sized to your condition. No long-term contracts and no six-month packages.</p>
+              <p>He grew up in Macomb County, so the roads, schools and ballfields in this part of the county are home turf. You get a thorough exam, a clear explanation of what is going on and a plan sized to your condition, with no long-term contracts and no six-month packages.</p>
             </div>
           </ScrollReveal>
         </div>
       </section>
 
-      {/* FIRST VISIT + HOURS */}
+{/* FIRST VISIT + HOURS */}
       <section className="py-20 bg-white">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-10 max-w-[1000px] mx-auto">
@@ -250,7 +269,7 @@ export default function ChiropracticUticaMiPage() {
                   <li>Fri: 9am to 12pm</li>
                   <li>Sat and Sun: Closed</li>
                 </ul>
-                <p className="text-sm text-text/70 mt-4">Evening slots make it easy to stop in on the way home to Utica.</p>
+                <p className="text-sm text-text/70 mt-4">Stop in on the way home from work or an evening in Utica.</p>
               </div>
             </ScrollReveal>
           </div>

@@ -36,28 +36,32 @@ export const metadata: Metadata = {
 export default function HerniatedDiscTreatmentClintonTownshipMiPage() {
   const faqItems = [
     {
-      question: 'Do you treat herniated discs for Clinton Township patients?',
-      answer: 'Yes. Many Clinton Township patients drive to our office in Shelby Charter Township at 55130 Van Dyke Ave #25. Dr. Brad combines spinal decompression with chiropractic adjustments for herniated and bulging discs, after an exam to confirm your case is a good fit.',
-    },
-    {
-      question: 'How does spinal decompression help a bulging disc?',
-      answer: 'Decompression applies controlled, gentle traction on a specialized table. The stretch creates negative pressure in the disc, which is designed to help draw bulging material back in and relieve pressure on the nerve. You stay fully clothed and a session is about 15 to 20 minutes.',
+      question: 'What is the difference between a bulging disc and a herniated disc?',
+      answer: 'A bulging disc extends past its normal edge while its outer ring stays intact. In a herniated disc the softer inner material has pushed through that ring. Both can press on a nerve, and the exam is how Dr. Brad tells which one you are dealing with.',
     },
     {
       question: 'Do I need surgery for a herniated disc?',
-      answer: 'Not automatically. Many disc injuries respond well to non-surgical care. Dr. Brad examines you first, and if your case needs a surgical referral he will tell you.',
+      answer: 'Not automatically. Many disc injuries respond well to non-surgical care. Dr. Brad examines you first, and if your case needs a surgical referral he will say so.',
     },
     {
-      question: 'How far is your office from Clinton Township?',
-      answer: 'About 14 miles, roughly 23 minutes in light traffic, to 25 Mile and Van Dyke in Shelby Charter Township.',
+      question: 'How does decompression help a bulging disc?',
+      answer: 'The table applies gentle, controlled traction. The stretch creates negative pressure inside the disc, which is designed to help draw bulging material back in and relieve pressure on the nerve. Sessions are about 15 to 20 minutes.',
     },
     {
-      question: 'What does the $67 first visit include?',
-      answer: 'A consultation, an exam, X-rays if needed and your first adjustment. No contracts and no pressure.',
+      question: 'I live near Romeo Plank Road. How do I get to your office?',
+      answer: 'Head south to Hall Road (M-59), go west to Van Dyke Avenue in Utica, then north on Van Dyke past 23 Mile Road to 25 Mile. The office is at 55130 Van Dyke Ave #25 in Shelby Charter Township.',
     },
     {
-      question: 'When are you open?',
-      answer: 'Monday through Thursday 9am to 1pm and 3pm to 7pm, and Friday 9am to 12pm. We are closed Saturday and Sunday.',
+      question: 'Do you only see people from Clinton Township?',
+      answer: 'No. Dr. Brad has served patients across Macomb and Oakland Counties since 2011, and many come from the townships around us.',
+    },
+    {
+      question: 'Should I bring my MRI report?',
+      answer: 'Yes, along with any X-ray reports. Dr. Brad will walk you through what the report means and whether decompression, adjustments or both fit your case.',
+    },
+    {
+      question: 'What are your hours?',
+      answer: 'Monday through Thursday 9am to 1pm and 3pm to 7pm, and Friday 9am to 12pm. We are closed on weekends.',
     },
   ];
 
@@ -122,7 +126,7 @@ export default function HerniatedDiscTreatmentClintonTownshipMiPage() {
         title={<>
           Herniated Disc Treatment <span className="text-mint">in Clinton Township, MI.</span>
         </>}
-        subtitle='Spinal decompression first, then the adjustments that keep the relief. About 14 miles from Clinton Township.'
+        subtitle='Bulging and herniated disc care that starts with decompression. Hall Road west, then north on Van Dyke.'
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Services', href: '/#services' },
@@ -130,39 +134,37 @@ export default function HerniatedDiscTreatmentClintonTownshipMiPage() {
         ]}
       />
 
-      {/* DECOMPRESSION FIRST */}
-      <section className="py-20 bg-white">
+            <section className="py-20 bg-white">
         <div className="container">
           <ScrollReveal>
             <div className="max-w-[860px] mb-8">
               <span className="label">Start Here</span>
-              <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>Herniated or Bulging Disc? Start With Decompression</h2>
+              <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>What a Disc Diagnosis Actually Means</h2>
             </div>
           </ScrollReveal>
           <ScrollReveal>
             <div className="prose-custom max-w-[860px]">
-              <p>A herniated or bulging disc can bring on low back pain, pain down one leg, or tingling and numbness in the foot. For disc problems, spinal decompression is where we usually begin.</p>
-              <p>Decompression uses a specialized table to apply controlled, gentle traction to the spine. That gentle stretch creates negative pressure inside the disc, which is designed to help draw bulging material back in and take pressure off the nerve. You stay fully clothed and a session lasts about 15 to 20 minutes.</p>
-              <p>Many disc injuries respond well to conservative care, and a disc diagnosis does not automatically mean surgery or injections. The exam comes first. If your case needs a surgical referral, Dr. Brad will tell you honestly.</p>
+              <p>Between each pair of vertebrae sits a disc, a cushion with a tougher outer ring around softer material. A bulging disc pushes past its normal edge. A herniated disc is one where the inner material has pushed through the outer ring. Either one can press on a nearby nerve, which is why disc problems so often show up as low back pain, pain down a leg, or tingling and numbness in the foot.</p>
+              <p>Many people hear the word herniated for the first time in an urgent care room or on an MRI report and assume the next step is surgery or injections. It does not have to be. Many disc injuries respond to conservative care, and Dr. Brad examines you first to see whether yours is a good fit. If your case needs a surgical referral, he will tell you so plainly.</p>
+              <p>For disc problems we usually begin with spinal decompression. The table applies controlled, gentle traction, and that stretch creates negative pressure inside the disc, which is designed to help draw bulging material back in and take pressure off the nerve. You stay fully clothed, and a session takes about 15 to 20 minutes.</p>
             </div>
           </ScrollReveal>
         </div>
       </section>
-
-      {/* LOCAL */}
       <section className="py-20 bg-light-gray relative" style={{ clipPath: 'polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0 100%)' }}>
         <div className="container">
           <ScrollReveal>
             <div className="max-w-[860px] mb-8">
               <span className="label">From Clinton Township</span>
-              <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>Getting From Clinton Township to Our Office</h2>
+              <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>Coming Down From the North Side of the Township</h2>
             </div>
           </ScrollReveal>
           <ScrollReveal>
             <div className="grid md:grid-cols-[1.5fr_1fr] gap-12 items-center">
               <div className="prose-custom">
-              <p>Back and Body Chiropractic Center is in Vince and Joe&apos;s plaza at 25 Mile and Van Dyke in Shelby Charter Township. From the center of Clinton Township it is about 14 miles, roughly 23 minutes in light traffic.</p>
-              <p>If a disc diagnosis or an MRI report has you weighing your options, bring the report to your first visit. Dr. Brad will go through what it means and whether decompression, adjustments or both fit your case.</p>
+                <p>Clinton Township is large, so the trip depends on where you start. From the Clinton-Macomb Public Library&apos;s Main Library at 40900 Romeo Plank Road, head south to Hall Road (M-59), go west and follow it to Van Dyke Avenue in Utica. From the Gratiot Avenue side, the same Hall Road leg gets you there. Then it is north on Van Dyke, past 23 Mile Road, to 25 Mile.</p>
+                <p>The office is in the Vince and Joe&apos;s International Gourmet Shopping Plaza at the northeast corner of Van Dyke and 25 Mile Road. Our own route estimate from the middle of the township is about 14 miles and 23 minutes in light traffic.</p>
+                <p>If you study or work near Macomb Community College&apos;s Center Campus at Garfield and Hall Road, you are already on the way. Hall Road is the main shopping and dining strip of the area, so many patients fold the visit in with errands.</p>
                 <p><strong>Address:</strong> 55130 Van Dyke Ave #25, Shelby Charter Township, MI 48317. <strong>Phone:</strong> <a href="tel:+15862071624" className="text-teal font-semibold">(586) 207-1624</a>.</p>
               </div>
               <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
@@ -178,34 +180,49 @@ export default function HerniatedDiscTreatmentClintonTownshipMiPage() {
           </ScrollReveal>
         </div>
       </section>
-
-      {/* WHAT WE SEE */}
+      <section className="py-20 bg-light-gray relative" style={{ clipPath: 'polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0 100%)' }}>
+        <div className="container">
+          <ScrollReveal>
+            <div className="max-w-[860px] mb-8">
+              <span className="label">Who Comes In</span>
+              <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>Desks, Job Sites and Sidelines</h2>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal>
+            <div className="prose-custom max-w-[860px]">
+              <p>Disc trouble does not pick a type of person. It can catch someone who sits at a desk all day, someone who lifts for a living, or a parent who stands through a Chippewa Valley or Clintondale game and cannot get comfortable. What they share is pain that has not gone away after rest.</p>
+              <p>Dr. Bradley Krawczyk, DC, grew up in Macomb County, studied kinesiology at Michigan State University and earned his Doctor of Chiropractic degree from Life University in Atlanta in 2011. His own path into chiropractic began with a football injury, so a patient who says they want to get back to their sport or their job is speaking his language.</p>
+              <p>Your visit is built around a thorough exam, a clear explanation and a plan sized to your case. There are no long-term contracts and no six-month packages.</p>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
       <section className="py-20 bg-white">
         <div className="container">
           <ScrollReveal>
             <div className="text-center mb-8">
               <span className="label">What We See</span>
-              <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>Disc Problems We See</h2>
+              <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>Disc Problems We Hear About</h2>
             </div>
           </ScrollReveal>
           <div className="grid md:grid-cols-3 gap-6 max-w-[1000px] mx-auto">
             <div className="bg-light-gray rounded-xl p-8">
-              <h3 className="text-[17px] font-bold text-teal mb-2 leading-snug" style={{ fontFamily: 'var(--font-heading)' }}>Herniated disc</h3>
-              <p className="text-sm text-text/70 leading-relaxed">Disc material pressing on a nerve, often with pain, tingling or numbness into the leg or arm.</p>
+              <h3 className="text-[17px] font-bold text-teal mb-2 leading-snug" style={{ fontFamily: 'var(--font-heading)' }}>Pain that started with a lift</h3>
+              <p className="text-sm text-text/70 leading-relaxed">A sudden catch in the low back after lifting, bending or twisting that never fully let go.</p>
             </div>
             <div className="bg-light-gray rounded-xl p-8">
-              <h3 className="text-[17px] font-bold text-teal mb-2 leading-snug" style={{ fontFamily: 'var(--font-heading)' }}>Bulging disc</h3>
-              <p className="text-sm text-text/70 leading-relaxed">A disc pushing past its normal edge, common in the low back and neck.</p>
+              <h3 className="text-[17px] font-bold text-teal mb-2 leading-snug" style={{ fontFamily: 'var(--font-heading)' }}>Numbness in the leg or arm</h3>
+              <p className="text-sm text-text/70 leading-relaxed">Tingling or weakness that follows a nerve, sometimes the first sign a disc is pressing on it.</p>
             </div>
             <div className="bg-light-gray rounded-xl p-8">
-              <h3 className="text-[17px] font-bold text-teal mb-2 leading-snug" style={{ fontFamily: 'var(--font-heading)' }}>Pain that will not quit</h3>
-              <p className="text-sm text-text/70 leading-relaxed">Back or leg pain that has lingered after rest, medication or earlier care.</p>
+              <h3 className="text-[17px] font-bold text-teal mb-2 leading-snug" style={{ fontFamily: 'var(--font-heading)' }}>A report you do not understand</h3>
+              <p className="text-sm text-text/70 leading-relaxed">An MRI that says bulge, protrusion or herniation, and no clear explanation of what to do next.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FIRST VISIT + HOURS */}
+{/* FIRST VISIT + HOURS */}
       <section className="py-20 bg-light-gray">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-10 max-w-[1000px] mx-auto">
@@ -219,7 +236,7 @@ export default function HerniatedDiscTreatmentClintonTownshipMiPage() {
                   <li>X-rays if needed</li>
                   <li>Your first adjustment</li>
                 </ul>
-                <p className="text-sm text-text/70 mt-4">Bring any MRI or X-ray reports you already have. No contracts, no pressure.</p>
+                <p className="text-sm text-text/70 mt-4">Please bring your MRI or X-ray reports. You will not be locked into a contract.</p>
               </div>
             </ScrollReveal>
             <ScrollReveal>
@@ -231,14 +248,14 @@ export default function HerniatedDiscTreatmentClintonTownshipMiPage() {
                   <li>Fri: 9am to 12pm</li>
                   <li>Sat and Sun: Closed</li>
                 </ul>
-                <p className="text-sm text-text/70 mt-4">Evening slots make it easy to stop in on the way home to Clinton Township.</p>
+                <p className="text-sm text-text/70 mt-4">Evening slots Monday to Thursday work around a full day at the office or on the job.</p>
               </div>
             </ScrollReveal>
           </div>
         </div>
       </section>
 
-      <ConversionCTA line1='Clinton Township disc pain, checked honestly.' anchor='See if decompression fits.' withForm={false} />
+      <ConversionCTA line1='Told you have a bad disc? Get a second look.' anchor='See if decompression fits.' withForm={false} />
 
       {/* RELATED SERVICES */}
       <section className="py-20 bg-white">

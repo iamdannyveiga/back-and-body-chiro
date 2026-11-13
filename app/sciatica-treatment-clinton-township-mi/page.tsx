@@ -36,28 +36,32 @@ export const metadata: Metadata = {
 export default function SciaticaTreatmentClintonTownshipMiPage() {
   const faqItems = [
     {
-      question: 'Do you treat sciatica for Clinton Township patients?',
-      answer: 'Yes. Many Clinton Township patients drive to our office in Shelby Charter Township at 55130 Van Dyke Ave #25. Dr. Brad combines chiropractic adjustments with spinal decompression to take pressure off the sciatic nerve. No injections and no surgery.',
+      question: 'Which route should I take from Clinton Township to your office?',
+      answer: 'Take Hall Road (M-59) west to Van Dyke Avenue in Utica, turn north and continue past 23 Mile Road to 25 Mile. The office is at 55130 Van Dyke Ave #25 in Shelby Charter Township, about 14 miles and 23 minutes from the middle of the township in light traffic.',
     },
     {
-      question: 'What causes sciatic nerve pain?',
-      answer: 'Sciatica is a symptom. A herniated disc pressing on the nerve root, a bone spur narrowing the spinal canal or a tight piriformis muscle can all cause it, which is why the exam comes first.',
+      question: 'I sit in traffic on Hall Road every day. Will that make my sciatica worse?',
+      answer: 'Many people find sitting aggravates sciatic pain, and a long commute is a lot of sitting. We cannot promise a result, but the exam looks at how you sit and what is compressing the nerve, and Dr. Brad will give you straightforward guidance based on what he finds.',
     },
     {
-      question: 'How does spinal decompression help sciatica?',
-      answer: 'Decompression applies controlled, gentle traction on a specialized table, designed to take pressure off the nerve. You stay fully clothed and a session is about 15 to 20 minutes.',
+      question: 'Can I come after work?',
+      answer: 'Yes. We are open Monday through Thursday from 9am to 1pm and 3pm to 7pm, and Friday from 9am to 12pm. The evening hours suit people driving home from jobs along Hall Road, Gratiot and Groesbeck.',
     },
     {
-      question: 'How far is your office from Clinton Township?',
-      answer: 'About 14 miles, roughly 23 minutes in light traffic, to 25 Mile and Van Dyke in Shelby Charter Township.',
+      question: 'How do you find out why my leg hurts?',
+      answer: 'With an exam first. A herniated disc, a bone spur narrowing the spinal canal and a tight piriformis muscle can all produce sciatica, and each calls for a different plan. X-rays are taken if needed.',
     },
     {
-      question: 'What does the $67 first visit include?',
-      answer: 'A consultation, an exam, X-rays if needed and your first adjustment. No contracts and no pressure.',
+      question: 'Do I need to change clothes for decompression?',
+      answer: 'No. You stay fully clothed on the table, and a session lasts about 15 to 20 minutes.',
     },
     {
-      question: 'When are you open?',
-      answer: 'Monday through Thursday 9am to 1pm and 3pm to 7pm, and Friday 9am to 12pm. We are closed Saturday and Sunday.',
+      question: 'Should I bring my MRI if I already have one?',
+      answer: 'Yes. Bring any MRI or X-ray reports to the first visit so Dr. Brad can compare them with what he finds in the exam.',
+    },
+    {
+      question: 'What does the $67 first visit cover?',
+      answer: 'A consultation with Dr. Brad, an exam, X-rays if needed and your first adjustment. There are no contracts.',
     },
   ];
 
@@ -122,7 +126,7 @@ export default function SciaticaTreatmentClintonTownshipMiPage() {
         title={<>
           Sciatica Treatment <span className="text-mint">in Clinton Township, MI.</span>
         </>}
-        subtitle='Take pressure off the sciatic nerve with decompression first. About 14 miles from Clinton Township.'
+        subtitle='Decompression first for sciatic nerve pain. Hall Road west, then north on Van Dyke.'
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Services', href: '/#services' },
@@ -130,39 +134,37 @@ export default function SciaticaTreatmentClintonTownshipMiPage() {
         ]}
       />
 
-      {/* DECOMPRESSION FIRST */}
-      <section className="py-20 bg-white">
+            <section className="py-20 bg-white">
         <div className="container">
           <ScrollReveal>
             <div className="max-w-[860px] mb-8">
               <span className="label">Start Here</span>
-              <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>Sciatica Pain? Decompression Comes First</h2>
+              <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>The Sciatic Nerve and the Hall Road Commute</h2>
             </div>
           </ScrollReveal>
           <ScrollReveal>
             <div className="prose-custom max-w-[860px]">
-              <p>Sciatica is a symptom, not a diagnosis: burning, shooting pain that travels from the low back into the leg because something is compressing or irritating the sciatic nerve. The cause is often a herniated disc, so spinal decompression is where we usually begin.</p>
-              <p>Decompression uses a specialized table to apply controlled, gentle traction to the spine, which is designed to take pressure off the nerve root. You stay fully clothed, a session lasts about 15 to 20 minutes, and Dr. Brad may follow it with a chiropractic adjustment.</p>
-              <p>Sciatica can also come from a bone spur narrowing the spinal canal or a tight piriformis muscle, so the exam comes first. The plan depends on the cause.</p>
+              <p>The sciatic nerve is a long nerve that starts in the lower spine, passes through the buttock and runs down the back of the leg. When something irritates it, the result is the burning, shooting or tingling pain people call sciatica. It is a symptom, not a diagnosis, and the exam is how we find what is behind it.</p>
+              <p>Clinton Township is a township built around driving. The 2020 census counted 100,513 people here, more than any other township in Michigan, and a lot of them spend part of every day in a seat on Hall Road, Gratiot Avenue or Groesbeck. Sitting is the position sciatica patients most often say is the hardest, so a long commute can turn a nagging leg ache into the main event of your day.</p>
+              <p>When a herniated disc is pressing on the nerve root, spinal decompression is where we usually begin. A specialized table applies controlled, gentle traction to the spine, which is designed to take pressure off the nerve. You stay fully clothed, a session runs about 15 to 20 minutes, and Dr. Brad may follow it with a chiropractic adjustment. If the exam points to a bone spur or a tight piriformis muscle instead, the plan changes to match.</p>
             </div>
           </ScrollReveal>
         </div>
       </section>
-
-      {/* LOCAL */}
       <section className="py-20 bg-light-gray relative" style={{ clipPath: 'polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0 100%)' }}>
         <div className="container">
           <ScrollReveal>
             <div className="max-w-[860px] mb-8">
               <span className="label">From Clinton Township</span>
-              <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>Sciatic Nerve Relief Near Clinton Township</h2>
+              <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>Hall Road West, Then North on Van Dyke</h2>
             </div>
           </ScrollReveal>
           <ScrollReveal>
             <div className="grid md:grid-cols-[1.5fr_1fr] gap-12 items-center">
               <div className="prose-custom">
-              <p>Back and Body Chiropractic Center is in Vince and Joe&apos;s plaza at 25 Mile and Van Dyke in Shelby Charter Township. From the center of Clinton Township it is about 14 miles, roughly 23 minutes in light traffic.</p>
-              <p>Sitting is hard when your leg is on fire, so we keep evening slots open Monday through Thursday. Tell us where it travels (hip, calf, foot) when you book and Dr. Brad will start the exam there.</p>
+                <p>Our office is in the Vince and Joe&apos;s International Gourmet Shopping Plaza, on the northeast corner of Van Dyke and 25 Mile Road in Shelby Charter Township. From the middle of Clinton Township it is about 14 miles, roughly 23 minutes in light traffic.</p>
+                <p>The simplest way to get here is to take Hall Road (M-59) west until it meets Van Dyke Avenue in Utica, where the M-59 freeway ends. Turn north on Van Dyke, drive through Utica and past 23 Mile Road, and the plaza is on your right at 25 Mile. If your errands already take you past The Mall at Partridge Creek or Macomb Community College&apos;s Center Campus at Garfield and Hall, you are on the right road.</p>
+                <p>Sitting in a waiting room is no fun with a pinched nerve, so we run evening appointments Monday through Thursday. When you book, tell us where the pain travels (hip, thigh, calf or foot) and Dr. Brad will begin the exam at that spot.</p>
                 <p><strong>Address:</strong> 55130 Van Dyke Ave #25, Shelby Charter Township, MI 48317. <strong>Phone:</strong> <a href="tel:+15862071624" className="text-teal font-semibold">(586) 207-1624</a>.</p>
               </div>
               <div className="h-[400px] rounded-xl overflow-hidden relative shadow-sm">
@@ -178,34 +180,49 @@ export default function SciaticaTreatmentClintonTownshipMiPage() {
           </ScrollReveal>
         </div>
       </section>
-
-      {/* WHAT WE SEE */}
+      <section className="py-20 bg-light-gray relative" style={{ clipPath: 'polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0 100%)' }}>
+        <div className="container">
+          <ScrollReveal>
+            <div className="max-w-[860px] mb-8">
+              <span className="label">Staying Active</span>
+              <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>Getting Back to Your Own Routine</h2>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal>
+            <div className="prose-custom max-w-[860px]">
+              <p>Sciatica is usually described by what it stops you doing. Maybe it is the walking paths at George George Memorial Park, a 30-acre township park on Moravian Drive with trails that follow part of the Clinton River. Maybe it is a lap through the Partridge Creek mall, a shift on your feet, or just a night of sleep without waking when the leg flares.</p>
+              <p>Bring that list to your first visit. Dr. Brad grew up in Macomb County, played football in high school and landed in a chiropractor&apos;s office after a hard hit, so he understands why a person wants to get back to normal and not just to a pain score. We will talk through what is going on, what the plan looks like and how you will know whether it is working.</p>
+              <p>Our care is not limited to decompression. Adjustments, SoftWave therapy and therapeutic massage are all available at the same office, and we add them when they help your recovery.</p>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
       <section className="py-20 bg-white">
         <div className="container">
           <ScrollReveal>
             <div className="text-center mb-8">
               <span className="label">What We See</span>
-              <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>Sciatica Patterns We See</h2>
+              <h2 className="text-[36px] md:text-[44px] text-teal" style={{ fontFamily: 'var(--font-heading)' }}>What Sciatica Can Feel Like</h2>
             </div>
           </ScrollReveal>
           <div className="grid md:grid-cols-3 gap-6 max-w-[1000px] mx-auto">
             <div className="bg-light-gray rounded-xl p-8">
-              <h3 className="text-[17px] font-bold text-teal mb-2 leading-snug" style={{ fontFamily: 'var(--font-heading)' }}>Pain down one leg</h3>
-              <p className="text-sm text-text/70 leading-relaxed">Burning or shooting pain from the low back through the buttock and down the leg.</p>
+              <h3 className="text-[17px] font-bold text-teal mb-2 leading-snug" style={{ fontFamily: 'var(--font-heading)' }}>Pain from back to foot</h3>
+              <p className="text-sm text-text/70 leading-relaxed">A line of burning or electric pain that starts near the low back or buttock and follows the leg down one side.</p>
             </div>
             <div className="bg-light-gray rounded-xl p-8">
-              <h3 className="text-[17px] font-bold text-teal mb-2 leading-snug" style={{ fontFamily: 'var(--font-heading)' }}>Tingling or numbness</h3>
-              <p className="text-sm text-text/70 leading-relaxed">Pins and needles or numbness that follows the nerve into the foot.</p>
+              <h3 className="text-[17px] font-bold text-teal mb-2 leading-snug" style={{ fontFamily: 'var(--font-heading)' }}>Pins and needles</h3>
+              <p className="text-sm text-text/70 leading-relaxed">Tingling, numbness or a heavy, asleep feeling in the calf or foot that comes and goes.</p>
             </div>
             <div className="bg-light-gray rounded-xl p-8">
-              <h3 className="text-[17px] font-bold text-teal mb-2 leading-snug" style={{ fontFamily: 'var(--font-heading)' }}>Pain worse sitting</h3>
-              <p className="text-sm text-text/70 leading-relaxed">Leg and back pain that flares when sitting, driving or standing up.</p>
+              <h3 className="text-[17px] font-bold text-teal mb-2 leading-snug" style={{ fontFamily: 'var(--font-heading)' }}>Worse in the driver&apos;s seat</h3>
+              <p className="text-sm text-text/70 leading-relaxed">Pain that builds the longer you sit and eases when you stand up and walk.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FIRST VISIT + HOURS */}
+{/* FIRST VISIT + HOURS */}
       <section className="py-20 bg-light-gray">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-10 max-w-[1000px] mx-auto">
@@ -219,7 +236,7 @@ export default function SciaticaTreatmentClintonTownshipMiPage() {
                   <li>X-rays if needed</li>
                   <li>Your first adjustment</li>
                 </ul>
-                <p className="text-sm text-text/70 mt-4">Bring any MRI or X-ray reports you already have. No contracts, no pressure.</p>
+                <p className="text-sm text-text/70 mt-4">Bring any MRI or X-ray reports you have. There are no contracts.</p>
               </div>
             </ScrollReveal>
             <ScrollReveal>
@@ -231,14 +248,14 @@ export default function SciaticaTreatmentClintonTownshipMiPage() {
                   <li>Fri: 9am to 12pm</li>
                   <li>Sat and Sun: Closed</li>
                 </ul>
-                <p className="text-sm text-text/70 mt-4">Evening slots make it easy to stop in on the way home to Clinton Township.</p>
+                <p className="text-sm text-text/70 mt-4">Open late Monday to Thursday, so you can stop in on the drive home.</p>
               </div>
             </ScrollReveal>
           </div>
         </div>
       </section>
 
-      <ConversionCTA line1='Clinton Township sciatica pain, checked honestly.' anchor='See if decompression fits.' withForm={false} />
+      <ConversionCTA line1='Leg pain on the Hall Road commute? Get the cause checked.' anchor='See if decompression fits.' withForm={false} />
 
       {/* RELATED SERVICES */}
       <section className="py-20 bg-white">
