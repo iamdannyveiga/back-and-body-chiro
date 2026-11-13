@@ -13,6 +13,7 @@ interface PageHeroProps {
   imageSrc?: string;
   imageAlt?: string;
   aside?: React.ReactNode;
+  cta?: React.ReactNode;
 }
 
 export default function PageHero({
@@ -22,6 +23,7 @@ export default function PageHero({
   imageSrc = '/images/hero-clinic.webp',
   imageAlt = 'Back and Body Chiropractic Center',
   aside,
+  cta,
 }: PageHeroProps) {
   return (
     <section className="relative pt-[120px] md:pt-[140px] pb-14 md:pb-16">
@@ -52,6 +54,7 @@ export default function PageHero({
         {subtitle && (
           <p className="text-[17px] text-text-light/[.65] mt-4 max-w-[600px] leading-[1.65]">{subtitle}</p>
         )}
+        {cta && <div className="mt-6">{cta}</div>}
         </div>
         {aside && <div id="get-started" className="scroll-mt-24 w-full max-w-[460px] lg:ml-auto">{aside}</div>}
       </div>

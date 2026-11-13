@@ -47,6 +47,7 @@ export function localBusinessSchema() {
       'https://www.facebook.com/profile.php?id=61587075946629',
       'https://maps.google.com/maps?cid=3971201418059877519',
       'https://www.google.com/maps/place/?q=place_id:ChIJcYtYsfnmJIgRj4z8PqaKHDc',
+      'https://shelbytownshipguide.com/places/back-and-body-chiropractic-center',
     ],
     priceRange: '$$',
     aggregateRating: {

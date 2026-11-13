@@ -63,7 +63,8 @@ export default function SpinalDecompressionPage() {
         title={<>
           Spinal Decompression <span className="text-mint">in Shelby Township.</span>
         </>}
-        subtitle="Non-surgical disc relief. Gentle traction therapy that creates space, reduces pressure, and promotes healing."
+        subtitle="Yes, we offer spinal decompression in Shelby Charter Township. Dr. Brad Krawczyk at Back and Body Chiropractic Center, 55130 Van Dyke Ave #25, Shelby Township, MI 48317, uses non-surgical decompression traction to take pressure off bulging or herniated discs."
+        cta={<Link href="/schedule-appointment" className="btn btn--mint">Book Your $67 Visit &rarr;</Link>}
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Services', href: '/#services' },
