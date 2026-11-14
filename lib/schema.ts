@@ -68,7 +68,7 @@ export function localBusinessSchema() {
         'Chiropractic Care', 'Spinal Decompression', 'Massage Therapy',
         'Back Pain Treatment', 'Neck Pain Treatment', 'Headache & Migraine Relief',
         'Sciatica Treatment', 'Disc Injury Treatment', 'Scoliosis Treatment',
-        'Pediatric Chiropractic', 'Prenatal Chiropractic', 'Sports Medicine',
+        'Pediatric Chiropractic', 'Prenatal Chiropractic', 'Sports Chiropractic',
         'Auto & Work Injury Treatment', 'Whiplash Treatment', 'Carpal Tunnel Treatment',
         'Vertigo Treatment', 'Shoulder Pain Treatment', 'Arm & Leg Pain Treatment',
         'Nutrition Counseling', 'Weight Loss Program',
