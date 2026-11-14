@@ -251,7 +251,7 @@ export default function HomePage() {
             <ScrollReveal>
               <div className="bg-white rounded-xl p-7 shadow-[var(--shadow)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-1 transition-all duration-300">
                 <div className="w-10 h-10 bg-mint/10 rounded-lg flex items-center justify-center mb-3.5"><SportsMedicineIcon className="w-5 h-5 stroke-mint" /></div>
-                <div className="text-[16px] font-bold text-teal mb-1.5" style={{ fontFamily: 'var(--font-heading)' }}>Sports Medicine</div>
+                <div className="text-[16px] font-bold text-teal mb-1.5" style={{ fontFamily: 'var(--font-heading)' }}>Sports Chiropractic</div>
                 <p className="text-[13px] text-text opacity-80">Get back in the game.</p>
               </div>
             </ScrollReveal>
@@ -340,7 +340,7 @@ export default function HomePage() {
                 <p>Every patient gets a thorough evaluation, a clear explanation of what is going on, and a care plan sized to their specific condition. Real results speak for themselves.</p>
               </div>
               <div className="flex flex-wrap gap-2">
-                {['Back Pain', 'Neck Pain', 'Spinal Decompression', 'SoftWave Therapy', 'Pediatric', 'Prenatal', 'Sports Medicine', 'Massage', 'Nutrition'].map((tag) => (
+                {['Back Pain', 'Neck Pain', 'Spinal Decompression', 'SoftWave Therapy', 'Pediatric', 'Prenatal', 'Sports Chiropractic', 'Massage', 'Nutrition'].map((tag) => (
                   <span key={tag} className="text-xs font-semibold px-3.5 py-1.5 bg-mint/10 text-green-sec rounded-[20px]" style={{ fontFamily: 'var(--font-heading)' }}>{tag}</span>
                 ))}
               </div>
