@@ -6,7 +6,7 @@ import { localBusinessSchema } from '@/lib/schema';
 import HeroCtaButton from '@/components/HeroCtaButton';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Chiropractor in Shelby Township, MI | Spinal Decompression' },
+  title: { absolute: 'Chiropractor in Shelby Charter Township, MI | Back & Body' },
   description:
     'Chiropractor in Shelby Township, MI: spinal decompression and chiropractic care with Dr. Brad. No contracts. $67 New Patient Visit. Call (586) 207-1624.',
   alternates: {
