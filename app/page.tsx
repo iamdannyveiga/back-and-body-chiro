@@ -109,7 +109,7 @@ export default function HomePage() {
                 <Link href="/nutrition-shelby-township-mi" className="text-teal hover:underline">nutrition counseling</Link>, and{' '}
                 <Link href="/wellness-care-shelby-township-mi" className="text-teal hover:underline">wellness care</Link>.{' '}
                 <strong>Conditions treated:</strong>{' '}
-                <Link href="/back-pain-treatment-shelby-township-mi" className="text-teal hover:underline">back pain</Link>,{' '}
+                <Link href="/back-pain-treatment-shelby-township-mi" className="text-teal hover:underline">back and spinal pain</Link>,{' '}
                 <Link href="/neck-pain-treatment-shelby-township-mi" className="text-teal hover:underline">neck pain</Link>,{' '}
                 <Link href="/sciatica-treatment-shelby-township-mi" className="text-teal hover:underline">sciatica</Link> (<Link href="/sciatica-treatment-clinton-township-mi" className="text-teal hover:underline">Clinton Township sciatica</Link>),{' '}
                 <Link href="/disc-injury-treatment-shelby-township-mi" className="text-teal hover:underline">herniated and bulging discs</Link> (<Link href="/herniated-disc-treatment-clinton-township-mi" className="text-teal hover:underline">Clinton Township disc care</Link>),{' '}
