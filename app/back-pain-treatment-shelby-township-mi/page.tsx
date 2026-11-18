@@ -9,15 +9,20 @@ import { SpineIcon, DecompressionIcon, MassageIcon, CheckIcon } from '@/componen
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Back Pain Shelby Township',
+  title: 'Back & Spinal Pain Treatment Shelby Township MI',
   description:
-    'Back pain treatment from Dr. Brad Krawczyk. Root-cause chiropractic care — no band-aids. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
+    'Back and spinal pain treatment in Shelby Township, MI from Dr. Brad Krawczyk. Root-cause chiropractic care — no band-aids. $67 New Patient Special. (586) 207-1624.',
   alternates: {
     canonical: '/back-pain-treatment-shelby-township-mi',
   },
 };
 
 const faqItems = [
+  {
+    question: 'What spinal pain treatment is available in Shelby Township, MI?',
+    answer:
+      'Dr. Brad Krawczyk at Back and Body Chiropractic Center, 55130 Van Dyke Ave #25, Shelby Township, MI, treats spinal pain in the low back, mid back and neck with chiropractic adjustments and spinal decompression, aimed at the root cause. Call (586) 207-1624.',
+  },
   {
     question: 'How quickly will I feel relief from back pain?',
     answer:
@@ -51,7 +56,7 @@ export default function BackPainTreatmentPage() {
     <>
       <PageHero
         title={<>
-          Back Pain Treatment <span className="text-mint">in Shelby Township.</span>
+          Back &amp; Spinal Pain Treatment <span className="text-mint">in Shelby Township.</span>
         </>}
         subtitle="The #1 reason patients find Dr. Brad. Root-cause treatment — not band-aids, not painkillers."
         breadcrumbs={[
