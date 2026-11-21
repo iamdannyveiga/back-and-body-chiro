@@ -67,6 +67,7 @@ export default function WellnessCarePage() {
                 </h2>
                 <div className="prose-custom">
                   <p>Most people come to a chiropractor when something hurts. And that&apos;s fine — Dr. Brad is great at fixing problems. But some patients discover that periodic chiropractic care helps them feel better, move better, and prevent the problems that brought them in the first time.</p>
+<p>{"Wellness care works alongside adjustments at our "}<Link href="/">{"Shelby Township chiropractic office"}</Link>{", where Dr. Brad builds each plan around your goals."}</p>
                   <p>Wellness care at Back and Body is not a sales pitch for lifelong visits. It&apos;s an option for patients who have experienced the benefits of chiropractic and want to maintain them. Think of it like going to the dentist for cleanings — you don&apos;t wait until you have a cavity.</p>
                   <p>And here is the important part: Dr. Brad will never pressure you into wellness visits. Come when you want to. Stop when you want to. No contracts, no guilt, no judgment. If you feel great and do not want to come in, that&apos;s a win.</p>
                 </div>
