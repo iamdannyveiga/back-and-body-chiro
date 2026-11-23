@@ -9,7 +9,7 @@ import { NeckPainIcon, MassageIcon, SpineIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Headaches & Migraines Shelby Township',
+  title: { absolute: 'Headaches & Migraines, Shelby Charter Township, MI' },
   description:
     'Headache and migraine relief from Dr. Brad Krawczyk. Find the cervical cause, fix it without medication. $67 New Patient Visit. Shelby Township, MI.',
   alternates: {

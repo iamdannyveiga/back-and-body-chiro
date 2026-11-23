@@ -9,7 +9,7 @@ import { SpineIcon, HeadacheIcon, MassageIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Neck Pain Shelby Township',
+  title: 'Neck Pain, Shelby Charter Township',
   description:
     'Neck pain relief from Dr. Brad Krawczyk. Gentle adjustments for stiffness, tension, and cervical issues. $67 New Patient Visit. Shelby Township, MI.',
   alternates: {

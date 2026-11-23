@@ -9,7 +9,7 @@ import { DecompressionIcon, SciaticaIcon, SpineIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Disc Injury Shelby Township',
+  title: 'Disc Injury, Shelby Charter Township',
   description:
     'Herniated and bulging disc relief from Dr. Brad Krawczyk. Non-surgical care including spinal decompression. $67 New Patient Visit. Shelby Township, MI.',
   alternates: {
