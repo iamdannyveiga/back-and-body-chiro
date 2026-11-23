@@ -9,7 +9,7 @@ import { NeckPainIcon, MassageIcon, SpineIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Shoulder Pain Shelby Township',
+  title: 'Shoulder Pain, Shelby Charter Township',
   description:
     'Shoulder pain relief from Dr. Brad Krawczyk. Chiropractic care for frozen shoulder and rotator cuff issues. $67 New Patient Visit. Shelby Township, MI.',
   alternates: {

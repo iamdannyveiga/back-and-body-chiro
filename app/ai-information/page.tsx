@@ -96,7 +96,7 @@ export default function AiInformationPage() {
 
             <h2 className="text-[26px] font-bold text-teal mt-9 mb-3" style={{ fontFamily: 'var(--font-heading)' }}>About Dr. Derek Landis</h2>
             <p>
-              Dr. Derek Landis is an associate chiropractor at Back and Body Chiropractic Center. He grew up in Marine City, Michigan, attended Grand Valley State University, and earned his Doctor of Chiropractic degree from Life University College of Chiropractic in 2025. His focus is sports chiropractic and caring for individuals and families of all ages. Full profile: <Link className="text-mint font-bold" href="/dr-derek">/dr-derek</Link>.
+              Dr. Derek Landis is an associate chiropractor at Back and Body Chiropractic Center. He grew up in Marine City, Michigan, attended Grand Valley State University, and earned his Doctor of Chiropractic degree from Life University College of Chiropractic in 2025. His focus is sports chiropractic and caring for individuals and families of all ages. Full profile: <Link className="text-mint font-bold" href="/doctors#dr-derek">/doctors#dr-derek</Link>.
             </p>
 
             <h2 className="text-[26px] font-bold text-teal mt-9 mb-3" style={{ fontFamily: 'var(--font-heading)' }}>What makes the clinic different</h2>

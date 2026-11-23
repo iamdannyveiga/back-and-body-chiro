@@ -9,7 +9,7 @@ import { SpineIcon, SciaticaIcon, DiscIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'SoftWave Clinics Near Me | Shelby Township, MI',
+  title: { absolute: 'SoftWave Clinics Near Me | Shelby Charter Township, MI' },
   description:
     'SoftWave clinics near me? SoftWave tissue regeneration at Back and Body in Shelby Township: FDA-cleared shockwave for chronic pain and inflammation. Dr. Brad Krawczyk. $67 New Patient Visit. Shelby Township, MI.',
   alternates: {

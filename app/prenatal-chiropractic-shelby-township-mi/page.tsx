@@ -9,7 +9,7 @@ import { SpineIcon, MassageIcon, PediatricIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Prenatal Chiropractic Shelby Township',
+  title: { absolute: 'Prenatal Chiropractic, Shelby Charter Township, MI' },
   description:
     'Prenatal chiropractic care from Dr. Brad Krawczyk. Safe, gentle adjustments for pregnancy-related back pain and pelvic alignment. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {

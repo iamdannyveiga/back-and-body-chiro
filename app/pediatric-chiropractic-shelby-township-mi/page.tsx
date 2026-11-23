@@ -9,7 +9,7 @@ import { SpineIcon, ScoliosisIcon, MassageIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: "Pediatric Chiropractor in Shelby Township, Michigan",
+  title: { absolute: "Pediatric Chiropractor in Shelby Charter Township, MI" },
   description:
     'Gentle pediatric chiropractic care from Dr. Brad Krawczyk. Safe, effective adjustments for kids of all ages. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {

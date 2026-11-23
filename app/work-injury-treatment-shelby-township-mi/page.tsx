@@ -9,7 +9,7 @@ import { SpineIcon, DecompressionIcon, NeckPainIcon } from '@/components/Icons';
 import { serviceSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: "Chiropractic Care for Work Injuries in Shelby Township",
+  title: { absolute: "Work Injury Chiropractic, Shelby Charter Township, MI" },
   description:
     'Work injury and workers comp chiropractic treatment from Dr. Brad Krawczyk. Back pain, repetitive strain, and workplace injuries. $67 New Patient Special. (586) 207-1624. Shelby Township, MI.',
   alternates: {
