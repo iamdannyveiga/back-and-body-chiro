@@ -50,12 +50,6 @@ export function localBusinessSchema() {
       'https://shelbytownshipguide.com/places/back-and-body-chiropractic-center',
     ],
     priceRange: '$$',
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: BUSINESS.rating,
-      reviewCount: BUSINESS.reviewCount,
-      bestRating: '5',
-    },
     founder: {
       '@type': 'Person',
       name: BUSINESS.doctor,
